@@ -2,10 +2,10 @@
 CoreGTK 2.24.0 - 2014-01-26
 ===============================================================================
 
-CoreGTK 2.24.0 is the first import code.
+CoreGTK 2.24.0 is the first code import.
 
 This version of CoreGTK provides bindings for the API exposed by these libraries:
-  * gtk+ 2.24.0 (GtkWidget and down)
+  * gtk+ 2.24 (GtkWidget and down)
 
 There is no API stability guarantee for now, but we try to keep breaking
 changes to a minimum.
