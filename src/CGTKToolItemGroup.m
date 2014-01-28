@@ -37,7 +37,7 @@
 
 -(id)init:(NSString *)label
 {
-	self = [super initWithGtkWidget:gtk_tool_item_group_new ([label UTF8String])];
+	self = [super initWithGtkWidget:gtk_tool_item_group_new ([label UTF8String]) andIncrementRefCount:NO];
 
 	if(self)
 	{

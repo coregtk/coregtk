@@ -37,7 +37,7 @@
 
 -(id)initWithSize:(GtkIconSize)size andMin:(NSNumber *)min andMax:(NSNumber *)max andStep:(NSNumber *)step andIcons:(NSArray *)icons
 {
-	self = [super initWithGtkWidget:gtk_scale_button_new (size, [min doubleValue], [max doubleValue], [step doubleValue], NULL)];
+	self = [super initWithGtkWidget:gtk_scale_button_new (size, [min doubleValue], [max doubleValue], [step doubleValue], NULL) andIncrementRefCount:NO];
 	
 	if(self)
 	{

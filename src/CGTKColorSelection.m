@@ -37,7 +37,7 @@
 
 -(id)init
 {
-	self = [super initWithGtkWidget:gtk_color_selection_new ()];
+	self = [super initWithGtkWidget:gtk_color_selection_new () andIncrementRefCount:NO];
 
 	if(self)
 	{

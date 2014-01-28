@@ -37,7 +37,7 @@
 
 -(id)init
 {
-	self = [super initWithGtkWidget: gtk_cell_view_new ()];
+	self = [super initWithGtkWidget: gtk_cell_view_new () andIncrementRefCount:NO];
 
 	if(self)
 	{
@@ -49,7 +49,7 @@
 
 -(id)initWithText:(NSString *)text
 {
-	self = [super initWithGtkWidget: gtk_cell_view_new_with_text ([text UTF8String])];
+	self = [super initWithGtkWidget: gtk_cell_view_new_with_text ([text UTF8String]) andIncrementRefCount:NO];
 
 	if(self)
 	{
@@ -61,7 +61,7 @@
 
 -(id)initWithMarkup:(NSString *)markup
 {
-	self = [super initWithGtkWidget: gtk_cell_view_new_with_markup ([markup UTF8String])];
+	self = [super initWithGtkWidget: gtk_cell_view_new_with_markup ([markup UTF8String]) andIncrementRefCount:NO];
 
 	if(self)
 	{
@@ -73,7 +73,7 @@
 
 -(id)initWithPixbuf:(GdkPixbuf *)pixbuf
 {
-	self = [super initWithGtkWidget:gtk_cell_view_new_with_pixbuf (pixbuf)];
+	self = [super initWithGtkWidget:gtk_cell_view_new_with_pixbuf (pixbuf) andIncrementRefCount:NO];
 
 	if(self)
 	{

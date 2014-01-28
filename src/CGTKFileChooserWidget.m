@@ -37,7 +37,7 @@
 
 -(id)init:(GtkFileChooserAction)action
 {
-	self = [super initWithGtkWidget:gtk_file_chooser_widget_new (action)];
+	self = [super initWithGtkWidget:gtk_file_chooser_widget_new (action) andIncrementRefCount:NO];
 
 	if(self)
 	{

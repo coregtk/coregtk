@@ -37,7 +37,7 @@
 
 -(id)initWithIconWidget:(CGTKWidget *)iconWidget andLabel:(NSString *)label
 {
-	self = [super initWithGtkWidget:GTK_WIDGET(gtk_tool_button_new ([iconWidget WIDGET], [label UTF8String]))];
+	self = [super initWithGtkWidget:GTK_WIDGET(gtk_tool_button_new ([iconWidget WIDGET], [label UTF8String])) andIncrementRefCount:NO];
 
 	if(self)
 	{
@@ -49,7 +49,7 @@
 
 -(id)initFromStock:(NSString *)stockId
 {
-	self = [super initWithGtkWidget:GTK_WIDGET(gtk_tool_button_new_from_stock ([stockId UTF8String]))];
+	self = [super initWithGtkWidget:GTK_WIDGET(gtk_tool_button_new_from_stock ([stockId UTF8String])) andIncrementRefCount:NO];
 
 	if(self)
 	{

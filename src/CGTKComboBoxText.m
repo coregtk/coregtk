@@ -37,7 +37,7 @@
 
 -(id)init
 {
-	self = [super initWithGtkWidget:gtk_combo_box_text_new ()];
+	self = [super initWithGtkWidget:gtk_combo_box_text_new () andIncrementRefCount:NO];
 
 	if(self)
 	{
@@ -49,7 +49,7 @@
 
 -(id)initWithEntry
 {
-	self = [super initWithGtkWidget:gtk_combo_box_text_new_with_entry ()];
+	self = [super initWithGtkWidget:gtk_combo_box_text_new_with_entry () andIncrementRefCount:NO];
 
 	if(self)
 	{

@@ -37,7 +37,7 @@
 
 -(id)init
 {
-	self = [super initWithGtkWidget:gtk_volume_button_new ()];
+	self = [super initWithGtkWidget:gtk_volume_button_new () andIncrementRefCount:NO];
 	
 	if(self)
 	{

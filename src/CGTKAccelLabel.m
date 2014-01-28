@@ -37,7 +37,7 @@
 
 -(id)init:(NSString *)string
 {
-	self = [super initWithGtkWidget:gtk_accel_label_new ([string UTF8String])];
+	self = [super initWithGtkWidget:gtk_accel_label_new ([string UTF8String]) andIncrementRefCount:NO];
 
 	if(self)
 	{

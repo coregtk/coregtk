@@ -37,7 +37,7 @@
 
 -(id)init
 {
-	self = [super initWithGtkWidget:gtk_drawing_area_new ()];
+	self = [super initWithGtkWidget:gtk_drawing_area_new () andIncrementRefCount:NO];
 
 	if(self)
 	{

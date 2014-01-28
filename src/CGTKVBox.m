@@ -37,7 +37,7 @@
 
 -(id)initWithHomogeneous:(BOOL)homogeneous andSpacing:(NSNumber *)spacing
 {
-	self = [super initWithGtkWidget:gtk_vbox_new ([CGTK getGboolean:homogeneous], [spacing intValue])];
+	self = [super initWithGtkWidget:gtk_vbox_new ([CGTK getGboolean:homogeneous], [spacing intValue]) andIncrementRefCount:NO];
 
 	if(self)
 	{

@@ -37,7 +37,7 @@
 
 -(id)initWithSocketId:(GdkNativeWindow)socketId
 {
-	self = [super initWithGtkWidget:gtk_plug_new (socketId)];
+	self = [super initWithGtkWidget:gtk_plug_new (socketId) andIncrementRefCount:NO];
 	
 	if(self)
 	{
@@ -49,7 +49,7 @@
 
 -(id)initForDisplayWithDisplay:(GdkDisplay*)display andSocketId:(GdkNativeWindow)socketId
 {
-	self = [super initWithGtkWidget:gtk_plug_new_for_display (display, socketId)];
+	self = [super initWithGtkWidget:gtk_plug_new_for_display (display, socketId) andIncrementRefCount:NO];
 	
 	if(self)
 	{

@@ -37,17 +37,11 @@
 
 -(id)initWithGtkWindowType:(GtkWindowType)type
 {
-	GtkWidget *window = gtk_window_new (type);
-
-    self = [super initWithGtkWidget:window];
+	self = [super initWithGtkWidget:gtk_window_new (type) andIncrementRefCount:NO];
 
     if(self)
     {
-        if(window != NULL)
-		{
-			// Decrease the reference count on the GtkWidget now that its been set
-			g_object_unref(window);
-		}
+        // Do nothing
     }
 
     return self;

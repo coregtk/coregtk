@@ -37,7 +37,7 @@
 
 -(id)initWithLabel:(NSString *)label andXalign:(NSNumber *)xalign andYalign:(NSNumber *)yalign andRatio:(NSNumber *)ratio andObeyChild:(BOOL)obeyChild
 {
-	self = [super initWithGtkWidget:gtk_aspect_frame_new ([label UTF8String], [xalign floatValue], [yalign floatValue], [ratio floatValue], [CGTK getGboolean:obeyChild])];
+	self = [super initWithGtkWidget:gtk_aspect_frame_new ([label UTF8String], [xalign floatValue], [yalign floatValue], [ratio floatValue], [CGTK getGboolean:obeyChild]) andIncrementRefCount:NO];
 	
 	if(self)
 	{

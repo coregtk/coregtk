@@ -37,7 +37,7 @@
 
 -(id)init
 {
-	self = [super initWithGtkWidget:gtk_statusbar_new ()];
+	self = [super initWithGtkWidget:gtk_statusbar_new () andIncrementRefCount:NO];
 
 	if(self)
 	{

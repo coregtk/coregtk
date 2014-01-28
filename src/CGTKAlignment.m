@@ -37,7 +37,7 @@
 
 -(id)initWithXalign:(NSNumber *)xalign andYalign:(NSNumber *)yalign andXscale:(NSNumber *)xscale andYscale:(NSNumber *)yscale
 {
-	self = [super initWithGtkWidget:gtk_alignment_new ([xalign floatValue], [yalign floatValue], [xscale floatValue], [yscale floatValue])];
+	self = [super initWithGtkWidget:gtk_alignment_new ([xalign floatValue], [yalign floatValue], [xscale floatValue], [yscale floatValue]) andIncrementRefCount:NO];
 	
 	if(self)
 	{

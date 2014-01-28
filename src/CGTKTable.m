@@ -37,7 +37,7 @@
 
 -(id)initWithRows:(NSNumber *)rows andColumns:(NSNumber *)columns andHomogeneous:(BOOL)homogeneous
 {
-	self = [super initWithGtkWidget:gtk_table_new([rows unsignedIntValue], [columns unsignedIntValue], [CGTK getGboolean:homogeneous])];
+	self = [super initWithGtkWidget:gtk_table_new([rows unsignedIntValue], [columns unsignedIntValue], [CGTK getGboolean:homogeneous]) andIncrementRefCount:NO];
 	
 	if(self)
 	{

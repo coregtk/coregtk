@@ -42,7 +42,7 @@
 
 -(id)initWithAdjustment:(GtkAdjustment *)adjustment andClimbRate:(NSNumber *)climbRate andDigits:(NSNumber *)digits
 {
-	self = [super initWithGtkWidget:gtk_spin_button_new (adjustment, [climbRate doubleValue], [digits unsignedIntValue])];
+	self = [super initWithGtkWidget:gtk_spin_button_new (adjustment, [climbRate doubleValue], [digits unsignedIntValue]) andIncrementRefCount:NO];
 
 	if(self)
 	{
@@ -54,7 +54,7 @@
 
 -(id)initWithRangeWithMin:(NSNumber *)min andMax:(NSNumber *)max andStep:(NSNumber *)step
 {
-	self = [super initWithGtkWidget:gtk_spin_button_new_with_range ([min doubleValue], [max doubleValue], [step doubleValue])];
+	self = [super initWithGtkWidget:gtk_spin_button_new_with_range ([min doubleValue], [max doubleValue], [step doubleValue]) andIncrementRefCount:NO];
 
 	if(self)
 	{

@@ -37,7 +37,7 @@
 
 -(id)init
 {
-	self = [super initWithGtkWidget:gtk_image_new ()];
+	self = [super initWithGtkWidget:gtk_image_new () andIncrementRefCount:NO];
 
 	if(self)
 	{
@@ -49,7 +49,7 @@
 
 -(id)initFromPixmapWithPixmap:(GdkPixmap*)pixmap andMask:(GdkBitmap *)mask
 {
-	self = [super initWithGtkWidget:gtk_image_new_from_pixmap (pixmap, mask)];
+	self = [super initWithGtkWidget:gtk_image_new_from_pixmap (pixmap, mask) andIncrementRefCount:NO];
 
 	if(self)
 	{
@@ -61,7 +61,7 @@
 
 -(id)initFromImageWithImage:(GdkImage *)image andMask:(GdkBitmap *)mask
 {
-	self = [super initWithGtkWidget:gtk_image_new_from_image (image, mask)];
+	self = [super initWithGtkWidget:gtk_image_new_from_image (image, mask) andIncrementRefCount:NO];
 
 	if(self)
 	{
@@ -73,7 +73,7 @@
 
 -(id)initFromFile:(NSString *)filename
 {
-	self = [super initWithGtkWidget:gtk_image_new_from_file ([filename UTF8String])];
+	self = [super initWithGtkWidget:gtk_image_new_from_file ([filename UTF8String]) andIncrementRefCount:NO];
 
 	if(self)
 	{
@@ -85,7 +85,7 @@
 
 -(id)initFromPixbuf:(GdkPixbuf *)pixbuf
 {
-	self = [super initWithGtkWidget:gtk_image_new_from_pixbuf (pixbuf)];
+	self = [super initWithGtkWidget:gtk_image_new_from_pixbuf (pixbuf) andIncrementRefCount:NO];
 
 	if(self)
 	{
@@ -97,7 +97,7 @@
 
 -(id)initFromStockWithStockId:(NSString *)stockId andSize:(GtkIconSize)size
 {
-	self = [super initWithGtkWidget:gtk_image_new_from_stock ([stockId UTF8String], size)];
+	self = [super initWithGtkWidget:gtk_image_new_from_stock ([stockId UTF8String], size) andIncrementRefCount:NO];
 
 	if(self)
 	{
@@ -109,7 +109,7 @@
 
 -(id)initFromIconSetWithIconSet:(GtkIconSet *)iconSet andSize:(GtkIconSize)size
 {
-	self = [super initWithGtkWidget:gtk_image_new_from_icon_set (iconSet, size)];
+	self = [super initWithGtkWidget:gtk_image_new_from_icon_set (iconSet, size) andIncrementRefCount:NO];
 
 	if(self)
 	{
@@ -121,7 +121,7 @@
 
 -(id)initFromAnimation:(GdkPixbufAnimation *)animation
 {
-	self = [super initWithGtkWidget:gtk_image_new_from_animation (animation)];
+	self = [super initWithGtkWidget:gtk_image_new_from_animation (animation) andIncrementRefCount:NO];
 
 	if(self)
 	{
@@ -133,7 +133,7 @@
 
 -(id)initFromIconNameWithIconName:(NSString *)iconName andSize:(GtkIconSize)size
 {
-	self = [super initWithGtkWidget:gtk_image_new_from_icon_name ([iconName UTF8String], size)];
+	self = [super initWithGtkWidget:gtk_image_new_from_icon_name ([iconName UTF8String], size) andIncrementRefCount:NO];
 
 	if(self)
 	{
@@ -145,7 +145,7 @@
 
 -(id)initFromGiconWithIcon:(GIcon *)icon andSize:(GtkIconSize)size
 {
-	self = [super initWithGtkWidget:gtk_image_new_from_gicon (icon, size)];
+	self = [super initWithGtkWidget:gtk_image_new_from_gicon (icon, size) andIncrementRefCount:NO];
 
 	if(self)
 	{

@@ -37,7 +37,7 @@
 
 -(id)init
 {
-	self = [super initWithGtkWidget:gtk_tool_palette_new ()];
+	self = [super initWithGtkWidget:gtk_tool_palette_new () andIncrementRefCount:NO];
 
 	if(self)
 	{

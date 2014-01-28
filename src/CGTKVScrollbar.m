@@ -37,7 +37,7 @@
 
 -(id)init:(GtkAdjustment *)adjustment
 {
-	self = [super initWithGtkWidget: gtk_vscrollbar_new (adjustment)];
+	self = [super initWithGtkWidget: gtk_vscrollbar_new (adjustment) andIncrementRefCount:NO];
 
 	if(self)
 	{

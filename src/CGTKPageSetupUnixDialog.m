@@ -37,7 +37,7 @@
 
 -(id)initWithTitle:(NSString *)title andParent:(CGTKWindow *)parent
 {
-	self = [super initWithGtkWidget:gtk_page_setup_unix_dialog_new([title UTF8String], [parent WINDOW]];
+	self = [super initWithGtkWidget:gtk_page_setup_unix_dialog_new([title UTF8String], [parent WINDOW] andIncrementRefCount:NO];
 	
 	if(self)
 	{

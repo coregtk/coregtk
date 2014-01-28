@@ -37,7 +37,7 @@
 
 -(id)init:(GtkAdjustment *)adjustment
 {
-	self = [super initWithGtkWidget:gtk_vscale_new (adjustment)];
+	self = [super initWithGtkWidget:gtk_vscale_new (adjustment) andIncrementRefCount:NO];
 
 	if(self)
 	{
@@ -49,7 +49,7 @@
 
 -(id)initWithRangeWithMin:(NSNumber *)min andMax:(NSNumber *)max andStep:(NSNumber *)step
 {
-	self = [super initWithGtkWidget:gtk_vscale_new_with_range ([min doubleValue], [max doubleValue], [step doubleValue])];
+	self = [super initWithGtkWidget:gtk_vscale_new_with_range ([min doubleValue], [max doubleValue], [step doubleValue]) andIncrementRefCount:NO];
 
 	if(self)
 	{

@@ -37,7 +37,7 @@
 
 -(id)init
 {
-	self = [super initWithGtkWidget:gtk_hbutton_box_new ()];
+	self = [super initWithGtkWidget:gtk_hbutton_box_new () andIncrementRefCount:NO];
 
 	if(self)
 	{

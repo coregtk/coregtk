@@ -37,7 +37,7 @@
 
 -(id)init:(NSString *)label
 {
-	self = [super initWithGtkWidget:gtk_expander_new ([label UTF8String])];
+	self = [super initWithGtkWidget:gtk_expander_new ([label UTF8String]) andIncrementRefCount:NO];
 
 	if(self)
 	{
@@ -49,7 +49,7 @@
 
 -(id)initWithMnemonic:(NSString *)label
 {
-	self = [super initWithGtkWidget:gtk_expander_new_with_mnemonic ([label UTF8String])];
+	self = [super initWithGtkWidget:gtk_expander_new_with_mnemonic ([label UTF8String]) andIncrementRefCount:NO];
 
 	if(self)
 	{

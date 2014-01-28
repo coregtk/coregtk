@@ -37,7 +37,7 @@
 
 -(id)init
 {
-	self = [super initWithGtkWidget:gtk_recent_chooser_widget_new ()];
+	self = [super initWithGtkWidget:gtk_recent_chooser_widget_new () andIncrementRefCount:NO];
 
 	if(self)
 	{
@@ -49,7 +49,7 @@
 
 -(id)initForManager:(GtkRecentManager *)manager
 {
-	self = [super initWithGtkWidget:gtk_recent_chooser_widget_new_for_manager (manager)];
+	self = [super initWithGtkWidget:gtk_recent_chooser_widget_new_for_manager (manager) andIncrementRefCount:NO];
 
 	if(self)
 	{

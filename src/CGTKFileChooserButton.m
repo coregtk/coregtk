@@ -37,7 +37,7 @@
 
 -(id)initWithTitle:(NSString *)title andAction:(GtkFileChooserAction)action
 {
-	self = [super initWithGtkWidget:gtk_file_chooser_button_new ([title UTF8String], action)];
+	self = [super initWithGtkWidget:gtk_file_chooser_button_new ([title UTF8String], action) andIncrementRefCount:NO];
 
 	if(self)
 	{
@@ -49,7 +49,7 @@
 
 -(id)initWithDialog:(CGTKWidget *)dialog
 {
-	self = [super initWithGtkWidget:gtk_file_chooser_button_new_with_dialog ([dialog WIDGET])];
+	self = [super initWithGtkWidget:gtk_file_chooser_button_new_with_dialog ([dialog WIDGET]) andIncrementRefCount:NO];
 
 	if(self)
 	{

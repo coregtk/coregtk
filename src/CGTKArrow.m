@@ -37,7 +37,7 @@
 
 -(id)initWithArrowType:(GtkArrowType)arrowType andShadowType:(GtkShadowType)shadowType
 {
-	self = [super initWithGtkWidget:gtk_arrow_new (arrowType, shadowType)];
+	self = [super initWithGtkWidget:gtk_arrow_new (arrowType, shadowType) andIncrementRefCount:NO];
 
 	if(self)
 	{

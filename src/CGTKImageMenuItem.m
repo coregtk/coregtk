@@ -37,7 +37,7 @@
 
 -(id)init
 {
-	self = [super initWithGtkWidget:gtk_image_menu_item_new ()];
+	self = [super initWithGtkWidget:gtk_image_menu_item_new () andIncrementRefCount:NO];
 	
 	if(self)
 	{
@@ -49,7 +49,7 @@
 
 -(id)initWithLabel:(NSString *)label
 {
-	self = [super initWithGtkWidget:gtk_image_menu_item_new_with_label ([label UTF8String])];
+	self = [super initWithGtkWidget:gtk_image_menu_item_new_with_label ([label UTF8String]) andIncrementRefCount:NO];
 	
 	if(self)
 	{
@@ -61,7 +61,7 @@
 
 -(id)initWithMnemonic:(NSString *)label
 {
-	self = [super initWithGtkWidget:gtk_image_menu_item_new_with_mnemonic ([label UTF8String])];
+	self = [super initWithGtkWidget:gtk_image_menu_item_new_with_mnemonic ([label UTF8String]) andIncrementRefCount:NO];
 	
 	if(self)
 	{
@@ -73,7 +73,7 @@
 
 -(id)initFromStockWithStockId:(NSString *)stockId andAccelGroup:(GtkAccelGroup *)accelGroup
 {
-	self = [super initWithGtkWidget:gtk_image_menu_item_new_from_stock ([stockId UTF8String], accelGroup)];
+	self = [super initWithGtkWidget:gtk_image_menu_item_new_from_stock ([stockId UTF8String], accelGroup) andIncrementRefCount:NO];
 	
 	if(self)
 	{

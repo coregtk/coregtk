@@ -37,7 +37,7 @@
 
 -(id)init
 {
-	self = [super initWithGtkWidget:gtk_entry_new ()];
+	self = [super initWithGtkWidget:gtk_entry_new () andIncrementRefCount:NO];
 
 	if(self)
 	{
@@ -49,7 +49,7 @@
 
 -(id)initWithBuffer:(GtkEntryBuffer *)buffer
 {
-	self = [super initWithGtkWidget:gtk_entry_new_with_buffer (buffer)];
+	self = [super initWithGtkWidget:gtk_entry_new_with_buffer (buffer) andIncrementRefCount:NO];
 
 	if(self)
 	{

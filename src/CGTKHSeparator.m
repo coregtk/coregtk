@@ -37,7 +37,7 @@
 
 -(id)init
 {
-	self = [super initWithGtkWidget: gtk_hseparator_new ()];
+	self = [super initWithGtkWidget: gtk_hseparator_new () andIncrementRefCount:NO];
 
 	if(self)
 	{

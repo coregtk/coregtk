@@ -37,7 +37,7 @@
 
 -(id)init:(NSString *)uri
 {
-	self = [super initWithGtkWidget:gtk_link_button_new ([uri UTF8String])];
+	self = [super initWithGtkWidget:gtk_link_button_new ([uri UTF8String]) andIncrementRefCount:NO];
 	
 	if(self)
 	{
@@ -49,7 +49,7 @@
 
 -(id)initWithLabelWithUri:(NSString *)uri andLabel:(NSString *)label
 {
-	self = [super initWithGtkWidget:gtk_link_button_new_with_label ([uri UTF8String], [label UTF8String])];
+	self = [super initWithGtkWidget:gtk_link_button_new_with_label ([uri UTF8String], [label UTF8String]) andIncrementRefCount:NO];
 	
 	if(self)
 	{

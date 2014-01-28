@@ -73,6 +73,19 @@
 -(id)init;
 
 /**
+ * Creates and returns a new instance of CGTKWidget holding the GtkWidget.
+ *
+ * @param widget
+ *  the GtkWidget to hold internally
+ *
+ * @param incrementRefCount
+ *  if YES the GtkWidget's ref count is increased
+ *
+ * @returns a new CGTKWidget
+ */
+-(id)initWithGtkWidget:(GtkWidget *)widget andIncrementRefCount:(BOOL)incrementRefCount;
+
+/**
  * Creates and returns a new instance of CGTKWidget holding the GtkWidget
  *
  * @param widget

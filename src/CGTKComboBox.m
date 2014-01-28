@@ -37,7 +37,7 @@
 
 -(id)init
 {
-	self = [super initWithGtkWidget:gtk_combo_box_new ()];
+	self = [super initWithGtkWidget:gtk_combo_box_new () andIncrementRefCount:NO];
 	
 	if(self)
 	{
@@ -49,7 +49,7 @@
 
 -(id)initWithEntry
 {
-	self = [super initWithGtkWidget:gtk_combo_box_new_with_entry ()];
+	self = [super initWithGtkWidget:gtk_combo_box_new_with_entry () andIncrementRefCount:NO];
 	
 	if(self)
 	{
@@ -61,7 +61,7 @@
 
 -(id)initWithModel:(GtkTreeModel *)model
 {
-	self = [super initWithGtkWidget:gtk_combo_box_new_with_model (model)];
+	self = [super initWithGtkWidget:gtk_combo_box_new_with_model (model) andIncrementRefCount:NO];
 	
 	if(self)
 	{
@@ -73,7 +73,7 @@
 
 -(id)initWithModelAndEntry:(GtkTreeModel *)model
 {
-	self = [super initWithGtkWidget:gtk_combo_box_new_with_model_and_entry (model)];
+	self = [super initWithGtkWidget:gtk_combo_box_new_with_model_and_entry (model) andIncrementRefCount:NO];
 	
 	if(self)
 	{

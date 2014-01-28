@@ -37,7 +37,7 @@
 
 -(id)init
 {
-	self = [super initWithGtkWidget:gtk_menu_new ()];
+	self = [super initWithGtkWidget:gtk_menu_new () andIncrementRefCount:NO];
 
 	if(self)
 	{

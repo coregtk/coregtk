@@ -37,7 +37,7 @@
 
 -(id)init:(GSList *)group
 {
-	self = [super initWithGtkWidget:GTK_WIDGET(gtk_radio_tool_button_new (group))];
+	self = [super initWithGtkWidget:GTK_WIDGET(gtk_radio_tool_button_new (group)) andIncrementRefCount:NO];
 
 	if(self)
 	{
@@ -49,7 +49,7 @@
 
 -(id)initFromStockWithGroup:(GSList *)group andStockId:(NSString *)stockId
 {
-	self = [super initWithGtkWidget:GTK_WIDGET(gtk_radio_tool_button_new_from_stock (group, [stockId UTF8String]))];
+	self = [super initWithGtkWidget:GTK_WIDGET(gtk_radio_tool_button_new_from_stock (group, [stockId UTF8String])) andIncrementRefCount:NO];
 
 	if(self)
 	{
@@ -61,7 +61,7 @@
 
 -(id)initFromWidgetWithGroup:(CGTKRadioToolButton *)group
 {
-	self = [super initWithGtkWidget:GTK_WIDGET(gtk_radio_tool_button_new_from_widget ([group RADIO_TOOL_BUTTON]))];
+	self = [super initWithGtkWidget:GTK_WIDGET(gtk_radio_tool_button_new_from_widget ([group RADIO_TOOL_BUTTON])) andIncrementRefCount:NO];
 
 	if(self)
 	{
@@ -73,7 +73,7 @@
 
 -(id)initWithStockFromWidgetWithGroup:(CGTKRadioToolButton *)group andStockId:(NSString *)stockId
 {
-	self = [super initWithGtkWidget:GTK_WIDGET(gtk_radio_tool_button_new_with_stock_from_widget ([group RADIO_TOOL_BUTTON], [stockId UTF8String]))];
+	self = [super initWithGtkWidget:GTK_WIDGET(gtk_radio_tool_button_new_with_stock_from_widget ([group RADIO_TOOL_BUTTON], [stockId UTF8String])) andIncrementRefCount:NO];
 
 	if(self)
 	{

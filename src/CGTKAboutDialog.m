@@ -32,7 +32,7 @@
 
 -(id)init
 {
-	self = [super initWithGtkWidget:gtk_about_dialog_new()];
+	self = [super initWithGtkWidget:gtk_about_dialog_new() andIncrementRefCount:NO];
 
     if(self)
     {

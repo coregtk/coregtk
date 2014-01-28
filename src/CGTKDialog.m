@@ -32,12 +32,11 @@
 
 -(id)init
 {
-    self = [super init];
+    self = [super initWithGtkWidget:gtk_dialog_new() andIncrementRefCount:NO];
 
     if(self)
     {
-        // Set dialog here
-        [self setWidget:gtk_dialog_new()];
+        // Do nothing
     }
 
     return self;

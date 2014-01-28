@@ -37,7 +37,7 @@
 
 -(id)init
 {
-	self = [super initWithGtkWidget:gtk_offscreen_window_new ()];
+	self = [super initWithGtkWidget:gtk_offscreen_window_new () andIncrementRefCount:NO];
 	
 	if(self)
 	{

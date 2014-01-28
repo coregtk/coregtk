@@ -35,7 +35,7 @@
 	self = [super initWithGtkWidget:gtk_recent_chooser_dialog_new([title UTF8String], [parent WINDOW], 
 	GTK_STOCK_CANCEL, GTK_RESPONSE_CANCEL,
 	GTK_STOCK_OPEN, GTK_RESPONSE_ACCEPT,
-	NULL)];
+	NULL) andIncrementRefCount:NO];
 	
 	if(self)
 	{
@@ -50,7 +50,7 @@
 	self = [super initWithGtkWidget:gtk_recent_chooser_dialog_new_for_manager([title UTF8String], [parent WINDOW], manager,
 	GTK_STOCK_CANCEL, GTK_RESPONSE_CANCEL,
 	GTK_STOCK_OPEN, GTK_RESPONSE_ACCEPT,
-	NULL)];
+	NULL) andIncrementRefCount:NO];
 	
 	if(self)
 	{

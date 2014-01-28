@@ -48,14 +48,32 @@
 }
 
 -(id)initWithGtkWidget:(GtkWidget *)widget
-{
-    self = [super init];
+{    
+    self = [self initWithGtkWidget:widget andIncrementRefCount:YES];
+    
+    if(self)
+    {
+        // Do nothing
+    }
 
+    return self;
+}
+
+-(id)initWithGtkWidget:(GtkWidget *)widget andIncrementRefCount:(BOOL)incrementRefCount
+{
+	self = [super init];
+    
     if(self)
     {
         [self setWidget:widget];
+        
+        if(incrementRefCount == NO && widget != NULL)
+        {
+			// Decrease the reference count on the GtkObject
+			g_object_unref(widget);			
+        }
     }
-
+    
     return self;
 }
 
@@ -70,8 +88,6 @@
     
     return self;
 }
-
-//-(id)initWithGType:(Gtype)type andProperties:(NSArray *) properties;
 
 -(GtkWidget *)WIDGET
 {

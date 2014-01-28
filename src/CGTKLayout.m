@@ -37,7 +37,7 @@
 
 -(id)initWithHadjustment:(GtkAdjustment *)hadjustment andVadjustment:(GtkAdjustment *)vadjustment
 {
-	self = [super initWithGtkWidget:gtk_layout_new (hadjustment, vadjustment)];
+	self = [super initWithGtkWidget:gtk_layout_new (hadjustment, vadjustment) andIncrementRefCount:NO];
 
 	if(self)
 	{

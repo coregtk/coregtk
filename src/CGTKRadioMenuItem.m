@@ -37,7 +37,7 @@
 
 -(id)init:(GSList *)group
 {
-	self = [super initWithGtkWidget:gtk_radio_menu_item_new (group)];
+	self = [super initWithGtkWidget:gtk_radio_menu_item_new (group) andIncrementRefCount:NO];
 	
 	if(self)
 	{
@@ -49,7 +49,7 @@
 
 -(id)initWithLabelWithGroup:(GSList *)group andLabel:(NSString *)label
 {
-	self = [super initWithGtkWidget:gtk_radio_menu_item_new_with_label (group, [label UTF8String])];
+	self = [super initWithGtkWidget:gtk_radio_menu_item_new_with_label (group, [label UTF8String]) andIncrementRefCount:NO];
 	
 	if(self)
 	{
@@ -61,7 +61,7 @@
 
 -(id)initWithMnemonicWithGroup:(GSList *)group andLabel:(NSString *)label
 {
-	self = [super initWithGtkWidget:gtk_radio_menu_item_new_with_mnemonic (group, [label UTF8String])];
+	self = [super initWithGtkWidget:gtk_radio_menu_item_new_with_mnemonic (group, [label UTF8String]) andIncrementRefCount:NO];
 	
 	if(self)
 	{
@@ -73,7 +73,7 @@
 
 -(id)initFromWidget:(CGTKRadioMenuItem *)group
 {
-	self = [super initWithGtkWidget:gtk_radio_menu_item_new_from_widget ([group RADIO_MENU_ITEM])];
+	self = [super initWithGtkWidget:gtk_radio_menu_item_new_from_widget ([group RADIO_MENU_ITEM]) andIncrementRefCount:NO];
 	
 	if(self)
 	{
@@ -85,7 +85,7 @@
 
 -(id)initWithMnemonicFromWidgetWithGroup:(CGTKRadioMenuItem *)group andLabel:(NSString *)label
 {
-	self = [super initWithGtkWidget:gtk_radio_menu_item_new_with_mnemonic_from_widget ([group RADIO_MENU_ITEM], [label UTF8String])];
+	self = [super initWithGtkWidget:gtk_radio_menu_item_new_with_mnemonic_from_widget ([group RADIO_MENU_ITEM], [label UTF8String]) andIncrementRefCount:NO];
 	
 	if(self)
 	{
@@ -97,7 +97,7 @@
 
 -(id)newWithLabelFromWidget:(CGTKRadioMenuItem *)group andLabel:(NSString *)label
 {
-	self = [super initWithGtkWidget:gtk_radio_menu_item_new_with_label_from_widget ([group RADIO_MENU_ITEM], [label UTF8String])];
+	self = [super initWithGtkWidget:gtk_radio_menu_item_new_with_label_from_widget ([group RADIO_MENU_ITEM], [label UTF8String]) andIncrementRefCount:NO];
 	
 	if(self)
 	{

@@ -37,7 +37,7 @@
 
 -(id)init
 {
-	self = [super initWithGtkWidget:gtk_color_button_new ()];
+	self = [super initWithGtkWidget:gtk_color_button_new () andIncrementRefCount:NO];
 	
 	if(self)
 	{
@@ -49,7 +49,7 @@
 
 -(id)initWithColor:(const GdkColor *)color
 {
-	self = [super initWithGtkWidget:gtk_color_button_new_with_color (color)];
+	self = [super initWithGtkWidget:gtk_color_button_new_with_color (color) andIncrementRefCount:NO];
 	
 	if(self)
 	{

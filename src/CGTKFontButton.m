@@ -37,7 +37,7 @@
 
 -(id)init
 {
-	self = [super initWithGtkWidget:gtk_font_button_new ()];
+	self = [super initWithGtkWidget:gtk_font_button_new () andIncrementRefCount:NO];
 	
 	if(self)
 	{
@@ -49,7 +49,7 @@
 
 -(id)initWithFont:(NSString *)fontname
 {
-	self = [super initWithGtkWidget:gtk_font_button_new_with_font ([fontname UTF8String])];
+	self = [super initWithGtkWidget:gtk_font_button_new_with_font ([fontname UTF8String]) andIncrementRefCount:NO];
 	
 	if(self)
 	{

@@ -32,7 +32,7 @@
 
 -(id)initWithTitle:(NSString *)title
 {
-	self = [super initWithGtkWidget:gtk_color_selection_dialog_new([title UTF8String])];
+	self = [super initWithGtkWidget:gtk_color_selection_dialog_new([title UTF8String]) andIncrementRefCount:NO];
 
     if(self)
     {

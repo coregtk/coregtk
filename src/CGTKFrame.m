@@ -37,7 +37,7 @@
 
 -(id)initWithLabel:(NSString *)label;
 {
-	self = [super initWithGtkWidget:gtk_frame_new ([label UTF8String])];
+	self = [super initWithGtkWidget:gtk_frame_new ([label UTF8String]) andIncrementRefCount:NO];
 	
 	if(self)
 	{

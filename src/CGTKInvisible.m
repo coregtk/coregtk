@@ -37,7 +37,7 @@
 
 -(id)init
 {
-	self = [super initWithGtkWidget: gtk_invisible_new ()];
+	self = [super initWithGtkWidget: gtk_invisible_new () andIncrementRefCount:NO];
 
 	if(self)
 	{
@@ -49,7 +49,7 @@
 
 -(id)initForScreen:(GdkScreen *)screen
 {
-	self = [super initWithGtkWidget: gtk_invisible_new_for_screen (screen)];
+	self = [super initWithGtkWidget: gtk_invisible_new_for_screen (screen) andIncrementRefCount:NO];
 
 	if(self)
 	{

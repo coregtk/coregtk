@@ -37,7 +37,7 @@
 
 -(id)init
 {
-	self = [super initWithGtkWidget:gtk_text_view_new ()];
+	self = [super initWithGtkWidget:gtk_text_view_new () andIncrementRefCount:NO];
 
 	if(self)
 	{
@@ -49,7 +49,7 @@
 
 -(id)initWithBuffer:(GtkTextBuffer *)buffer
 {
-	self = [super initWithGtkWidget:gtk_text_view_new_with_buffer (buffer)];
+	self = [super initWithGtkWidget:gtk_text_view_new_with_buffer (buffer) andIncrementRefCount:NO];
 
 	if(self)
 	{

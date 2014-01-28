@@ -37,7 +37,7 @@
 
 -(id)initWithParent:(CGTKWindow *)parent andFlags:(GtkDialogFlags)flags andType:(GtkMessageType)type andButtons:(GtkButtonsType)buttons andMessage:(NSString *)message
 {
-	self = [super initWithGtkWidget:gtk_message_dialog_new([parent WINDOW], flags, type, buttons, NULL)];
+	self = [super initWithGtkWidget:gtk_message_dialog_new([parent WINDOW], flags, type, buttons, NULL) andIncrementRefCount:NO];
 	
 	if(self)
 	{

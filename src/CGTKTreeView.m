@@ -37,7 +37,7 @@
 
 -(id)init
 {
-	self = [super initWithGtkWidget:gtk_tree_view_new ()];
+	self = [super initWithGtkWidget:gtk_tree_view_new () andIncrementRefCount:NO];
 
 	if(self)
 	{
@@ -49,7 +49,7 @@
 
 -(id)initWithModel:(GtkTreeModel *)model
 {
-	self = [super initWithGtkWidget:GTK_WIDGET(gtk_tree_view_new_with_model (model))];
+	self = [super initWithGtkWidget:GTK_WIDGET(gtk_tree_view_new_with_model (model)) andIncrementRefCount:NO];
 
 	if(self)
 	{
