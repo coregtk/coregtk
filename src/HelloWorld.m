@@ -14,8 +14,7 @@
 
 @interface HelloWorld : NSObject
 
-/* This is a callback function. The data arguments are ignored
- * in this example. More on callbacks below. */
+/* This is a callback function. More callbacks below. */
 +(void)hello;
 
 /* Another callback */
