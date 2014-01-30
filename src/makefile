@@ -14,7 +14,7 @@ CC=gcc
 CFLAGS=-c -Wall
 
 #Objective-c specific flags
-OBJCFLAGS=-lobjc
+OBJCFLAGS=-lobjc -fobjc-exceptions
 
 #Objective-c specific flags
 MACOBJCFLAGS=-framework Foundation
