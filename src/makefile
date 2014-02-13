@@ -14,16 +14,16 @@ CC=gcc
 CFLAGS=-c -Wall
 
 #Objective-c specific flags
-OBJCFLAGS=-lobjc -fobjc-exceptions
+OBJCFLAGS=`gnustep-config --objc-flags` `pkg-config --cflags gtk+-2.0`
 
 #Objective-c specific flags
 MACOBJCFLAGS=-framework Foundation
 
 #GNUstep dependencies
-GNUSTEPDEPS=-I /GNUstep/System/Library/Headers -L /GNUstep/System/Library/Libraries -lgnustep-base `gnustep-config --objc-flags`
+GNUSTEPDEPS=`gnustep-config --base-libs`
 
 #GTK dependencies
-GTKDEPS=`pkg-config --libs --cflags gtk+-2.0`
+GTKDEPS=`pkg-config --libs gtk+-2.0`
 
 #Common flags
 COMMONFLAGS=$(OBJCFLAGS) $(GNUSTEPDEPS) $(GTKDEPS)
