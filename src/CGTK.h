@@ -30,6 +30,7 @@
  * Objective-C imports
  */
 #import <Foundation/NSObject.h>
+#import <Foundation/NSString.h>
 #import <Foundation/NSValue.h>
 
 /*
