@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<!-- This file was automatically generated from C sources - DO NOT EDIT!
+To affect the contents of this file, edit the original C definitions,
+and/or use gtk-doc annotations.  -->
+<repository version="1.2"
+            xmlns="http://www.gtk.org/introspection/core/1.0"
+            xmlns:c="http://www.gtk.org/introspection/c/1.0"
+            xmlns:glib="http://www.gtk.org/introspection/glib/1.0">
+  <include name="GObject" version="2.0"/>
+  <namespace name="Tut"
+             version="0.1"
+             shared-library=""
+             c:identifier-prefixes="Tut"
+             c:symbol-prefixes="tut">
+    <class name="Greeter"
+           c:symbol-prefix="greeter"
+           c:type="TutGreeter"
+           parent="GObject.Object"
+           glib:type-name="TutGreeter"
+           glib:get-type="tut_greeter_get_type"
+           glib:type-struct="GreeterClass">
+      <constructor name="new" c:identifier="tut_greeter_new">
+        <doc xml:whitespace="preserve">Allocates a new #TutGreeter.</doc>
+        <return-value transfer-ownership="full">
+          <doc xml:whitespace="preserve">a new #TutGreeter.</doc>
+          <type name="Greeter" c:type="TutGreeter*"/>
+        </return-value>
+      </constructor>
+      <method name="greet" c:identifier="tut_greeter_greet">
+        <doc xml:whitespace="preserve">Prints a friendly greeting.</doc>
+        <return-value transfer-ownership="none">
+          <doc xml:whitespace="preserve">nothing.</doc>
+          <type name="none" c:type="void"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="greeter" transfer-ownership="none">
+            <doc xml:whitespace="preserve">a #TutGreeter</doc>
+            <type name="Greeter" c:type="TutGreeter*"/>
+          </instance-parameter>
+        </parameters>
+      </method>
+      <property name="greetee"
+                writable="1"
+                construct="1"
+                transfer-ownership="none">
+        <doc xml:whitespace="preserve">The entity to greet.</doc>
+        <type name="utf8" c:type="gchar*"/>
+      </property>
+      <field name="parent">
+        <type name="GObject.Object" c:type="GObject"/>
+      </field>
+    </class>
+    <record name="GreeterClass"
+            c:type="TutGreeterClass"
+            glib:is-gtype-struct-for="Greeter">
+      <field name="parent">
+        <type name="GObject.ObjectClass" c:type="GObjectClass"/>
+      </field>
+    </record>
+    <record name="GreeterPrivate" c:type="TutGreeterPrivate" disguised="1">
+    </record>
+  </namespace>
+</repository>
