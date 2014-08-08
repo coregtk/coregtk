@@ -1,6 +1,6 @@
 /*
  * main.m
- * This file is part of gir2objc
+ * This file is part of CoreGTK
  *
  * Copyright (C) 2014 - Tyler Burton
  *
@@ -20,8 +20,8 @@
  */
 
 /*
- * Modified by the gir2objc Team, 2014. See the AUTHORS file for a
- * list of people on the gir2objc Team.
+ * Modified by the CoreGTK Team, 2014. See the AUTHORS file for a
+ * list of people on the CoreGTK Team.
  * See the ChangeLog files for a list of changes.
  *
  */
@@ -33,6 +33,8 @@
 #import <Foundation/NSError.h>
 #import <Foundation/NSDictionary.h>
 #import <Foundation/NSString.h>
+
+#import "Gir2CoreGTK/Generator.h"
 
 #import "Gir2Objc/Gir2Objc.h"
 
@@ -47,14 +49,14 @@ int main(int argc, char *argv[])
 	 * Check error conditions
 	 */
 	 
-	if(argc > 2)
+	if(argc > 3)
 	{
 		printf("ERROR - too many arguments!\n");
 		return 1;
 	}
-	else if(argc != 2)
+	else if(argc != 3)
 	{
-		printf("ERROR - need to provide the path to the GIR file as an argument\n");
+		printf("ERROR - usage [executable] [input path to GIR file] [output directory]\n");
 		return 1;
 	}
 
@@ -63,51 +65,11 @@ int main(int argc, char *argv[])
 	Gir2Objc *gir2Objc = [[Gir2Objc alloc] init];
 	
 	NSString *girFile = [NSString stringWithUTF8String:argv[1]];
-	NSDictionary *girDict = nil;
 	NSError *parseError = nil;
 	
-	/**
-	 * The following shows the two step parsing method. 
-	 * 1) First parse the GIR XML into an NSDictionary.
-	 * 2) Then attempt to convert the NSDictionary contents into a GIRApi object.
-	 */
-	 
-	NSLog(@"Starting two-step process example.");
+	NSLog(@"Processing GIR file %@...", girFile);
 	
-	NSLog(@"Parsing GIR file %@...", girFile);
-	
-	if(![gir2Objc parseGirFromFile: girFile intoDictionary: &girDict withError: &parseError])
-	{
-		NSLog(@"Failed to parse GIR file!");
-		NSLog(@"%@", parseError);
-		return 1;
-	}
-	
-	NSLog(@"Finished parsing GIR file.");
-	
-	NSLog(@"Converting parsed dictionary into GIRApi Objective-C object...");
-	
-	GIRApi *api = [gir2Objc firstApiFromDictionary: girDict];
-	
-	if(api == nil)
-	{
-		NSLog(@"Failed to convert dictionary into GIRApi!");
-	}
-	else
-	{
-		NSLog(@"Finished converting dictionary into GIRApi.");
-	}
-	
-	/**
-	 * The following shows the single step parse and convert method.
-	 * This is functionally equivalent to the two step process above.
-	 */
-	
-	NSLog(@"Starting single-step process example.");
-	
-	NSLog(@"Parsing GIR file %@ and converting it into Objective-C object...", girFile);
-	
-	api = [gir2Objc firstApiFromGirFile: girFile withError: &parseError];
+	GIRApi *api = [gir2Objc firstApiFromGirFile: girFile withError: &parseError];
 	
 	if(api == nil)
 	{
@@ -122,15 +84,23 @@ int main(int argc, char *argv[])
 		{
 			NSLog(@"Failed to convert dictionary into GIRApi!");
 		}
+		
+		return 1;
 	}
-	else
-	{
-		NSLog(@"Finished converting dictionary into GIRApi.");
-	}
+	
+	Generator *gen = [[Generator alloc] init];
+	
+	[gen generateHeadersFromApi: api inOutputDir: [NSString stringWithUTF8String:argv[2]]];
+	[gen generateSourcesFromApi: api inOutputDir: [NSString stringWithUTF8String:argv[2]]];
+	
+	NSLog(@"===== Results =====");
+	NSLog(@"Namespaces:\t%u", gen.generatedNamespaceCount);
+	NSLog(@"Functions:\t%u", gen.generatedFunctionCount);
 	
 	/*
 	 * Release allocated memory
 	 */
+	[gen release];
 	[gir2Objc release];
 	[pool release];
 	
