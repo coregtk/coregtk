@@ -38,6 +38,7 @@
 {
 	NSString *name;
 	NSString *parent;
+	NSMutableArray *constants;
 	NSMutableArray *variables;
 	NSMutableArray *properties;
 	NSMutableArray *methods;
@@ -52,6 +53,11 @@
  * Object parent
  */
 @property (nonatomic, retain) NSString *parent;
+
+/**
+ * Object constants
+ */
+@property (nonatomic, retain) NSMutableArray *constants;
 
 /**
  * Object variables

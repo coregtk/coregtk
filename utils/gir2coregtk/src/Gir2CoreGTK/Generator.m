@@ -101,6 +101,11 @@
 	GenObj *generatedObject = [[GenObj alloc] init];
 	generatedObject.name = name;
 	generatedObject.parent = @"NSObject"; // TODO: this should be dynamic
+			
+	for(GIRConstant *cnst in namespace.constants)
+	{
+		[generatedObject.constants addObject:[NSString stringWithFormat:@"const %@ %@ = %@;\n", cnst.cType, cnst.name, cnst.theValue]];
+	}
 	
 	for(GIRFunction *func in namespace.functions)
 	{

@@ -35,6 +35,7 @@
 
 @synthesize name;
 @synthesize parent;
+@synthesize constants;
 @synthesize variables;
 @synthesize properties;
 @synthesize methods;
@@ -45,6 +46,7 @@
 	
 	if(self)
 	{
+		constants = [[NSMutableArray alloc] init];
 		variables = [[NSMutableArray alloc] init];
 		properties = [[NSMutableArray alloc] init];
 		methods = [[NSMutableArray alloc] init];
@@ -58,6 +60,17 @@
 	NSMutableString *output = [[NSMutableString alloc] init];
 	
 	// TODO: imports
+	
+	// Constants
+	for(NSString *cnst in constants)
+	{
+		[output appendFormat:@"%@",cnst];
+	}
+	
+	if([constants count] > 0)
+	{
+		[output appendString:@"\n"];
+	}
 	
 	[output appendFormat:@"@interface %@: %@\n", self.name, self.parent];
 	[output appendString:@"{\n\n"];
@@ -135,6 +148,7 @@
 {
 	[name release];
 	[parent release];
+	[constants release];
 	[variables release];
 	[properties release];
 	[methods release];
