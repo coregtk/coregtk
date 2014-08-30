@@ -96,6 +96,7 @@ int main(int argc, char *argv[])
 	NSLog(@"===== Results =====");
 	NSLog(@"Namespaces:\t%u", gen.generatedNamespaceCount);
 	NSLog(@"Constants:\t%u", gen.generatedConstantCount);
+	NSLog(@"Enumerations:\t%u", gen.generatedEnumerationCount);
 	NSLog(@"Functions:\t%u", gen.generatedFunctionCount);
 	
 	/*

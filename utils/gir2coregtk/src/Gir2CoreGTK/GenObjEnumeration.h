@@ -1,5 +1,5 @@
 /*
- * GenObj.h
+ * GenObjEnumeration.h
  * This file is part of CoreGTK
  *
  * Copyright (C) 2014 - Tyler Burton
@@ -25,69 +25,21 @@
  * See the ChangeLog files for a list of changes.
  *
  */
- 
+
 /*
  * Objective-C imports
  */
-#import <Foundation/NSArray.h>
-#import <Foundation/NSString.h>
-
+#import "GIR/GIREnumeration.h"
 #import "Gir2CoreGTK/Util.h"
 
-@interface GenObj: NSObject
+@interface GenObjEnumeration : NSObject
 {
-	NSString *name;
-	NSString *parent;
-	NSMutableArray *constants;
-	NSMutableArray *enumerations;
-	NSMutableArray *variables;
-	NSMutableArray *properties;
-	NSMutableArray *methods;
+
 }
 
 /**
- * Object name
+ * An enumeration value declaration for the header file
  */
-@property (nonatomic, retain) NSString *name;
-
-/**
- * Object parent
- */
-@property (nonatomic, retain) NSString *parent;
-
-/**
- * Object constants
- */
-@property (nonatomic, retain) NSMutableArray *constants;
-
-/**
- * Object enumerations
- */
-@property (nonatomic, retain) NSMutableArray *enumerations;
-
-/**
- * Object variables
- */
-@property (nonatomic, retain) NSMutableArray *variables;
-
-/**
- * Object properties
- */
-@property (nonatomic, retain) NSMutableArray *properties;
-
-/**
- * Object methods
- */
-@property (nonatomic, retain) NSMutableArray *methods;
-
-/**
- * Writes out the contents of the header file
- */
--(BOOL)writeHeaderToFile:(NSString *) file;
-
-/**
- * Writes out the contents of the source file
- */
--(BOOL)writeSourceToFile:(NSString *) file;
++(NSString *)objcHeaderString:(GIREnumeration *)enm;
 
 @end

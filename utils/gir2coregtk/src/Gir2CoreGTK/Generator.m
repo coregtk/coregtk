@@ -33,9 +33,28 @@
 
 @implementation Generator
 
+@synthesize generateConstants;
+@synthesize generateEnumerations;
+@synthesize generateFunctions;
+
 @synthesize generatedNamespaceCount;
 @synthesize generatedConstantCount;
+@synthesize generatedEnumerationCount;
 @synthesize generatedFunctionCount;
+
+-(id)init
+{
+	self = [super init];
+	
+	if(self)
+	{
+		self.generateConstants = NO;
+		self.generateEnumerations = NO;
+		self.generateFunctions = YES;
+	}
+	
+	return self;
+}
 
 -(BOOL)generateHeadersFromApi:(GIRApi *) api inOutputDir:(NSString *) dir
 {
@@ -103,18 +122,34 @@
 	generatedObject.name = name;
 	generatedObject.parent = @"NSObject"; // TODO: this should be dynamic
 			
-	for(GIRConstant *cnst in namespace.constants)
+	if(self.generateConstants)
 	{
-		[generatedObject.constants addObject:[GenObjConstant objcHeaderString:cnst]];
+		for(GIRConstant *cnst in namespace.constants)
+		{
+			[generatedObject.constants addObject:[GenObjConstant objcHeaderString:cnst]];
 		
-		self.generatedConstantCount++;
+			self.generatedConstantCount++;
+		}
 	}
 	
-	for(GIRFunction *func in namespace.functions)
+	if(self.generateEnumerations)
 	{
-		[generatedObject.methods addObject:[GenObjFunction objcHeaderSignature:func]];
+		for(GIREnumeration *enm in namespace.enumerations)
+		{
+			[generatedObject.enumerations addObject:[GenObjEnumeration objcHeaderString:enm]];
 		
-		self.generatedFunctionCount++;
+			self.generatedEnumerationCount++;
+		}
+	}
+	
+	if(self.generateFunctions)
+	{
+		for(GIRFunction *func in namespace.functions)
+		{
+			[generatedObject.methods addObject:[GenObjFunction objcHeaderSignature:func]];
+		
+			self.generatedFunctionCount++;
+		}
 	}
 	
 	[generatedObject writeHeaderToFile:[NSString stringWithFormat:@"%@.h", [dir stringByAppendingPathComponent:name]]];

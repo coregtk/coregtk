@@ -33,14 +33,41 @@
 
 #import "Gir2CoreGTK/GenObj.h"
 #import "Gir2CoreGTK/GenObjConstant.h"
+#import "Gir2CoreGTK/GenObjEnumeration.h"
 #import "Gir2CoreGTK/GenObjFunction.h"
 
 @interface Generator : NSObject
 {
+	/*
+	 * Switches
+	 */
+	BOOL generateConstants;
+	BOOL generateEnumerations;
+	BOOL generateFunctions;
+
+	/*
+	 * Counts
+	 */
 	unsigned int generatedNamespaceCount;
 	unsigned int generatedConstantCount;
+	unsigned int generatedEnumerationCount;
 	unsigned int generatedFunctionCount;	
 }
+
+/**
+ * A flag for generating constants. When TRUE or YES this will include Constants in the conversion. (Default = NO)
+ */
+@property (assign) BOOL generateConstants;
+
+/**
+ * A flag for generating enumerations. When TRUE or YES this will include Enumerations in the conversion. (Default = NO)
+ */
+@property (assign) BOOL generateEnumerations;
+
+/**
+ * A flag for generating functions. When TRUE or YES this will include Functions in the conversion. (Default = YES)
+ */
+@property (assign) BOOL generateFunctions;
 
 /**
  * A running total of all processed namespaces
@@ -51,6 +78,11 @@
  * A running total of all processed constants
  */
 @property (assign) unsigned int generatedConstantCount;
+
+/**
+ * A running total of all processed enumerations
+ */
+@property (assign) unsigned int generatedEnumerationCount;
 
 /**
  * A running total of all processed functions

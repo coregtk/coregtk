@@ -36,6 +36,7 @@
 @synthesize name;
 @synthesize parent;
 @synthesize constants;
+@synthesize enumerations;
 @synthesize variables;
 @synthesize properties;
 @synthesize methods;
@@ -47,6 +48,7 @@
 	if(self)
 	{
 		constants = [[NSMutableArray alloc] init];
+		enumerations = [[NSMutableArray alloc] init];
 		variables = [[NSMutableArray alloc] init];
 		properties = [[NSMutableArray alloc] init];
 		methods = [[NSMutableArray alloc] init];
@@ -64,10 +66,21 @@
 	// Constants
 	for(NSString *cnst in constants)
 	{
-		[output appendFormat:@"%@",cnst];
+		[output appendString:cnst];
 	}
 	
 	if([constants count] > 0)
+	{
+		[output appendString:@"\n"];
+	}
+	
+	// Enumerations
+	for(NSString *enm in enumerations)
+	{
+		[output appendFormat:@"%@\n", enm];
+	}
+	
+	if([enumerations count] > 0)
 	{
 		[output appendString:@"\n"];
 	}
@@ -100,7 +113,7 @@
 		[output appendFormat:@"%@\n", meth];
 	}
 	
-	[output appendString:@"@end"];
+	[output appendString:@"\n@end"];
 	
 	BOOL retVal = [Util writeString:output toFile:file];
 	
@@ -149,6 +162,7 @@
 	[name release];
 	[parent release];
 	[constants release];
+	[enumerations release];
 	[variables release];
 	[properties release];
 	[methods release];
