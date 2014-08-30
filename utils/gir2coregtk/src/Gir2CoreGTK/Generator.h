@@ -32,11 +32,13 @@
 #import "GIR/GIRApi.h"
 
 #import "Gir2CoreGTK/GenObj.h"
+#import "Gir2CoreGTK/GenObjConstant.h"
 #import "Gir2CoreGTK/GenObjFunction.h"
 
 @interface Generator : NSObject
 {
 	unsigned int generatedNamespaceCount;
+	unsigned int generatedConstantCount;
 	unsigned int generatedFunctionCount;	
 }
 
@@ -44,6 +46,11 @@
  * A running total of all processed namespaces
  */
 @property (assign) unsigned int generatedNamespaceCount;
+
+/**
+ * A running total of all processed constants
+ */
+@property (assign) unsigned int generatedConstantCount;
 
 /**
  * A running total of all processed functions

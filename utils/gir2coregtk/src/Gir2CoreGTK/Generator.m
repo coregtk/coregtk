@@ -34,6 +34,7 @@
 @implementation Generator
 
 @synthesize generatedNamespaceCount;
+@synthesize generatedConstantCount;
 @synthesize generatedFunctionCount;
 
 -(BOOL)generateHeadersFromApi:(GIRApi *) api inOutputDir:(NSString *) dir
@@ -104,7 +105,9 @@
 			
 	for(GIRConstant *cnst in namespace.constants)
 	{
-		[generatedObject.constants addObject:[NSString stringWithFormat:@"const %@ %@ = %@;\n", cnst.cType, cnst.name, cnst.theValue]];
+		[generatedObject.constants addObject:[GenObjConstant objcHeaderString:cnst]];
+		
+		self.generatedConstantCount++;
 	}
 	
 	for(GIRFunction *func in namespace.functions)
