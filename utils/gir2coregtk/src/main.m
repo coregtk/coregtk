@@ -89,15 +89,17 @@ int main(int argc, char *argv[])
 	}
 	
 	Generator *gen = [[Generator alloc] init];
+	gen.generatedClassPrefix = @"CGTK";
 	
 	[gen generateHeadersFromApi: api inOutputDir: [NSString stringWithUTF8String:argv[2]]];
 	[gen generateSourcesFromApi: api inOutputDir: [NSString stringWithUTF8String:argv[2]]];
 	
 	NSLog(@"===== Results =====");
-	NSLog(@"Namespaces:\t%u", gen.generatedNamespaceCount);
-	NSLog(@"Constants:\t%u", gen.generatedConstantCount);
+	NSLog(@"Namespaces:\t\t%u", gen.generatedNamespaceCount);
+	NSLog(@"Classes:\t\t%u", gen.generatedClassesCount);
+	NSLog(@"Constants:\t\t%u", gen.generatedConstantCount);
 	NSLog(@"Enumerations:\t%u", gen.generatedEnumerationCount);
-	NSLog(@"Functions:\t%u", gen.generatedFunctionCount);
+	NSLog(@"Functions:\t\t%u", gen.generatedFunctionCount);
 	
 	/*
 	 * Release allocated memory

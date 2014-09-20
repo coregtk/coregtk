@@ -29,6 +29,8 @@
 /*
  * Objective-C imports
  */
+#import <Foundation/NSDictionary.h>
+ 
 #import "GIR/GIRApi.h"
 
 #import "Gir2CoreGTK/GenObj.h"
@@ -44,6 +46,7 @@
 	BOOL generateConstants;
 	BOOL generateEnumerations;
 	BOOL generateFunctions;
+	BOOL generateClasses;
 
 	/*
 	 * Counts
@@ -51,7 +54,19 @@
 	unsigned int generatedNamespaceCount;
 	unsigned int generatedConstantCount;
 	unsigned int generatedEnumerationCount;
-	unsigned int generatedFunctionCount;	
+	unsigned int generatedFunctionCount;
+	unsigned int generatedClassesCount;
+	
+	/*
+	 * Dictionaries
+	 */	
+	NSMutableDictionary *typeSwapDictionary;
+	NSMutableDictionary *generatedClassDictionary;
+	
+	/**
+	 * Config
+	 */
+	NSString *generatedClassPrefix;
 }
 
 /**
@@ -68,6 +83,11 @@
  * A flag for generating functions. When TRUE or YES this will include Functions in the conversion. (Default = YES)
  */
 @property (assign) BOOL generateFunctions;
+
+/**
+ * A flag for generating classes. When TRUE or YES this will include Classes in the conversion. (Default = YES)
+ */
+@property (assign) BOOL generateClasses;
 
 /**
  * A running total of all processed namespaces
@@ -88,6 +108,26 @@
  * A running total of all processed functions
  */
 @property (assign) unsigned int generatedFunctionCount;
+
+/**
+ * A running total of all processed classes
+ */
+@property (assign) unsigned int generatedClassesCount;
+
+/**
+ * A dictionary of generated classes
+ */
+@property (nonatomic, retain) NSMutableDictionary *generatedClassDictionary;
+
+/**
+ * A dictionary of data types to swap between
+ */
+@property (nonatomic, retain) NSMutableDictionary *typeSwapDictionary;
+
+/**
+ * A prefix to add to generated classes
+ */
+@property (nonatomic, retain) NSString *generatedClassPrefix;
 
 /**
  * Generates CoreGTK Objective-C header files extracted from the GIRApi and written out to the dir

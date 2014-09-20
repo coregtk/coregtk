@@ -36,11 +36,18 @@
 @synthesize generateConstants;
 @synthesize generateEnumerations;
 @synthesize generateFunctions;
+@synthesize generateClasses;
 
 @synthesize generatedNamespaceCount;
 @synthesize generatedConstantCount;
 @synthesize generatedEnumerationCount;
 @synthesize generatedFunctionCount;
+@synthesize generatedClassesCount;
+
+@synthesize typeSwapDictionary;
+@synthesize generatedClassDictionary;
+
+@synthesize generatedClassPrefix;
 
 -(id)init
 {
@@ -51,6 +58,10 @@
 		self.generateConstants = NO;
 		self.generateEnumerations = NO;
 		self.generateFunctions = YES;
+		self.generateClasses = YES;
+		
+		self.typeSwapDictionary = [[NSMutableDictionary alloc] init];
+		self.generatedClassDictionary = [[NSMutableDictionary alloc] init];
 	}
 	
 	return self;
@@ -152,7 +163,45 @@
 		}
 	}
 	
+	if(self.generateClasses)
+	{
+		if(self.generatedClassPrefix == nil)
+		{
+			self.generatedClassPrefix = @"";
+		}
+	
+		for(GIRClass *clazz in namespace.classes)
+		{			
+			GenObj *newClass = [[GenObj alloc] init];
+			newClass.name = [NSString stringWithFormat:@"%@%@", generatedClassPrefix, clazz.name];
+			
+			if(clazz.parent != nil)
+			{
+				newClass.parent = [NSString stringWithFormat:@"%@%@", generatedClassPrefix, clazz.parent];
+			}
+			else
+			{
+				newClass.parent = @"NSObject";
+			}
+			
+			// TODO: populate the rest of the newClass object from clazz
+			
+			[generatedClassDictionary setObject:newClass forKey:newClass.name];
+			
+			[newClass release];
+		
+			self.generatedClassesCount++;
+		}
+	}
+	
 	[generatedObject writeHeaderToFile:[NSString stringWithFormat:@"%@.h", [dir stringByAppendingPathComponent:name]]];
+	
+	GenObj *genClass;
+	for(NSString *key in generatedClassDictionary)
+	{
+		genClass = [generatedClassDictionary objectForKey:key];
+		[genClass writeHeaderToFile:[NSString stringWithFormat:@"%@.h", [dir stringByAppendingPathComponent:genClass.name]]];
+	}
 	
 	[generatedObject release];	
 	[output release];
@@ -174,9 +223,22 @@
 	generatedObject.name = name;
 	generatedObject.parent = @"NSObject";
 	
-	for(GIRFunction *func in namespace.functions)
+	if(self.generateFunctions)
 	{
-		[generatedObject.methods addObject:[GenObjFunction objcSourceSignature:func]];
+		for(GIRFunction *func in namespace.functions)
+		{
+			[generatedObject.methods addObject:[GenObjFunction objcSourceSignature:func]];
+		}
+	}
+	
+	if(self.generateClasses)
+	{
+		if(self.generatedClassPrefix == nil)
+		{
+			self.generatedClassPrefix = @"";
+		}
+		
+		// TODO write class source files
 	}
 	
 	[generatedObject writeSourceToFile:[NSString stringWithFormat:@"%@.m", [dir stringByAppendingPathComponent:name]]];
@@ -185,6 +247,14 @@
 	[output release];
 	
 	return YES;
+}
+
+-(void)dealloc
+{
+	[self.generatedClassPrefix release];
+	[self.typeSwapDictionary release];
+	[self.generatedClassDictionary release];
+	[super dealloc];
 }
 
 @end
