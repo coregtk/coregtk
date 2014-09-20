@@ -36,6 +36,7 @@
 @synthesize name;
 @synthesize parent;
 @synthesize constants;
+@synthesize constructors;
 @synthesize enumerations;
 @synthesize variables;
 @synthesize properties;
@@ -48,6 +49,7 @@
 	if(self)
 	{
 		constants = [[NSMutableArray alloc] init];
+		constructors = [[NSMutableArray alloc] init];
 		enumerations = [[NSMutableArray alloc] init];
 		variables = [[NSMutableArray alloc] init];
 		properties = [[NSMutableArray alloc] init];
@@ -107,6 +109,12 @@
 		[output appendString:@"\n"];
 	}
 	
+	// Constructors
+	for(NSString *ctor in constructors)
+	{
+		[output appendFormat:@"%@\n", ctor];
+	}
+	
 	// Methods
 	for(NSString *meth in methods)
 	{
@@ -142,6 +150,12 @@
 		[output appendString:@"\n"];
 	}
 	
+	// Constructors
+	for(NSString *ctor in constructors)
+	{
+		[output appendFormat:@"%@\n", constructors];
+	}
+	
 	// Methods
 	for(NSString *meth in methods)
 	{
@@ -162,6 +176,7 @@
 	[name release];
 	[parent release];
 	[constants release];
+	[constructors release];
 	[enumerations release];
 	[variables release];
 	[properties release];

@@ -184,6 +184,12 @@
 				newClass.parent = @"NSObject";
 			}
 			
+			// Handle constructors
+			for(GIRConstructor *ctor in clazz.constructors)
+			{				
+				[newClass.constructors addObject:[GenObjConstructor objcHeaderSignature:ctor]];
+			}
+			
 			// TODO: populate the rest of the newClass object from clazz
 			
 			[generatedClassDictionary setObject:newClass forKey:newClass.name];
@@ -238,10 +244,51 @@
 			self.generatedClassPrefix = @"";
 		}
 		
-		// TODO write class source files
+		/*
+		for(GIRClass *clazz in namespace.classes)
+		{			
+			GenObj *newClass = [[GenObj alloc] init];
+			newClass.name = [NSString stringWithFormat:@"%@%@", generatedClassPrefix, clazz.name];
+			
+			if(clazz.parent != nil)
+			{
+				newClass.parent = [NSString stringWithFormat:@"%@%@", generatedClassPrefix, clazz.parent];
+			}
+			else
+			{
+				newClass.parent = @"NSObject";
+			}
+			
+			// Handle constructors
+			for(GIRConstructor *ctor in clazz.constructors)
+			{				
+				[newClass.constructors addObject:[GenObjConstructor objcSourceSignature:ctor]];
+			}
+			
+			// TODO: populate the rest of the newClass object from clazz
+			
+			[generatedClassDictionary setObject:newClass forKey:newClass.name];
+			
+			[newClass release];
+		
+			self.generatedClassesCount++;
+		}
+		
+		for(GIRConstructor *ctor in namespace.classes)
+		{
+			[generatedObject.constructors addObject:[GenObjConstructor objcSourceSignature:ctor]];
+		}
+		*/
 	}
 	
 	[generatedObject writeSourceToFile:[NSString stringWithFormat:@"%@.m", [dir stringByAppendingPathComponent:name]]];
+	
+	GenObj *genClass;
+	for(NSString *key in generatedClassDictionary)
+	{
+		genClass = [generatedClassDictionary objectForKey:key];
+		[genClass writeSourceToFile:[NSString stringWithFormat:@"%@.m", [dir stringByAppendingPathComponent:genClass.name]]];
+	}
 	
 	[generatedObject release];	
 	[output release];

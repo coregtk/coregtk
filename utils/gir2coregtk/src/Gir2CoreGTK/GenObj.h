@@ -39,6 +39,7 @@
 	NSString *name;
 	NSString *parent;
 	NSMutableArray *constants;
+	NSMutableArray *constructors;
 	NSMutableArray *enumerations;
 	NSMutableArray *variables;
 	NSMutableArray *properties;
@@ -59,6 +60,11 @@
  * Object constants
  */
 @property (nonatomic, retain) NSMutableArray *constants;
+
+/**
+ * Object constructors
+ */
+@property (nonatomic, retain) NSMutableArray *constructors;
 
 /**
  * Object enumerations

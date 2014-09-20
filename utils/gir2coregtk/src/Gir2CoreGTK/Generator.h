@@ -35,6 +35,7 @@
 
 #import "Gir2CoreGTK/GenObj.h"
 #import "Gir2CoreGTK/GenObjConstant.h"
+#import "Gir2CoreGTK/GenObjConstructor.h"
 #import "Gir2CoreGTK/GenObjEnumeration.h"
 #import "Gir2CoreGTK/GenObjFunction.h"
 
