@@ -48,6 +48,7 @@
 	BOOL generateEnumerations;
 	BOOL generateFunctions;
 	BOOL generateClasses;
+	BOOL generateVarArgs;
 
 	/*
 	 * Counts
@@ -89,6 +90,11 @@
  * A flag for generating classes. When TRUE or YES this will include Classes in the conversion. (Default = YES)
  */
 @property (assign) BOOL generateClasses;
+
+/**
+ * A flag for generating methods and functions with variable arguments. When TRUE or YES this will include the methods and functions in the conversion. (Default = NO)
+ */
+@property (assign) BOOL generateVarArgs;
 
 /**
  * A running total of all processed namespaces

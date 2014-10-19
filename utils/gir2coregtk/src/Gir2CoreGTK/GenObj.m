@@ -35,12 +35,8 @@
 
 @synthesize name;
 @synthesize parent;
-@synthesize constants;
-@synthesize constructors;
-@synthesize enumerations;
-@synthesize variables;
-@synthesize properties;
-@synthesize methods;
+@synthesize header;
+@synthesize source;
 
 -(id)init
 {
@@ -48,12 +44,8 @@
 	
 	if(self)
 	{
-		constants = [[NSMutableArray alloc] init];
-		constructors = [[NSMutableArray alloc] init];
-		enumerations = [[NSMutableArray alloc] init];
-		variables = [[NSMutableArray alloc] init];
-		properties = [[NSMutableArray alloc] init];
-		methods = [[NSMutableArray alloc] init];
+		header = [[GenObjData alloc] init];
+		source = [[GenObjData alloc] init];
 	}
 	
 	return self;
@@ -66,23 +58,23 @@
 	// TODO: imports
 	
 	// Constants
-	for(NSString *cnst in constants)
+	for(NSString *cnst in header.constants)
 	{
 		[output appendString:cnst];
 	}
 	
-	if([constants count] > 0)
+	if([header.constants count] > 0)
 	{
 		[output appendString:@"\n"];
 	}
 	
 	// Enumerations
-	for(NSString *enm in enumerations)
+	for(NSString *enm in header.enumerations)
 	{
 		[output appendFormat:@"%@\n", enm];
 	}
 	
-	if([enumerations count] > 0)
+	if([header.enumerations count] > 0)
 	{
 		[output appendString:@"\n"];
 	}
@@ -91,7 +83,7 @@
 	[output appendString:@"{\n\n"];
 	
 	// Variables
-	for(NSString *var in variables)
+	for(NSString *var in header.variables)
 	{
 		[output appendFormat:@"\t%@\n", var];
 	}
@@ -99,24 +91,24 @@
 	[output appendString:@"}\n\n"];
 	
 	// Properties
-	for(NSString *prop in properties)
+	for(NSString *prop in header.properties)
 	{
 		[output appendFormat:@"@property (nonatomic, retain) %@;\n", prop]; //TODO: change options (nonatomic, retain, etc.) based on prop type
 	}
 	
-	if([properties count] > 0)
+	if([header.properties count] > 0)
 	{
 		[output appendString:@"\n"];
 	}
 	
 	// Constructors
-	for(NSString *ctor in constructors)
+	for(NSString *ctor in header.constructors)
 	{
 		[output appendFormat:@"%@\n", ctor];
 	}
 	
 	// Methods
-	for(NSString *meth in methods)
+	for(NSString *meth in header.methods)
 	{
 		[output appendFormat:@"%@\n", meth];
 	}
@@ -140,24 +132,24 @@
 	[output appendFormat:@"@implementation %@\n\n", self.name, self.parent];
 	
 	// Properties
-	for(NSString *prop in properties)
+	for(NSString *prop in source.properties)
 	{
 		[output appendFormat:@"@synthesize %@;\n", prop];
 	}
 	
-	if([properties count] > 0)
+	if([source.properties count] > 0)
 	{
 		[output appendString:@"\n"];
 	}
 	
 	// Constructors
-	for(NSString *ctor in constructors)
-	{
-		[output appendFormat:@"%@\n", constructors];
+	for(NSString *ctor in source.constructors)
+	{	
+		[output appendFormat:@"%@\n", ctor];
 	}
 	
 	// Methods
-	for(NSString *meth in methods)
+	for(NSString *meth in source.methods)
 	{
 		[output appendFormat:@"%@\n", meth];
 	}
@@ -175,12 +167,8 @@
 {
 	[name release];
 	[parent release];
-	[constants release];
-	[constructors release];
-	[enumerations release];
-	[variables release];
-	[properties release];
-	[methods release];
+	[header release];
+	[source release];
 	[super dealloc];
 }
 

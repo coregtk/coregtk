@@ -1,5 +1,5 @@
 /*
- * GenObj.h
+ * GenObjData.m
  * This file is part of CoreGTK
  *
  * Copyright (C) 2014 - Tyler Burton
@@ -26,51 +26,46 @@
  *
  */
  
-/*
+ /*
  * Objective-C imports
  */
-#import <Foundation/NSArray.h>
-#import <Foundation/NSString.h>
+#import "GenObjData.h"
 
-#import "Gir2CoreGTK/GenObjData.h"
-#import "Gir2CoreGTK/Util.h"
+@implementation GenObjData
 
-@interface GenObj: NSObject
+@synthesize constants;
+@synthesize constructors;
+@synthesize enumerations;
+@synthesize variables;
+@synthesize properties;
+@synthesize methods;
+
+-(id)init
 {
-	NSString *name;
-	NSString *parent;
-	GenObjData *header;
-	GenObjData *source;
+	self = [super init];
+	
+	if(self)
+	{
+		constants = [[NSMutableArray alloc] init];
+		constructors = [[NSMutableArray alloc] init];
+		enumerations = [[NSMutableArray alloc] init];
+		variables = [[NSMutableArray alloc] init];
+		properties = [[NSMutableArray alloc] init];
+		methods = [[NSMutableArray alloc] init];
+	}
+	
+	return self;
 }
 
-/**
- * Object name
- */
-@property (nonatomic, retain) NSString *name;
-
-/**
- * Object parent
- */
-@property (nonatomic, retain) NSString *parent;
-
-/**
- * Header data
- */
-@property (nonatomic, retain) GenObjData *header;
-
-/**
- * Source data
- */
-@property (nonatomic, retain) GenObjData *source;
-
-/**
- * Writes out the contents of the header file
- */
--(BOOL)writeHeaderToFile:(NSString *) file;
-
-/**
- * Writes out the contents of the source file
- */
--(BOOL)writeSourceToFile:(NSString *) file;
+-(void)dealloc
+{
+	[constants release];
+	[constructors release];
+	[enumerations release];
+	[variables release];
+	[properties release];
+	[methods release];
+	[super dealloc];
+}
 
 @end

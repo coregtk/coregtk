@@ -1,5 +1,5 @@
 /*
- * GenObj.h
+ * GenObjData.h
  * This file is part of CoreGTK
  *
  * Copyright (C) 2014 - Tyler Burton
@@ -32,45 +32,46 @@
 #import <Foundation/NSArray.h>
 #import <Foundation/NSString.h>
 
-#import "Gir2CoreGTK/GenObjData.h"
 #import "Gir2CoreGTK/Util.h"
 
-@interface GenObj: NSObject
+@interface GenObjData: NSObject
 {
-	NSString *name;
-	NSString *parent;
-	GenObjData *header;
-	GenObjData *source;
+	NSMutableArray *constants;
+	NSMutableArray *constructors;
+	NSMutableArray *enumerations;
+	NSMutableArray *variables;
+	NSMutableArray *properties;
+	NSMutableArray *methods;
 }
 
 /**
- * Object name
+ * Object constants
  */
-@property (nonatomic, retain) NSString *name;
+@property (nonatomic, retain) NSMutableArray *constants;
 
 /**
- * Object parent
+ * Object constructors
  */
-@property (nonatomic, retain) NSString *parent;
+@property (nonatomic, retain) NSMutableArray *constructors;
 
 /**
- * Header data
+ * Object enumerations
  */
-@property (nonatomic, retain) GenObjData *header;
+@property (nonatomic, retain) NSMutableArray *enumerations;
 
 /**
- * Source data
+ * Object variables
  */
-@property (nonatomic, retain) GenObjData *source;
+@property (nonatomic, retain) NSMutableArray *variables;
 
 /**
- * Writes out the contents of the header file
+ * Object properties
  */
--(BOOL)writeHeaderToFile:(NSString *) file;
+@property (nonatomic, retain) NSMutableArray *properties;
 
 /**
- * Writes out the contents of the source file
+ * Object methods
  */
--(BOOL)writeSourceToFile:(NSString *) file;
+@property (nonatomic, retain) NSMutableArray *methods;
 
 @end

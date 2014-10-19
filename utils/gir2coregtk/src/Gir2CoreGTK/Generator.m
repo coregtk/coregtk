@@ -37,6 +37,7 @@
 @synthesize generateEnumerations;
 @synthesize generateFunctions;
 @synthesize generateClasses;
+@synthesize generateVarArgs;
 
 @synthesize generatedNamespaceCount;
 @synthesize generatedConstantCount;
@@ -59,6 +60,7 @@
 		self.generateEnumerations = NO;
 		self.generateFunctions = YES;
 		self.generateClasses = YES;
+		self.generateVarArgs = NO;
 		
 		self.typeSwapDictionary = [[NSMutableDictionary alloc] init];
 		self.generatedClassDictionary = [[NSMutableDictionary alloc] init];
@@ -137,7 +139,7 @@
 	{
 		for(GIRConstant *cnst in namespace.constants)
 		{
-			[generatedObject.constants addObject:[GenObjConstant objcHeaderString:cnst]];
+			[generatedObject.header.constants addObject:[GenObjConstant objcHeaderString:cnst]];
 		
 			self.generatedConstantCount++;
 		}
@@ -147,7 +149,7 @@
 	{
 		for(GIREnumeration *enm in namespace.enumerations)
 		{
-			[generatedObject.enumerations addObject:[GenObjEnumeration objcHeaderString:enm]];
+			[generatedObject.header.enumerations addObject:[GenObjEnumeration objcHeaderString:enm]];
 		
 			self.generatedEnumerationCount++;
 		}
@@ -157,7 +159,7 @@
 	{
 		for(GIRFunction *func in namespace.functions)
 		{
-			[generatedObject.methods addObject:[GenObjFunction objcHeaderSignature:func]];
+			[generatedObject.header.methods addObject:[GenObjFunction objcHeaderSignature:func]];
 		
 			self.generatedFunctionCount++;
 		}
@@ -187,8 +189,43 @@
 			// Handle constructors
 			for(GIRConstructor *ctor in clazz.constructors)
 			{				
-				[newClass.constructors addObject:[GenObjConstructor objcHeaderSignature:ctor]];
+				if(generateVarArgs)
+				{
+					[newClass.header.constructors addObject:[GenObjConstructor objcHeaderSignature:ctor]];
+				}
+				else
+				{
+					BOOL foundVarArgs = NO;
+					
+					// Need to first check for var args in list of parameters
+					for(GIRParameter *param in ctor.parameters)
+					{
+						if(param.varargs != nil)
+						{
+							foundVarArgs = YES;
+							break;
+						}
+					}
+					
+					if(!foundVarArgs)
+					{
+						[newClass.header.constructors addObject:[GenObjConstructor objcHeaderSignature:ctor]];
+					}
+				}
 			}
+			
+			// Handle properties
+			
+			for(GIRProperty *prop in clazz.properties)
+			{
+				if(prop.type.cType != nil)
+				{
+					[newClass.header.properties addObject:[NSString stringWithFormat:@"%@ %@", prop.type.cType, prop.name]];
+				}			
+			}
+			
+			// Handle functions
+			// Handle methods
 			
 			// TODO: populate the rest of the newClass object from clazz
 			
@@ -233,7 +270,7 @@
 	{
 		for(GIRFunction *func in namespace.functions)
 		{
-			[generatedObject.methods addObject:[GenObjFunction objcSourceSignature:func]];
+			[generatedObject.source.methods addObject:[GenObjFunction objcSourceSignature:func]];
 		}
 	}
 	
@@ -244,51 +281,42 @@
 			self.generatedClassPrefix = @"";
 		}
 		
-		/*
+		GenObj *genClass;
+		
 		for(GIRClass *clazz in namespace.classes)
-		{			
-			GenObj *newClass = [[GenObj alloc] init];
-			newClass.name = [NSString stringWithFormat:@"%@%@", generatedClassPrefix, clazz.name];
-			
-			if(clazz.parent != nil)
+		{
+			NSString *key = [NSString stringWithFormat:@"%@%@", generatedClassPrefix, clazz.name];
+			genClass = [generatedClassDictionary objectForKey:key];
+		
+			// If it is nil then it was likely filtered out in the header pass	
+			if(genClass == nil)
 			{
-				newClass.parent = [NSString stringWithFormat:@"%@%@", generatedClassPrefix, clazz.parent];
+				continue;
 			}
-			else
-			{
-				newClass.parent = @"NSObject";
-			}
-			
+		
 			// Handle constructors
 			for(GIRConstructor *ctor in clazz.constructors)
-			{				
-				[newClass.constructors addObject:[GenObjConstructor objcSourceSignature:ctor]];
+			{
+				[genClass.source.constructors addObject:[GenObjConstructor objcSourceSignature:ctor]];
+				[genClass writeSourceToFile:[NSString stringWithFormat:@"%@.m", [dir stringByAppendingPathComponent:genClass.name]]];
 			}
 			
-			// TODO: populate the rest of the newClass object from clazz
+			// Handle properties
 			
-			[generatedClassDictionary setObject:newClass forKey:newClass.name];
+			for(GIRProperty *prop in clazz.properties)
+			{
+				if(prop.type.cType != nil)
+				{
+					[genClass.source.properties addObject:prop.name];
+				}			
+			}
 			
-			[newClass release];
-		
-			self.generatedClassesCount++;
-		}
-		
-		for(GIRConstructor *ctor in namespace.classes)
-		{
-			[generatedObject.constructors addObject:[GenObjConstructor objcSourceSignature:ctor]];
-		}
-		*/
+			// Handle functions
+			// Handle methods
+		}	
 	}
 	
-	[generatedObject writeSourceToFile:[NSString stringWithFormat:@"%@.m", [dir stringByAppendingPathComponent:name]]];
-	
-	GenObj *genClass;
-	for(NSString *key in generatedClassDictionary)
-	{
-		genClass = [generatedClassDictionary objectForKey:key];
-		[genClass writeSourceToFile:[NSString stringWithFormat:@"%@.m", [dir stringByAppendingPathComponent:genClass.name]]];
-	}
+	[generatedObject writeSourceToFile:[NSString stringWithFormat:@"%@.m", [dir stringByAppendingPathComponent:name]]];	
 	
 	[generatedObject release];	
 	[output release];
