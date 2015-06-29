@@ -1,4 +1,33 @@
 ===============================================================================
+CoreGTK 3.10.0 - 2015-06-28
+===============================================================================
+
+CoreGTK 3.10.0 is the newly re-written GTK+ 3 version.
+
+This version of CoreGTK provides bindings for the API exposed by these libraries:
+  * gtk+ 3.10.8 (mostly GtkWidget and down)
+
+There is no API stability guarantee for now, but we try to keep breaking
+changes to a minimum.
+
+New features and enhancements
+-----------------------------
+
+  * Moved from GTK+ 2 to GTK+ 3
+  * Base code generation on GObject Introspection instead of a mix of automated source parsing and manual correction
+
+Changes
+-------
+
+  * Now preferring the use of glib data types over boxed OpenStep/Cocoa objects (i.e. gint vs NSNumber)
+  * A few APIs have been removed or updated to work better with this new approach
+
+Bug fixes
+---------
+
+  * 
+
+===============================================================================
 CoreGTK 2.24.0 - 2014-01-26
 ===============================================================================
 
