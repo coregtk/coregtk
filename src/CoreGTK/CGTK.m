@@ -35,7 +35,7 @@
 
 +(NSString *)coreGtkVersion
 {
-	return @"3.10.8";
+	return @"3.10.0";
 }
 
 +(void)initWithArgc:(int *)argc andArgv:(char ***)argv
