@@ -46,28 +46,167 @@
 /**
  * Methods
  */
+
 -(GtkSpinButton*)SPINBUTTON;
+
+/**
+ * -(void*)configureWithAdjustment:(GtkAdjustment*) adjustment andClimbRate:(gdouble) climbRate andDigits:(guint) digits;
+ *
+ * @param adjustment
+ * @param climbRate
+ * @param digits
+ */
 -(void)configureWithAdjustment:(GtkAdjustment*) adjustment andClimbRate:(gdouble) climbRate andDigits:(guint) digits;
+
+/**
+ * -(GtkAdjustment**)getAdjustment;
+ *
+ * @returns GtkAdjustment*
+ */
 -(GtkAdjustment*)getAdjustment;
+
+/**
+ * -(guint*)getDigits;
+ *
+ * @returns guint
+ */
 -(guint)getDigits;
+
+/**
+ * -(void*)getIncrementsWithStep:(gdouble*) step andPage:(gdouble*) page;
+ *
+ * @param step
+ * @param page
+ */
 -(void)getIncrementsWithStep:(gdouble*) step andPage:(gdouble*) page;
+
+/**
+ * -(BOOL*)getNumeric;
+ *
+ * @returns BOOL
+ */
 -(BOOL)getNumeric;
+
+/**
+ * -(void*)getRangeWithMin:(gdouble*) min andMax:(gdouble*) max;
+ *
+ * @param min
+ * @param max
+ */
 -(void)getRangeWithMin:(gdouble*) min andMax:(gdouble*) max;
+
+/**
+ * -(BOOL*)getSnapToTicks;
+ *
+ * @returns BOOL
+ */
 -(BOOL)getSnapToTicks;
+
+/**
+ * -(GtkSpinButtonUpdatePolicy*)getUpdatePolicy;
+ *
+ * @returns GtkSpinButtonUpdatePolicy
+ */
 -(GtkSpinButtonUpdatePolicy)getUpdatePolicy;
+
+/**
+ * -(gdouble*)getValue;
+ *
+ * @returns gdouble
+ */
 -(gdouble)getValue;
+
+/**
+ * -(gint*)getValueAsInt;
+ *
+ * @returns gint
+ */
 -(gint)getValueAsInt;
+
+/**
+ * -(BOOL*)getWrap;
+ *
+ * @returns BOOL
+ */
 -(BOOL)getWrap;
+
+/**
+ * -(void*)setAdjustment:(GtkAdjustment*) adjustment;
+ *
+ * @param adjustment
+ */
 -(void)setAdjustment:(GtkAdjustment*) adjustment;
+
+/**
+ * -(void*)setDigits:(guint) digits;
+ *
+ * @param digits
+ */
 -(void)setDigits:(guint) digits;
+
+/**
+ * -(void*)setIncrementsWithStep:(gdouble) step andPage:(gdouble) page;
+ *
+ * @param step
+ * @param page
+ */
 -(void)setIncrementsWithStep:(gdouble) step andPage:(gdouble) page;
+
+/**
+ * -(void*)setNumeric:(BOOL) numeric;
+ *
+ * @param numeric
+ */
 -(void)setNumeric:(BOOL) numeric;
+
+/**
+ * -(void*)setRangeWithMin:(gdouble) min andMax:(gdouble) max;
+ *
+ * @param min
+ * @param max
+ */
 -(void)setRangeWithMin:(gdouble) min andMax:(gdouble) max;
+
+/**
+ * -(void*)setSnapToTicks:(BOOL) snapToTicks;
+ *
+ * @param snapToTicks
+ */
 -(void)setSnapToTicks:(BOOL) snapToTicks;
+
+/**
+ * -(void*)setUpdatePolicy:(GtkSpinButtonUpdatePolicy) policy;
+ *
+ * @param policy
+ */
 -(void)setUpdatePolicy:(GtkSpinButtonUpdatePolicy) policy;
+
+/**
+ * -(void*)setValue:(gdouble) value;
+ *
+ * @param value
+ */
 -(void)setValue:(gdouble) value;
+
+/**
+ * -(void*)setWrap:(BOOL) wrap;
+ *
+ * @param wrap
+ */
 -(void)setWrap:(BOOL) wrap;
+
+/**
+ * -(void*)spinWithDirection:(GtkSpinType) direction andIncrement:(gdouble) increment;
+ *
+ * @param direction
+ * @param increment
+ */
 -(void)spinWithDirection:(GtkSpinType) direction andIncrement:(gdouble) increment;
+
+/**
+ * -(void*)update;
+ *
+ */
 -(void)update;
 
 @end

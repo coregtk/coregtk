@@ -1,0 +1,7 @@
+<map id="CGTKMenu" name="CGTKMenu">
+<area shape="rect" id="node7" href="$interface_c_g_t_k_recent_chooser_menu.html" title="CGTKRecentChooserMenu" alt="" coords="5,453,187,480"/>
+<area shape="rect" id="node2" href="$interface_c_g_t_k_menu_shell.html" title="CGTKMenuShell" alt="" coords="36,304,156,331"/>
+<area shape="rect" id="node3" href="$interface_c_g_t_k_container.html" title="CGTKContainer" alt="" coords="39,229,153,256"/>
+<area shape="rect" id="node4" href="$interface_c_g_t_k_widget.html" title="CGTKWidget" alt="" coords="46,155,145,181"/>
+<area shape="rect" id="node5" href="$interface_c_g_t_k_base.html" title="CGTKBase" alt="" coords="51,80,140,107"/>
+</map>

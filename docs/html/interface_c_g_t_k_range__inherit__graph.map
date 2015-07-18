@@ -1,0 +1,10 @@
+<map id="CGTKRange" name="CGTKRange">
+<area shape="rect" id="node5" href="$interface_c_g_t_k_scale.html" title="CGTKScale" alt="" coords="137,304,228,331"/>
+<area shape="rect" id="node8" href="$interface_c_g_t_k_scrollbar.html" title="CGTKScrollbar" alt="" coords="262,304,372,331"/>
+<area shape="rect" id="node2" href="$interface_c_g_t_k_widget.html" title="CGTKWidget" alt="" coords="199,155,299,181"/>
+<area shape="rect" id="node3" href="$interface_c_g_t_k_base.html" title="CGTKBase" alt="" coords="205,80,293,107"/>
+<area shape="rect" id="node6" href="$interface_c_g_t_k_h_scale.html" title="CGTKHScale" alt="" coords="5,379,107,405"/>
+<area shape="rect" id="node7" href="$interface_c_g_t_k_v_scale.html" title="CGTKVScale" alt="" coords="132,379,233,405"/>
+<area shape="rect" id="node9" href="$interface_c_g_t_k_h_scrollbar.html" title="CGTKHScrollbar" alt="" coords="257,379,377,405"/>
+<area shape="rect" id="node10" href="$interface_c_g_t_k_v_scrollbar.html" title="CGTKVScrollbar" alt="" coords="402,379,520,405"/>
+</map>

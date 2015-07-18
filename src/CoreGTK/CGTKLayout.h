@@ -45,15 +45,76 @@
 /**
  * Methods
  */
+
 -(GtkLayout*)LAYOUT;
+
+/**
+ * -(GdkWindow**)getBinWindow;
+ *
+ * @returns GdkWindow*
+ */
 -(GdkWindow*)getBinWindow;
+
+/**
+ * -(GtkAdjustment**)getHadjustment;
+ *
+ * @returns GtkAdjustment*
+ */
 -(GtkAdjustment*)getHadjustment;
+
+/**
+ * -(void*)getSizeWithWidth:(guint*) width andHeight:(guint*) height;
+ *
+ * @param width
+ * @param height
+ */
 -(void)getSizeWithWidth:(guint*) width andHeight:(guint*) height;
+
+/**
+ * -(GtkAdjustment**)getVadjustment;
+ *
+ * @returns GtkAdjustment*
+ */
 -(GtkAdjustment*)getVadjustment;
+
+/**
+ * -(void*)moveWithChildWidget:(CGTKWidget*) childWidget andX:(gint) x andY:(gint) y;
+ *
+ * @param childWidget
+ * @param x
+ * @param y
+ */
 -(void)moveWithChildWidget:(CGTKWidget*) childWidget andX:(gint) x andY:(gint) y;
+
+/**
+ * -(void*)putWithChildWidget:(CGTKWidget*) childWidget andX:(gint) x andY:(gint) y;
+ *
+ * @param childWidget
+ * @param x
+ * @param y
+ */
 -(void)putWithChildWidget:(CGTKWidget*) childWidget andX:(gint) x andY:(gint) y;
+
+/**
+ * -(void*)setHadjustment:(GtkAdjustment*) adjustment;
+ *
+ * @param adjustment
+ */
 -(void)setHadjustment:(GtkAdjustment*) adjustment;
+
+/**
+ * -(void*)setSizeWithWidth:(guint) width andHeight:(guint) height;
+ *
+ * @param width
+ * @param height
+ */
 -(void)setSizeWithWidth:(guint) width andHeight:(guint) height;
+
+/**
+ * -(void*)setVadjustment:(GtkAdjustment*) adjustment;
+ *
+ * @param adjustment
+ */
 -(void)setVadjustment:(GtkAdjustment*) adjustment;
 
 @end

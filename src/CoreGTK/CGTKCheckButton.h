@@ -47,6 +47,7 @@
 /**
  * Methods
  */
+
 -(GtkCheckButton*)CHECKBUTTON;
 
 @end

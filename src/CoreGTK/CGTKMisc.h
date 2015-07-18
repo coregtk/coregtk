@@ -40,10 +40,39 @@
 /**
  * Methods
  */
+
 -(GtkMisc*)MISC;
+
+/**
+ * -(void*)getAlignmentWithXalign:(gfloat*) xalign andYalign:(gfloat*) yalign;
+ *
+ * @param xalign
+ * @param yalign
+ */
 -(void)getAlignmentWithXalign:(gfloat*) xalign andYalign:(gfloat*) yalign;
+
+/**
+ * -(void*)getPaddingWithXpad:(gint*) xpad andYpad:(gint*) ypad;
+ *
+ * @param xpad
+ * @param ypad
+ */
 -(void)getPaddingWithXpad:(gint*) xpad andYpad:(gint*) ypad;
+
+/**
+ * -(void*)setAlignmentWithXalign:(gfloat) xalign andYalign:(gfloat) yalign;
+ *
+ * @param xalign
+ * @param yalign
+ */
 -(void)setAlignmentWithXalign:(gfloat) xalign andYalign:(gfloat) yalign;
+
+/**
+ * -(void*)setPaddingWithXpad:(gint) xpad andYpad:(gint) ypad;
+ *
+ * @param xpad
+ * @param ypad
+ */
 -(void)setPaddingWithXpad:(gint) xpad andYpad:(gint) ypad;
 
 @end

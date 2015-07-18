@@ -45,27 +45,159 @@
 /**
  * Methods
  */
+
 -(GtkListBox*)LISTBOX;
+
+/**
+ * -(void*)dragHighlightRow:(GtkListBoxRow*) row;
+ *
+ * @param row
+ */
 -(void)dragHighlightRow:(GtkListBoxRow*) row;
+
+/**
+ * -(void*)dragUnhighlightRow;
+ *
+ */
 -(void)dragUnhighlightRow;
+
+/**
+ * -(BOOL*)getActivateOnSingleClick;
+ *
+ * @returns BOOL
+ */
 -(BOOL)getActivateOnSingleClick;
+
+/**
+ * -(GtkAdjustment**)getAdjustment;
+ *
+ * @returns GtkAdjustment*
+ */
 -(GtkAdjustment*)getAdjustment;
+
+/**
+ * -(GtkListBoxRow**)getRowAtIndex:(gint) index;
+ *
+ * @param index
+ * @returns GtkListBoxRow*
+ */
 -(GtkListBoxRow*)getRowAtIndex:(gint) index;
+
+/**
+ * -(GtkListBoxRow**)getRowAtY:(gint) y;
+ *
+ * @param y
+ * @returns GtkListBoxRow*
+ */
 -(GtkListBoxRow*)getRowAtY:(gint) y;
+
+/**
+ * -(GtkListBoxRow**)getSelectedRow;
+ *
+ * @returns GtkListBoxRow*
+ */
 -(GtkListBoxRow*)getSelectedRow;
+
+/**
+ * -(GtkSelectionMode*)getSelectionMode;
+ *
+ * @returns GtkSelectionMode
+ */
 -(GtkSelectionMode)getSelectionMode;
+
+/**
+ * -(void*)insertWithChild:(CGTKWidget*) child andPosition:(gint) position;
+ *
+ * @param child
+ * @param position
+ */
 -(void)insertWithChild:(CGTKWidget*) child andPosition:(gint) position;
+
+/**
+ * -(void*)invalidateFilter;
+ *
+ */
 -(void)invalidateFilter;
+
+/**
+ * -(void*)invalidateHeaders;
+ *
+ */
 -(void)invalidateHeaders;
+
+/**
+ * -(void*)invalidateSort;
+ *
+ */
 -(void)invalidateSort;
+
+/**
+ * -(void*)prepend:(CGTKWidget*) child;
+ *
+ * @param child
+ */
 -(void)prepend:(CGTKWidget*) child;
+
+/**
+ * -(void*)selectRow:(GtkListBoxRow*) row;
+ *
+ * @param row
+ */
 -(void)selectRow:(GtkListBoxRow*) row;
+
+/**
+ * -(void*)setActivateOnSingleClick:(BOOL) single;
+ *
+ * @param single
+ */
 -(void)setActivateOnSingleClick:(BOOL) single;
+
+/**
+ * -(void*)setAdjustment:(GtkAdjustment*) adjustment;
+ *
+ * @param adjustment
+ */
 -(void)setAdjustment:(GtkAdjustment*) adjustment;
+
+/**
+ * -(void*)setFilterFuncWithFilterFunc:(GtkListBoxFilterFunc) filterFunc andUserData:(gpointer) userData andDestroy:(GDestroyNotify) destroy;
+ *
+ * @param filterFunc
+ * @param userData
+ * @param destroy
+ */
 -(void)setFilterFuncWithFilterFunc:(GtkListBoxFilterFunc) filterFunc andUserData:(gpointer) userData andDestroy:(GDestroyNotify) destroy;
+
+/**
+ * -(void*)setHeaderFuncWithUpdateHeader:(GtkListBoxUpdateHeaderFunc) updateHeader andUserData:(gpointer) userData andDestroy:(GDestroyNotify) destroy;
+ *
+ * @param updateHeader
+ * @param userData
+ * @param destroy
+ */
 -(void)setHeaderFuncWithUpdateHeader:(GtkListBoxUpdateHeaderFunc) updateHeader andUserData:(gpointer) userData andDestroy:(GDestroyNotify) destroy;
+
+/**
+ * -(void*)setPlaceholder:(CGTKWidget*) placeholder;
+ *
+ * @param placeholder
+ */
 -(void)setPlaceholder:(CGTKWidget*) placeholder;
+
+/**
+ * -(void*)setSelectionMode:(GtkSelectionMode) mode;
+ *
+ * @param mode
+ */
 -(void)setSelectionMode:(GtkSelectionMode) mode;
+
+/**
+ * -(void*)setSortFuncWithSortFunc:(GtkListBoxSortFunc) sortFunc andUserData:(gpointer) userData andDestroy:(GDestroyNotify) destroy;
+ *
+ * @param sortFunc
+ * @param userData
+ * @param destroy
+ */
 -(void)setSortFuncWithSortFunc:(GtkListBoxSortFunc) sortFunc andUserData:(gpointer) userData andDestroy:(GDestroyNotify) destroy;
 
 @end

@@ -46,8 +46,21 @@
 /**
  * Methods
  */
+
 -(GtkRecentChooserMenu*)RECENTCHOOSERMENU;
+
+/**
+ * -(BOOL*)getShowNumbers;
+ *
+ * @returns BOOL
+ */
 -(BOOL)getShowNumbers;
+
+/**
+ * -(void*)setShowNumbers:(BOOL) showNumbers;
+ *
+ * @param showNumbers
+ */
 -(void)setShowNumbers:(BOOL) showNumbers;
 
 @end

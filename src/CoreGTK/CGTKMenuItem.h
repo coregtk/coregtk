@@ -47,23 +47,123 @@
 /**
  * Methods
  */
+
 -(GtkMenuItem*)MENUITEM;
+
+/**
+ * -(void*)activate;
+ *
+ */
 -(void)activate;
+
+/**
+ * -(void*)deselect;
+ *
+ */
 -(void)deselect;
+
+/**
+ * -(NSString**)getAccelPath;
+ *
+ * @returns NSString*
+ */
 -(NSString*)getAccelPath;
+
+/**
+ * -(NSString**)getLabel;
+ *
+ * @returns NSString*
+ */
 -(NSString*)getLabel;
+
+/**
+ * -(BOOL*)getReserveIndicator;
+ *
+ * @returns BOOL
+ */
 -(BOOL)getReserveIndicator;
+
+/**
+ * -(BOOL*)getRightJustified;
+ *
+ * @returns BOOL
+ */
 -(BOOL)getRightJustified;
+
+/**
+ * -(CGTKWidget**)getSubmenu;
+ *
+ * @returns CGTKWidget*
+ */
 -(CGTKWidget*)getSubmenu;
+
+/**
+ * -(BOOL*)getUseUnderline;
+ *
+ * @returns BOOL
+ */
 -(BOOL)getUseUnderline;
+
+/**
+ * -(void*)select;
+ *
+ */
 -(void)select;
+
+/**
+ * -(void*)setAccelPath:(NSString*) accelPath;
+ *
+ * @param accelPath
+ */
 -(void)setAccelPath:(NSString*) accelPath;
+
+/**
+ * -(void*)setLabel:(NSString*) label;
+ *
+ * @param label
+ */
 -(void)setLabel:(NSString*) label;
+
+/**
+ * -(void*)setReserveIndicator:(BOOL) reserve;
+ *
+ * @param reserve
+ */
 -(void)setReserveIndicator:(BOOL) reserve;
+
+/**
+ * -(void*)setRightJustified:(BOOL) rightJustified;
+ *
+ * @param rightJustified
+ */
 -(void)setRightJustified:(BOOL) rightJustified;
+
+/**
+ * -(void*)setSubmenu:(CGTKWidget*) submenu;
+ *
+ * @param submenu
+ */
 -(void)setSubmenu:(CGTKWidget*) submenu;
+
+/**
+ * -(void*)setUseUnderline:(BOOL) setting;
+ *
+ * @param setting
+ */
 -(void)setUseUnderline:(BOOL) setting;
+
+/**
+ * -(void*)toggleSizeAllocate:(gint) allocation;
+ *
+ * @param allocation
+ */
 -(void)toggleSizeAllocate:(gint) allocation;
+
+/**
+ * -(void*)toggleSizeRequest:(gint*) requisition;
+ *
+ * @param requisition
+ */
 -(void)toggleSizeRequest:(gint*) requisition;
 
 @end

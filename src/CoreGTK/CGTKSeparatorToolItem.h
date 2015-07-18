@@ -45,8 +45,21 @@
 /**
  * Methods
  */
+
 -(GtkSeparatorToolItem*)SEPARATORTOOLITEM;
+
+/**
+ * -(BOOL*)getDraw;
+ *
+ * @returns BOOL
+ */
 -(BOOL)getDraw;
+
+/**
+ * -(void*)setDraw:(BOOL) draw;
+ *
+ * @param draw
+ */
 -(void)setDraw:(BOOL) draw;
 
 @end

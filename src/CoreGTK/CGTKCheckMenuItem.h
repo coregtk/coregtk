@@ -47,13 +47,55 @@
 /**
  * Methods
  */
+
 -(GtkCheckMenuItem*)CHECKMENUITEM;
+
+/**
+ * -(BOOL*)getActive;
+ *
+ * @returns BOOL
+ */
 -(BOOL)getActive;
+
+/**
+ * -(BOOL*)getDrawAsRadio;
+ *
+ * @returns BOOL
+ */
 -(BOOL)getDrawAsRadio;
+
+/**
+ * -(BOOL*)getInconsistent;
+ *
+ * @returns BOOL
+ */
 -(BOOL)getInconsistent;
+
+/**
+ * -(void*)setActive:(BOOL) isActive;
+ *
+ * @param isActive
+ */
 -(void)setActive:(BOOL) isActive;
+
+/**
+ * -(void*)setDrawAsRadio:(BOOL) drawAsRadio;
+ *
+ * @param drawAsRadio
+ */
 -(void)setDrawAsRadio:(BOOL) drawAsRadio;
+
+/**
+ * -(void*)setInconsistent:(BOOL) setting;
+ *
+ * @param setting
+ */
 -(void)setInconsistent:(BOOL) setting;
+
+/**
+ * -(void*)toggled;
+ *
+ */
 -(void)toggled;
 
 @end

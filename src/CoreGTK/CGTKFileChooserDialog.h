@@ -40,6 +40,7 @@
 /**
  * Methods
  */
+
 -(GtkFileChooserDialog*)FILECHOOSERDIALOG;
 
 @end

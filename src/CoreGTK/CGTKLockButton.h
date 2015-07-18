@@ -45,8 +45,21 @@
 /**
  * Methods
  */
+
 -(GtkLockButton*)LOCKBUTTON;
+
+/**
+ * -(GPermission**)getPermission;
+ *
+ * @returns GPermission*
+ */
 -(GPermission*)getPermission;
+
+/**
+ * -(void*)setPermission:(GPermission*) permission;
+ *
+ * @param permission
+ */
 -(void)setPermission:(GPermission*) permission;
 
 @end

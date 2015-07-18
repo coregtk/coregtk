@@ -45,14 +45,63 @@
 /**
  * Methods
  */
+
 -(GtkScaleButton*)SCALEBUTTON;
+
+/**
+ * -(GtkAdjustment**)getAdjustment;
+ *
+ * @returns GtkAdjustment*
+ */
 -(GtkAdjustment*)getAdjustment;
+
+/**
+ * -(CGTKWidget**)getMinusButton;
+ *
+ * @returns CGTKWidget*
+ */
 -(CGTKWidget*)getMinusButton;
+
+/**
+ * -(CGTKWidget**)getPlusButton;
+ *
+ * @returns CGTKWidget*
+ */
 -(CGTKWidget*)getPlusButton;
+
+/**
+ * -(CGTKWidget**)getPopup;
+ *
+ * @returns CGTKWidget*
+ */
 -(CGTKWidget*)getPopup;
+
+/**
+ * -(gdouble*)getValue;
+ *
+ * @returns gdouble
+ */
 -(gdouble)getValue;
+
+/**
+ * -(void*)setAdjustment:(GtkAdjustment*) adjustment;
+ *
+ * @param adjustment
+ */
 -(void)setAdjustment:(GtkAdjustment*) adjustment;
+
+/**
+ * -(void*)setIcons:(gchar**) icons;
+ *
+ * @param icons
+ */
 -(void)setIcons:(gchar**) icons;
+
+/**
+ * -(void*)setValue:(gdouble) value;
+ *
+ * @param value
+ */
 -(void)setValue:(gdouble) value;
 
 @end

@@ -1,0 +1,28 @@
+var interface_c_g_t_k_spin_button =
+[
+    [ "configureWithAdjustment:andClimbRate:andDigits:", "interface_c_g_t_k_spin_button.html#ae1bb8dbc9d4eecfe4e8e5dff114a4c11", null ],
+    [ "getAdjustment", "interface_c_g_t_k_spin_button.html#ac307ffe447c98aadd87045170b4ce1fd", null ],
+    [ "getDigits", "interface_c_g_t_k_spin_button.html#a9771561d3b3148a377cd5476adb251f4", null ],
+    [ "getIncrementsWithStep:andPage:", "interface_c_g_t_k_spin_button.html#a66d8e48c57200c09f74e47fb0b6fee22", null ],
+    [ "getNumeric", "interface_c_g_t_k_spin_button.html#a2906394293b21868814072b6dd903071", null ],
+    [ "getRangeWithMin:andMax:", "interface_c_g_t_k_spin_button.html#a5fa7d851c4d0f31317c78b08ef178d26", null ],
+    [ "getSnapToTicks", "interface_c_g_t_k_spin_button.html#aa7cc86a6888ab1be5c91b3f4707f0a8b", null ],
+    [ "getUpdatePolicy", "interface_c_g_t_k_spin_button.html#a9a97b16b1006657e2a35da7308810d4d", null ],
+    [ "getValue", "interface_c_g_t_k_spin_button.html#a2e331e3d89848394857774ee206dfa11", null ],
+    [ "getValueAsInt", "interface_c_g_t_k_spin_button.html#adbb6df99c6851db433ef816d33ab5934", null ],
+    [ "getWrap", "interface_c_g_t_k_spin_button.html#a9f2fef1a3434c2051cb1820739e8455c", null ],
+    [ "initWithAdjustment:andClimbRate:andDigits:", "interface_c_g_t_k_spin_button.html#abbd21cc22482341ccbcffbe68fa8c852", null ],
+    [ "initWithRangeWithMin:andMax:andStep:", "interface_c_g_t_k_spin_button.html#a41d8c80d8ec8077338f6f09a948662d2", null ],
+    [ "setAdjustment:", "interface_c_g_t_k_spin_button.html#a902cdeb6c955d35aeaf54a55157c10b5", null ],
+    [ "setDigits:", "interface_c_g_t_k_spin_button.html#adde3e522e0983cb6285b2f121f9a405d", null ],
+    [ "setIncrementsWithStep:andPage:", "interface_c_g_t_k_spin_button.html#a1b643fe0b4a07fc95f930b81c7ee574a", null ],
+    [ "setNumeric:", "interface_c_g_t_k_spin_button.html#a391940076070e8cbc914ff893821f514", null ],
+    [ "setRangeWithMin:andMax:", "interface_c_g_t_k_spin_button.html#a70bf4af731dd6cd2fdda802c2ab319ee", null ],
+    [ "setSnapToTicks:", "interface_c_g_t_k_spin_button.html#a354b25269267aba488798e088e1d3bb6", null ],
+    [ "setUpdatePolicy:", "interface_c_g_t_k_spin_button.html#aa1705b31ebdc3a5c4e7e238a3608b8d7", null ],
+    [ "setValue:", "interface_c_g_t_k_spin_button.html#af9ec14138d83d947d5cdb7a17f43f5f8", null ],
+    [ "setWrap:", "interface_c_g_t_k_spin_button.html#a0176e58994b5aa479f301cebc22a7db3", null ],
+    [ "SPINBUTTON", "interface_c_g_t_k_spin_button.html#a9e022640dd3eafdc438ab165ddbe6802", null ],
+    [ "spinWithDirection:andIncrement:", "interface_c_g_t_k_spin_button.html#ae1f9edc885750cd37f878134c4537926", null ],
+    [ "update", "interface_c_g_t_k_spin_button.html#ad0c3c22d7bdad99d445c3bfb542fb6ce", null ]
+];

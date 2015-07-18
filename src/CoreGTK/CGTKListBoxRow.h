@@ -45,10 +45,34 @@
 /**
  * Methods
  */
+
 -(GtkListBoxRow*)LISTBOXROW;
+
+/**
+ * -(void*)changed;
+ *
+ */
 -(void)changed;
+
+/**
+ * -(CGTKWidget**)getHeader;
+ *
+ * @returns CGTKWidget*
+ */
 -(CGTKWidget*)getHeader;
+
+/**
+ * -(gint*)getIndex;
+ *
+ * @returns gint
+ */
 -(gint)getIndex;
+
+/**
+ * -(void*)setHeader:(CGTKWidget*) header;
+ *
+ * @param header
+ */
 -(void)setHeader:(CGTKWidget*) header;
 
 @end

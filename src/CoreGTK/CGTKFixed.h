@@ -45,8 +45,25 @@
 /**
  * Methods
  */
+
 -(GtkFixed*)FIXED;
+
+/**
+ * -(void*)moveWithWidget:(CGTKWidget*) widget andX:(gint) x andY:(gint) y;
+ *
+ * @param widget
+ * @param x
+ * @param y
+ */
 -(void)moveWithWidget:(CGTKWidget*) widget andX:(gint) x andY:(gint) y;
+
+/**
+ * -(void*)putWithWidget:(CGTKWidget*) widget andX:(gint) x andY:(gint) y;
+ *
+ * @param widget
+ * @param x
+ * @param y
+ */
 -(void)putWithWidget:(CGTKWidget*) widget andX:(gint) x andY:(gint) y;
 
 @end

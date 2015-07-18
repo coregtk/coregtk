@@ -45,14 +45,63 @@
 /**
  * Methods
  */
+
 -(GtkViewport*)VIEWPORT;
+
+/**
+ * -(GdkWindow**)getBinWindow;
+ *
+ * @returns GdkWindow*
+ */
 -(GdkWindow*)getBinWindow;
+
+/**
+ * -(GtkAdjustment**)getHadjustment;
+ *
+ * @returns GtkAdjustment*
+ */
 -(GtkAdjustment*)getHadjustment;
+
+/**
+ * -(GtkShadowType*)getShadowType;
+ *
+ * @returns GtkShadowType
+ */
 -(GtkShadowType)getShadowType;
+
+/**
+ * -(GtkAdjustment**)getVadjustment;
+ *
+ * @returns GtkAdjustment*
+ */
 -(GtkAdjustment*)getVadjustment;
+
+/**
+ * -(GdkWindow**)getViewWindow;
+ *
+ * @returns GdkWindow*
+ */
 -(GdkWindow*)getViewWindow;
+
+/**
+ * -(void*)setHadjustment:(GtkAdjustment*) adjustment;
+ *
+ * @param adjustment
+ */
 -(void)setHadjustment:(GtkAdjustment*) adjustment;
+
+/**
+ * -(void*)setShadowType:(GtkShadowType) type;
+ *
+ * @param type
+ */
 -(void)setShadowType:(GtkShadowType) type;
+
+/**
+ * -(void*)setVadjustment:(GtkAdjustment*) adjustment;
+ *
+ * @param adjustment
+ */
 -(void)setVadjustment:(GtkAdjustment*) adjustment;
 
 @end

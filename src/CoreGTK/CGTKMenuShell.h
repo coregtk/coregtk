@@ -40,20 +40,106 @@
 /**
  * Methods
  */
+
 -(GtkMenuShell*)MENUSHELL;
+
+/**
+ * -(void*)activateItemWithMenuItem:(CGTKWidget*) menuItem andForceDeactivate:(BOOL) forceDeactivate;
+ *
+ * @param menuItem
+ * @param forceDeactivate
+ */
 -(void)activateItemWithMenuItem:(CGTKWidget*) menuItem andForceDeactivate:(BOOL) forceDeactivate;
+
+/**
+ * -(void*)append:(CGTKWidget*) child;
+ *
+ * @param child
+ */
 -(void)append:(CGTKWidget*) child;
+
+/**
+ * -(void*)bindModelWithModel:(GMenuModel*) model andActionNamespace:(NSString*) actionNamespace andWithSeparators:(BOOL) withSeparators;
+ *
+ * @param model
+ * @param actionNamespace
+ * @param withSeparators
+ */
 -(void)bindModelWithModel:(GMenuModel*) model andActionNamespace:(NSString*) actionNamespace andWithSeparators:(BOOL) withSeparators;
+
+/**
+ * -(void*)cancel;
+ *
+ */
 -(void)cancel;
+
+/**
+ * -(void*)deactivate;
+ *
+ */
 -(void)deactivate;
+
+/**
+ * -(void*)deselect;
+ *
+ */
 -(void)deselect;
+
+/**
+ * -(CGTKWidget**)getParentShell;
+ *
+ * @returns CGTKWidget*
+ */
 -(CGTKWidget*)getParentShell;
+
+/**
+ * -(CGTKWidget**)getSelectedItem;
+ *
+ * @returns CGTKWidget*
+ */
 -(CGTKWidget*)getSelectedItem;
+
+/**
+ * -(BOOL*)getTakeFocus;
+ *
+ * @returns BOOL
+ */
 -(BOOL)getTakeFocus;
+
+/**
+ * -(void*)insertWithChild:(CGTKWidget*) child andPosition:(gint) position;
+ *
+ * @param child
+ * @param position
+ */
 -(void)insertWithChild:(CGTKWidget*) child andPosition:(gint) position;
+
+/**
+ * -(void*)prepend:(CGTKWidget*) child;
+ *
+ * @param child
+ */
 -(void)prepend:(CGTKWidget*) child;
+
+/**
+ * -(void*)selectFirst:(BOOL) searchSensitive;
+ *
+ * @param searchSensitive
+ */
 -(void)selectFirst:(BOOL) searchSensitive;
+
+/**
+ * -(void*)selectItem:(CGTKWidget*) menuItem;
+ *
+ * @param menuItem
+ */
 -(void)selectItem:(CGTKWidget*) menuItem;
+
+/**
+ * -(void*)setTakeFocus:(BOOL) takeFocus;
+ *
+ * @param takeFocus
+ */
 -(void)setTakeFocus:(BOOL) takeFocus;
 
 @end

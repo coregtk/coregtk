@@ -46,12 +46,49 @@
 /**
  * Methods
  */
+
 -(GtkFileChooserButton*)FILECHOOSERBUTTON;
+
+/**
+ * -(BOOL*)getFocusOnClick;
+ *
+ * @returns BOOL
+ */
 -(BOOL)getFocusOnClick;
+
+/**
+ * -(NSString**)getTitle;
+ *
+ * @returns NSString*
+ */
 -(NSString*)getTitle;
+
+/**
+ * -(gint*)getWidthChars;
+ *
+ * @returns gint
+ */
 -(gint)getWidthChars;
+
+/**
+ * -(void*)setFocusOnClick:(BOOL) focusOnClick;
+ *
+ * @param focusOnClick
+ */
 -(void)setFocusOnClick:(BOOL) focusOnClick;
+
+/**
+ * -(void*)setTitle:(NSString*) title;
+ *
+ * @param title
+ */
 -(void)setTitle:(NSString*) title;
+
+/**
+ * -(void*)setWidthChars:(gint) nchars;
+ *
+ * @param nchars
+ */
 -(void)setWidthChars:(gint) nchars;
 
 @end

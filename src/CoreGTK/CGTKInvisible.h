@@ -46,8 +46,21 @@
 /**
  * Methods
  */
+
 -(GtkInvisible*)INVISIBLE;
+
+/**
+ * -(GdkScreen**)getScreen;
+ *
+ * @returns GdkScreen*
+ */
 -(GdkScreen*)getScreen;
+
+/**
+ * -(void*)setScreen:(GdkScreen*) screen;
+ *
+ * @param screen
+ */
 -(void)setScreen:(GdkScreen*) screen;
 
 @end

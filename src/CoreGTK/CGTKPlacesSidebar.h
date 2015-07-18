@@ -45,18 +45,92 @@
 /**
  * Methods
  */
+
 -(GtkPlacesSidebar*)PLACESSIDEBAR;
+
+/**
+ * -(void*)addShortcut:(GFile*) location;
+ *
+ * @param location
+ */
 -(void)addShortcut:(GFile*) location;
+
+/**
+ * -(GFile**)getLocation;
+ *
+ * @returns GFile*
+ */
 -(GFile*)getLocation;
+
+/**
+ * -(GFile**)getNthBookmark:(gint) n;
+ *
+ * @param n
+ * @returns GFile*
+ */
 -(GFile*)getNthBookmark:(gint) n;
+
+/**
+ * -(GtkPlacesOpenFlags*)getOpenFlags;
+ *
+ * @returns GtkPlacesOpenFlags
+ */
 -(GtkPlacesOpenFlags)getOpenFlags;
+
+/**
+ * -(BOOL*)getShowConnectToServer;
+ *
+ * @returns BOOL
+ */
 -(BOOL)getShowConnectToServer;
+
+/**
+ * -(BOOL*)getShowDesktop;
+ *
+ * @returns BOOL
+ */
 -(BOOL)getShowDesktop;
+
+/**
+ * -(GSList**)listShortcuts;
+ *
+ * @returns GSList*
+ */
 -(GSList*)listShortcuts;
+
+/**
+ * -(void*)removeShortcut:(GFile*) location;
+ *
+ * @param location
+ */
 -(void)removeShortcut:(GFile*) location;
+
+/**
+ * -(void*)setLocation:(GFile*) location;
+ *
+ * @param location
+ */
 -(void)setLocation:(GFile*) location;
+
+/**
+ * -(void*)setOpenFlags:(GtkPlacesOpenFlags) flags;
+ *
+ * @param flags
+ */
 -(void)setOpenFlags:(GtkPlacesOpenFlags) flags;
+
+/**
+ * -(void*)setShowConnectToServer:(BOOL) showConnectToServer;
+ *
+ * @param showConnectToServer
+ */
 -(void)setShowConnectToServer:(BOOL) showConnectToServer;
+
+/**
+ * -(void*)setShowDesktop:(BOOL) showDesktop;
+ *
+ * @param showDesktop
+ */
 -(void)setShowDesktop:(BOOL) showDesktop;
 
 @end

@@ -45,8 +45,21 @@
 /**
  * Methods
  */
+
 -(GtkStackSwitcher*)STACKSWITCHER;
+
+/**
+ * -(GtkStack**)getStack;
+ *
+ * @returns GtkStack*
+ */
 -(GtkStack*)getStack;
+
+/**
+ * -(void*)setStack:(GtkStack*) stack;
+ *
+ * @param stack
+ */
 -(void)setStack:(GtkStack*) stack;
 
 @end

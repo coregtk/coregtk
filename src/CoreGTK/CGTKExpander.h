@@ -46,22 +46,119 @@
 /**
  * Methods
  */
+
 -(GtkExpander*)EXPANDER;
+
+/**
+ * -(BOOL*)getExpanded;
+ *
+ * @returns BOOL
+ */
 -(BOOL)getExpanded;
+
+/**
+ * -(NSString**)getLabel;
+ *
+ * @returns NSString*
+ */
 -(NSString*)getLabel;
+
+/**
+ * -(BOOL*)getLabelFill;
+ *
+ * @returns BOOL
+ */
 -(BOOL)getLabelFill;
+
+/**
+ * -(CGTKWidget**)getLabelWidget;
+ *
+ * @returns CGTKWidget*
+ */
 -(CGTKWidget*)getLabelWidget;
+
+/**
+ * -(BOOL*)getResizeToplevel;
+ *
+ * @returns BOOL
+ */
 -(BOOL)getResizeToplevel;
+
+/**
+ * -(gint*)getSpacing;
+ *
+ * @returns gint
+ */
 -(gint)getSpacing;
+
+/**
+ * -(BOOL*)getUseMarkup;
+ *
+ * @returns BOOL
+ */
 -(BOOL)getUseMarkup;
+
+/**
+ * -(BOOL*)getUseUnderline;
+ *
+ * @returns BOOL
+ */
 -(BOOL)getUseUnderline;
+
+/**
+ * -(void*)setExpanded:(BOOL) expanded;
+ *
+ * @param expanded
+ */
 -(void)setExpanded:(BOOL) expanded;
+
+/**
+ * -(void*)setLabel:(NSString*) label;
+ *
+ * @param label
+ */
 -(void)setLabel:(NSString*) label;
+
+/**
+ * -(void*)setLabelFill:(BOOL) labelFill;
+ *
+ * @param labelFill
+ */
 -(void)setLabelFill:(BOOL) labelFill;
+
+/**
+ * -(void*)setLabelWidget:(CGTKWidget*) labelWidget;
+ *
+ * @param labelWidget
+ */
 -(void)setLabelWidget:(CGTKWidget*) labelWidget;
+
+/**
+ * -(void*)setResizeToplevel:(BOOL) resizeToplevel;
+ *
+ * @param resizeToplevel
+ */
 -(void)setResizeToplevel:(BOOL) resizeToplevel;
+
+/**
+ * -(void*)setSpacing:(gint) spacing;
+ *
+ * @param spacing
+ */
 -(void)setSpacing:(gint) spacing;
+
+/**
+ * -(void*)setUseMarkup:(BOOL) useMarkup;
+ *
+ * @param useMarkup
+ */
 -(void)setUseMarkup:(BOOL) useMarkup;
+
+/**
+ * -(void*)setUseUnderline:(BOOL) useUnderline;
+ *
+ * @param useUnderline
+ */
 -(void)setUseUnderline:(BOOL) useUnderline;
 
 @end

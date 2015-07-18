@@ -45,19 +45,97 @@
 /**
  * Methods
  */
+
 -(GtkProgressBar*)PROGRESSBAR;
+
+/**
+ * -(PangoEllipsizeMode*)getEllipsize;
+ *
+ * @returns PangoEllipsizeMode
+ */
 -(PangoEllipsizeMode)getEllipsize;
+
+/**
+ * -(gdouble*)getFraction;
+ *
+ * @returns gdouble
+ */
 -(gdouble)getFraction;
+
+/**
+ * -(BOOL*)getInverted;
+ *
+ * @returns BOOL
+ */
 -(BOOL)getInverted;
+
+/**
+ * -(gdouble*)getPulseStep;
+ *
+ * @returns gdouble
+ */
 -(gdouble)getPulseStep;
+
+/**
+ * -(BOOL*)getShowText;
+ *
+ * @returns BOOL
+ */
 -(BOOL)getShowText;
+
+/**
+ * -(NSString**)getText;
+ *
+ * @returns NSString*
+ */
 -(NSString*)getText;
+
+/**
+ * -(void*)pulse;
+ *
+ */
 -(void)pulse;
+
+/**
+ * -(void*)setEllipsize:(PangoEllipsizeMode) mode;
+ *
+ * @param mode
+ */
 -(void)setEllipsize:(PangoEllipsizeMode) mode;
+
+/**
+ * -(void*)setFraction:(gdouble) fraction;
+ *
+ * @param fraction
+ */
 -(void)setFraction:(gdouble) fraction;
+
+/**
+ * -(void*)setInverted:(BOOL) inverted;
+ *
+ * @param inverted
+ */
 -(void)setInverted:(BOOL) inverted;
+
+/**
+ * -(void*)setPulseStep:(gdouble) fraction;
+ *
+ * @param fraction
+ */
 -(void)setPulseStep:(gdouble) fraction;
+
+/**
+ * -(void*)setShowText:(BOOL) showText;
+ *
+ * @param showText
+ */
 -(void)setShowText:(BOOL) showText;
+
+/**
+ * -(void*)setText:(NSString*) text;
+ *
+ * @param text
+ */
 -(void)setText:(NSString*) text;
 
 @end

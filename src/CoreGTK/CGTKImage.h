@@ -54,25 +54,147 @@
 /**
  * Methods
  */
+
 -(GtkImage*)IMAGE;
+
+/**
+ * -(void*)clear;
+ *
+ */
 -(void)clear;
+
+/**
+ * -(GdkPixbufAnimation**)getAnimation;
+ *
+ * @returns GdkPixbufAnimation*
+ */
 -(GdkPixbufAnimation*)getAnimation;
+
+/**
+ * -(void*)getGiconWithGicon:(GIcon**) gicon andSize:(GtkIconSize*) size;
+ *
+ * @param gicon
+ * @param size
+ */
 -(void)getGiconWithGicon:(GIcon**) gicon andSize:(GtkIconSize*) size;
+
+/**
+ * -(void*)getIconNameWithIconName:(const gchar**) iconName andSize:(GtkIconSize*) size;
+ *
+ * @param iconName
+ * @param size
+ */
 -(void)getIconNameWithIconName:(const gchar**) iconName andSize:(GtkIconSize*) size;
+
+/**
+ * -(void*)getIconSetWithIconSet:(GtkIconSet**) iconSet andSize:(GtkIconSize*) size;
+ *
+ * @param iconSet
+ * @param size
+ */
 -(void)getIconSetWithIconSet:(GtkIconSet**) iconSet andSize:(GtkIconSize*) size;
+
+/**
+ * -(GdkPixbuf**)getPixbuf;
+ *
+ * @returns GdkPixbuf*
+ */
 -(GdkPixbuf*)getPixbuf;
+
+/**
+ * -(gint*)getPixelSize;
+ *
+ * @returns gint
+ */
 -(gint)getPixelSize;
+
+/**
+ * -(void*)getStockWithStockId:(gchar**) stockId andSize:(GtkIconSize*) size;
+ *
+ * @param stockId
+ * @param size
+ */
 -(void)getStockWithStockId:(gchar**) stockId andSize:(GtkIconSize*) size;
+
+/**
+ * -(GtkImageType*)getStorageType;
+ *
+ * @returns GtkImageType
+ */
 -(GtkImageType)getStorageType;
+
+/**
+ * -(void*)setFromAnimation:(GdkPixbufAnimation*) animation;
+ *
+ * @param animation
+ */
 -(void)setFromAnimation:(GdkPixbufAnimation*) animation;
+
+/**
+ * -(void*)setFromFile:(NSString*) filename;
+ *
+ * @param filename
+ */
 -(void)setFromFile:(NSString*) filename;
+
+/**
+ * -(void*)setFromGiconWithIcon:(GIcon*) icon andSize:(GtkIconSize) size;
+ *
+ * @param icon
+ * @param size
+ */
 -(void)setFromGiconWithIcon:(GIcon*) icon andSize:(GtkIconSize) size;
+
+/**
+ * -(void*)setFromIconNameWithIconName:(NSString*) iconName andSize:(GtkIconSize) size;
+ *
+ * @param iconName
+ * @param size
+ */
 -(void)setFromIconNameWithIconName:(NSString*) iconName andSize:(GtkIconSize) size;
+
+/**
+ * -(void*)setFromIconSetWithIconSet:(GtkIconSet*) iconSet andSize:(GtkIconSize) size;
+ *
+ * @param iconSet
+ * @param size
+ */
 -(void)setFromIconSetWithIconSet:(GtkIconSet*) iconSet andSize:(GtkIconSize) size;
+
+/**
+ * -(void*)setFromPixbuf:(GdkPixbuf*) pixbuf;
+ *
+ * @param pixbuf
+ */
 -(void)setFromPixbuf:(GdkPixbuf*) pixbuf;
+
+/**
+ * -(void*)setFromResource:(NSString*) resourcePath;
+ *
+ * @param resourcePath
+ */
 -(void)setFromResource:(NSString*) resourcePath;
+
+/**
+ * -(void*)setFromStockWithStockId:(NSString*) stockId andSize:(GtkIconSize) size;
+ *
+ * @param stockId
+ * @param size
+ */
 -(void)setFromStockWithStockId:(NSString*) stockId andSize:(GtkIconSize) size;
+
+/**
+ * -(void*)setFromSurface:(cairo_surface_t*) surface;
+ *
+ * @param surface
+ */
 -(void)setFromSurface:(cairo_surface_t*) surface;
+
+/**
+ * -(void*)setPixelSize:(gint) pixelSize;
+ *
+ * @param pixelSize
+ */
 -(void)setPixelSize:(gint) pixelSize;
 
 @end

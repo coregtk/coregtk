@@ -45,26 +45,160 @@
 /**
  * Methods
  */
+
 -(GtkGrid*)GRID;
+
+/**
+ * -(void*)attachWithChild:(CGTKWidget*) child andLeft:(gint) left andTop:(gint) top andWidth:(gint) width andHeight:(gint) height;
+ *
+ * @param child
+ * @param left
+ * @param top
+ * @param width
+ * @param height
+ */
 -(void)attachWithChild:(CGTKWidget*) child andLeft:(gint) left andTop:(gint) top andWidth:(gint) width andHeight:(gint) height;
+
+/**
+ * -(void*)attachNextToWithChild:(CGTKWidget*) child andSibling:(CGTKWidget*) sibling andSide:(GtkPositionType) side andWidth:(gint) width andHeight:(gint) height;
+ *
+ * @param child
+ * @param sibling
+ * @param side
+ * @param width
+ * @param height
+ */
 -(void)attachNextToWithChild:(CGTKWidget*) child andSibling:(CGTKWidget*) sibling andSide:(GtkPositionType) side andWidth:(gint) width andHeight:(gint) height;
+
+/**
+ * -(gint*)getBaselineRow;
+ *
+ * @returns gint
+ */
 -(gint)getBaselineRow;
+
+/**
+ * -(CGTKWidget**)getChildAtWithLeft:(gint) left andTop:(gint) top;
+ *
+ * @param left
+ * @param top
+ * @returns CGTKWidget*
+ */
 -(CGTKWidget*)getChildAtWithLeft:(gint) left andTop:(gint) top;
+
+/**
+ * -(BOOL*)getColumnHomogeneous;
+ *
+ * @returns BOOL
+ */
 -(BOOL)getColumnHomogeneous;
+
+/**
+ * -(guint*)getColumnSpacing;
+ *
+ * @returns guint
+ */
 -(guint)getColumnSpacing;
+
+/**
+ * -(GtkBaselinePosition*)getRowBaselinePosition:(gint) row;
+ *
+ * @param row
+ * @returns GtkBaselinePosition
+ */
 -(GtkBaselinePosition)getRowBaselinePosition:(gint) row;
+
+/**
+ * -(BOOL*)getRowHomogeneous;
+ *
+ * @returns BOOL
+ */
 -(BOOL)getRowHomogeneous;
+
+/**
+ * -(guint*)getRowSpacing;
+ *
+ * @returns guint
+ */
 -(guint)getRowSpacing;
+
+/**
+ * -(void*)insertColumn:(gint) position;
+ *
+ * @param position
+ */
 -(void)insertColumn:(gint) position;
+
+/**
+ * -(void*)insertNextToWithSibling:(CGTKWidget*) sibling andSide:(GtkPositionType) side;
+ *
+ * @param sibling
+ * @param side
+ */
 -(void)insertNextToWithSibling:(CGTKWidget*) sibling andSide:(GtkPositionType) side;
+
+/**
+ * -(void*)insertRow:(gint) position;
+ *
+ * @param position
+ */
 -(void)insertRow:(gint) position;
+
+/**
+ * -(void*)removeColumn:(gint) position;
+ *
+ * @param position
+ */
 -(void)removeColumn:(gint) position;
+
+/**
+ * -(void*)removeRow:(gint) position;
+ *
+ * @param position
+ */
 -(void)removeRow:(gint) position;
+
+/**
+ * -(void*)setBaselineRow:(gint) row;
+ *
+ * @param row
+ */
 -(void)setBaselineRow:(gint) row;
+
+/**
+ * -(void*)setColumnHomogeneous:(BOOL) homogeneous;
+ *
+ * @param homogeneous
+ */
 -(void)setColumnHomogeneous:(BOOL) homogeneous;
+
+/**
+ * -(void*)setColumnSpacing:(guint) spacing;
+ *
+ * @param spacing
+ */
 -(void)setColumnSpacing:(guint) spacing;
+
+/**
+ * -(void*)setRowBaselinePositionWithRow:(gint) row andPos:(GtkBaselinePosition) pos;
+ *
+ * @param row
+ * @param pos
+ */
 -(void)setRowBaselinePositionWithRow:(gint) row andPos:(GtkBaselinePosition) pos;
+
+/**
+ * -(void*)setRowHomogeneous:(BOOL) homogeneous;
+ *
+ * @param homogeneous
+ */
 -(void)setRowHomogeneous:(BOOL) homogeneous;
+
+/**
+ * -(void*)setRowSpacing:(guint) spacing;
+ *
+ * @param spacing
+ */
 -(void)setRowSpacing:(guint) spacing;
 
 @end

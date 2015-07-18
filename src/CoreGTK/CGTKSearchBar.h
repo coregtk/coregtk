@@ -45,12 +45,50 @@
 /**
  * Methods
  */
+
 -(GtkSearchBar*)SEARCHBAR;
+
+/**
+ * -(void*)connectEntry:(GtkEntry*) entry;
+ *
+ * @param entry
+ */
 -(void)connectEntry:(GtkEntry*) entry;
+
+/**
+ * -(BOOL*)getSearchMode;
+ *
+ * @returns BOOL
+ */
 -(BOOL)getSearchMode;
+
+/**
+ * -(BOOL*)getShowCloseButton;
+ *
+ * @returns BOOL
+ */
 -(BOOL)getShowCloseButton;
+
+/**
+ * -(BOOL*)handleEvent:(GdkEvent*) event;
+ *
+ * @param event
+ * @returns BOOL
+ */
 -(BOOL)handleEvent:(GdkEvent*) event;
+
+/**
+ * -(void*)setSearchMode:(BOOL) searchMode;
+ *
+ * @param searchMode
+ */
 -(void)setSearchMode:(BOOL) searchMode;
+
+/**
+ * -(void*)setShowCloseButton:(BOOL) visible;
+ *
+ * @param visible
+ */
 -(void)setShowCloseButton:(BOOL) visible;
 
 @end

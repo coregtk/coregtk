@@ -45,7 +45,14 @@
 /**
  * Methods
  */
+
 -(GtkColorSelectionDialog*)COLORSELECTIONDIALOG;
+
+/**
+ * -(CGTKWidget**)getColorSelection;
+ *
+ * @returns CGTKWidget*
+ */
 -(CGTKWidget*)getColorSelection;
 
 @end

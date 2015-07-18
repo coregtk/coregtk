@@ -45,7 +45,15 @@
 /**
  * Methods
  */
+
 -(GtkArrow*)ARROW;
+
+/**
+ * -(void*)setWithArrowType:(GtkArrowType) arrowType andShadowType:(GtkShadowType) shadowType;
+ *
+ * @param arrowType
+ * @param shadowType
+ */
 -(void)setWithArrowType:(GtkArrowType) arrowType andShadowType:(GtkShadowType) shadowType;
 
 @end

@@ -45,22 +45,125 @@
 /**
  * Methods
  */
+
 -(GtkToolItemGroup*)TOOLITEMGROUP;
+
+/**
+ * -(BOOL*)getCollapsed;
+ *
+ * @returns BOOL
+ */
 -(BOOL)getCollapsed;
+
+/**
+ * -(GtkToolItem**)getDropItemWithX:(gint) x andY:(gint) y;
+ *
+ * @param x
+ * @param y
+ * @returns GtkToolItem*
+ */
 -(GtkToolItem*)getDropItemWithX:(gint) x andY:(gint) y;
+
+/**
+ * -(PangoEllipsizeMode*)getEllipsize;
+ *
+ * @returns PangoEllipsizeMode
+ */
 -(PangoEllipsizeMode)getEllipsize;
+
+/**
+ * -(GtkReliefStyle*)getHeaderRelief;
+ *
+ * @returns GtkReliefStyle
+ */
 -(GtkReliefStyle)getHeaderRelief;
+
+/**
+ * -(gint*)getItemPosition:(GtkToolItem*) item;
+ *
+ * @param item
+ * @returns gint
+ */
 -(gint)getItemPosition:(GtkToolItem*) item;
+
+/**
+ * -(NSString**)getLabel;
+ *
+ * @returns NSString*
+ */
 -(NSString*)getLabel;
+
+/**
+ * -(CGTKWidget**)getLabelWidget;
+ *
+ * @returns CGTKWidget*
+ */
 -(CGTKWidget*)getLabelWidget;
+
+/**
+ * -(guint*)getNitems;
+ *
+ * @returns guint
+ */
 -(guint)getNitems;
+
+/**
+ * -(GtkToolItem**)getNthItem:(guint) index;
+ *
+ * @param index
+ * @returns GtkToolItem*
+ */
 -(GtkToolItem*)getNthItem:(guint) index;
+
+/**
+ * -(void*)insertWithItem:(GtkToolItem*) item andPosition:(gint) position;
+ *
+ * @param item
+ * @param position
+ */
 -(void)insertWithItem:(GtkToolItem*) item andPosition:(gint) position;
+
+/**
+ * -(void*)setCollapsed:(BOOL) collapsed;
+ *
+ * @param collapsed
+ */
 -(void)setCollapsed:(BOOL) collapsed;
+
+/**
+ * -(void*)setEllipsize:(PangoEllipsizeMode) ellipsize;
+ *
+ * @param ellipsize
+ */
 -(void)setEllipsize:(PangoEllipsizeMode) ellipsize;
+
+/**
+ * -(void*)setHeaderRelief:(GtkReliefStyle) style;
+ *
+ * @param style
+ */
 -(void)setHeaderRelief:(GtkReliefStyle) style;
+
+/**
+ * -(void*)setItemPositionWithItem:(GtkToolItem*) item andPosition:(gint) position;
+ *
+ * @param item
+ * @param position
+ */
 -(void)setItemPositionWithItem:(GtkToolItem*) item andPosition:(gint) position;
+
+/**
+ * -(void*)setLabel:(NSString*) label;
+ *
+ * @param label
+ */
 -(void)setLabel:(NSString*) label;
+
+/**
+ * -(void*)setLabelWidget:(CGTKWidget*) labelWidget;
+ *
+ * @param labelWidget
+ */
 -(void)setLabelWidget:(CGTKWidget*) labelWidget;
 
 @end

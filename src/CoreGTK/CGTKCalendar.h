@@ -45,20 +45,110 @@
 /**
  * Methods
  */
+
 -(GtkCalendar*)CALENDAR;
+
+/**
+ * -(void*)clearMarks;
+ *
+ */
 -(void)clearMarks;
+
+/**
+ * -(void*)getDateWithYear:(guint*) year andMonth:(guint*) month andDay:(guint*) day;
+ *
+ * @param year
+ * @param month
+ * @param day
+ */
 -(void)getDateWithYear:(guint*) year andMonth:(guint*) month andDay:(guint*) day;
+
+/**
+ * -(BOOL*)getDayIsMarked:(guint) day;
+ *
+ * @param day
+ * @returns BOOL
+ */
 -(BOOL)getDayIsMarked:(guint) day;
+
+/**
+ * -(gint*)getDetailHeightRows;
+ *
+ * @returns gint
+ */
 -(gint)getDetailHeightRows;
+
+/**
+ * -(gint*)getDetailWidthChars;
+ *
+ * @returns gint
+ */
 -(gint)getDetailWidthChars;
+
+/**
+ * -(GtkCalendarDisplayOptions*)getDisplayOptions;
+ *
+ * @returns GtkCalendarDisplayOptions
+ */
 -(GtkCalendarDisplayOptions)getDisplayOptions;
+
+/**
+ * -(void*)markDay:(guint) day;
+ *
+ * @param day
+ */
 -(void)markDay:(guint) day;
+
+/**
+ * -(void*)selectDay:(guint) day;
+ *
+ * @param day
+ */
 -(void)selectDay:(guint) day;
+
+/**
+ * -(void*)selectMonthWithMonth:(guint) month andYear:(guint) year;
+ *
+ * @param month
+ * @param year
+ */
 -(void)selectMonthWithMonth:(guint) month andYear:(guint) year;
+
+/**
+ * -(void*)setDetailFuncWithFunc:(GtkCalendarDetailFunc) func andData:(gpointer) data andDestroy:(GDestroyNotify) destroy;
+ *
+ * @param func
+ * @param data
+ * @param destroy
+ */
 -(void)setDetailFuncWithFunc:(GtkCalendarDetailFunc) func andData:(gpointer) data andDestroy:(GDestroyNotify) destroy;
+
+/**
+ * -(void*)setDetailHeightRows:(gint) rows;
+ *
+ * @param rows
+ */
 -(void)setDetailHeightRows:(gint) rows;
+
+/**
+ * -(void*)setDetailWidthChars:(gint) chars;
+ *
+ * @param chars
+ */
 -(void)setDetailWidthChars:(gint) chars;
+
+/**
+ * -(void*)setDisplayOptions:(GtkCalendarDisplayOptions) flags;
+ *
+ * @param flags
+ */
 -(void)setDisplayOptions:(GtkCalendarDisplayOptions) flags;
+
+/**
+ * -(void*)unmarkDay:(guint) day;
+ *
+ * @param day
+ */
 -(void)unmarkDay:(guint) day;
 
 @end

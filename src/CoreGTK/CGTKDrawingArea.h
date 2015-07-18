@@ -45,6 +45,7 @@
 /**
  * Methods
  */
+
 -(GtkDrawingArea*)DRAWINGAREA;
 
 @end

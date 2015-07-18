@@ -45,12 +45,53 @@
 /**
  * Methods
  */
+
 -(GtkButtonBox*)BUTTONBOX;
+
+/**
+ * -(BOOL*)getChildNonHomogeneous:(CGTKWidget*) child;
+ *
+ * @param child
+ * @returns BOOL
+ */
 -(BOOL)getChildNonHomogeneous:(CGTKWidget*) child;
+
+/**
+ * -(BOOL*)getChildSecondary:(CGTKWidget*) child;
+ *
+ * @param child
+ * @returns BOOL
+ */
 -(BOOL)getChildSecondary:(CGTKWidget*) child;
+
+/**
+ * -(GtkButtonBoxStyle*)getLayout;
+ *
+ * @returns GtkButtonBoxStyle
+ */
 -(GtkButtonBoxStyle)getLayout;
+
+/**
+ * -(void*)setChildNonHomogeneousWithChild:(CGTKWidget*) child andNonHomogeneous:(BOOL) nonHomogeneous;
+ *
+ * @param child
+ * @param nonHomogeneous
+ */
 -(void)setChildNonHomogeneousWithChild:(CGTKWidget*) child andNonHomogeneous:(BOOL) nonHomogeneous;
+
+/**
+ * -(void*)setChildSecondaryWithChild:(CGTKWidget*) child andIsSecondary:(BOOL) isSecondary;
+ *
+ * @param child
+ * @param isSecondary
+ */
 -(void)setChildSecondaryWithChild:(CGTKWidget*) child andIsSecondary:(BOOL) isSecondary;
+
+/**
+ * -(void*)setLayout:(GtkButtonBoxStyle) layoutStyle;
+ *
+ * @param layoutStyle
+ */
 -(void)setLayout:(GtkButtonBoxStyle) layoutStyle;
 
 @end

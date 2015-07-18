@@ -46,19 +46,101 @@
 /**
  * Methods
  */
+
 -(GtkLevelBar*)LEVELBAR;
+
+/**
+ * -(void*)addOffsetValueWithName:(NSString*) name andValue:(gdouble) value;
+ *
+ * @param name
+ * @param value
+ */
 -(void)addOffsetValueWithName:(NSString*) name andValue:(gdouble) value;
+
+/**
+ * -(BOOL*)getInverted;
+ *
+ * @returns BOOL
+ */
 -(BOOL)getInverted;
+
+/**
+ * -(gdouble*)getMaxValue;
+ *
+ * @returns gdouble
+ */
 -(gdouble)getMaxValue;
+
+/**
+ * -(gdouble*)getMinValue;
+ *
+ * @returns gdouble
+ */
 -(gdouble)getMinValue;
+
+/**
+ * -(GtkLevelBarMode*)getMode;
+ *
+ * @returns GtkLevelBarMode
+ */
 -(GtkLevelBarMode)getMode;
+
+/**
+ * -(BOOL*)getOffsetValueWithName:(NSString*) name andValue:(gdouble*) value;
+ *
+ * @param name
+ * @param value
+ * @returns BOOL
+ */
 -(BOOL)getOffsetValueWithName:(NSString*) name andValue:(gdouble*) value;
+
+/**
+ * -(gdouble*)getValue;
+ *
+ * @returns gdouble
+ */
 -(gdouble)getValue;
+
+/**
+ * -(void*)removeOffsetValue:(NSString*) name;
+ *
+ * @param name
+ */
 -(void)removeOffsetValue:(NSString*) name;
+
+/**
+ * -(void*)setInverted:(BOOL) inverted;
+ *
+ * @param inverted
+ */
 -(void)setInverted:(BOOL) inverted;
+
+/**
+ * -(void*)setMaxValue:(gdouble) value;
+ *
+ * @param value
+ */
 -(void)setMaxValue:(gdouble) value;
+
+/**
+ * -(void*)setMinValue:(gdouble) value;
+ *
+ * @param value
+ */
 -(void)setMinValue:(gdouble) value;
+
+/**
+ * -(void*)setMode:(GtkLevelBarMode) mode;
+ *
+ * @param mode
+ */
 -(void)setMode:(GtkLevelBarMode) mode;
+
+/**
+ * -(void*)setValue:(gdouble) value;
+ *
+ * @param value
+ */
 -(void)setValue:(gdouble) value;
 
 @end

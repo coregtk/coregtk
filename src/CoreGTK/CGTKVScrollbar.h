@@ -45,6 +45,7 @@
 /**
  * Methods
  */
+
 -(GtkVScrollbar*)VSCROLLBAR;
 
 @end

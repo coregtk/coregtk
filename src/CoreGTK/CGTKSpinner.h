@@ -45,8 +45,19 @@
 /**
  * Methods
  */
+
 -(GtkSpinner*)SPINNER;
+
+/**
+ * -(void*)start;
+ *
+ */
 -(void)start;
+
+/**
+ * -(void*)stop;
+ *
+ */
 -(void)stop;
 
 @end

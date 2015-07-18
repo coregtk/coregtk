@@ -40,7 +40,14 @@
 /**
  * Methods
  */
+
 -(GtkBin*)BIN;
+
+/**
+ * -(CGTKWidget**)getChild;
+ *
+ * @returns CGTKWidget*
+ */
 -(CGTKWidget*)getChild;
 
 @end

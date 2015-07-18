@@ -45,6 +45,7 @@
 /**
  * Methods
  */
+
 -(GtkVBox*)VBOX;
 
 @end

@@ -45,8 +45,21 @@
 /**
  * Methods
  */
+
 -(GtkSwitch*)SWITCH;
+
+/**
+ * -(BOOL*)getActive;
+ *
+ * @returns BOOL
+ */
 -(BOOL)getActive;
+
+/**
+ * -(void*)setActive:(BOOL) isActive;
+ *
+ * @param isActive
+ */
 -(void)setActive:(BOOL) isActive;
 
 @end

@@ -45,17 +45,91 @@
 /**
  * Methods
  */
+
 -(GtkDialog*)DIALOG;
+
+/**
+ * -(void*)addActionWidgetWithChild:(CGTKWidget*) child andResponseId:(gint) responseId;
+ *
+ * @param child
+ * @param responseId
+ */
 -(void)addActionWidgetWithChild:(CGTKWidget*) child andResponseId:(gint) responseId;
+
+/**
+ * -(CGTKWidget**)addButtonWithButtonText:(NSString*) buttonText andResponseId:(gint) responseId;
+ *
+ * @param buttonText
+ * @param responseId
+ * @returns CGTKWidget*
+ */
 -(CGTKWidget*)addButtonWithButtonText:(NSString*) buttonText andResponseId:(gint) responseId;
+
+/**
+ * -(CGTKWidget**)getActionArea;
+ *
+ * @returns CGTKWidget*
+ */
 -(CGTKWidget*)getActionArea;
+
+/**
+ * -(CGTKWidget**)getContentArea;
+ *
+ * @returns CGTKWidget*
+ */
 -(CGTKWidget*)getContentArea;
+
+/**
+ * -(gint*)getResponseForWidget:(CGTKWidget*) widget;
+ *
+ * @param widget
+ * @returns gint
+ */
 -(gint)getResponseForWidget:(CGTKWidget*) widget;
+
+/**
+ * -(CGTKWidget**)getWidgetForResponse:(gint) responseId;
+ *
+ * @param responseId
+ * @returns CGTKWidget*
+ */
 -(CGTKWidget*)getWidgetForResponse:(gint) responseId;
+
+/**
+ * -(void*)response:(gint) responseId;
+ *
+ * @param responseId
+ */
 -(void)response:(gint) responseId;
+
+/**
+ * -(gint*)run;
+ *
+ * @returns gint
+ */
 -(gint)run;
+
+/**
+ * -(void*)setAlternativeButtonOrderFromArrayWithNparams:(gint) nparams andNewOrder:(gint*) newOrder;
+ *
+ * @param nparams
+ * @param newOrder
+ */
 -(void)setAlternativeButtonOrderFromArrayWithNparams:(gint) nparams andNewOrder:(gint*) newOrder;
+
+/**
+ * -(void*)setDefaultResponse:(gint) responseId;
+ *
+ * @param responseId
+ */
 -(void)setDefaultResponse:(gint) responseId;
+
+/**
+ * -(void*)setResponseSensitiveWithResponseId:(gint) responseId andSetting:(BOOL) setting;
+ *
+ * @param responseId
+ * @param setting
+ */
 -(void)setResponseSensitiveWithResponseId:(gint) responseId andSetting:(BOOL) setting;
 
 @end

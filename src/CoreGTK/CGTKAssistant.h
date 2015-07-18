@@ -45,31 +45,195 @@
 /**
  * Methods
  */
+
 -(GtkAssistant*)ASSISTANT;
+
+/**
+ * -(void*)addActionWidget:(CGTKWidget*) child;
+ *
+ * @param child
+ */
 -(void)addActionWidget:(CGTKWidget*) child;
+
+/**
+ * -(gint*)appendPage:(CGTKWidget*) page;
+ *
+ * @param page
+ * @returns gint
+ */
 -(gint)appendPage:(CGTKWidget*) page;
+
+/**
+ * -(void*)commit;
+ *
+ */
 -(void)commit;
+
+/**
+ * -(gint*)getCurrentPage;
+ *
+ * @returns gint
+ */
 -(gint)getCurrentPage;
+
+/**
+ * -(gint*)getNpages;
+ *
+ * @returns gint
+ */
 -(gint)getNpages;
+
+/**
+ * -(CGTKWidget**)getNthPage:(gint) pageNum;
+ *
+ * @param pageNum
+ * @returns CGTKWidget*
+ */
 -(CGTKWidget*)getNthPage:(gint) pageNum;
+
+/**
+ * -(BOOL*)getPageComplete:(CGTKWidget*) page;
+ *
+ * @param page
+ * @returns BOOL
+ */
 -(BOOL)getPageComplete:(CGTKWidget*) page;
+
+/**
+ * -(GdkPixbuf**)getPageHeaderImage:(CGTKWidget*) page;
+ *
+ * @param page
+ * @returns GdkPixbuf*
+ */
 -(GdkPixbuf*)getPageHeaderImage:(CGTKWidget*) page;
+
+/**
+ * -(GdkPixbuf**)getPageSideImage:(CGTKWidget*) page;
+ *
+ * @param page
+ * @returns GdkPixbuf*
+ */
 -(GdkPixbuf*)getPageSideImage:(CGTKWidget*) page;
+
+/**
+ * -(NSString**)getPageTitle:(CGTKWidget*) page;
+ *
+ * @param page
+ * @returns NSString*
+ */
 -(NSString*)getPageTitle:(CGTKWidget*) page;
+
+/**
+ * -(GtkAssistantPageType*)getPageType:(CGTKWidget*) page;
+ *
+ * @param page
+ * @returns GtkAssistantPageType
+ */
 -(GtkAssistantPageType)getPageType:(CGTKWidget*) page;
+
+/**
+ * -(gint*)insertPageWithPage:(CGTKWidget*) page andPosition:(gint) position;
+ *
+ * @param page
+ * @param position
+ * @returns gint
+ */
 -(gint)insertPageWithPage:(CGTKWidget*) page andPosition:(gint) position;
+
+/**
+ * -(void*)nextPage;
+ *
+ */
 -(void)nextPage;
+
+/**
+ * -(gint*)prependPage:(CGTKWidget*) page;
+ *
+ * @param page
+ * @returns gint
+ */
 -(gint)prependPage:(CGTKWidget*) page;
+
+/**
+ * -(void*)previousPage;
+ *
+ */
 -(void)previousPage;
+
+/**
+ * -(void*)removeActionWidget:(CGTKWidget*) child;
+ *
+ * @param child
+ */
 -(void)removeActionWidget:(CGTKWidget*) child;
+
+/**
+ * -(void*)removePage:(gint) pageNum;
+ *
+ * @param pageNum
+ */
 -(void)removePage:(gint) pageNum;
+
+/**
+ * -(void*)setCurrentPage:(gint) pageNum;
+ *
+ * @param pageNum
+ */
 -(void)setCurrentPage:(gint) pageNum;
+
+/**
+ * -(void*)setForwardPageFuncWithPageFunc:(GtkAssistantPageFunc) pageFunc andData:(gpointer) data andDestroy:(GDestroyNotify) destroy;
+ *
+ * @param pageFunc
+ * @param data
+ * @param destroy
+ */
 -(void)setForwardPageFuncWithPageFunc:(GtkAssistantPageFunc) pageFunc andData:(gpointer) data andDestroy:(GDestroyNotify) destroy;
+
+/**
+ * -(void*)setPageCompleteWithPage:(CGTKWidget*) page andComplete:(BOOL) complete;
+ *
+ * @param page
+ * @param complete
+ */
 -(void)setPageCompleteWithPage:(CGTKWidget*) page andComplete:(BOOL) complete;
+
+/**
+ * -(void*)setPageHeaderImageWithPage:(CGTKWidget*) page andPixbuf:(GdkPixbuf*) pixbuf;
+ *
+ * @param page
+ * @param pixbuf
+ */
 -(void)setPageHeaderImageWithPage:(CGTKWidget*) page andPixbuf:(GdkPixbuf*) pixbuf;
+
+/**
+ * -(void*)setPageSideImageWithPage:(CGTKWidget*) page andPixbuf:(GdkPixbuf*) pixbuf;
+ *
+ * @param page
+ * @param pixbuf
+ */
 -(void)setPageSideImageWithPage:(CGTKWidget*) page andPixbuf:(GdkPixbuf*) pixbuf;
+
+/**
+ * -(void*)setPageTitleWithPage:(CGTKWidget*) page andTitle:(NSString*) title;
+ *
+ * @param page
+ * @param title
+ */
 -(void)setPageTitleWithPage:(CGTKWidget*) page andTitle:(NSString*) title;
+
+/**
+ * -(void*)setPageTypeWithPage:(CGTKWidget*) page andType:(GtkAssistantPageType) type;
+ *
+ * @param page
+ * @param type
+ */
 -(void)setPageTypeWithPage:(CGTKWidget*) page andType:(GtkAssistantPageType) type;
+
+/**
+ * -(void*)updateButtonsState;
+ *
+ */
 -(void)updateButtonsState;
 
 @end

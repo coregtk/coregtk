@@ -45,17 +45,88 @@
 /**
  * Methods
  */
+
 -(GtkInfoBar*)INFOBAR;
+
+/**
+ * -(void*)addActionWidgetWithChild:(CGTKWidget*) child andResponseId:(gint) responseId;
+ *
+ * @param child
+ * @param responseId
+ */
 -(void)addActionWidgetWithChild:(CGTKWidget*) child andResponseId:(gint) responseId;
+
+/**
+ * -(CGTKWidget**)addButtonWithButtonText:(NSString*) buttonText andResponseId:(gint) responseId;
+ *
+ * @param buttonText
+ * @param responseId
+ * @returns CGTKWidget*
+ */
 -(CGTKWidget*)addButtonWithButtonText:(NSString*) buttonText andResponseId:(gint) responseId;
+
+/**
+ * -(CGTKWidget**)getActionArea;
+ *
+ * @returns CGTKWidget*
+ */
 -(CGTKWidget*)getActionArea;
+
+/**
+ * -(CGTKWidget**)getContentArea;
+ *
+ * @returns CGTKWidget*
+ */
 -(CGTKWidget*)getContentArea;
+
+/**
+ * -(GtkMessageType*)getMessageType;
+ *
+ * @returns GtkMessageType
+ */
 -(GtkMessageType)getMessageType;
+
+/**
+ * -(BOOL*)getShowCloseButton;
+ *
+ * @returns BOOL
+ */
 -(BOOL)getShowCloseButton;
+
+/**
+ * -(void*)response:(gint) responseId;
+ *
+ * @param responseId
+ */
 -(void)response:(gint) responseId;
+
+/**
+ * -(void*)setDefaultResponse:(gint) responseId;
+ *
+ * @param responseId
+ */
 -(void)setDefaultResponse:(gint) responseId;
+
+/**
+ * -(void*)setMessageType:(GtkMessageType) messageType;
+ *
+ * @param messageType
+ */
 -(void)setMessageType:(GtkMessageType) messageType;
+
+/**
+ * -(void*)setResponseSensitiveWithResponseId:(gint) responseId andSetting:(BOOL) setting;
+ *
+ * @param responseId
+ * @param setting
+ */
 -(void)setResponseSensitiveWithResponseId:(gint) responseId andSetting:(BOOL) setting;
+
+/**
+ * -(void*)setShowCloseButton:(BOOL) setting;
+ *
+ * @param setting
+ */
 -(void)setShowCloseButton:(BOOL) setting;
 
 @end
