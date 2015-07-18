@@ -51,23 +51,126 @@
 /**
  * Methods
  */
+
 -(GtkColorSelection*)COLORSELECTION;
+
+/**
+ * -(guint16*)getCurrentAlpha;
+ *
+ * @returns guint16
+ */
 -(guint16)getCurrentAlpha;
+
+/**
+ * -(void*)getCurrentColor:(GdkColor*) color;
+ *
+ * @param color
+ */
 -(void)getCurrentColor:(GdkColor*) color;
+
+/**
+ * -(void*)getCurrentRgba:(GdkRGBA*) rgba;
+ *
+ * @param rgba
+ */
 -(void)getCurrentRgba:(GdkRGBA*) rgba;
+
+/**
+ * -(BOOL*)getHasOpacityControl;
+ *
+ * @returns BOOL
+ */
 -(BOOL)getHasOpacityControl;
+
+/**
+ * -(BOOL*)getHasPalette;
+ *
+ * @returns BOOL
+ */
 -(BOOL)getHasPalette;
+
+/**
+ * -(guint16*)getPreviousAlpha;
+ *
+ * @returns guint16
+ */
 -(guint16)getPreviousAlpha;
+
+/**
+ * -(void*)getPreviousColor:(GdkColor*) color;
+ *
+ * @param color
+ */
 -(void)getPreviousColor:(GdkColor*) color;
+
+/**
+ * -(void*)getPreviousRgba:(GdkRGBA*) rgba;
+ *
+ * @param rgba
+ */
 -(void)getPreviousRgba:(GdkRGBA*) rgba;
+
+/**
+ * -(BOOL*)isAdjusting;
+ *
+ * @returns BOOL
+ */
 -(BOOL)isAdjusting;
+
+/**
+ * -(void*)setCurrentAlpha:(guint16) alpha;
+ *
+ * @param alpha
+ */
 -(void)setCurrentAlpha:(guint16) alpha;
+
+/**
+ * -(void*)setCurrentColor:(const GdkColor*) color;
+ *
+ * @param color
+ */
 -(void)setCurrentColor:(const GdkColor*) color;
+
+/**
+ * -(void*)setCurrentRgba:(const GdkRGBA*) rgba;
+ *
+ * @param rgba
+ */
 -(void)setCurrentRgba:(const GdkRGBA*) rgba;
+
+/**
+ * -(void*)setHasOpacityControl:(BOOL) hasOpacity;
+ *
+ * @param hasOpacity
+ */
 -(void)setHasOpacityControl:(BOOL) hasOpacity;
+
+/**
+ * -(void*)setHasPalette:(BOOL) hasPalette;
+ *
+ * @param hasPalette
+ */
 -(void)setHasPalette:(BOOL) hasPalette;
+
+/**
+ * -(void*)setPreviousAlpha:(guint16) alpha;
+ *
+ * @param alpha
+ */
 -(void)setPreviousAlpha:(guint16) alpha;
+
+/**
+ * -(void*)setPreviousColor:(const GdkColor*) color;
+ *
+ * @param color
+ */
 -(void)setPreviousColor:(const GdkColor*) color;
+
+/**
+ * -(void*)setPreviousRgba:(const GdkRGBA*) rgba;
+ *
+ * @param rgba
+ */
 -(void)setPreviousRgba:(const GdkRGBA*) rgba;
 
 @end

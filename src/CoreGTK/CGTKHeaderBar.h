@@ -45,16 +45,77 @@
 /**
  * Methods
  */
+
 -(GtkHeaderBar*)HEADERBAR;
+
+/**
+ * -(CGTKWidget**)getCustomTitle;
+ *
+ * @returns CGTKWidget*
+ */
 -(CGTKWidget*)getCustomTitle;
+
+/**
+ * -(BOOL*)getShowCloseButton;
+ *
+ * @returns BOOL
+ */
 -(BOOL)getShowCloseButton;
+
+/**
+ * -(NSString**)getSubtitle;
+ *
+ * @returns NSString*
+ */
 -(NSString*)getSubtitle;
+
+/**
+ * -(NSString**)getTitle;
+ *
+ * @returns NSString*
+ */
 -(NSString*)getTitle;
+
+/**
+ * -(void*)packEnd:(CGTKWidget*) child;
+ *
+ * @param child
+ */
 -(void)packEnd:(CGTKWidget*) child;
+
+/**
+ * -(void*)packStart:(CGTKWidget*) child;
+ *
+ * @param child
+ */
 -(void)packStart:(CGTKWidget*) child;
+
+/**
+ * -(void*)setCustomTitle:(CGTKWidget*) titleWidget;
+ *
+ * @param titleWidget
+ */
 -(void)setCustomTitle:(CGTKWidget*) titleWidget;
+
+/**
+ * -(void*)setShowCloseButton:(BOOL) setting;
+ *
+ * @param setting
+ */
 -(void)setShowCloseButton:(BOOL) setting;
+
+/**
+ * -(void*)setSubtitle:(NSString*) subtitle;
+ *
+ * @param subtitle
+ */
 -(void)setSubtitle:(NSString*) subtitle;
+
+/**
+ * -(void*)setTitle:(NSString*) title;
+ *
+ * @param title
+ */
 -(void)setTitle:(NSString*) title;
 
 @end

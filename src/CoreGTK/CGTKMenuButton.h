@@ -45,14 +45,63 @@
 /**
  * Methods
  */
+
 -(GtkMenuButton*)MENUBUTTON;
+
+/**
+ * -(CGTKWidget**)getAlignWidget;
+ *
+ * @returns CGTKWidget*
+ */
 -(CGTKWidget*)getAlignWidget;
+
+/**
+ * -(GtkArrowType*)getDirection;
+ *
+ * @returns GtkArrowType
+ */
 -(GtkArrowType)getDirection;
+
+/**
+ * -(GMenuModel**)getMenuModel;
+ *
+ * @returns GMenuModel*
+ */
 -(GMenuModel*)getMenuModel;
+
+/**
+ * -(GtkMenu**)getPopup;
+ *
+ * @returns GtkMenu*
+ */
 -(GtkMenu*)getPopup;
+
+/**
+ * -(void*)setAlignWidget:(CGTKWidget*) alignWidget;
+ *
+ * @param alignWidget
+ */
 -(void)setAlignWidget:(CGTKWidget*) alignWidget;
+
+/**
+ * -(void*)setDirection:(GtkArrowType) direction;
+ *
+ * @param direction
+ */
 -(void)setDirection:(GtkArrowType) direction;
+
+/**
+ * -(void*)setMenuModel:(GMenuModel*) menuModel;
+ *
+ * @param menuModel
+ */
 -(void)setMenuModel:(GMenuModel*) menuModel;
+
+/**
+ * -(void*)setPopup:(CGTKWidget*) popup;
+ *
+ * @param popup
+ */
 -(void)setPopup:(CGTKWidget*) popup;
 
 @end

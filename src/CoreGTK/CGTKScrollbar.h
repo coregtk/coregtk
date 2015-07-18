@@ -45,6 +45,7 @@
 /**
  * Methods
  */
+
 -(GtkScrollbar*)SCROLLBAR;
 
 @end

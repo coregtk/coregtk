@@ -45,10 +45,35 @@
 /**
  * Methods
  */
+
 -(GtkEventBox*)EVENTBOX;
+
+/**
+ * -(BOOL*)getAboveChild;
+ *
+ * @returns BOOL
+ */
 -(BOOL)getAboveChild;
+
+/**
+ * -(BOOL*)getVisibleWindow;
+ *
+ * @returns BOOL
+ */
 -(BOOL)getVisibleWindow;
+
+/**
+ * -(void*)setAboveChild:(BOOL) aboveChild;
+ *
+ * @param aboveChild
+ */
 -(void)setAboveChild:(BOOL) aboveChild;
+
+/**
+ * -(void*)setVisibleWindow:(BOOL) visibleWindow;
+ *
+ * @param visibleWindow
+ */
 -(void)setVisibleWindow:(BOOL) visibleWindow;
 
 @end

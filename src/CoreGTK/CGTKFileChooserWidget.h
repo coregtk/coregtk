@@ -45,6 +45,7 @@
 /**
  * Methods
  */
+
 -(GtkFileChooserWidget*)FILECHOOSERWIDGET;
 
 @end

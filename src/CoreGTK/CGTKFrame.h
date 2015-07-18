@@ -45,14 +45,65 @@
 /**
  * Methods
  */
+
 -(GtkFrame*)FRAME;
+
+/**
+ * -(NSString**)getLabel;
+ *
+ * @returns NSString*
+ */
 -(NSString*)getLabel;
+
+/**
+ * -(void*)getLabelAlignWithXalign:(gfloat*) xalign andYalign:(gfloat*) yalign;
+ *
+ * @param xalign
+ * @param yalign
+ */
 -(void)getLabelAlignWithXalign:(gfloat*) xalign andYalign:(gfloat*) yalign;
+
+/**
+ * -(CGTKWidget**)getLabelWidget;
+ *
+ * @returns CGTKWidget*
+ */
 -(CGTKWidget*)getLabelWidget;
+
+/**
+ * -(GtkShadowType*)getShadowType;
+ *
+ * @returns GtkShadowType
+ */
 -(GtkShadowType)getShadowType;
+
+/**
+ * -(void*)setLabel:(NSString*) label;
+ *
+ * @param label
+ */
 -(void)setLabel:(NSString*) label;
+
+/**
+ * -(void*)setLabelAlignWithXalign:(gfloat) xalign andYalign:(gfloat) yalign;
+ *
+ * @param xalign
+ * @param yalign
+ */
 -(void)setLabelAlignWithXalign:(gfloat) xalign andYalign:(gfloat) yalign;
+
+/**
+ * -(void*)setLabelWidget:(CGTKWidget*) labelWidget;
+ *
+ * @param labelWidget
+ */
 -(void)setLabelWidget:(CGTKWidget*) labelWidget;
+
+/**
+ * -(void*)setShadowType:(GtkShadowType) type;
+ *
+ * @param type
+ */
 -(void)setShadowType:(GtkShadowType) type;
 
 @end

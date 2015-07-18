@@ -45,6 +45,7 @@
 /**
  * Methods
  */
+
 -(GtkHPaned*)HPANED;
 
 @end

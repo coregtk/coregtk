@@ -45,15 +45,71 @@
 /**
  * Methods
  */
+
 -(GtkAppChooserButton*)APPCHOOSERBUTTON;
+
+/**
+ * -(void*)appendCustomItemWithName:(NSString*) name andLabel:(NSString*) label andIcon:(GIcon*) icon;
+ *
+ * @param name
+ * @param label
+ * @param icon
+ */
 -(void)appendCustomItemWithName:(NSString*) name andLabel:(NSString*) label andIcon:(GIcon*) icon;
+
+/**
+ * -(void*)appendSeparator;
+ *
+ */
 -(void)appendSeparator;
+
+/**
+ * -(NSString**)getHeading;
+ *
+ * @returns NSString*
+ */
 -(NSString*)getHeading;
+
+/**
+ * -(BOOL*)getShowDefaultItem;
+ *
+ * @returns BOOL
+ */
 -(BOOL)getShowDefaultItem;
+
+/**
+ * -(BOOL*)getShowDialogItem;
+ *
+ * @returns BOOL
+ */
 -(BOOL)getShowDialogItem;
+
+/**
+ * -(void*)setActiveCustomItem:(NSString*) name;
+ *
+ * @param name
+ */
 -(void)setActiveCustomItem:(NSString*) name;
+
+/**
+ * -(void*)setHeading:(NSString*) heading;
+ *
+ * @param heading
+ */
 -(void)setHeading:(NSString*) heading;
+
+/**
+ * -(void*)setShowDefaultItem:(BOOL) setting;
+ *
+ * @param setting
+ */
 -(void)setShowDefaultItem:(BOOL) setting;
+
+/**
+ * -(void*)setShowDialogItem:(BOOL) setting;
+ *
+ * @param setting
+ */
 -(void)setShowDialogItem:(BOOL) setting;
 
 @end

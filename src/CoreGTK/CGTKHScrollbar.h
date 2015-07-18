@@ -45,6 +45,7 @@
 /**
  * Methods
  */
+
 -(GtkHScrollbar*)HSCROLLBAR;
 
 @end

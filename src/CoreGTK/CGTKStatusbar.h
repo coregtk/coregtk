@@ -45,12 +45,53 @@
 /**
  * Methods
  */
+
 -(GtkStatusbar*)STATUSBAR;
+
+/**
+ * -(guint*)getContextId:(NSString*) contextDescription;
+ *
+ * @param contextDescription
+ * @returns guint
+ */
 -(guint)getContextId:(NSString*) contextDescription;
+
+/**
+ * -(CGTKWidget**)getMessageArea;
+ *
+ * @returns CGTKWidget*
+ */
 -(CGTKWidget*)getMessageArea;
+
+/**
+ * -(void*)pop:(guint) contextId;
+ *
+ * @param contextId
+ */
 -(void)pop:(guint) contextId;
+
+/**
+ * -(guint*)pushWithContextId:(guint) contextId andText:(NSString*) text;
+ *
+ * @param contextId
+ * @param text
+ * @returns guint
+ */
 -(guint)pushWithContextId:(guint) contextId andText:(NSString*) text;
+
+/**
+ * -(void*)removeWithContextId:(guint) contextId andMessageId:(guint) messageId;
+ *
+ * @param contextId
+ * @param messageId
+ */
 -(void)removeWithContextId:(guint) contextId andMessageId:(guint) messageId;
+
+/**
+ * -(void*)removeAll:(guint) contextId;
+ *
+ * @param contextId
+ */
 -(void)removeAll:(guint) contextId;
 
 @end

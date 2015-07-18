@@ -48,24 +48,164 @@
 /**
  * Methods
  */
+
 -(GtkBuilder*)BUILDER;
+
+/**
+ * -(void*)addCallbackSymbolWithCallbackName:(NSString*) callbackName andCallbackSymbol:(GCallback) callbackSymbol;
+ *
+ * @param callbackName
+ * @param callbackSymbol
+ */
 -(void)addCallbackSymbolWithCallbackName:(NSString*) callbackName andCallbackSymbol:(GCallback) callbackSymbol;
+
+/**
+ * -(guint*)addFromFileWithFilename:(NSString*) filename andErr:(GError**) err;
+ *
+ * @param filename
+ * @param err
+ * @returns guint
+ */
 -(guint)addFromFileWithFilename:(NSString*) filename andErr:(GError**) err;
+
+/**
+ * -(guint*)addFromResourceWithResourcePath:(NSString*) resourcePath andErr:(GError**) err;
+ *
+ * @param resourcePath
+ * @param err
+ * @returns guint
+ */
 -(guint)addFromResourceWithResourcePath:(NSString*) resourcePath andErr:(GError**) err;
+
+/**
+ * -(guint*)addFromStringWithBuffer:(NSString*) buffer andLength:(gsize) length andErr:(GError**) err;
+ *
+ * @param buffer
+ * @param length
+ * @param err
+ * @returns guint
+ */
 -(guint)addFromStringWithBuffer:(NSString*) buffer andLength:(gsize) length andErr:(GError**) err;
+
+/**
+ * -(guint*)addObjectsFromFileWithFilename:(NSString*) filename andObjectIds:(gchar**) objectIds andErr:(GError**) err;
+ *
+ * @param filename
+ * @param objectIds
+ * @param err
+ * @returns guint
+ */
 -(guint)addObjectsFromFileWithFilename:(NSString*) filename andObjectIds:(gchar**) objectIds andErr:(GError**) err;
+
+/**
+ * -(guint*)addObjectsFromResourceWithResourcePath:(NSString*) resourcePath andObjectIds:(gchar**) objectIds andErr:(GError**) err;
+ *
+ * @param resourcePath
+ * @param objectIds
+ * @param err
+ * @returns guint
+ */
 -(guint)addObjectsFromResourceWithResourcePath:(NSString*) resourcePath andObjectIds:(gchar**) objectIds andErr:(GError**) err;
+
+/**
+ * -(guint*)addObjectsFromStringWithBuffer:(NSString*) buffer andLength:(gsize) length andObjectIds:(gchar**) objectIds andErr:(GError**) err;
+ *
+ * @param buffer
+ * @param length
+ * @param objectIds
+ * @param err
+ * @returns guint
+ */
 -(guint)addObjectsFromStringWithBuffer:(NSString*) buffer andLength:(gsize) length andObjectIds:(gchar**) objectIds andErr:(GError**) err;
+
+/**
+ * -(void*)connectSignals:(gpointer) userData;
+ *
+ * @param userData
+ */
 -(void)connectSignals:(gpointer) userData;
+
+/**
+ * -(void*)connectSignalsFullWithFunc:(GtkBuilderConnectFunc) func andUserData:(gpointer) userData;
+ *
+ * @param func
+ * @param userData
+ */
 -(void)connectSignalsFullWithFunc:(GtkBuilderConnectFunc) func andUserData:(gpointer) userData;
+
+/**
+ * -(void*)exposeObjectWithName:(NSString*) name andObject:(GObject*) object;
+ *
+ * @param name
+ * @param object
+ */
 -(void)exposeObjectWithName:(NSString*) name andObject:(GObject*) object;
+
+/**
+ * -(GObject**)getObject:(NSString*) name;
+ *
+ * @param name
+ * @returns GObject*
+ */
 -(GObject*)getObject:(NSString*) name;
+
+/**
+ * -(GSList**)getObjects;
+ *
+ * @returns GSList*
+ */
 -(GSList*)getObjects;
+
+/**
+ * -(NSString**)getTranslationDomain;
+ *
+ * @returns NSString*
+ */
 -(NSString*)getTranslationDomain;
+
+/**
+ * -(GType*)getTypeFromName:(const char*) typeName;
+ *
+ * @param typeName
+ * @returns GType
+ */
 -(GType)getTypeFromName:(const char*) typeName;
+
+/**
+ * -(GCallback*)lookupCallbackSymbol:(NSString*) callbackName;
+ *
+ * @param callbackName
+ * @returns GCallback
+ */
 -(GCallback)lookupCallbackSymbol:(NSString*) callbackName;
+
+/**
+ * -(void*)setTranslationDomain:(NSString*) domain;
+ *
+ * @param domain
+ */
 -(void)setTranslationDomain:(NSString*) domain;
+
+/**
+ * -(BOOL*)valueFromStringWithPspec:(GParamSpec*) pspec andString:(NSString*) string andValue:(GValue*) value andErr:(GError**) err;
+ *
+ * @param pspec
+ * @param string
+ * @param value
+ * @param err
+ * @returns BOOL
+ */
 -(BOOL)valueFromStringWithPspec:(GParamSpec*) pspec andString:(NSString*) string andValue:(GValue*) value andErr:(GError**) err;
+
+/**
+ * -(BOOL*)valueFromStringTypeWithType:(GType) type andString:(NSString*) string andValue:(GValue*) value andErr:(GError**) err;
+ *
+ * @param type
+ * @param string
+ * @param value
+ * @param err
+ * @returns BOOL
+ */
 -(BOOL)valueFromStringTypeWithType:(GType) type andString:(NSString*) string andValue:(GValue*) value andErr:(GError**) err;
 
 @end

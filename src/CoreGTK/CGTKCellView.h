@@ -49,17 +49,86 @@
 /**
  * Methods
  */
+
 -(GtkCellView*)CELLVIEW;
+
+/**
+ * -(GtkTreePath**)getDisplayedRow;
+ *
+ * @returns GtkTreePath*
+ */
 -(GtkTreePath*)getDisplayedRow;
+
+/**
+ * -(BOOL*)getDrawSensitive;
+ *
+ * @returns BOOL
+ */
 -(BOOL)getDrawSensitive;
+
+/**
+ * -(BOOL*)getFitModel;
+ *
+ * @returns BOOL
+ */
 -(BOOL)getFitModel;
+
+/**
+ * -(GtkTreeModel**)getModel;
+ *
+ * @returns GtkTreeModel*
+ */
 -(GtkTreeModel*)getModel;
+
+/**
+ * -(BOOL*)getSizeOfRowWithPath:(GtkTreePath*) path andRequisition:(GtkRequisition*) requisition;
+ *
+ * @param path
+ * @param requisition
+ * @returns BOOL
+ */
 -(BOOL)getSizeOfRowWithPath:(GtkTreePath*) path andRequisition:(GtkRequisition*) requisition;
+
+/**
+ * -(void*)setBackgroundColor:(const GdkColor*) color;
+ *
+ * @param color
+ */
 -(void)setBackgroundColor:(const GdkColor*) color;
+
+/**
+ * -(void*)setBackgroundRgba:(const GdkRGBA*) rgba;
+ *
+ * @param rgba
+ */
 -(void)setBackgroundRgba:(const GdkRGBA*) rgba;
+
+/**
+ * -(void*)setDisplayedRow:(GtkTreePath*) path;
+ *
+ * @param path
+ */
 -(void)setDisplayedRow:(GtkTreePath*) path;
+
+/**
+ * -(void*)setDrawSensitive:(BOOL) drawSensitive;
+ *
+ * @param drawSensitive
+ */
 -(void)setDrawSensitive:(BOOL) drawSensitive;
+
+/**
+ * -(void*)setFitModel:(BOOL) fitModel;
+ *
+ * @param fitModel
+ */
 -(void)setFitModel:(BOOL) fitModel;
+
+/**
+ * -(void*)setModel:(GtkTreeModel*) model;
+ *
+ * @param model
+ */
 -(void)setModel:(GtkTreeModel*) model;
 
 @end

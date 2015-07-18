@@ -45,20 +45,123 @@
 /**
  * Methods
  */
+
 -(GtkTable*)TABLE;
+
+/**
+ * -(void*)attachWithChild:(CGTKWidget*) child andLeftAttach:(guint) leftAttach andRightAttach:(guint) rightAttach andTopAttach:(guint) topAttach andBottomAttach:(guint) bottomAttach andXoptions:(GtkAttachOptions) xoptions andYoptions:(GtkAttachOptions) yoptions andXpadding:(guint) xpadding andYpadding:(guint) ypadding;
+ *
+ * @param child
+ * @param leftAttach
+ * @param rightAttach
+ * @param topAttach
+ * @param bottomAttach
+ * @param xoptions
+ * @param yoptions
+ * @param xpadding
+ * @param ypadding
+ */
 -(void)attachWithChild:(CGTKWidget*) child andLeftAttach:(guint) leftAttach andRightAttach:(guint) rightAttach andTopAttach:(guint) topAttach andBottomAttach:(guint) bottomAttach andXoptions:(GtkAttachOptions) xoptions andYoptions:(GtkAttachOptions) yoptions andXpadding:(guint) xpadding andYpadding:(guint) ypadding;
+
+/**
+ * -(void*)attachDefaultsWithWidget:(CGTKWidget*) widget andLeftAttach:(guint) leftAttach andRightAttach:(guint) rightAttach andTopAttach:(guint) topAttach andBottomAttach:(guint) bottomAttach;
+ *
+ * @param widget
+ * @param leftAttach
+ * @param rightAttach
+ * @param topAttach
+ * @param bottomAttach
+ */
 -(void)attachDefaultsWithWidget:(CGTKWidget*) widget andLeftAttach:(guint) leftAttach andRightAttach:(guint) rightAttach andTopAttach:(guint) topAttach andBottomAttach:(guint) bottomAttach;
+
+/**
+ * -(guint*)getColSpacing:(guint) column;
+ *
+ * @param column
+ * @returns guint
+ */
 -(guint)getColSpacing:(guint) column;
+
+/**
+ * -(guint*)getDefaultColSpacing;
+ *
+ * @returns guint
+ */
 -(guint)getDefaultColSpacing;
+
+/**
+ * -(guint*)getDefaultRowSpacing;
+ *
+ * @returns guint
+ */
 -(guint)getDefaultRowSpacing;
+
+/**
+ * -(BOOL*)getHomogeneous;
+ *
+ * @returns BOOL
+ */
 -(BOOL)getHomogeneous;
+
+/**
+ * -(guint*)getRowSpacing:(guint) row;
+ *
+ * @param row
+ * @returns guint
+ */
 -(guint)getRowSpacing:(guint) row;
+
+/**
+ * -(void*)getSizeWithRows:(guint*) rows andColumns:(guint*) columns;
+ *
+ * @param rows
+ * @param columns
+ */
 -(void)getSizeWithRows:(guint*) rows andColumns:(guint*) columns;
+
+/**
+ * -(void*)resizeWithRows:(guint) rows andColumns:(guint) columns;
+ *
+ * @param rows
+ * @param columns
+ */
 -(void)resizeWithRows:(guint) rows andColumns:(guint) columns;
+
+/**
+ * -(void*)setColSpacingWithColumn:(guint) column andSpacing:(guint) spacing;
+ *
+ * @param column
+ * @param spacing
+ */
 -(void)setColSpacingWithColumn:(guint) column andSpacing:(guint) spacing;
+
+/**
+ * -(void*)setColSpacings:(guint) spacing;
+ *
+ * @param spacing
+ */
 -(void)setColSpacings:(guint) spacing;
+
+/**
+ * -(void*)setHomogeneous:(BOOL) homogeneous;
+ *
+ * @param homogeneous
+ */
 -(void)setHomogeneous:(BOOL) homogeneous;
+
+/**
+ * -(void*)setRowSpacingWithRow:(guint) row andSpacing:(guint) spacing;
+ *
+ * @param row
+ * @param spacing
+ */
 -(void)setRowSpacingWithRow:(guint) row andSpacing:(guint) spacing;
+
+/**
+ * -(void*)setRowSpacings:(guint) spacing;
+ *
+ * @param spacing
+ */
 -(void)setRowSpacings:(guint) spacing;
 
 @end

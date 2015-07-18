@@ -45,13 +45,56 @@
 /**
  * Methods
  */
+
 -(GtkHandleBox*)HANDLEBOX;
+
+/**
+ * -(BOOL*)getChildDetached;
+ *
+ * @returns BOOL
+ */
 -(BOOL)getChildDetached;
+
+/**
+ * -(GtkPositionType*)getHandlePosition;
+ *
+ * @returns GtkPositionType
+ */
 -(GtkPositionType)getHandlePosition;
+
+/**
+ * -(GtkShadowType*)getShadowType;
+ *
+ * @returns GtkShadowType
+ */
 -(GtkShadowType)getShadowType;
+
+/**
+ * -(GtkPositionType*)getSnapEdge;
+ *
+ * @returns GtkPositionType
+ */
 -(GtkPositionType)getSnapEdge;
+
+/**
+ * -(void*)setHandlePosition:(GtkPositionType) position;
+ *
+ * @param position
+ */
 -(void)setHandlePosition:(GtkPositionType) position;
+
+/**
+ * -(void*)setShadowType:(GtkShadowType) type;
+ *
+ * @param type
+ */
 -(void)setShadowType:(GtkShadowType) type;
+
+/**
+ * -(void*)setSnapEdge:(GtkPositionType) edge;
+ *
+ * @param edge
+ */
 -(void)setSnapEdge:(GtkPositionType) edge;
 
 @end

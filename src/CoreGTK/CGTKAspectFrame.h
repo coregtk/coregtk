@@ -45,7 +45,17 @@
 /**
  * Methods
  */
+
 -(GtkAspectFrame*)ASPECTFRAME;
+
+/**
+ * -(void*)setWithXalign:(gfloat) xalign andYalign:(gfloat) yalign andRatio:(gfloat) ratio andObeyChild:(BOOL) obeyChild;
+ *
+ * @param xalign
+ * @param yalign
+ * @param ratio
+ * @param obeyChild
+ */
 -(void)setWithXalign:(gfloat) xalign andYalign:(gfloat) yalign andRatio:(gfloat) ratio andObeyChild:(BOOL) obeyChild;
 
 @end

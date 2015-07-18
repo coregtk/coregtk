@@ -45,9 +45,28 @@
 /**
  * Methods
  */
+
 -(GtkApplicationWindow*)APPLICATIONWINDOW;
+
+/**
+ * -(guint*)getId;
+ *
+ * @returns guint
+ */
 -(guint)getId;
+
+/**
+ * -(BOOL*)getShowMenubar;
+ *
+ * @returns BOOL
+ */
 -(BOOL)getShowMenubar;
+
+/**
+ * -(void*)setShowMenubar:(BOOL) showMenubar;
+ *
+ * @param showMenubar
+ */
 -(void)setShowMenubar:(BOOL) showMenubar;
 
 @end

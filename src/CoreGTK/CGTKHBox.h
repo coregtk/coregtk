@@ -45,6 +45,7 @@
 /**
  * Methods
  */
+
 -(GtkHBox*)HBOX;
 
 @end

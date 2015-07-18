@@ -45,6 +45,7 @@
 /**
  * Methods
  */
+
 -(GtkFontChooserDialog*)FONTCHOOSERDIALOG;
 
 @end

@@ -47,13 +47,55 @@
 /**
  * Methods
  */
+
 -(GtkToggleButton*)TOGGLEBUTTON;
+
+/**
+ * -(BOOL*)getActive;
+ *
+ * @returns BOOL
+ */
 -(BOOL)getActive;
+
+/**
+ * -(BOOL*)getInconsistent;
+ *
+ * @returns BOOL
+ */
 -(BOOL)getInconsistent;
+
+/**
+ * -(BOOL*)getMode;
+ *
+ * @returns BOOL
+ */
 -(BOOL)getMode;
+
+/**
+ * -(void*)setActive:(BOOL) isActive;
+ *
+ * @param isActive
+ */
 -(void)setActive:(BOOL) isActive;
+
+/**
+ * -(void*)setInconsistent:(BOOL) setting;
+ *
+ * @param setting
+ */
 -(void)setInconsistent:(BOOL) setting;
+
+/**
+ * -(void*)setMode:(BOOL) drawIndicator;
+ *
+ * @param drawIndicator
+ */
 -(void)setMode:(BOOL) drawIndicator;
+
+/**
+ * -(void*)toggled;
+ *
+ */
 -(void)toggled;
 
 @end

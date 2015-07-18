@@ -47,16 +47,77 @@
 /**
  * Methods
  */
+
 -(GtkColorButton*)COLORBUTTON;
+
+/**
+ * -(guint16*)getAlpha;
+ *
+ * @returns guint16
+ */
 -(guint16)getAlpha;
+
+/**
+ * -(void*)getColor:(GdkColor*) color;
+ *
+ * @param color
+ */
 -(void)getColor:(GdkColor*) color;
+
+/**
+ * -(void*)getRgba:(GdkRGBA*) rgba;
+ *
+ * @param rgba
+ */
 -(void)getRgba:(GdkRGBA*) rgba;
+
+/**
+ * -(NSString**)getTitle;
+ *
+ * @returns NSString*
+ */
 -(NSString*)getTitle;
+
+/**
+ * -(BOOL*)getUseAlpha;
+ *
+ * @returns BOOL
+ */
 -(BOOL)getUseAlpha;
+
+/**
+ * -(void*)setAlpha:(guint16) alpha;
+ *
+ * @param alpha
+ */
 -(void)setAlpha:(guint16) alpha;
+
+/**
+ * -(void*)setColor:(const GdkColor*) color;
+ *
+ * @param color
+ */
 -(void)setColor:(const GdkColor*) color;
+
+/**
+ * -(void*)setRgba:(const GdkRGBA*) rgba;
+ *
+ * @param rgba
+ */
 -(void)setRgba:(const GdkRGBA*) rgba;
+
+/**
+ * -(void*)setTitle:(NSString*) title;
+ *
+ * @param title
+ */
 -(void)setTitle:(NSString*) title;
+
+/**
+ * -(void*)setUseAlpha:(BOOL) useAlpha;
+ *
+ * @param useAlpha
+ */
 -(void)setUseAlpha:(BOOL) useAlpha;
 
 @end

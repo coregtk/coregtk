@@ -45,8 +45,21 @@
 /**
  * Methods
  */
+
 -(GtkOffscreenWindow*)OFFSCREENWINDOW;
+
+/**
+ * -(GdkPixbuf**)getPixbuf;
+ *
+ * @returns GdkPixbuf*
+ */
 -(GdkPixbuf*)getPixbuf;
+
+/**
+ * -(cairo_surface_t**)getSurface;
+ *
+ * @returns cairo_surface_t*
+ */
 -(cairo_surface_t*)getSurface;
 
 @end

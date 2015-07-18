@@ -46,6 +46,7 @@
 /**
  * Methods
  */
+
 -(GtkVScale*)VSCALE;
 
 @end

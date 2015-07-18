@@ -1,0 +1,21 @@
+<map id="CGTKBox" name="CGTKBox">
+<area shape="rect" id="node6" href="$interface_c_g_t_k_app_chooser_widget.html" title="CGTKAppChooserWidget" alt="" coords="725,5,897,32"/>
+<area shape="rect" id="node7" href="$interface_c_g_t_k_button_box.html" title="CGTKButtonBox" alt="" coords="751,56,871,83"/>
+<area shape="rect" id="node10" href="$interface_c_g_t_k_color_chooser_widget.html" title="CGTKColorChooserWidget" alt="" coords="721,107,901,133"/>
+<area shape="rect" id="node11" href="$interface_c_g_t_k_color_selection.html" title="CGTKColorSelection" alt="" coords="739,157,883,184"/>
+<area shape="rect" id="node12" href="$interface_c_g_t_k_file_chooser_button.html" title="CGTKFileChooserButton" alt="" coords="727,208,894,235"/>
+<area shape="rect" id="node13" href="$interface_c_g_t_k_file_chooser_widget.html" title="CGTKFileChooserWidget" alt="" coords="725,259,896,285"/>
+<area shape="rect" id="node14" href="$interface_c_g_t_k_font_chooser_widget.html" title="CGTKFontChooserWidget" alt="" coords="723,309,898,336"/>
+<area shape="rect" id="node15" href="$interface_c_g_t_k_font_selection.html" title="CGTKFontSelection" alt="" coords="741,360,880,387"/>
+<area shape="rect" id="node16" href="$interface_c_g_t_k_h_box.html" title="CGTKHBox" alt="" coords="765,411,857,437"/>
+<area shape="rect" id="node17" href="$interface_c_g_t_k_info_bar.html" title="CGTKInfoBar" alt="" coords="760,461,861,488"/>
+<area shape="rect" id="node18" href="$interface_c_g_t_k_recent_chooser_widget.html" title="CGTKRecentChooserWidget" alt="" coords="715,512,906,539"/>
+<area shape="rect" id="node19" href="$interface_c_g_t_k_stack_switcher.html" title="CGTKStackSwitcher" alt="" coords="739,563,883,589"/>
+<area shape="rect" id="node20" href="$interface_c_g_t_k_statusbar.html" title="CGTKStatusbar" alt="" coords="753,613,868,640"/>
+<area shape="rect" id="node21" href="$interface_c_g_t_k_v_box.html" title="CGTKVBox" alt="" coords="765,664,856,691"/>
+<area shape="rect" id="node2" href="$interface_c_g_t_k_container.html" title="CGTKContainer" alt="" coords="421,335,536,361"/>
+<area shape="rect" id="node3" href="$interface_c_g_t_k_widget.html" title="CGTKWidget" alt="" coords="273,335,373,361"/>
+<area shape="rect" id="node4" href="$interface_c_g_t_k_base.html" title="CGTKBase" alt="" coords="134,335,223,361"/>
+<area shape="rect" id="node8" href="$interface_c_g_t_k_h_button_box.html" title="CGTKHButtonBox" alt="" coords="955,31,1085,57"/>
+<area shape="rect" id="node9" href="$interface_c_g_t_k_v_button_box.html" title="CGTKVButtonBox" alt="" coords="955,81,1085,108"/>
+</map>

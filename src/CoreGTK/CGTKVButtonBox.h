@@ -45,6 +45,7 @@
 /**
  * Methods
  */
+
 -(GtkVButtonBox*)VBUTTONBOX;
 
 @end

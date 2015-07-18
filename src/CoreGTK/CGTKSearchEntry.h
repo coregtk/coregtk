@@ -45,6 +45,7 @@
 /**
  * Methods
  */
+
 -(GtkSearchEntry*)SEARCHENTRY;
 
 @end

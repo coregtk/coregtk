@@ -45,33 +45,196 @@
 /**
  * Methods
  */
+
 -(GtkToolItem*)TOOLITEM;
+
+/**
+ * -(PangoEllipsizeMode*)getEllipsizeMode;
+ *
+ * @returns PangoEllipsizeMode
+ */
 -(PangoEllipsizeMode)getEllipsizeMode;
+
+/**
+ * -(BOOL*)getExpand;
+ *
+ * @returns BOOL
+ */
 -(BOOL)getExpand;
+
+/**
+ * -(BOOL*)getHomogeneous;
+ *
+ * @returns BOOL
+ */
 -(BOOL)getHomogeneous;
+
+/**
+ * -(GtkIconSize*)getIconSize;
+ *
+ * @returns GtkIconSize
+ */
 -(GtkIconSize)getIconSize;
+
+/**
+ * -(BOOL*)getIsImportant;
+ *
+ * @returns BOOL
+ */
 -(BOOL)getIsImportant;
+
+/**
+ * -(GtkOrientation*)getOrientation;
+ *
+ * @returns GtkOrientation
+ */
 -(GtkOrientation)getOrientation;
+
+/**
+ * -(CGTKWidget**)getProxyMenuItem:(NSString*) menuItemId;
+ *
+ * @param menuItemId
+ * @returns CGTKWidget*
+ */
 -(CGTKWidget*)getProxyMenuItem:(NSString*) menuItemId;
+
+/**
+ * -(GtkReliefStyle*)getReliefStyle;
+ *
+ * @returns GtkReliefStyle
+ */
 -(GtkReliefStyle)getReliefStyle;
+
+/**
+ * -(gfloat*)getTextAlignment;
+ *
+ * @returns gfloat
+ */
 -(gfloat)getTextAlignment;
+
+/**
+ * -(GtkOrientation*)getTextOrientation;
+ *
+ * @returns GtkOrientation
+ */
 -(GtkOrientation)getTextOrientation;
+
+/**
+ * -(GtkSizeGroup**)getTextSizeGroup;
+ *
+ * @returns GtkSizeGroup*
+ */
 -(GtkSizeGroup*)getTextSizeGroup;
+
+/**
+ * -(GtkToolbarStyle*)getToolbarStyle;
+ *
+ * @returns GtkToolbarStyle
+ */
 -(GtkToolbarStyle)getToolbarStyle;
+
+/**
+ * -(BOOL*)getUseDragWindow;
+ *
+ * @returns BOOL
+ */
 -(BOOL)getUseDragWindow;
+
+/**
+ * -(BOOL*)getVisibleHorizontal;
+ *
+ * @returns BOOL
+ */
 -(BOOL)getVisibleHorizontal;
+
+/**
+ * -(BOOL*)getVisibleVertical;
+ *
+ * @returns BOOL
+ */
 -(BOOL)getVisibleVertical;
+
+/**
+ * -(void*)rebuildMenu;
+ *
+ */
 -(void)rebuildMenu;
+
+/**
+ * -(CGTKWidget**)retrieveProxyMenuItem;
+ *
+ * @returns CGTKWidget*
+ */
 -(CGTKWidget*)retrieveProxyMenuItem;
+
+/**
+ * -(void*)setExpand:(BOOL) expand;
+ *
+ * @param expand
+ */
 -(void)setExpand:(BOOL) expand;
+
+/**
+ * -(void*)setHomogeneous:(BOOL) homogeneous;
+ *
+ * @param homogeneous
+ */
 -(void)setHomogeneous:(BOOL) homogeneous;
+
+/**
+ * -(void*)setIsImportant:(BOOL) isImportant;
+ *
+ * @param isImportant
+ */
 -(void)setIsImportant:(BOOL) isImportant;
+
+/**
+ * -(void*)setProxyMenuItemWithMenuItemId:(NSString*) menuItemId andMenuItem:(CGTKWidget*) menuItem;
+ *
+ * @param menuItemId
+ * @param menuItem
+ */
 -(void)setProxyMenuItemWithMenuItemId:(NSString*) menuItemId andMenuItem:(CGTKWidget*) menuItem;
+
+/**
+ * -(void*)setTooltipMarkup:(NSString*) markup;
+ *
+ * @param markup
+ */
 -(void)setTooltipMarkup:(NSString*) markup;
+
+/**
+ * -(void*)setTooltipText:(NSString*) text;
+ *
+ * @param text
+ */
 -(void)setTooltipText:(NSString*) text;
+
+/**
+ * -(void*)setUseDragWindow:(BOOL) useDragWindow;
+ *
+ * @param useDragWindow
+ */
 -(void)setUseDragWindow:(BOOL) useDragWindow;
+
+/**
+ * -(void*)setVisibleHorizontal:(BOOL) visibleHorizontal;
+ *
+ * @param visibleHorizontal
+ */
 -(void)setVisibleHorizontal:(BOOL) visibleHorizontal;
+
+/**
+ * -(void*)setVisibleVertical:(BOOL) visibleVertical;
+ *
+ * @param visibleVertical
+ */
 -(void)setVisibleVertical:(BOOL) visibleVertical;
+
+/**
+ * -(void*)toolbarReconfigured;
+ *
+ */
 -(void)toolbarReconfigured;
 
 @end

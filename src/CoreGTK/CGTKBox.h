@@ -45,17 +45,99 @@
 /**
  * Methods
  */
+
 -(GtkBox*)BOX;
+
+/**
+ * -(GtkBaselinePosition*)getBaselinePosition;
+ *
+ * @returns GtkBaselinePosition
+ */
 -(GtkBaselinePosition)getBaselinePosition;
+
+/**
+ * -(BOOL*)getHomogeneous;
+ *
+ * @returns BOOL
+ */
 -(BOOL)getHomogeneous;
+
+/**
+ * -(gint*)getSpacing;
+ *
+ * @returns gint
+ */
 -(gint)getSpacing;
+
+/**
+ * -(void*)packEndWithChild:(CGTKWidget*) child andExpand:(BOOL) expand andFill:(BOOL) fill andPadding:(guint) padding;
+ *
+ * @param child
+ * @param expand
+ * @param fill
+ * @param padding
+ */
 -(void)packEndWithChild:(CGTKWidget*) child andExpand:(BOOL) expand andFill:(BOOL) fill andPadding:(guint) padding;
+
+/**
+ * -(void*)packStartWithChild:(CGTKWidget*) child andExpand:(BOOL) expand andFill:(BOOL) fill andPadding:(guint) padding;
+ *
+ * @param child
+ * @param expand
+ * @param fill
+ * @param padding
+ */
 -(void)packStartWithChild:(CGTKWidget*) child andExpand:(BOOL) expand andFill:(BOOL) fill andPadding:(guint) padding;
+
+/**
+ * -(void*)queryChildPackingWithChild:(CGTKWidget*) child andExpand:(gboolean*) expand andFill:(gboolean*) fill andPadding:(guint*) padding andPackType:(GtkPackType*) packType;
+ *
+ * @param child
+ * @param expand
+ * @param fill
+ * @param padding
+ * @param packType
+ */
 -(void)queryChildPackingWithChild:(CGTKWidget*) child andExpand:(gboolean*) expand andFill:(gboolean*) fill andPadding:(guint*) padding andPackType:(GtkPackType*) packType;
+
+/**
+ * -(void*)reorderChildWithChild:(CGTKWidget*) child andPosition:(gint) position;
+ *
+ * @param child
+ * @param position
+ */
 -(void)reorderChildWithChild:(CGTKWidget*) child andPosition:(gint) position;
+
+/**
+ * -(void*)setBaselinePosition:(GtkBaselinePosition) position;
+ *
+ * @param position
+ */
 -(void)setBaselinePosition:(GtkBaselinePosition) position;
+
+/**
+ * -(void*)setChildPackingWithChild:(CGTKWidget*) child andExpand:(BOOL) expand andFill:(BOOL) fill andPadding:(guint) padding andPackType:(GtkPackType) packType;
+ *
+ * @param child
+ * @param expand
+ * @param fill
+ * @param padding
+ * @param packType
+ */
 -(void)setChildPackingWithChild:(CGTKWidget*) child andExpand:(BOOL) expand andFill:(BOOL) fill andPadding:(guint) padding andPackType:(GtkPackType) packType;
+
+/**
+ * -(void*)setHomogeneous:(BOOL) homogeneous;
+ *
+ * @param homogeneous
+ */
 -(void)setHomogeneous:(BOOL) homogeneous;
+
+/**
+ * -(void*)setSpacing:(gint) spacing;
+ *
+ * @param spacing
+ */
 -(void)setSpacing:(gint) spacing;
 
 @end

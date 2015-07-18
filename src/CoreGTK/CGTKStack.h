@@ -45,19 +45,102 @@
 /**
  * Methods
  */
+
 -(GtkStack*)STACK;
+
+/**
+ * -(void*)addNamedWithChild:(CGTKWidget*) child andName:(NSString*) name;
+ *
+ * @param child
+ * @param name
+ */
 -(void)addNamedWithChild:(CGTKWidget*) child andName:(NSString*) name;
+
+/**
+ * -(void*)addTitledWithChild:(CGTKWidget*) child andName:(NSString*) name andTitle:(NSString*) title;
+ *
+ * @param child
+ * @param name
+ * @param title
+ */
 -(void)addTitledWithChild:(CGTKWidget*) child andName:(NSString*) name andTitle:(NSString*) title;
+
+/**
+ * -(BOOL*)getHomogeneous;
+ *
+ * @returns BOOL
+ */
 -(BOOL)getHomogeneous;
+
+/**
+ * -(guint*)getTransitionDuration;
+ *
+ * @returns guint
+ */
 -(guint)getTransitionDuration;
+
+/**
+ * -(GtkStackTransitionType*)getTransitionType;
+ *
+ * @returns GtkStackTransitionType
+ */
 -(GtkStackTransitionType)getTransitionType;
+
+/**
+ * -(CGTKWidget**)getVisibleChild;
+ *
+ * @returns CGTKWidget*
+ */
 -(CGTKWidget*)getVisibleChild;
+
+/**
+ * -(NSString**)getVisibleChildName;
+ *
+ * @returns NSString*
+ */
 -(NSString*)getVisibleChildName;
+
+/**
+ * -(void*)setHomogeneous:(BOOL) homogeneous;
+ *
+ * @param homogeneous
+ */
 -(void)setHomogeneous:(BOOL) homogeneous;
+
+/**
+ * -(void*)setTransitionDuration:(guint) duration;
+ *
+ * @param duration
+ */
 -(void)setTransitionDuration:(guint) duration;
+
+/**
+ * -(void*)setTransitionType:(GtkStackTransitionType) transition;
+ *
+ * @param transition
+ */
 -(void)setTransitionType:(GtkStackTransitionType) transition;
+
+/**
+ * -(void*)setVisibleChild:(CGTKWidget*) child;
+ *
+ * @param child
+ */
 -(void)setVisibleChild:(CGTKWidget*) child;
+
+/**
+ * -(void*)setVisibleChildFullWithName:(NSString*) name andTransition:(GtkStackTransitionType) transition;
+ *
+ * @param name
+ * @param transition
+ */
 -(void)setVisibleChildFullWithName:(NSString*) name andTransition:(GtkStackTransitionType) transition;
+
+/**
+ * -(void*)setVisibleChildName:(NSString*) name;
+ *
+ * @param name
+ */
 -(void)setVisibleChildName:(NSString*) name;
 
 @end

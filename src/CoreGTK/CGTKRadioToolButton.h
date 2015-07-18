@@ -48,8 +48,21 @@
 /**
  * Methods
  */
+
 -(GtkRadioToolButton*)RADIOTOOLBUTTON;
+
+/**
+ * -(GSList**)getGroup;
+ *
+ * @returns GSList*
+ */
 -(GSList*)getGroup;
+
+/**
+ * -(void*)setGroup:(GSList*) group;
+ *
+ * @param group
+ */
 -(void)setGroup:(GSList*) group;
 
 @end

@@ -40,6 +40,7 @@
 /**
  * Methods
  */
+
 -(GtkRecentChooserDialog*)RECENTCHOOSERDIALOG;
 
 @end

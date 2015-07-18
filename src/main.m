@@ -96,8 +96,6 @@ int main(int argc, char *argv[])
 	window = [[CGTKWindow alloc] init:GTK_WINDOW_TOPLEVEL];
 	
 	/* Here we connect the "destroy" event to a signal handler in the HelloWorld class */
-    /*[CGTKSignalConnector connectGpointer:[window WIDGET] withSignal:@"destroy" 
-        toTarget:[HelloWorld class] withSelector:@selector(destroy) andData:NULL];*/
     [CGTKSignalConnector connectGpointer:[window WIDGET] withSignal:@"destroy" 
         toTarget:[CGTK class] withSelector:@selector(mainQuit) andData:NULL];
 	

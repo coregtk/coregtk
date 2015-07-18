@@ -46,6 +46,7 @@
 /**
  * Methods
  */
+
 -(GtkRecentChooserWidget*)RECENTCHOOSERWIDGET;
 
 @end

@@ -46,15 +46,74 @@
 /**
  * Methods
  */
+
 -(GtkComboBoxText*)COMBOBOXTEXT;
+
+/**
+ * -(void*)appendWithId:(NSString*) id andText:(NSString*) text;
+ *
+ * @param id
+ * @param text
+ */
 -(void)appendWithId:(NSString*) id andText:(NSString*) text;
+
+/**
+ * -(void*)appendText:(NSString*) text;
+ *
+ * @param text
+ */
 -(void)appendText:(NSString*) text;
+
+/**
+ * -(NSString**)getActiveText;
+ *
+ * @returns NSString*
+ */
 -(NSString*)getActiveText;
+
+/**
+ * -(void*)insertWithPosition:(gint) position andId:(NSString*) id andText:(NSString*) text;
+ *
+ * @param position
+ * @param id
+ * @param text
+ */
 -(void)insertWithPosition:(gint) position andId:(NSString*) id andText:(NSString*) text;
+
+/**
+ * -(void*)insertTextWithPosition:(gint) position andText:(NSString*) text;
+ *
+ * @param position
+ * @param text
+ */
 -(void)insertTextWithPosition:(gint) position andText:(NSString*) text;
+
+/**
+ * -(void*)prependWithId:(NSString*) id andText:(NSString*) text;
+ *
+ * @param id
+ * @param text
+ */
 -(void)prependWithId:(NSString*) id andText:(NSString*) text;
+
+/**
+ * -(void*)prependText:(NSString*) text;
+ *
+ * @param text
+ */
 -(void)prependText:(NSString*) text;
+
+/**
+ * -(void*)remove:(gint) position;
+ *
+ * @param position
+ */
 -(void)remove:(gint) position;
+
+/**
+ * -(void*)removeAll;
+ *
+ */
 -(void)removeAll;
 
 @end

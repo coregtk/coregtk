@@ -48,13 +48,56 @@
 /**
  * Methods
  */
+
 -(GtkImageMenuItem*)IMAGEMENUITEM;
+
+/**
+ * -(BOOL*)getAlwaysShowImage;
+ *
+ * @returns BOOL
+ */
 -(BOOL)getAlwaysShowImage;
+
+/**
+ * -(CGTKWidget**)getImage;
+ *
+ * @returns CGTKWidget*
+ */
 -(CGTKWidget*)getImage;
+
+/**
+ * -(BOOL*)getUseStock;
+ *
+ * @returns BOOL
+ */
 -(BOOL)getUseStock;
+
+/**
+ * -(void*)setAccelGroup:(GtkAccelGroup*) accelGroup;
+ *
+ * @param accelGroup
+ */
 -(void)setAccelGroup:(GtkAccelGroup*) accelGroup;
+
+/**
+ * -(void*)setAlwaysShowImage:(BOOL) alwaysShow;
+ *
+ * @param alwaysShow
+ */
 -(void)setAlwaysShowImage:(BOOL) alwaysShow;
+
+/**
+ * -(void*)setImage:(CGTKWidget*) image;
+ *
+ * @param image
+ */
 -(void)setImage:(CGTKWidget*) image;
+
+/**
+ * -(void*)setUseStock:(BOOL) useStock;
+ *
+ * @param useStock
+ */
 -(void)setUseStock:(BOOL) useStock;
 
 @end

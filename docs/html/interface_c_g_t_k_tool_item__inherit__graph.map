@@ -1,0 +1,11 @@
+<map id="CGTKToolItem" name="CGTKToolItem">
+<area shape="rect" id="node7" href="$interface_c_g_t_k_separator_tool_item.html" title="CGTKSeparatorToolItem" alt="" coords="5,453,171,480"/>
+<area shape="rect" id="node8" href="$interface_c_g_t_k_tool_button.html" title="CGTKToolButton" alt="" coords="196,453,319,480"/>
+<area shape="rect" id="node2" href="$interface_c_g_t_k_bin.html" title="CGTKBin" alt="" coords="133,304,211,331"/>
+<area shape="rect" id="node3" href="$interface_c_g_t_k_container.html" title="CGTKContainer" alt="" coords="115,229,229,256"/>
+<area shape="rect" id="node4" href="$interface_c_g_t_k_widget.html" title="CGTKWidget" alt="" coords="122,155,221,181"/>
+<area shape="rect" id="node5" href="$interface_c_g_t_k_base.html" title="CGTKBase" alt="" coords="127,80,216,107"/>
+<area shape="rect" id="node9" href="$interface_c_g_t_k_menu_tool_button.html" title="CGTKMenuToolButton" alt="" coords="89,528,243,555"/>
+<area shape="rect" id="node10" href="$interface_c_g_t_k_toggle_tool_button.html" title="CGTKToggleToolButton" alt="" coords="269,528,429,555"/>
+<area shape="rect" id="node11" href="$interface_c_g_t_k_radio_tool_button.html" title="CGTKRadioToolButton" alt="" coords="271,603,427,629"/>
+</map>

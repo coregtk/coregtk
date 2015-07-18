@@ -45,18 +45,92 @@
 /**
  * Methods
  */
+
 -(GtkFontSelection*)FONTSELECTION;
+
+/**
+ * -(PangoFontFace**)getFace;
+ *
+ * @returns PangoFontFace*
+ */
 -(PangoFontFace*)getFace;
+
+/**
+ * -(CGTKWidget**)getFaceList;
+ *
+ * @returns CGTKWidget*
+ */
 -(CGTKWidget*)getFaceList;
+
+/**
+ * -(PangoFontFamily**)getFamily;
+ *
+ * @returns PangoFontFamily*
+ */
 -(PangoFontFamily*)getFamily;
+
+/**
+ * -(CGTKWidget**)getFamilyList;
+ *
+ * @returns CGTKWidget*
+ */
 -(CGTKWidget*)getFamilyList;
+
+/**
+ * -(NSString**)getFontName;
+ *
+ * @returns NSString*
+ */
 -(NSString*)getFontName;
+
+/**
+ * -(CGTKWidget**)getPreviewEntry;
+ *
+ * @returns CGTKWidget*
+ */
 -(CGTKWidget*)getPreviewEntry;
+
+/**
+ * -(NSString**)getPreviewText;
+ *
+ * @returns NSString*
+ */
 -(NSString*)getPreviewText;
+
+/**
+ * -(gint*)getSize;
+ *
+ * @returns gint
+ */
 -(gint)getSize;
+
+/**
+ * -(CGTKWidget**)getSizeEntry;
+ *
+ * @returns CGTKWidget*
+ */
 -(CGTKWidget*)getSizeEntry;
+
+/**
+ * -(CGTKWidget**)getSizeList;
+ *
+ * @returns CGTKWidget*
+ */
 -(CGTKWidget*)getSizeList;
+
+/**
+ * -(BOOL*)setFontName:(NSString*) fontname;
+ *
+ * @param fontname
+ * @returns BOOL
+ */
 -(BOOL)setFontName:(NSString*) fontname;
+
+/**
+ * -(void*)setPreviewText:(NSString*) text;
+ *
+ * @param text
+ */
 -(void)setPreviewText:(NSString*) text;
 
 @end

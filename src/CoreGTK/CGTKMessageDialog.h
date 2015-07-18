@@ -40,10 +40,35 @@
 /**
  * Methods
  */
+
 -(GtkMessageDialog*)MESSAGEDIALOG;
+
+/**
+ * -(CGTKWidget**)getImage;
+ *
+ * @returns CGTKWidget*
+ */
 -(CGTKWidget*)getImage;
+
+/**
+ * -(CGTKWidget**)getMessageArea;
+ *
+ * @returns CGTKWidget*
+ */
 -(CGTKWidget*)getMessageArea;
+
+/**
+ * -(void*)setImage:(CGTKWidget*) image;
+ *
+ * @param image
+ */
 -(void)setImage:(CGTKWidget*) image;
+
+/**
+ * -(void*)setMarkup:(NSString*) str;
+ *
+ * @param str
+ */
 -(void)setMarkup:(NSString*) str;
 
 @end

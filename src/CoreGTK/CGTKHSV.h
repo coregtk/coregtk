@@ -49,11 +49,48 @@
 /**
  * Methods
  */
+
 -(GtkHSV*)HSV;
+
+/**
+ * -(void*)gtkHsvGetColorWithH:(gdouble*) h andS:(gdouble*) s andV:(gdouble*) v;
+ *
+ * @param h
+ * @param s
+ * @param v
+ */
 -(void)gtkHsvGetColorWithH:(gdouble*) h andS:(gdouble*) s andV:(gdouble*) v;
+
+/**
+ * -(void*)gtkHsvGetMetricsWithSize:(gint*) size andRingWidth:(gint*) ringWidth;
+ *
+ * @param size
+ * @param ringWidth
+ */
 -(void)gtkHsvGetMetricsWithSize:(gint*) size andRingWidth:(gint*) ringWidth;
+
+/**
+ * -(BOOL*)gtkHsvIsAdjusting;
+ *
+ * @returns BOOL
+ */
 -(BOOL)gtkHsvIsAdjusting;
+
+/**
+ * -(void*)gtkHsvSetColorWithH:(double) h andS:(double) s andV:(double) v;
+ *
+ * @param h
+ * @param s
+ * @param v
+ */
 -(void)gtkHsvSetColorWithH:(double) h andS:(double) s andV:(double) v;
+
+/**
+ * -(void*)gtkHsvSetMetricsWithSize:(gint) size andRingWidth:(gint) ringWidth;
+ *
+ * @param size
+ * @param ringWidth
+ */
 -(void)gtkHsvSetMetricsWithSize:(gint) size andRingWidth:(gint) ringWidth;
 
 @end

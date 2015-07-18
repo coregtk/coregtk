@@ -46,18 +46,93 @@
 /**
  * Methods
  */
+
 -(GtkScale*)SCALE;
+
+/**
+ * -(void*)addMarkWithValue:(gdouble) value andPosition:(GtkPositionType) position andMarkup:(NSString*) markup;
+ *
+ * @param value
+ * @param position
+ * @param markup
+ */
 -(void)addMarkWithValue:(gdouble) value andPosition:(GtkPositionType) position andMarkup:(NSString*) markup;
+
+/**
+ * -(void*)clearMarks;
+ *
+ */
 -(void)clearMarks;
+
+/**
+ * -(gint*)getDigits;
+ *
+ * @returns gint
+ */
 -(gint)getDigits;
+
+/**
+ * -(BOOL*)getDrawValue;
+ *
+ * @returns BOOL
+ */
 -(BOOL)getDrawValue;
+
+/**
+ * -(BOOL*)getHasOrigin;
+ *
+ * @returns BOOL
+ */
 -(BOOL)getHasOrigin;
+
+/**
+ * -(PangoLayout**)getLayout;
+ *
+ * @returns PangoLayout*
+ */
 -(PangoLayout*)getLayout;
+
+/**
+ * -(void*)getLayoutOffsetsWithX:(gint*) x andY:(gint*) y;
+ *
+ * @param x
+ * @param y
+ */
 -(void)getLayoutOffsetsWithX:(gint*) x andY:(gint*) y;
+
+/**
+ * -(GtkPositionType*)getValuePos;
+ *
+ * @returns GtkPositionType
+ */
 -(GtkPositionType)getValuePos;
+
+/**
+ * -(void*)setDigits:(gint) digits;
+ *
+ * @param digits
+ */
 -(void)setDigits:(gint) digits;
+
+/**
+ * -(void*)setDrawValue:(BOOL) drawValue;
+ *
+ * @param drawValue
+ */
 -(void)setDrawValue:(BOOL) drawValue;
+
+/**
+ * -(void*)setHasOrigin:(BOOL) hasOrigin;
+ *
+ * @param hasOrigin
+ */
 -(void)setHasOrigin:(BOOL) hasOrigin;
+
+/**
+ * -(void*)setValuePos:(GtkPositionType) pos;
+ *
+ * @param pos
+ */
 -(void)setValuePos:(GtkPositionType) pos;
 
 @end

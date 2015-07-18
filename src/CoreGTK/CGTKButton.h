@@ -49,30 +49,172 @@
 /**
  * Methods
  */
+
 -(GtkButton*)BUTTON;
+
+/**
+ * -(void*)clicked;
+ *
+ */
 -(void)clicked;
+
+/**
+ * -(void*)enter;
+ *
+ */
 -(void)enter;
+
+/**
+ * -(void*)getAlignmentWithXalign:(gfloat*) xalign andYalign:(gfloat*) yalign;
+ *
+ * @param xalign
+ * @param yalign
+ */
 -(void)getAlignmentWithXalign:(gfloat*) xalign andYalign:(gfloat*) yalign;
+
+/**
+ * -(BOOL*)getAlwaysShowImage;
+ *
+ * @returns BOOL
+ */
 -(BOOL)getAlwaysShowImage;
+
+/**
+ * -(GdkWindow**)getEventWindow;
+ *
+ * @returns GdkWindow*
+ */
 -(GdkWindow*)getEventWindow;
+
+/**
+ * -(BOOL*)getFocusOnClick;
+ *
+ * @returns BOOL
+ */
 -(BOOL)getFocusOnClick;
+
+/**
+ * -(CGTKWidget**)getImage;
+ *
+ * @returns CGTKWidget*
+ */
 -(CGTKWidget*)getImage;
+
+/**
+ * -(GtkPositionType*)getImagePosition;
+ *
+ * @returns GtkPositionType
+ */
 -(GtkPositionType)getImagePosition;
+
+/**
+ * -(NSString**)getLabel;
+ *
+ * @returns NSString*
+ */
 -(NSString*)getLabel;
+
+/**
+ * -(GtkReliefStyle*)getRelief;
+ *
+ * @returns GtkReliefStyle
+ */
 -(GtkReliefStyle)getRelief;
+
+/**
+ * -(BOOL*)getUseStock;
+ *
+ * @returns BOOL
+ */
 -(BOOL)getUseStock;
+
+/**
+ * -(BOOL*)getUseUnderline;
+ *
+ * @returns BOOL
+ */
 -(BOOL)getUseUnderline;
+
+/**
+ * -(void*)leave;
+ *
+ */
 -(void)leave;
+
+/**
+ * -(void*)pressed;
+ *
+ */
 -(void)pressed;
+
+/**
+ * -(void*)released;
+ *
+ */
 -(void)released;
+
+/**
+ * -(void*)setAlignmentWithXalign:(gfloat) xalign andYalign:(gfloat) yalign;
+ *
+ * @param xalign
+ * @param yalign
+ */
 -(void)setAlignmentWithXalign:(gfloat) xalign andYalign:(gfloat) yalign;
+
+/**
+ * -(void*)setAlwaysShowImage:(BOOL) alwaysShow;
+ *
+ * @param alwaysShow
+ */
 -(void)setAlwaysShowImage:(BOOL) alwaysShow;
+
+/**
+ * -(void*)setFocusOnClick:(BOOL) focusOnClick;
+ *
+ * @param focusOnClick
+ */
 -(void)setFocusOnClick:(BOOL) focusOnClick;
+
+/**
+ * -(void*)setImage:(CGTKWidget*) image;
+ *
+ * @param image
+ */
 -(void)setImage:(CGTKWidget*) image;
+
+/**
+ * -(void*)setImagePosition:(GtkPositionType) position;
+ *
+ * @param position
+ */
 -(void)setImagePosition:(GtkPositionType) position;
+
+/**
+ * -(void*)setLabel:(NSString*) label;
+ *
+ * @param label
+ */
 -(void)setLabel:(NSString*) label;
+
+/**
+ * -(void*)setRelief:(GtkReliefStyle) newstyle;
+ *
+ * @param newstyle
+ */
 -(void)setRelief:(GtkReliefStyle) newstyle;
+
+/**
+ * -(void*)setUseStock:(BOOL) useStock;
+ *
+ * @param useStock
+ */
 -(void)setUseStock:(BOOL) useStock;
+
+/**
+ * -(void*)setUseUnderline:(BOOL) useUnderline;
+ *
+ * @param useUnderline
+ */
 -(void)setUseUnderline:(BOOL) useUnderline;
 
 @end

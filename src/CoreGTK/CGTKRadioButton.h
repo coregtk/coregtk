@@ -50,9 +50,28 @@
 /**
  * Methods
  */
+
 -(GtkRadioButton*)RADIOBUTTON;
+
+/**
+ * -(GSList**)getGroup;
+ *
+ * @returns GSList*
+ */
 -(GSList*)getGroup;
+
+/**
+ * -(void*)joinGroup:(GtkRadioButton*) groupSource;
+ *
+ * @param groupSource
+ */
 -(void)joinGroup:(GtkRadioButton*) groupSource;
+
+/**
+ * -(void*)setGroup:(GSList*) group;
+ *
+ * @param group
+ */
 -(void)setGroup:(GSList*) group;
 
 @end

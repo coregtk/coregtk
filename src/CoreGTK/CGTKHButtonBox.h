@@ -45,6 +45,7 @@
 /**
  * Methods
  */
+
 -(GtkHButtonBox*)HBUTTONBOX;
 
 @end

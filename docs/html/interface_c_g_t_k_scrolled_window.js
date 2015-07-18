@@ -1,0 +1,27 @@
+var interface_c_g_t_k_scrolled_window =
+[
+    [ "addWithViewport:", "interface_c_g_t_k_scrolled_window.html#a90528521b98f9623ea1ab204a8171bbc", null ],
+    [ "getCaptureButtonPress", "interface_c_g_t_k_scrolled_window.html#adb97f10b876779e1a3468408012e922c", null ],
+    [ "getHadjustment", "interface_c_g_t_k_scrolled_window.html#a8e9162823f9f3b2f6eb8c3a363e5d7dc", null ],
+    [ "getHscrollbar", "interface_c_g_t_k_scrolled_window.html#a7b2c8453b3ff8266d30d0b3a17c64ac2", null ],
+    [ "getKineticScrolling", "interface_c_g_t_k_scrolled_window.html#a7670ad48dcbcc23ec95ebd8ef2d89ee8", null ],
+    [ "getMinContentHeight", "interface_c_g_t_k_scrolled_window.html#a072118e24d482eaa6351a79374af8058", null ],
+    [ "getMinContentWidth", "interface_c_g_t_k_scrolled_window.html#a30e4dda2f90268e0cf2397c8a1b4539c", null ],
+    [ "getPlacement", "interface_c_g_t_k_scrolled_window.html#a9b636a01debf19d8f4e5205ebd1f43be", null ],
+    [ "getPolicyWithHscrollbarPolicy:andVscrollbarPolicy:", "interface_c_g_t_k_scrolled_window.html#ad30584828aa1b70965ec64b2e3c16a9c", null ],
+    [ "getShadowType", "interface_c_g_t_k_scrolled_window.html#a03d1f8c319fb1675b1e7d8781630d32d", null ],
+    [ "getVadjustment", "interface_c_g_t_k_scrolled_window.html#a9b5b19dc9e08d5649c2d84a34282b39f", null ],
+    [ "getVscrollbar", "interface_c_g_t_k_scrolled_window.html#a2bbfa70064aa3f6579fa2a268de2f5c6", null ],
+    [ "initWithHadjustment:andVadjustment:", "interface_c_g_t_k_scrolled_window.html#abc988983049ef56f4cfb8569e184bf13", null ],
+    [ "SCROLLEDWINDOW", "interface_c_g_t_k_scrolled_window.html#a88a73b3e9f90e488247f953aebee3a2d", null ],
+    [ "setCaptureButtonPress:", "interface_c_g_t_k_scrolled_window.html#a033838162b94a56cbb30ec3b17d3b5fa", null ],
+    [ "setHadjustment:", "interface_c_g_t_k_scrolled_window.html#a95843c2badebfc08cd31ec4f8dad478f", null ],
+    [ "setKineticScrolling:", "interface_c_g_t_k_scrolled_window.html#a2a4b18c9c51298e8d5345c2e5a415f46", null ],
+    [ "setMinContentHeight:", "interface_c_g_t_k_scrolled_window.html#acdcd1ddccaaa362c50f98932ef564938", null ],
+    [ "setMinContentWidth:", "interface_c_g_t_k_scrolled_window.html#a23540c8db2ccfda0e5b76070a3f62dc6", null ],
+    [ "setPlacement:", "interface_c_g_t_k_scrolled_window.html#ab0c7c71fdaef42473e6e13e6d3a2714a", null ],
+    [ "setPolicyWithHscrollbarPolicy:andVscrollbarPolicy:", "interface_c_g_t_k_scrolled_window.html#a09adc0cb05e7dee90eafe10cb2f6276c", null ],
+    [ "setShadowType:", "interface_c_g_t_k_scrolled_window.html#a40c5479af6a087b7b9523e132146fc1b", null ],
+    [ "setVadjustment:", "interface_c_g_t_k_scrolled_window.html#a8bc6c585d68a323c7399e340ae800cfc", null ],
+    [ "unsetPlacement", "interface_c_g_t_k_scrolled_window.html#adbbf8c691f4ebc44f30d32a3a03e66ba", null ]
+];

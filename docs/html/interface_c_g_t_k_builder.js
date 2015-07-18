@@ -1,0 +1,26 @@
+var interface_c_g_t_k_builder =
+[
+    [ "addCallbackSymbolWithCallbackName:andCallbackSymbol:", "interface_c_g_t_k_builder.html#a003a6ccb9929135443bd99f2ae4c84f1", null ],
+    [ "addFromFileWithFilename:andErr:", "interface_c_g_t_k_builder.html#a356e89091ba687720ec446bf2cdc2cc7", null ],
+    [ "addFromResourceWithResourcePath:andErr:", "interface_c_g_t_k_builder.html#abb75362dcf8ba69dd9c8c8d6518a4665", null ],
+    [ "addFromStringWithBuffer:andLength:andErr:", "interface_c_g_t_k_builder.html#a9910edf303b6896d779ae0c890203f7e", null ],
+    [ "addObjectsFromFileWithFilename:andObjectIds:andErr:", "interface_c_g_t_k_builder.html#a3ebe03072b9e03ad60972e451212a8c5", null ],
+    [ "addObjectsFromResourceWithResourcePath:andObjectIds:andErr:", "interface_c_g_t_k_builder.html#a975353e36d208b2a7be5d19e5b43a3f5", null ],
+    [ "addObjectsFromStringWithBuffer:andLength:andObjectIds:andErr:", "interface_c_g_t_k_builder.html#abab59a60716126b6af64149293ed1a5e", null ],
+    [ "BUILDER", "interface_c_g_t_k_builder.html#aa75611c6ad089e4ccdb0ceeab381e778", null ],
+    [ "connectSignals:", "interface_c_g_t_k_builder.html#ab903bce8a40e21903aba9f2bcd6ddb53", null ],
+    [ "connectSignalsFullWithFunc:andUserData:", "interface_c_g_t_k_builder.html#a8a20dcfcf070a33015140191a8d49b53", null ],
+    [ "exposeObjectWithName:andObject:", "interface_c_g_t_k_builder.html#a0d8b40d57c9218aaf625410c610df982", null ],
+    [ "getObject:", "interface_c_g_t_k_builder.html#a8ec5b4a3f4676cd8ea1696899170df1a", null ],
+    [ "getObjects", "interface_c_g_t_k_builder.html#a869dc6be539ee09cd5e246ef4c725559", null ],
+    [ "getTranslationDomain", "interface_c_g_t_k_builder.html#a0a34c807514740369c24c10a9a386215", null ],
+    [ "getTypeFromName:", "interface_c_g_t_k_builder.html#aca9c31b3d6af648c121c2041fe5bfe17", null ],
+    [ "init", "interface_c_g_t_k_builder.html#abfad0ba43c09c25125acda4bde4907de", null ],
+    [ "initFromFile:", "interface_c_g_t_k_builder.html#a80bb39f792ba8ce272dbe074f7a159f3", null ],
+    [ "initFromResource:", "interface_c_g_t_k_builder.html#aed99db5e5196afa047bf67ba5ecade6e", null ],
+    [ "initFromStringWithString:andLength:", "interface_c_g_t_k_builder.html#a852f6630c53e85c3f8ef9edaa69b6d65", null ],
+    [ "lookupCallbackSymbol:", "interface_c_g_t_k_builder.html#a9c57ae940ed0fe017d179d6f22674a43", null ],
+    [ "setTranslationDomain:", "interface_c_g_t_k_builder.html#a8c67029eb0e8f79a572ad54705aa8bed", null ],
+    [ "valueFromStringTypeWithType:andString:andValue:andErr:", "interface_c_g_t_k_builder.html#a7ee7b150f9c2e38412a2d192d8a90b2c", null ],
+    [ "valueFromStringWithPspec:andString:andValue:andErr:", "interface_c_g_t_k_builder.html#a905ea41d9601fb8a306c0c3630755ff9", null ]
+];

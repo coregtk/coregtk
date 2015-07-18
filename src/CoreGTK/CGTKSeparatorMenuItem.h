@@ -45,6 +45,7 @@
 /**
  * Methods
  */
+
 -(GtkSeparatorMenuItem*)SEPARATORMENUITEM;
 
 @end

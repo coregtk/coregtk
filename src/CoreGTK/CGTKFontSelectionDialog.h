@@ -45,13 +45,57 @@
 /**
  * Methods
  */
+
 -(GtkFontSelectionDialog*)FONTSELECTIONDIALOG;
+
+/**
+ * -(CGTKWidget**)getCancelButton;
+ *
+ * @returns CGTKWidget*
+ */
 -(CGTKWidget*)getCancelButton;
+
+/**
+ * -(NSString**)getFontName;
+ *
+ * @returns NSString*
+ */
 -(NSString*)getFontName;
+
+/**
+ * -(CGTKWidget**)getFontSelection;
+ *
+ * @returns CGTKWidget*
+ */
 -(CGTKWidget*)getFontSelection;
+
+/**
+ * -(CGTKWidget**)getOkButton;
+ *
+ * @returns CGTKWidget*
+ */
 -(CGTKWidget*)getOkButton;
+
+/**
+ * -(NSString**)getPreviewText;
+ *
+ * @returns NSString*
+ */
 -(NSString*)getPreviewText;
+
+/**
+ * -(BOOL*)setFontName:(NSString*) fontname;
+ *
+ * @param fontname
+ * @returns BOOL
+ */
 -(BOOL)setFontName:(NSString*) fontname;
+
+/**
+ * -(void*)setPreviewText:(NSString*) text;
+ *
+ * @param text
+ */
 -(void)setPreviewText:(NSString*) text;
 
 @end

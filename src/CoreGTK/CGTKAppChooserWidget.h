@@ -45,18 +45,91 @@
 /**
  * Methods
  */
+
 -(GtkAppChooserWidget*)APPCHOOSERWIDGET;
+
+/**
+ * -(NSString**)getDefaultText;
+ *
+ * @returns NSString*
+ */
 -(NSString*)getDefaultText;
+
+/**
+ * -(BOOL*)getShowAll;
+ *
+ * @returns BOOL
+ */
 -(BOOL)getShowAll;
+
+/**
+ * -(BOOL*)getShowDefault;
+ *
+ * @returns BOOL
+ */
 -(BOOL)getShowDefault;
+
+/**
+ * -(BOOL*)getShowFallback;
+ *
+ * @returns BOOL
+ */
 -(BOOL)getShowFallback;
+
+/**
+ * -(BOOL*)getShowOther;
+ *
+ * @returns BOOL
+ */
 -(BOOL)getShowOther;
+
+/**
+ * -(BOOL*)getShowRecommended;
+ *
+ * @returns BOOL
+ */
 -(BOOL)getShowRecommended;
+
+/**
+ * -(void*)setDefaultText:(NSString*) text;
+ *
+ * @param text
+ */
 -(void)setDefaultText:(NSString*) text;
+
+/**
+ * -(void*)setShowAll:(BOOL) setting;
+ *
+ * @param setting
+ */
 -(void)setShowAll:(BOOL) setting;
+
+/**
+ * -(void*)setShowDefault:(BOOL) setting;
+ *
+ * @param setting
+ */
 -(void)setShowDefault:(BOOL) setting;
+
+/**
+ * -(void*)setShowFallback:(BOOL) setting;
+ *
+ * @param setting
+ */
 -(void)setShowFallback:(BOOL) setting;
+
+/**
+ * -(void*)setShowOther:(BOOL) setting;
+ *
+ * @param setting
+ */
 -(void)setShowOther:(BOOL) setting;
+
+/**
+ * -(void*)setShowRecommended:(BOOL) setting;
+ *
+ * @param setting
+ */
 -(void)setShowRecommended:(BOOL) setting;
 
 @end

@@ -45,15 +45,74 @@
 /**
  * Methods
  */
+
 -(GtkPaned*)PANED;
+
+/**
+ * -(void*)add1:(CGTKWidget*) child;
+ *
+ * @param child
+ */
 -(void)add1:(CGTKWidget*) child;
+
+/**
+ * -(void*)add2:(CGTKWidget*) child;
+ *
+ * @param child
+ */
 -(void)add2:(CGTKWidget*) child;
+
+/**
+ * -(CGTKWidget**)getChild1;
+ *
+ * @returns CGTKWidget*
+ */
 -(CGTKWidget*)getChild1;
+
+/**
+ * -(CGTKWidget**)getChild2;
+ *
+ * @returns CGTKWidget*
+ */
 -(CGTKWidget*)getChild2;
+
+/**
+ * -(GdkWindow**)getHandleWindow;
+ *
+ * @returns GdkWindow*
+ */
 -(GdkWindow*)getHandleWindow;
+
+/**
+ * -(gint*)getPosition;
+ *
+ * @returns gint
+ */
 -(gint)getPosition;
+
+/**
+ * -(void*)pack1WithChild:(CGTKWidget*) child andResize:(BOOL) resize andShrink:(BOOL) shrink;
+ *
+ * @param child
+ * @param resize
+ * @param shrink
+ */
 -(void)pack1WithChild:(CGTKWidget*) child andResize:(BOOL) resize andShrink:(BOOL) shrink;
+
+/**
+ * -(void*)pack2WithChild:(CGTKWidget*) child andResize:(BOOL) resize andShrink:(BOOL) shrink;
+ *
+ * @param child
+ * @param resize
+ * @param shrink
+ */
 -(void)pack2WithChild:(CGTKWidget*) child andResize:(BOOL) resize andShrink:(BOOL) shrink;
+
+/**
+ * -(void*)setPosition:(gint) position;
+ *
+ * @param position
+ */
 -(void)setPosition:(gint) position;
 
 @end

@@ -1,0 +1,8 @@
+<map id="CGTKMessageDialog" name="CGTKMessageDialog">
+<area shape="rect" id="node2" href="$interface_c_g_t_k_dialog.html" title="CGTKDialog" alt="" coords="31,453,127,480"/>
+<area shape="rect" id="node3" href="$interface_c_g_t_k_window.html" title="CGTKWindow" alt="" coords="25,379,132,405"/>
+<area shape="rect" id="node4" href="$interface_c_g_t_k_bin.html" title="CGTKBin" alt="" coords="39,304,117,331"/>
+<area shape="rect" id="node5" href="$interface_c_g_t_k_container.html" title="CGTKContainer" alt="" coords="21,229,136,256"/>
+<area shape="rect" id="node6" href="$interface_c_g_t_k_widget.html" title="CGTKWidget" alt="" coords="29,155,128,181"/>
+<area shape="rect" id="node7" href="$interface_c_g_t_k_base.html" title="CGTKBase" alt="" coords="34,80,123,107"/>
+</map>

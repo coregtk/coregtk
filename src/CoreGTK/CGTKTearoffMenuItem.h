@@ -45,6 +45,7 @@
 /**
  * Methods
  */
+
 -(GtkTearoffMenuItem*)TEAROFFMENUITEM;
 
 @end

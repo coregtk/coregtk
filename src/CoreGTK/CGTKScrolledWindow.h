@@ -45,28 +45,162 @@
 /**
  * Methods
  */
+
 -(GtkScrolledWindow*)SCROLLEDWINDOW;
+
+/**
+ * -(void*)addWithViewport:(CGTKWidget*) child;
+ *
+ * @param child
+ */
 -(void)addWithViewport:(CGTKWidget*) child;
+
+/**
+ * -(BOOL*)getCaptureButtonPress;
+ *
+ * @returns BOOL
+ */
 -(BOOL)getCaptureButtonPress;
+
+/**
+ * -(GtkAdjustment**)getHadjustment;
+ *
+ * @returns GtkAdjustment*
+ */
 -(GtkAdjustment*)getHadjustment;
+
+/**
+ * -(CGTKWidget**)getHscrollbar;
+ *
+ * @returns CGTKWidget*
+ */
 -(CGTKWidget*)getHscrollbar;
+
+/**
+ * -(BOOL*)getKineticScrolling;
+ *
+ * @returns BOOL
+ */
 -(BOOL)getKineticScrolling;
+
+/**
+ * -(gint*)getMinContentHeight;
+ *
+ * @returns gint
+ */
 -(gint)getMinContentHeight;
+
+/**
+ * -(gint*)getMinContentWidth;
+ *
+ * @returns gint
+ */
 -(gint)getMinContentWidth;
+
+/**
+ * -(GtkCornerType*)getPlacement;
+ *
+ * @returns GtkCornerType
+ */
 -(GtkCornerType)getPlacement;
+
+/**
+ * -(void*)getPolicyWithHscrollbarPolicy:(GtkPolicyType*) hscrollbarPolicy andVscrollbarPolicy:(GtkPolicyType*) vscrollbarPolicy;
+ *
+ * @param hscrollbarPolicy
+ * @param vscrollbarPolicy
+ */
 -(void)getPolicyWithHscrollbarPolicy:(GtkPolicyType*) hscrollbarPolicy andVscrollbarPolicy:(GtkPolicyType*) vscrollbarPolicy;
+
+/**
+ * -(GtkShadowType*)getShadowType;
+ *
+ * @returns GtkShadowType
+ */
 -(GtkShadowType)getShadowType;
+
+/**
+ * -(GtkAdjustment**)getVadjustment;
+ *
+ * @returns GtkAdjustment*
+ */
 -(GtkAdjustment*)getVadjustment;
+
+/**
+ * -(CGTKWidget**)getVscrollbar;
+ *
+ * @returns CGTKWidget*
+ */
 -(CGTKWidget*)getVscrollbar;
+
+/**
+ * -(void*)setCaptureButtonPress:(BOOL) captureButtonPress;
+ *
+ * @param captureButtonPress
+ */
 -(void)setCaptureButtonPress:(BOOL) captureButtonPress;
+
+/**
+ * -(void*)setHadjustment:(GtkAdjustment*) hadjustment;
+ *
+ * @param hadjustment
+ */
 -(void)setHadjustment:(GtkAdjustment*) hadjustment;
+
+/**
+ * -(void*)setKineticScrolling:(BOOL) kineticScrolling;
+ *
+ * @param kineticScrolling
+ */
 -(void)setKineticScrolling:(BOOL) kineticScrolling;
+
+/**
+ * -(void*)setMinContentHeight:(gint) height;
+ *
+ * @param height
+ */
 -(void)setMinContentHeight:(gint) height;
+
+/**
+ * -(void*)setMinContentWidth:(gint) width;
+ *
+ * @param width
+ */
 -(void)setMinContentWidth:(gint) width;
+
+/**
+ * -(void*)setPlacement:(GtkCornerType) windowPlacement;
+ *
+ * @param windowPlacement
+ */
 -(void)setPlacement:(GtkCornerType) windowPlacement;
+
+/**
+ * -(void*)setPolicyWithHscrollbarPolicy:(GtkPolicyType) hscrollbarPolicy andVscrollbarPolicy:(GtkPolicyType) vscrollbarPolicy;
+ *
+ * @param hscrollbarPolicy
+ * @param vscrollbarPolicy
+ */
 -(void)setPolicyWithHscrollbarPolicy:(GtkPolicyType) hscrollbarPolicy andVscrollbarPolicy:(GtkPolicyType) vscrollbarPolicy;
+
+/**
+ * -(void*)setShadowType:(GtkShadowType) type;
+ *
+ * @param type
+ */
 -(void)setShadowType:(GtkShadowType) type;
+
+/**
+ * -(void*)setVadjustment:(GtkAdjustment*) vadjustment;
+ *
+ * @param vadjustment
+ */
 -(void)setVadjustment:(GtkAdjustment*) vadjustment;
+
+/**
+ * -(void*)unsetPlacement;
+ *
+ */
 -(void)unsetPlacement;
 
 @end

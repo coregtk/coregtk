@@ -45,6 +45,7 @@
 /**
  * Methods
  */
+
 -(GtkVolumeButton*)VOLUMEBUTTON;
 
 @end

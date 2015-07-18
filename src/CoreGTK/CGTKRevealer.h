@@ -45,13 +45,56 @@
 /**
  * Methods
  */
+
 -(GtkRevealer*)REVEALER;
+
+/**
+ * -(BOOL*)getChildRevealed;
+ *
+ * @returns BOOL
+ */
 -(BOOL)getChildRevealed;
+
+/**
+ * -(BOOL*)getRevealChild;
+ *
+ * @returns BOOL
+ */
 -(BOOL)getRevealChild;
+
+/**
+ * -(guint*)getTransitionDuration;
+ *
+ * @returns guint
+ */
 -(guint)getTransitionDuration;
+
+/**
+ * -(GtkRevealerTransitionType*)getTransitionType;
+ *
+ * @returns GtkRevealerTransitionType
+ */
 -(GtkRevealerTransitionType)getTransitionType;
+
+/**
+ * -(void*)setRevealChild:(BOOL) revealChild;
+ *
+ * @param revealChild
+ */
 -(void)setRevealChild:(BOOL) revealChild;
+
+/**
+ * -(void*)setTransitionDuration:(guint) duration;
+ *
+ * @param duration
+ */
 -(void)setTransitionDuration:(guint) duration;
+
+/**
+ * -(void*)setTransitionType:(GtkRevealerTransitionType) transition;
+ *
+ * @param transition
+ */
 -(void)setTransitionType:(GtkRevealerTransitionType) transition;
 
 @end

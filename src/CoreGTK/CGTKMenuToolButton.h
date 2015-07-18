@@ -46,10 +46,35 @@
 /**
  * Methods
  */
+
 -(GtkMenuToolButton*)MENUTOOLBUTTON;
+
+/**
+ * -(CGTKWidget**)getMenu;
+ *
+ * @returns CGTKWidget*
+ */
 -(CGTKWidget*)getMenu;
+
+/**
+ * -(void*)setArrowTooltipMarkup:(NSString*) markup;
+ *
+ * @param markup
+ */
 -(void)setArrowTooltipMarkup:(NSString*) markup;
+
+/**
+ * -(void*)setArrowTooltipText:(NSString*) text;
+ *
+ * @param text
+ */
 -(void)setArrowTooltipText:(NSString*) text;
+
+/**
+ * -(void*)setMenu:(CGTKWidget*) menu;
+ *
+ * @param menu
+ */
 -(void)setMenu:(CGTKWidget*) menu;
 
 @end

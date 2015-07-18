@@ -46,18 +46,92 @@
 /**
  * Methods
  */
+
 -(GtkFontButton*)FONTBUTTON;
+
+/**
+ * -(NSString**)getFontName;
+ *
+ * @returns NSString*
+ */
 -(NSString*)getFontName;
+
+/**
+ * -(BOOL*)getShowSize;
+ *
+ * @returns BOOL
+ */
 -(BOOL)getShowSize;
+
+/**
+ * -(BOOL*)getShowStyle;
+ *
+ * @returns BOOL
+ */
 -(BOOL)getShowStyle;
+
+/**
+ * -(NSString**)getTitle;
+ *
+ * @returns NSString*
+ */
 -(NSString*)getTitle;
+
+/**
+ * -(BOOL*)getUseFont;
+ *
+ * @returns BOOL
+ */
 -(BOOL)getUseFont;
+
+/**
+ * -(BOOL*)getUseSize;
+ *
+ * @returns BOOL
+ */
 -(BOOL)getUseSize;
+
+/**
+ * -(BOOL*)setFontName:(NSString*) fontname;
+ *
+ * @param fontname
+ * @returns BOOL
+ */
 -(BOOL)setFontName:(NSString*) fontname;
+
+/**
+ * -(void*)setShowSize:(BOOL) showSize;
+ *
+ * @param showSize
+ */
 -(void)setShowSize:(BOOL) showSize;
+
+/**
+ * -(void*)setShowStyle:(BOOL) showStyle;
+ *
+ * @param showStyle
+ */
 -(void)setShowStyle:(BOOL) showStyle;
+
+/**
+ * -(void*)setTitle:(NSString*) title;
+ *
+ * @param title
+ */
 -(void)setTitle:(NSString*) title;
+
+/**
+ * -(void*)setUseFont:(BOOL) useFont;
+ *
+ * @param useFont
+ */
 -(void)setUseFont:(BOOL) useFont;
+
+/**
+ * -(void*)setUseSize:(BOOL) useSize;
+ *
+ * @param useSize
+ */
 -(void)setUseSize:(BOOL) useSize;
 
 @end

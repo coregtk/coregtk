@@ -46,10 +46,35 @@
 /**
  * Methods
  */
+
 -(GtkLinkButton*)LINKBUTTON;
+
+/**
+ * -(NSString**)getUri;
+ *
+ * @returns NSString*
+ */
 -(NSString*)getUri;
+
+/**
+ * -(BOOL*)getVisited;
+ *
+ * @returns BOOL
+ */
 -(BOOL)getVisited;
+
+/**
+ * -(void*)setUri:(NSString*) uri;
+ *
+ * @param uri
+ */
 -(void)setUri:(NSString*) uri;
+
+/**
+ * -(void*)setVisited:(BOOL) visited;
+ *
+ * @param visited
+ */
 -(void)setVisited:(BOOL) visited;
 
 @end

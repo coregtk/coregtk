@@ -45,7 +45,14 @@
 /**
  * Methods
  */
+
 -(GtkOverlay*)OVERLAY;
+
+/**
+ * -(void*)addOverlay:(CGTKWidget*) widget;
+ *
+ * @param widget
+ */
 -(void)addOverlay:(CGTKWidget*) widget;
 
 @end

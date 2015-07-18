@@ -45,6 +45,7 @@
 /**
  * Methods
  */
+
 -(GtkVPaned*)VPANED;
 
 @end

@@ -45,6 +45,7 @@
 /**
  * Methods
  */
+
 -(GtkHSeparator*)HSEPARATOR;
 
 @end

@@ -46,10 +46,35 @@
 /**
  * Methods
  */
+
 -(GtkMenuBar*)MENUBAR;
+
+/**
+ * -(GtkPackDirection*)getChildPackDirection;
+ *
+ * @returns GtkPackDirection
+ */
 -(GtkPackDirection)getChildPackDirection;
+
+/**
+ * -(GtkPackDirection*)getPackDirection;
+ *
+ * @returns GtkPackDirection
+ */
 -(GtkPackDirection)getPackDirection;
+
+/**
+ * -(void*)setChildPackDirection:(GtkPackDirection) childPackDir;
+ *
+ * @param childPackDir
+ */
 -(void)setChildPackDirection:(GtkPackDirection) childPackDir;
+
+/**
+ * -(void*)setPackDirection:(GtkPackDirection) packDir;
+ *
+ * @param packDir
+ */
 -(void)setPackDirection:(GtkPackDirection) packDir;
 
 @end

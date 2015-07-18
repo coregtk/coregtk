@@ -46,9 +46,28 @@
 /**
  * Methods
  */
+
 -(GtkAppChooserDialog*)APPCHOOSERDIALOG;
+
+/**
+ * -(NSString**)getHeading;
+ *
+ * @returns NSString*
+ */
 -(NSString*)getHeading;
+
+/**
+ * -(CGTKWidget**)getWidget;
+ *
+ * @returns CGTKWidget*
+ */
 -(CGTKWidget*)getWidget;
+
+/**
+ * -(void*)setHeading:(NSString*) heading;
+ *
+ * @param heading
+ */
 -(void)setHeading:(NSString*) heading;
 
 @end

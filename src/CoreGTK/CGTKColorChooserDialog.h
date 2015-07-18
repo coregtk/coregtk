@@ -45,6 +45,7 @@
 /**
  * Methods
  */
+
 -(GtkColorChooserDialog*)COLORCHOOSERDIALOG;
 
 @end

@@ -46,18 +46,91 @@
 /**
  * Methods
  */
+
 -(GtkToolButton*)TOOLBUTTON;
+
+/**
+ * -(NSString**)getIconName;
+ *
+ * @returns NSString*
+ */
 -(NSString*)getIconName;
+
+/**
+ * -(CGTKWidget**)getIconWidget;
+ *
+ * @returns CGTKWidget*
+ */
 -(CGTKWidget*)getIconWidget;
+
+/**
+ * -(NSString**)getLabel;
+ *
+ * @returns NSString*
+ */
 -(NSString*)getLabel;
+
+/**
+ * -(CGTKWidget**)getLabelWidget;
+ *
+ * @returns CGTKWidget*
+ */
 -(CGTKWidget*)getLabelWidget;
+
+/**
+ * -(NSString**)getStockId;
+ *
+ * @returns NSString*
+ */
 -(NSString*)getStockId;
+
+/**
+ * -(BOOL*)getUseUnderline;
+ *
+ * @returns BOOL
+ */
 -(BOOL)getUseUnderline;
+
+/**
+ * -(void*)setIconName:(NSString*) iconName;
+ *
+ * @param iconName
+ */
 -(void)setIconName:(NSString*) iconName;
+
+/**
+ * -(void*)setIconWidget:(CGTKWidget*) iconWidget;
+ *
+ * @param iconWidget
+ */
 -(void)setIconWidget:(CGTKWidget*) iconWidget;
+
+/**
+ * -(void*)setLabel:(NSString*) label;
+ *
+ * @param label
+ */
 -(void)setLabel:(NSString*) label;
+
+/**
+ * -(void*)setLabelWidget:(CGTKWidget*) labelWidget;
+ *
+ * @param labelWidget
+ */
 -(void)setLabelWidget:(CGTKWidget*) labelWidget;
+
+/**
+ * -(void*)setStockId:(NSString*) stockId;
+ *
+ * @param stockId
+ */
 -(void)setStockId:(NSString*) stockId;
+
+/**
+ * -(void*)setUseUnderline:(BOOL) useUnderline;
+ *
+ * @param useUnderline
+ */
 -(void)setUseUnderline:(BOOL) useUnderline;
 
 @end

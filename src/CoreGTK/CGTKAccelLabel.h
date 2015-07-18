@@ -45,12 +45,50 @@
 /**
  * Methods
  */
+
 -(GtkAccelLabel*)ACCELLABEL;
+
+/**
+ * -(CGTKWidget**)getAccelWidget;
+ *
+ * @returns CGTKWidget*
+ */
 -(CGTKWidget*)getAccelWidget;
+
+/**
+ * -(guint*)getAccelWidth;
+ *
+ * @returns guint
+ */
 -(guint)getAccelWidth;
+
+/**
+ * -(BOOL*)refetch;
+ *
+ * @returns BOOL
+ */
 -(BOOL)refetch;
+
+/**
+ * -(void*)setAccelWithAcceleratorKey:(guint) acceleratorKey andAcceleratorMods:(GdkModifierType) acceleratorMods;
+ *
+ * @param acceleratorKey
+ * @param acceleratorMods
+ */
 -(void)setAccelWithAcceleratorKey:(guint) acceleratorKey andAcceleratorMods:(GdkModifierType) acceleratorMods;
+
+/**
+ * -(void*)setAccelClosure:(GClosure*) accelClosure;
+ *
+ * @param accelClosure
+ */
 -(void)setAccelClosure:(GClosure*) accelClosure;
+
+/**
+ * -(void*)setAccelWidget:(CGTKWidget*) accelWidget;
+ *
+ * @param accelWidget
+ */
 -(void)setAccelWidget:(CGTKWidget*) accelWidget;
 
 @end
