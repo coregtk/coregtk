@@ -7,26 +7,29 @@ SOURCES=main.m CoreGTK/CGTK.m CoreGTK/CGTKBase.m CoreGTK/CGTKBaseBuilder.m CoreG
 #Objects
 OBJECTS=$(SOURCES:.m=.o)
 
-#compiler
-CC=gcc
+#Indirect compiler for fixing GNUstep/clang argument bug 
+ICC=./indirect_compiler.sh
+
+#Compiler
+CC=clang
+
+#Compiler flags
+CCFLAGS=-Qunused-arguments -Wno-deprecated-declarations
 
 #CFLAGS
-CFLAGS=-c -Wno-deprecated-declarations -Wno-deprecated
-
-#Objective-c specific flags
-OBJCFLAGS=`gnustep-config --objc-flags` `pkg-config --cflags gtk+-3.0`
+CFLAGS=-c
 
 #Objective-c specific flags
 MACOBJCFLAGS=-framework Foundation
 
 #GNUstep dependencies
-GNUSTEPDEPS=`gnustep-config --base-libs`
+GNUSTEPDEPS=`gnustep-config --objc-flags` `gnustep-config --base-libs`
 
 #GTK dependencies
-GTKDEPS=`pkg-config --libs gtk+-3.0`
+GTKDEPS=`pkg-config --cflags gtk+-3.0` `pkg-config --libs gtk+-3.0`
 
 #Common flags
-COMMONFLAGS=$(OBJCFLAGS) $(GNUSTEPDEPS) $(GTKDEPS)
+COMMONFLAGS=$(CCFLAGS) $(GNUSTEPDEPS) $(GTKDEPS)
 
 
 #Targets
@@ -35,7 +38,7 @@ COMMONFLAGS=$(OBJCFLAGS) $(GNUSTEPDEPS) $(GTKDEPS)
 linux: all
 
 #Mac Target
-mac: COMMONFLAGS=$(MACOBJCFLAGS) $(GTKDEPS)
+mac: COMMONFLAGS=$(CCFLAGS) $(MACOBJCFLAGS) $(GTKDEPS)
 mac: all
 
 #Windows Target
@@ -45,10 +48,10 @@ windows: all
 all: $(SOURCES) $(EXECUTABLE)
 
 $(EXECUTABLE): $(OBJECTS)
-	$(CC) $(OBJECTS) $(COMMONFLAGS) -o $@
+	$(ICC) $(CC) $(OBJECTS) $(COMMONFLAGS) -o $@
 
 %.o: %.m
-	$(CC) $(CFLAGS) $(COMMONFLAGS) $< -o $@
+	$(ICC) $(CC) $(CFLAGS) $(COMMONFLAGS) $< -o $@
 
 clean: 
 	rm -rf *.o *.d $(EXECUTABLE)
