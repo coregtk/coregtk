@@ -84,7 +84,7 @@ int main(int argc, char *argv[])
 /*
  * This is an example program showing some CoreGTK features
  */
-+(void) standardExample//(int argc, char *argv[])
++(void) standardExample
 {
 	// We could use also CGTKWidget here instead
 	CGTKWindow *window;
@@ -111,7 +111,7 @@ int main(int argc, char *argv[])
 
 	/* 
 	 * When the button receives the "clicked" signal, it will call the
-	 * function hello() in the HelloWorld class (below) 
+	 * method -hello in the HelloWorld class (below) 
 	 */
 	[CGTKSignalConnector connectGpointer:[button WIDGET] withSignal:@"clicked" 
 		toTarget:[HelloWorld class] withSelector:@selector(hello) andData:NULL];
