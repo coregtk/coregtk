@@ -1,6 +1,6 @@
 /*
  * main.m
- * This file is part of CoreGTKGen
+ * This file is part of CoreGTK
  *
  * Copyright (C) 2015 - Tyler Burton
  *
