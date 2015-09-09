@@ -1,5 +1,5 @@
 /*
- * CGTKMenuToolButton.h
+ * CGTKTypeWrapper.m
  * This file is part of CoreGTK
  *
  * Copyright (C) 2015 - Tyler Burton
@@ -29,52 +29,18 @@
 /*
  * Objective-C imports
  */
-#import "CoreGTK/CGTKToolButton.h"
+#import "CGTKTypeWrapper.h"
 
-@interface CGTKMenuToolButton : CGTKToolButton
+/**
+ * Provides functions for wrapping GTK types
+ */
+@implementation CGTKTypeWrapper
+
+@synthesize gintValue;
+
+-(const GValue*)asGValuePtr
 {
-
+	return (const GValue*)ptrValue;
 }
-
-
-/**
- * Constructors
- */
--(id)initWithIconWidget:(CGTKWidget*) iconWidget andLabel:(NSString*) label;
--(id)initFromStock:(NSString*) stockId;
-
-/**
- * Methods
- */
-
--(GtkMenuToolButton*)MENUTOOLBUTTON;
-
-/**
- * -(CGTKWidget**)getMenu;
- *
- * @returns CGTKWidget*
- */
--(CGTKWidget*)getMenu;
-
-/**
- * -(void*)setArrowTooltipMarkup:(NSString*) markup;
- *
- * @param markup
- */
--(void)setArrowTooltipMarkup:(NSString*) markup;
-
-/**
- * -(void*)setArrowTooltipText:(NSString*) text;
- *
- * @param text
- */
--(void)setArrowTooltipText:(NSString*) text;
-
-/**
- * -(void*)setMenu:(CGTKWidget*) menu;
- *
- * @param menu
- */
--(void)setMenu:(CGTKWidget*) menu;
 
 @end

@@ -43,6 +43,14 @@
 
 -(GtkMessageDialog*)MESSAGEDIALOG;
 
+-(void)formatSecondaryMarkup:(NSString *)markup;
+
+-(void)formatSecondaryText:(NSString *)message;
+
+-(id)initWithParent:(CGTKWindow *)parent andFlags:(GtkDialogFlags)flags andType:(GtkMessageType)type andButtons:(GtkButtonsType)buttons andMessage:(NSString *)message;
+
+-(id)initWithParent:(CGTKWindow *)parent andFlags:(GtkDialogFlags)flags andType:(GtkMessageType)type andButtons:(GtkButtonsType)buttons andMarkup:(NSString *)markup;
+
 /**
  * -(CGTKWidget**)getImage;
  *

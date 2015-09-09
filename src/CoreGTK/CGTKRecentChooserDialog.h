@@ -43,4 +43,8 @@
 
 -(GtkRecentChooserDialog*)RECENTCHOOSERDIALOG;
 
+-(id)initForManagerWithTitle:(NSString *)title andParent:(CGTKWindow *)parent andManager:(GtkRecentManager*)manager andButtonTextResponseDictionary:(NSDictionary *)buttonTextDict;
+
+-(id)initWithTitle:(NSString *)title andParent:(CGTKWindow *)parent andButtonTextResponseDictionary:(NSDictionary *)buttonTextDict;
+
 @end

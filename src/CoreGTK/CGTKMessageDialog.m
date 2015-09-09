@@ -33,6 +33,40 @@
 
 @implementation CGTKMessageDialog
 
+-(void)formatSecondaryMarkup:(NSString *)markup
+{
+	gtk_message_dialog_format_secondary_markup([self MESSAGEDIALOG], [markup UTF8String], NULL);
+}
+
+-(void)formatSecondaryText:(NSString *)message
+{
+	gtk_message_dialog_format_secondary_text([self MESSAGEDIALOG], [message UTF8String], NULL);
+}
+
+-(id)initWithParent:(CGTKWindow *)parent andFlags:(GtkDialogFlags)flags andType:(GtkMessageType)type andButtons:(GtkButtonsType)buttons andMessage:(NSString *)message
+{
+	self = [super initWithGObject:(GObject *)gtk_message_dialog_new([parent WINDOW], flags, type, buttons, [message UTF8String], NULL)];
+
+	if(self)
+	{
+		// Do nothing
+	}
+
+	return self;
+}
+
+-(id)initWithParent:(CGTKWindow *)parent andFlags:(GtkDialogFlags)flags andType:(GtkMessageType)type andButtons:(GtkButtonsType)buttons andMarkup:(NSString *)markup
+{
+	self = [super initWithGObject:(GObject *)gtk_message_dialog_new_with_markup([parent WINDOW], flags, type, buttons, [markup UTF8String], NULL)];
+
+	if(self)
+	{
+		// Do nothing
+	}
+
+	return self;
+}
+
 -(GtkMessageDialog*)MESSAGEDIALOG
 {
 	return GTK_MESSAGE_DIALOG([self GOBJECT]);
