@@ -158,6 +158,7 @@ var hierarchy =
       [ "CGTKBaseBuilder", "interface_c_g_t_k_base_builder.html", null ],
       [ "CGTKCallbackData", "interface_c_g_t_k_callback_data.html", null ],
       [ "CGTKSignalConnector", "interface_c_g_t_k_signal_connector.html", null ],
-      [ "CGTKSignalData", "interface_c_g_t_k_signal_data.html", null ]
+      [ "CGTKSignalData", "interface_c_g_t_k_signal_data.html", null ],
+      [ "CGTKTypeWrapper", "interface_c_g_t_k_type_wrapper.html", null ]
     ] ]
 ];

@@ -140,47 +140,83 @@ $(document).ready(function(){initNavTree('_c_g_t_k_message_dialog_8m_source.html
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">@implementation </span><a class="code" href="interface_c_g_t_k_message_dialog.html">CGTKMessageDialog</a></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="interface_c_g_t_k_message_dialog.html#aac746e8d5e705ef7f1c0d9b5052c84d7">   36</a></span>&#160;-(GtkMessageDialog*)<a class="code" href="interface_c_g_t_k_message_dialog.html#aac746e8d5e705ef7f1c0d9b5052c84d7">MESSAGEDIALOG</a></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;-(void)formatSecondaryMarkup:(NSString *)markup</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;{</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordflow">return</span> GTK_MESSAGE_DIALOG([<span class="keyword">self</span> <a class="code" href="interface_c_g_t_k_base.html#a07553be10a943fead663d4b3f5ed791d">GOBJECT</a>]);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    gtk_message_dialog_format_secondary_markup([<span class="keyword">self</span> <a class="code" href="interface_c_g_t_k_message_dialog.html#aac746e8d5e705ef7f1c0d9b5052c84d7">MESSAGEDIALOG</a>], [markup UTF8String], NULL);</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="interface_c_g_t_k_message_dialog.html#ad225846661499b673b5dc773c1262c71">   41</a></span>&#160;-(<a class="code" href="interface_c_g_t_k_widget.html">CGTKWidget</a>*)<a class="code" href="interface_c_g_t_k_message_dialog.html#ad225846661499b673b5dc773c1262c71">getImage</a></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;-(void)formatSecondaryText:(NSString *)message</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;{</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordflow">return</span> [[<a class="code" href="interface_c_g_t_k_widget.html">CGTKWidget</a> alloc] initWithGObject:(GObject *)gtk_message_dialog_get_image(GTK_MESSAGE_DIALOG([<span class="keyword">self</span> <a class="code" href="interface_c_g_t_k_base.html#a07553be10a943fead663d4b3f5ed791d">GOBJECT</a>]))];</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    gtk_message_dialog_format_secondary_text([<span class="keyword">self</span> <a class="code" href="interface_c_g_t_k_message_dialog.html#aac746e8d5e705ef7f1c0d9b5052c84d7">MESSAGEDIALOG</a>], [message UTF8String], NULL);</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
-<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="interface_c_g_t_k_message_dialog.html#a04b12363502dc17f3a9513da3978f708">   46</a></span>&#160;-(<a class="code" href="interface_c_g_t_k_widget.html">CGTKWidget</a>*)<a class="code" href="interface_c_g_t_k_message_dialog.html#a04b12363502dc17f3a9513da3978f708">getMessageArea</a></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;-(id)initWithParent:(<a class="code" href="interface_c_g_t_k_window.html">CGTKWindow</a> *)parent andFlags:(GtkDialogFlags)flags andType:(GtkMessageType)type andButtons:(GtkButtonsType)buttons andMessage:(NSString *)message</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;{</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordflow">return</span> [[<a class="code" href="interface_c_g_t_k_widget.html">CGTKWidget</a> alloc] initWithGObject:(GObject *)gtk_message_dialog_get_message_area(GTK_MESSAGE_DIALOG([<span class="keyword">self</span> <a class="code" href="interface_c_g_t_k_base.html#a07553be10a943fead663d4b3f5ed791d">GOBJECT</a>]))];</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;}</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="interface_c_g_t_k_message_dialog.html#a177ceedf117d56eac3e4c0c4b9b5762d">   51</a></span>&#160;-(void)setImage:(<a class="code" href="interface_c_g_t_k_widget.html">CGTKWidget</a>*) image</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;{</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    gtk_message_dialog_set_image(GTK_MESSAGE_DIALOG([<span class="keyword">self</span> <a class="code" href="interface_c_g_t_k_base.html#a07553be10a943fead663d4b3f5ed791d">GOBJECT</a>]), [image <a class="code" href="interface_c_g_t_k_widget.html#ae3f2fdcf83d1901f7aa8756067b52bf7">WIDGET</a>]);</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;}</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
-<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="interface_c_g_t_k_message_dialog.html#a4aad285862f99485414714e2c7609035">   56</a></span>&#160;-(void)setMarkup:(NSString*) str</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;{</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    gtk_message_dialog_set_markup(GTK_MESSAGE_DIALOG([<span class="keyword">self</span> <a class="code" href="interface_c_g_t_k_base.html#a07553be10a943fead663d4b3f5ed791d">GOBJECT</a>]), [str UTF8String]);</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;}</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keyword">self</span> = [<span class="keyword">super</span> initWithGObject:(GObject *)gtk_message_dialog_new([parent <a class="code" href="interface_c_g_t_k_window.html#a1f0e24be3697bfcb3322c2c67fb16095">WINDOW</a>], flags, type, buttons, [message UTF8String], NULL)];</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordflow">if</span>(<span class="keyword">self</span>)</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    {</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="comment">// Do nothing</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    }</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">self</span>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;}</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;-(id)initWithParent:(<a class="code" href="interface_c_g_t_k_window.html">CGTKWindow</a> *)parent andFlags:(GtkDialogFlags)flags andType:(GtkMessageType)type andButtons:(GtkButtonsType)buttons andMarkup:(NSString *)markup</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;{</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keyword">self</span> = [<span class="keyword">super</span> initWithGObject:(GObject *)gtk_message_dialog_new_with_markup([parent <a class="code" href="interface_c_g_t_k_window.html#a1f0e24be3697bfcb3322c2c67fb16095">WINDOW</a>], flags, type, buttons, [markup UTF8String], NULL)];</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordflow">if</span>(<span class="keyword">self</span>)</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    {</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="comment">// Do nothing</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    }</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">self</span>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;}</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="interface_c_g_t_k_message_dialog.html#aac746e8d5e705ef7f1c0d9b5052c84d7">   70</a></span>&#160;-(GtkMessageDialog*)<a class="code" href="interface_c_g_t_k_message_dialog.html#aac746e8d5e705ef7f1c0d9b5052c84d7">MESSAGEDIALOG</a></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;{</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordflow">return</span> GTK_MESSAGE_DIALOG([<span class="keyword">self</span> <a class="code" href="interface_c_g_t_k_base.html#a07553be10a943fead663d4b3f5ed791d">GOBJECT</a>]);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;}</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="interface_c_g_t_k_message_dialog.html#ad225846661499b673b5dc773c1262c71">   75</a></span>&#160;-(<a class="code" href="interface_c_g_t_k_widget.html">CGTKWidget</a>*)<a class="code" href="interface_c_g_t_k_message_dialog.html#ad225846661499b673b5dc773c1262c71">getImage</a></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;{</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordflow">return</span> [[<a class="code" href="interface_c_g_t_k_widget.html">CGTKWidget</a> alloc] initWithGObject:(GObject *)gtk_message_dialog_get_image(GTK_MESSAGE_DIALOG([<span class="keyword">self</span> <a class="code" href="interface_c_g_t_k_base.html#a07553be10a943fead663d4b3f5ed791d">GOBJECT</a>]))];</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;}</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="interface_c_g_t_k_message_dialog.html#a04b12363502dc17f3a9513da3978f708">   80</a></span>&#160;-(<a class="code" href="interface_c_g_t_k_widget.html">CGTKWidget</a>*)<a class="code" href="interface_c_g_t_k_message_dialog.html#a04b12363502dc17f3a9513da3978f708">getMessageArea</a></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;{</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordflow">return</span> [[<a class="code" href="interface_c_g_t_k_widget.html">CGTKWidget</a> alloc] initWithGObject:(GObject *)gtk_message_dialog_get_message_area(GTK_MESSAGE_DIALOG([<span class="keyword">self</span> <a class="code" href="interface_c_g_t_k_base.html#a07553be10a943fead663d4b3f5ed791d">GOBJECT</a>]))];</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;}</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="interface_c_g_t_k_message_dialog.html#a177ceedf117d56eac3e4c0c4b9b5762d">   85</a></span>&#160;-(void)setImage:(<a class="code" href="interface_c_g_t_k_widget.html">CGTKWidget</a>*) image</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;{</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    gtk_message_dialog_set_image(GTK_MESSAGE_DIALOG([<span class="keyword">self</span> <a class="code" href="interface_c_g_t_k_base.html#a07553be10a943fead663d4b3f5ed791d">GOBJECT</a>]), [image <a class="code" href="interface_c_g_t_k_widget.html#ae3f2fdcf83d1901f7aa8756067b52bf7">WIDGET</a>]);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;}</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="interface_c_g_t_k_message_dialog.html#a4aad285862f99485414714e2c7609035">   90</a></span>&#160;-(void)setMarkup:(NSString*) str</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;{</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    gtk_message_dialog_set_markup(GTK_MESSAGE_DIALOG([<span class="keyword">self</span> <a class="code" href="interface_c_g_t_k_base.html#a07553be10a943fead663d4b3f5ed791d">GOBJECT</a>]), [str UTF8String]);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;}</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="keyword">@end</span></div>
 <div class="ttc" id="interface_c_g_t_k_base_html_a07553be10a943fead663d4b3f5ed791d"><div class="ttname"><a href="interface_c_g_t_k_base.html#a07553be10a943fead663d4b3f5ed791d">-[CGTKBase GOBJECT]</a></div><div class="ttdeci">GObject * GOBJECT()</div><div class="ttdef"><b>Definition:</b> <a href="_c_g_t_k_base_8m_source.html#l00082">CGTKBase.m:82</a></div></div>
-<div class="ttc" id="interface_c_g_t_k_message_dialog_html_aac746e8d5e705ef7f1c0d9b5052c84d7"><div class="ttname"><a href="interface_c_g_t_k_message_dialog.html#aac746e8d5e705ef7f1c0d9b5052c84d7">-[CGTKMessageDialog MESSAGEDIALOG]</a></div><div class="ttdeci">GtkMessageDialog * MESSAGEDIALOG()</div><div class="ttdef"><b>Definition:</b> <a href="_c_g_t_k_message_dialog_8m_source.html#l00036">CGTKMessageDialog.m:36</a></div></div>
+<div class="ttc" id="interface_c_g_t_k_window_html"><div class="ttname"><a href="interface_c_g_t_k_window.html">CGTKWindow</a></div><div class="ttdef"><b>Definition:</b> <a href="_c_g_t_k_window_8h_source.html#l00034">CGTKWindow.h:34</a></div></div>
+<div class="ttc" id="interface_c_g_t_k_window_html_a1f0e24be3697bfcb3322c2c67fb16095"><div class="ttname"><a href="interface_c_g_t_k_window.html#a1f0e24be3697bfcb3322c2c67fb16095">-[CGTKWindow WINDOW]</a></div><div class="ttdeci">GtkWindow * WINDOW()</div><div class="ttdef"><b>Definition:</b> <a href="_c_g_t_k_window_8m_source.html#l00088">CGTKWindow.m:88</a></div></div>
+<div class="ttc" id="interface_c_g_t_k_message_dialog_html_aac746e8d5e705ef7f1c0d9b5052c84d7"><div class="ttname"><a href="interface_c_g_t_k_message_dialog.html#aac746e8d5e705ef7f1c0d9b5052c84d7">-[CGTKMessageDialog MESSAGEDIALOG]</a></div><div class="ttdeci">GtkMessageDialog * MESSAGEDIALOG()</div><div class="ttdef"><b>Definition:</b> <a href="_c_g_t_k_message_dialog_8m_source.html#l00070">CGTKMessageDialog.m:70</a></div></div>
 <div class="ttc" id="interface_c_g_t_k_widget_html_ae3f2fdcf83d1901f7aa8756067b52bf7"><div class="ttname"><a href="interface_c_g_t_k_widget.html#ae3f2fdcf83d1901f7aa8756067b52bf7">-[CGTKWidget WIDGET]</a></div><div class="ttdeci">GtkWidget * WIDGET()</div><div class="ttdef"><b>Definition:</b> <a href="_c_g_t_k_widget_8m_source.html#l00061">CGTKWidget.m:61</a></div></div>
-<div class="ttc" id="interface_c_g_t_k_message_dialog_html_a04b12363502dc17f3a9513da3978f708"><div class="ttname"><a href="interface_c_g_t_k_message_dialog.html#a04b12363502dc17f3a9513da3978f708">-[CGTKMessageDialog getMessageArea]</a></div><div class="ttdeci">CGTKWidget * getMessageArea()</div><div class="ttdef"><b>Definition:</b> <a href="_c_g_t_k_message_dialog_8m_source.html#l00046">CGTKMessageDialog.m:46</a></div></div>
+<div class="ttc" id="interface_c_g_t_k_message_dialog_html_a04b12363502dc17f3a9513da3978f708"><div class="ttname"><a href="interface_c_g_t_k_message_dialog.html#a04b12363502dc17f3a9513da3978f708">-[CGTKMessageDialog getMessageArea]</a></div><div class="ttdeci">CGTKWidget * getMessageArea()</div><div class="ttdef"><b>Definition:</b> <a href="_c_g_t_k_message_dialog_8m_source.html#l00080">CGTKMessageDialog.m:80</a></div></div>
 <div class="ttc" id="interface_c_g_t_k_message_dialog_html"><div class="ttname"><a href="interface_c_g_t_k_message_dialog.html">CGTKMessageDialog</a></div><div class="ttdef"><b>Definition:</b> <a href="_c_g_t_k_message_dialog_8h_source.html#l00034">CGTKMessageDialog.h:34</a></div></div>
 <div class="ttc" id="interface_c_g_t_k_widget_html"><div class="ttname"><a href="interface_c_g_t_k_widget.html">CGTKWidget</a></div><div class="ttdef"><b>Definition:</b> <a href="_c_g_t_k_widget_8h_source.html#l00034">CGTKWidget.h:34</a></div></div>
-<div class="ttc" id="interface_c_g_t_k_message_dialog_html_ad225846661499b673b5dc773c1262c71"><div class="ttname"><a href="interface_c_g_t_k_message_dialog.html#ad225846661499b673b5dc773c1262c71">-[CGTKMessageDialog getImage]</a></div><div class="ttdeci">CGTKWidget * getImage()</div><div class="ttdef"><b>Definition:</b> <a href="_c_g_t_k_message_dialog_8m_source.html#l00041">CGTKMessageDialog.m:41</a></div></div>
+<div class="ttc" id="interface_c_g_t_k_message_dialog_html_ad225846661499b673b5dc773c1262c71"><div class="ttname"><a href="interface_c_g_t_k_message_dialog.html#ad225846661499b673b5dc773c1262c71">-[CGTKMessageDialog getImage]</a></div><div class="ttdeci">CGTKWidget * getImage()</div><div class="ttdef"><b>Definition:</b> <a href="_c_g_t_k_message_dialog_8m_source.html#l00075">CGTKMessageDialog.m:75</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_43e935f04f45c544b32a48587b06c123.html">CoreGTK</a></li><li class="navelem"><b>CGTKMessageDialog.m</b></li>
-    <li class="footer">Generated on Fri Jul 17 2015 22:15:14 for CoreGTK by
+    <li class="footer">Generated on Tue Sep 8 2015 21:38:36 for CoreGTK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>

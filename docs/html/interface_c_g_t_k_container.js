@@ -1,6 +1,7 @@
 var interface_c_g_t_k_container =
 [
     [ "add:", "interface_c_g_t_k_container.html#ae5772097dbf633d6f732ffd596a49b80", null ],
+    [ "addWidget:withProperties:", "interface_c_g_t_k_container.html#a91954e247a32bc5cea32b41d890c3658", null ],
     [ "checkResize", "interface_c_g_t_k_container.html#a7a5896cf03751c4bb21d32716d30e721", null ],
     [ "childGetPropertyWithChild:andPropertyName:andValue:", "interface_c_g_t_k_container.html#a4188bd5879b7916192e28348f70da00d", null ],
     [ "childGetValistWithChild:andFirstPropertyName:andVarArgs:", "interface_c_g_t_k_container.html#ac25318efacdefced806fb5caad73f6c6", null ],

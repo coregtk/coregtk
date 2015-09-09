@@ -118,6 +118,7 @@ var annotated =
     [ "CGTKToolItemGroup", "interface_c_g_t_k_tool_item_group.html", "interface_c_g_t_k_tool_item_group" ],
     [ "CGTKToolPalette", "interface_c_g_t_k_tool_palette.html", "interface_c_g_t_k_tool_palette" ],
     [ "CGTKTreeView", "interface_c_g_t_k_tree_view.html", "interface_c_g_t_k_tree_view" ],
+    [ "CGTKTypeWrapper", "interface_c_g_t_k_type_wrapper.html", "interface_c_g_t_k_type_wrapper" ],
     [ "CGTKVBox", "interface_c_g_t_k_v_box.html", "interface_c_g_t_k_v_box" ],
     [ "CGTKVButtonBox", "interface_c_g_t_k_v_button_box.html", "interface_c_g_t_k_v_button_box" ],
     [ "CGTKViewport", "interface_c_g_t_k_viewport.html", "interface_c_g_t_k_viewport" ],

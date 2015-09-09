@@ -122,6 +122,7 @@ var searchData=
   ['cgtktoolitemgroup',['CGTKToolItemGroup',['../interface_c_g_t_k_tool_item_group.html',1,'']]],
   ['cgtktoolpalette',['CGTKToolPalette',['../interface_c_g_t_k_tool_palette.html',1,'']]],
   ['cgtktreeview',['CGTKTreeView',['../interface_c_g_t_k_tree_view.html',1,'']]],
+  ['cgtktypewrapper',['CGTKTypeWrapper',['../interface_c_g_t_k_type_wrapper.html',1,'']]],
   ['cgtkvbox',['CGTKVBox',['../interface_c_g_t_k_v_box.html',1,'']]],
   ['cgtkvbuttonbox',['CGTKVButtonBox',['../interface_c_g_t_k_v_button_box.html',1,'']]],
   ['cgtkviewport',['CGTKViewport',['../interface_c_g_t_k_viewport.html',1,'']]],

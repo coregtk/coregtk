@@ -146,15 +146,24 @@ $(document).ready(function(){initNavTree('_c_g_t_k_message_dialog_8h_source.html
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;-(GtkMessageDialog*)MESSAGEDIALOG;</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;-(<a class="code" href="interface_c_g_t_k_widget.html">CGTKWidget</a>*)getImage;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;-(<a class="code" href="interface_c_g_t_k_widget.html">CGTKWidget</a>*)getMessageArea;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;-(void)setImage:(<a class="code" href="interface_c_g_t_k_widget.html">CGTKWidget</a>*) image;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;-(void)setMarkup:(NSString*) str;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;-(void)formatSecondaryMarkup:(NSString *)markup;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;-(void)formatSecondaryText:(NSString *)message;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;-(id)initWithParent:(<a class="code" href="interface_c_g_t_k_window.html">CGTKWindow</a> *)parent andFlags:(GtkDialogFlags)flags andType:(GtkMessageType)type andButtons:(GtkButtonsType)buttons andMessage:(NSString *)message;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;-(id)initWithParent:(<a class="code" href="interface_c_g_t_k_window.html">CGTKWindow</a> *)parent andFlags:(GtkDialogFlags)flags andType:(GtkMessageType)type andButtons:(GtkButtonsType)buttons andMarkup:(NSString *)markup;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;-(<a class="code" href="interface_c_g_t_k_widget.html">CGTKWidget</a>*)getImage;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;-(<a class="code" href="interface_c_g_t_k_widget.html">CGTKWidget</a>*)getMessageArea;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;-(void)setImage:(<a class="code" href="interface_c_g_t_k_widget.html">CGTKWidget</a>*) image;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;-(void)setMarkup:(NSString*) str;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="keyword">@end</span></div>
+<div class="ttc" id="interface_c_g_t_k_window_html"><div class="ttname"><a href="interface_c_g_t_k_window.html">CGTKWindow</a></div><div class="ttdef"><b>Definition:</b> <a href="_c_g_t_k_window_8h_source.html#l00034">CGTKWindow.h:34</a></div></div>
 <div class="ttc" id="interface_c_g_t_k_message_dialog_html"><div class="ttname"><a href="interface_c_g_t_k_message_dialog.html">CGTKMessageDialog</a></div><div class="ttdef"><b>Definition:</b> <a href="_c_g_t_k_message_dialog_8h_source.html#l00034">CGTKMessageDialog.h:34</a></div></div>
 <div class="ttc" id="interface_c_g_t_k_dialog_html"><div class="ttname"><a href="interface_c_g_t_k_dialog.html">CGTKDialog</a></div><div class="ttdef"><b>Definition:</b> <a href="_c_g_t_k_dialog_8h_source.html#l00034">CGTKDialog.h:34</a></div></div>
 <div class="ttc" id="interface_c_g_t_k_widget_html"><div class="ttname"><a href="interface_c_g_t_k_widget.html">CGTKWidget</a></div><div class="ttdef"><b>Definition:</b> <a href="_c_g_t_k_widget_8h_source.html#l00034">CGTKWidget.h:34</a></div></div>
@@ -164,7 +173,7 @@ $(document).ready(function(){initNavTree('_c_g_t_k_message_dialog_8h_source.html
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_43e935f04f45c544b32a48587b06c123.html">CoreGTK</a></li><li class="navelem"><b>CGTKMessageDialog.h</b></li>
-    <li class="footer">Generated on Fri Jul 17 2015 22:15:14 for CoreGTK by
+    <li class="footer">Generated on Tue Sep 8 2015 21:38:36 for CoreGTK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>

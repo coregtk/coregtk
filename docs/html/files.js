@@ -236,6 +236,8 @@ var files =
     [ "CGTKToolPalette.m", "_c_g_t_k_tool_palette_8m_source.html", null ],
     [ "CGTKTreeView.h", "_c_g_t_k_tree_view_8h_source.html", null ],
     [ "CGTKTreeView.m", "_c_g_t_k_tree_view_8m_source.html", null ],
+    [ "CGTKTypeWrapper.h", "_c_g_t_k_type_wrapper_8h_source.html", null ],
+    [ "CGTKTypeWrapper.m", "_c_g_t_k_type_wrapper_8m_source.html", null ],
     [ "CGTKVBox.h", "_c_g_t_k_v_box_8h_source.html", null ],
     [ "CGTKVBox.m", "_c_g_t_k_v_box_8m_source.html", null ],
     [ "CGTKVButtonBox.h", "_c_g_t_k_v_button_box_8h_source.html", null ],
