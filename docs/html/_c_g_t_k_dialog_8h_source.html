@@ -148,29 +148,33 @@ $(document).ready(function(){initNavTree('_c_g_t_k_dialog_8h_source.html','');})
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;-(GtkDialog*)DIALOG;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;-(void)addActionWidgetWithChild:(<a class="code" href="interface_c_g_t_k_widget.html">CGTKWidget</a>*) child andResponseId:(gint) responseId;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;-(<a class="code" href="interface_c_g_t_k_widget.html">CGTKWidget</a>*)addButtonWithButtonText:(NSString*) buttonText andResponseId:(gint) responseId;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;-(<a class="code" href="interface_c_g_t_k_widget.html">CGTKWidget</a>*)getActionArea;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;-(<a class="code" href="interface_c_g_t_k_widget.html">CGTKWidget</a>*)getContentArea;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;-(gint)getResponseForWidget:(<a class="code" href="interface_c_g_t_k_widget.html">CGTKWidget</a>*) widget;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;-(<a class="code" href="interface_c_g_t_k_widget.html">CGTKWidget</a>*)getWidgetForResponse:(gint) responseId;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;-(void)response:(gint) responseId;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;-(gint)run;</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;-(void)setAlternativeButtonOrderFromArrayWithNparams:(gint) nparams andNewOrder:(gint*) newOrder;</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;-(void)setDefaultResponse:(gint) responseId;</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;-(void)setResponseSensitiveWithResponseId:(gint) responseId andSetting:(BOOL) setting;</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;-(void)addButtons:(NSDictionary *)buttonTextDict;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;-(id)initWithTitle:(NSString *)title andParent:(<a class="code" href="interface_c_g_t_k_window.html">CGTKWindow</a> *)parent andFlags:(GtkDialogFlags)flags andButtonTextResponseDictionary:(NSDictionary *)buttonTextDict;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;-(void)addActionWidgetWithChild:(<a class="code" href="interface_c_g_t_k_widget.html">CGTKWidget</a>*) child andResponseId:(gint) responseId;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;-(<a class="code" href="interface_c_g_t_k_widget.html">CGTKWidget</a>*)addButtonWithButtonText:(NSString*) buttonText andResponseId:(gint) responseId;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;-(<a class="code" href="interface_c_g_t_k_widget.html">CGTKWidget</a>*)getActionArea;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;-(<a class="code" href="interface_c_g_t_k_widget.html">CGTKWidget</a>*)getContentArea;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;-(gint)getResponseForWidget:(<a class="code" href="interface_c_g_t_k_widget.html">CGTKWidget</a>*) widget;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;-(<a class="code" href="interface_c_g_t_k_widget.html">CGTKWidget</a>*)getWidgetForResponse:(gint) responseId;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;-(void)response:(gint) responseId;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;-(gint)run;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;-(void)setAlternativeButtonOrderFromArrayWithNparams:(gint) nparams andNewOrder:(gint*) newOrder;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;-(void)setDefaultResponse:(gint) responseId;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;-(void)setResponseSensitiveWithResponseId:(gint) responseId andSetting:(BOOL) setting;</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;<span class="keyword">@end</span></div>
 <div class="ttc" id="interface_c_g_t_k_window_html"><div class="ttname"><a href="interface_c_g_t_k_window.html">CGTKWindow</a></div><div class="ttdef"><b>Definition:</b> <a href="_c_g_t_k_window_8h_source.html#l00034">CGTKWindow.h:34</a></div></div>
 <div class="ttc" id="interface_c_g_t_k_dialog_html"><div class="ttname"><a href="interface_c_g_t_k_dialog.html">CGTKDialog</a></div><div class="ttdef"><b>Definition:</b> <a href="_c_g_t_k_dialog_8h_source.html#l00034">CGTKDialog.h:34</a></div></div>
 <div class="ttc" id="interface_c_g_t_k_widget_html"><div class="ttname"><a href="interface_c_g_t_k_widget.html">CGTKWidget</a></div><div class="ttdef"><b>Definition:</b> <a href="_c_g_t_k_widget_8h_source.html#l00034">CGTKWidget.h:34</a></div></div>
@@ -180,7 +184,7 @@ $(document).ready(function(){initNavTree('_c_g_t_k_dialog_8h_source.html','');})
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_43e935f04f45c544b32a48587b06c123.html">CoreGTK</a></li><li class="navelem"><b>CGTKDialog.h</b></li>
-    <li class="footer">Generated on Fri Jul 17 2015 22:15:14 for CoreGTK by
+    <li class="footer">Generated on Tue Sep 8 2015 21:38:36 for CoreGTK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>

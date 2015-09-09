@@ -53,6 +53,7 @@ var searchData=
   ['appendwithid_3aandtext_3a',['appendWithId:andText:',['../interface_c_g_t_k_combo_box_text.html#a8a6fa462fe50612806f5b4e8958d4370',1,'CGTKComboBoxText']]],
   ['applicationwindow',['APPLICATIONWINDOW',['../interface_c_g_t_k_application_window.html#ab75f6466ddfe2c94fd9711f847de14aa',1,'CGTKApplicationWindow']]],
   ['arrow',['ARROW',['../interface_c_g_t_k_arrow.html#a0c3c78f8e1757bdc738eb9399f4bffa2',1,'CGTKArrow']]],
+  ['asgvalueptr',['asGValuePtr',['../interface_c_g_t_k_type_wrapper.html#ad2081cc7cdfd952a613cc67fcf8b72ad',1,'CGTKTypeWrapper']]],
   ['aspectframe',['ASPECTFRAME',['../interface_c_g_t_k_aspect_frame.html#ac119cb6dd3585c449d8594a56d11aa3e',1,'CGTKAspectFrame']]],
   ['assistant',['ASSISTANT',['../interface_c_g_t_k_assistant.html#a5c9c7849de74f68116127a2642988122',1,'CGTKAssistant']]],
   ['attachdefaultswithwidget_3aandleftattach_3aandrightattach_3aandtopattach_3aandbottomattach_3a',['attachDefaultsWithWidget:andLeftAttach:andRightAttach:andTopAttach:andBottomAttach:',['../interface_c_g_t_k_table.html#a9a3fbe14fc4ee37e192ca2bf99226929',1,'CGTKTable']]],

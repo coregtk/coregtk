@@ -140,15 +140,56 @@ $(document).ready(function(){initNavTree('_c_g_t_k_recent_chooser_dialog_8m_sour
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">@implementation </span><a class="code" href="interface_c_g_t_k_recent_chooser_dialog.html">CGTKRecentChooserDialog</a></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="interface_c_g_t_k_recent_chooser_dialog.html#ad173c8cc5ffac83738a2862e11fcff10">   36</a></span>&#160;-(GtkRecentChooserDialog*)<a class="code" href="interface_c_g_t_k_recent_chooser_dialog.html#ad173c8cc5ffac83738a2862e11fcff10">RECENTCHOOSERDIALOG</a></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;-(id)initForManagerWithTitle:(NSString *)title andParent:(<a class="code" href="interface_c_g_t_k_window.html">CGTKWindow</a> *)parent andManager:(GtkRecentManager*)manager andButtonTextResponseDictionary:(NSDictionary *)buttonTextDict</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;{</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordflow">return</span> GTK_RECENT_CHOOSER_DIALOG([<span class="keyword">self</span> <a class="code" href="interface_c_g_t_k_base.html#a07553be10a943fead663d4b3f5ed791d">GOBJECT</a>]);</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">self</span> = [<span class="keyword">super</span> initWithGObject:(GObject *)gtk_recent_chooser_dialog_new_for_manager([title UTF8String], [parent <a class="code" href="interface_c_g_t_k_window.html#a1f0e24be3697bfcb3322c2c67fb16095">WINDOW</a>], manager, NULL, NULL)];</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordflow">if</span>(<span class="keyword">self</span>)</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    {</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <a class="code" href="interface_c_g_t_k_type_wrapper.html">CGTKTypeWrapper</a> *wrapper;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keywordflow">for</span>(NSString *text in buttonTextDict)</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        {</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            wrapper = [buttonTextDict objectForKey:text];</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            [<span class="keyword">self</span> addButtonWithButtonText:text andResponseId:wrapper.gintValue];</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        }</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    }</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">self</span>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;}</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;-(id)initWithTitle:(NSString *)title andParent:(<a class="code" href="interface_c_g_t_k_window.html">CGTKWindow</a> *)parent andButtonTextResponseDictionary:(NSDictionary *)buttonTextDict</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;{</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keyword">self</span> = [<span class="keyword">super</span> initWithGObject:(GObject *)gtk_recent_chooser_dialog_new([title UTF8String], [parent <a class="code" href="interface_c_g_t_k_window.html#a1f0e24be3697bfcb3322c2c67fb16095">WINDOW</a>], NULL, NULL)];</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordflow">if</span>(<span class="keyword">self</span>)</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    {</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <a class="code" href="interface_c_g_t_k_type_wrapper.html">CGTKTypeWrapper</a> *wrapper;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keywordflow">for</span>(NSString *text in buttonTextDict)</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        {</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            wrapper = [buttonTextDict objectForKey:text];</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            [<span class="keyword">self</span> addButtonWithButtonText:text andResponseId:wrapper.gintValue];</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        }</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    }</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">self</span>;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;}</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="interface_c_g_t_k_recent_chooser_dialog.html#ad173c8cc5ffac83738a2862e11fcff10">   74</a></span>&#160;-(GtkRecentChooserDialog*)<a class="code" href="interface_c_g_t_k_recent_chooser_dialog.html#ad173c8cc5ffac83738a2862e11fcff10">RECENTCHOOSERDIALOG</a></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;{</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordflow">return</span> GTK_RECENT_CHOOSER_DIALOG([<span class="keyword">self</span> <a class="code" href="interface_c_g_t_k_base.html#a07553be10a943fead663d4b3f5ed791d">GOBJECT</a>]);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;}</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="keyword">@end</span></div>
 <div class="ttc" id="interface_c_g_t_k_base_html_a07553be10a943fead663d4b3f5ed791d"><div class="ttname"><a href="interface_c_g_t_k_base.html#a07553be10a943fead663d4b3f5ed791d">-[CGTKBase GOBJECT]</a></div><div class="ttdeci">GObject * GOBJECT()</div><div class="ttdef"><b>Definition:</b> <a href="_c_g_t_k_base_8m_source.html#l00082">CGTKBase.m:82</a></div></div>
-<div class="ttc" id="interface_c_g_t_k_recent_chooser_dialog_html_ad173c8cc5ffac83738a2862e11fcff10"><div class="ttname"><a href="interface_c_g_t_k_recent_chooser_dialog.html#ad173c8cc5ffac83738a2862e11fcff10">-[CGTKRecentChooserDialog RECENTCHOOSERDIALOG]</a></div><div class="ttdeci">GtkRecentChooserDialog * RECENTCHOOSERDIALOG()</div><div class="ttdef"><b>Definition:</b> <a href="_c_g_t_k_recent_chooser_dialog_8m_source.html#l00036">CGTKRecentChooserDialog.m:36</a></div></div>
+<div class="ttc" id="interface_c_g_t_k_type_wrapper_html"><div class="ttname"><a href="interface_c_g_t_k_type_wrapper.html">CGTKTypeWrapper</a></div><div class="ttdef"><b>Definition:</b> <a href="_c_g_t_k_type_wrapper_8h_source.html#l00038">CGTKTypeWrapper.h:38</a></div></div>
+<div class="ttc" id="interface_c_g_t_k_window_html"><div class="ttname"><a href="interface_c_g_t_k_window.html">CGTKWindow</a></div><div class="ttdef"><b>Definition:</b> <a href="_c_g_t_k_window_8h_source.html#l00034">CGTKWindow.h:34</a></div></div>
+<div class="ttc" id="interface_c_g_t_k_window_html_a1f0e24be3697bfcb3322c2c67fb16095"><div class="ttname"><a href="interface_c_g_t_k_window.html#a1f0e24be3697bfcb3322c2c67fb16095">-[CGTKWindow WINDOW]</a></div><div class="ttdeci">GtkWindow * WINDOW()</div><div class="ttdef"><b>Definition:</b> <a href="_c_g_t_k_window_8m_source.html#l00088">CGTKWindow.m:88</a></div></div>
+<div class="ttc" id="interface_c_g_t_k_recent_chooser_dialog_html_ad173c8cc5ffac83738a2862e11fcff10"><div class="ttname"><a href="interface_c_g_t_k_recent_chooser_dialog.html#ad173c8cc5ffac83738a2862e11fcff10">-[CGTKRecentChooserDialog RECENTCHOOSERDIALOG]</a></div><div class="ttdeci">GtkRecentChooserDialog * RECENTCHOOSERDIALOG()</div><div class="ttdef"><b>Definition:</b> <a href="_c_g_t_k_recent_chooser_dialog_8m_source.html#l00074">CGTKRecentChooserDialog.m:74</a></div></div>
 <div class="ttc" id="interface_c_g_t_k_recent_chooser_dialog_html"><div class="ttname"><a href="interface_c_g_t_k_recent_chooser_dialog.html">CGTKRecentChooserDialog</a></div><div class="ttdef"><b>Definition:</b> <a href="_c_g_t_k_recent_chooser_dialog_8h_source.html#l00034">CGTKRecentChooserDialog.h:34</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -156,7 +197,7 @@ $(document).ready(function(){initNavTree('_c_g_t_k_recent_chooser_dialog_8m_sour
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_43e935f04f45c544b32a48587b06c123.html">CoreGTK</a></li><li class="navelem"><b>CGTKRecentChooserDialog.m</b></li>
-    <li class="footer">Generated on Fri Jul 17 2015 22:15:14 for CoreGTK by
+    <li class="footer">Generated on Tue Sep 8 2015 21:38:36 for CoreGTK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>
