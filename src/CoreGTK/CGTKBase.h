@@ -30,6 +30,7 @@
  * Objective-C imports
  */
 #import <Foundation/Foundation.h>
+#import "CGTKTypeWrapper.h"
 
 /*
  * C imports

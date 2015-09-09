@@ -33,6 +33,17 @@
 
 @implementation CGTKContainer
 
+-(void)addWidget:(CGTKWidget *)widget withProperties:(NSDictionary *)properties
+{
+	CGTKTypeWrapper *wrapper;
+	for(NSString *propName in properties)
+	{
+		wrapper = [properties objectForKey:propName];
+		
+		gtk_container_child_set_property([self CONTAINER], [widget WIDGET], [propName UTF8String], [wrapper asGValuePtr]);
+	}
+}
+
 -(GtkContainer*)CONTAINER
 {
 	return GTK_CONTAINER([self GOBJECT]);

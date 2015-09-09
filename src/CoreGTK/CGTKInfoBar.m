@@ -33,6 +33,37 @@
 
 @implementation CGTKInfoBar
 
+-(void)addButtonTextResponseDictionary:(NSDictionary *)buttonTextDict
+{
+	CGTKTypeWrapper *wrapper;
+	
+	for(NSString *text in buttonTextDict)
+	{
+		wrapper = [buttonTextDict objectForKey:text];
+		
+		[self addButtonWithButtonText:text andResponseId:wrapper.gintValue];
+	}
+}
+
+-(id)initWithButtonTextResponseDictionary:(NSDictionary *)buttonTextDict
+{
+	self = [super initWithGObject:(GObject *)gtk_info_bar_new()];
+
+	if(self)
+	{
+		CGTKTypeWrapper *wrapper;
+		
+		for(NSString *text in buttonTextDict)
+		{
+			wrapper = [buttonTextDict objectForKey:text];
+			
+			[self addButtonWithButtonText:text andResponseId:wrapper.gintValue];
+		}
+	}
+
+	return self;
+}
+
 -(id)init
 {
 	self = [super initWithGObject:(GObject *)gtk_info_bar_new()];

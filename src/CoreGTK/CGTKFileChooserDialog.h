@@ -43,4 +43,6 @@
 
 -(GtkFileChooserDialog*)FILECHOOSERDIALOG;
 
+-(id)initWithTitle:(NSString *)title andParent:(CGTKWindow *)parent andAction:(GtkFileChooserAction)action andButtonTextResponseDictionary:(NSDictionary *)buttonTextDict;
+
 @end

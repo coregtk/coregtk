@@ -48,6 +48,10 @@
 
 -(GtkInfoBar*)INFOBAR;
 
+-(void)addButtonTextResponseDictionary:(NSDictionary *)buttonTextDict;
+
+-(id)initWithButtonTextResponseDictionary:(NSDictionary *)buttonTextDict;
+
 /**
  * -(void*)addActionWidgetWithChild:(CGTKWidget*) child andResponseId:(gint) responseId;
  *

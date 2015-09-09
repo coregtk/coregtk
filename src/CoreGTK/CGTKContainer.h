@@ -43,6 +43,8 @@
 
 -(GtkContainer*)CONTAINER;
 
+-(void)addWidget:(CGTKWidget *)widget withProperties:(NSDictionary *)properties;
+
 /**
  * -(void*)add:(CGTKWidget*) widget;
  *

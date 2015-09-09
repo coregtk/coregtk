@@ -33,6 +33,44 @@
 
 @implementation CGTKRecentChooserDialog
 
+-(id)initForManagerWithTitle:(NSString *)title andParent:(CGTKWindow *)parent andManager:(GtkRecentManager*)manager andButtonTextResponseDictionary:(NSDictionary *)buttonTextDict
+{
+	self = [super initWithGObject:(GObject *)gtk_recent_chooser_dialog_new_for_manager([title UTF8String], [parent WINDOW], manager, NULL, NULL)];
+
+	if(self)
+	{
+		CGTKTypeWrapper *wrapper;
+		
+		for(NSString *text in buttonTextDict)
+		{
+			wrapper = [buttonTextDict objectForKey:text];
+			
+			[self addButtonWithButtonText:text andResponseId:wrapper.gintValue];
+		}
+	}
+
+	return self;
+}
+
+-(id)initWithTitle:(NSString *)title andParent:(CGTKWindow *)parent andButtonTextResponseDictionary:(NSDictionary *)buttonTextDict
+{
+	self = [super initWithGObject:(GObject *)gtk_recent_chooser_dialog_new([title UTF8String], [parent WINDOW], NULL, NULL)];
+
+	if(self)
+	{
+		CGTKTypeWrapper *wrapper;
+		
+		for(NSString *text in buttonTextDict)
+		{
+			wrapper = [buttonTextDict objectForKey:text];
+			
+			[self addButtonWithButtonText:text andResponseId:wrapper.gintValue];
+		}
+	}
+
+	return self;
+}
+
 -(GtkRecentChooserDialog*)RECENTCHOOSERDIALOG
 {
 	return GTK_RECENT_CHOOSER_DIALOG([self GOBJECT]);

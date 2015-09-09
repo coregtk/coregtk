@@ -33,6 +33,25 @@
 
 @implementation CGTKFileChooserDialog
 
+-(id)initWithTitle:(NSString *)title andParent:(CGTKWindow *)parent andAction:(GtkFileChooserAction)action andButtonTextResponseDictionary:(NSDictionary *)buttonTextDict
+{
+	self = [super initWithGObject:(GObject *)gtk_file_chooser_dialog_new([title UTF8String], [parent WINDOW], action, NULL, NULL)];
+
+	if(self)
+	{
+		CGTKTypeWrapper *wrapper;
+		
+		for(NSString *text in buttonTextDict)
+		{
+			wrapper = [buttonTextDict objectForKey:text];
+			
+			[self addButtonWithButtonText:text andResponseId:wrapper.gintValue];
+		}
+	}
+
+	return self;
+}
+
 -(GtkFileChooserDialog*)FILECHOOSERDIALOG
 {
 	return GTK_FILE_CHOOSER_DIALOG([self GOBJECT]);

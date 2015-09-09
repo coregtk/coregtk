@@ -48,6 +48,10 @@
 
 -(GtkDialog*)DIALOG;
 
+-(void)addButtons:(NSDictionary *)buttonTextDict;
+
+-(id)initWithTitle:(NSString *)title andParent:(CGTKWindow *)parent andFlags:(GtkDialogFlags)flags andButtonTextResponseDictionary:(NSDictionary *)buttonTextDict;
+
 /**
  * -(void*)addActionWidgetWithChild:(CGTKWidget*) child andResponseId:(gint) responseId;
  *
