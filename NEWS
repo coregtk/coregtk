@@ -1,4 +1,31 @@
 ===============================================================================
+CoreGTK 3.10.2 - 2016-02-20
+===============================================================================
+
+Highlights for this release:
+-----------------------------
+
+ * This is a bug fix release.
+ * Corrected issue with compiling CoreGTK on OS X.
+
+Issues resolved:
+
+ * #22 Won't compile on OS X due to "file not found 'CoreGTK/.h'"
+
+===============================================================================
+CoreGTK 3.10.1 - 2015-09-08
+===============================================================================
+
+Highlights for this release:
+-----------------------------
+
+ * Added some missing (varargs) GTK+ functions. This makes it easier to create widgets like the FileChooserDialog.
+
+Issues resolved:
+
+ * #19 Add missing GTK+ functions
+
+===============================================================================
 CoreGTK 3.10.0 - 2015-06-28
 ===============================================================================
 
