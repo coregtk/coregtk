@@ -11,10 +11,10 @@ OBJECTS=$(SOURCES:.m=.o)
 ICC=./indirect_compiler.sh
 
 #Compiler
-CC=clang
+CC=gcc
 
 #Compiler flags
-CCFLAGS=-Qunused-arguments -Wno-deprecated-declarations -I. -I./CoreGTK
+CCFLAGS=-Wno-deprecated-declarations -I. -I./CoreGTK
 
 #CFLAGS
 CFLAGS=-c
