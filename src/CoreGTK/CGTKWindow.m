@@ -2,7 +2,7 @@
  * CGTKWindow.m
  * This file is part of CoreGTK
  *
- * Copyright (C) 2015 - Tyler Burton
+ * Copyright (C) 2016 - Tyler Burton
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -20,7 +20,7 @@
  */
 
 /*
- * Modified by the CoreGTK Team, 2015. See the AUTHORS file for a
+ * Modified by the CoreGTK Team, 2016. See the AUTHORS file for a
  * list of people on the CoreGTK Team.
  * See the ChangeLog files for a list of changes.
  *
@@ -71,6 +71,11 @@
 +(void)setDefaultIconName:(NSString*) name
 {
 	gtk_window_set_default_icon_name([name UTF8String]);
+}
+
++(void)setInteractiveDebugging:(BOOL) enable
+{
+	gtk_window_set_interactive_debugging((enable ? TRUE : FALSE));
 }
 
 -(id)init:(GtkWindowType) type
@@ -138,6 +143,11 @@
 -(void)fullscreen
 {
 	gtk_window_fullscreen(GTK_WINDOW([self GOBJECT]));
+}
+
+-(void)fullscreenOnMonitorWithScreen:(GdkScreen*) screen andMonitor:(gint) monitor
+{
+	gtk_window_fullscreen_on_monitor(GTK_WINDOW([self GOBJECT]), screen, monitor);
 }
 
 -(BOOL)getAcceptFocus
@@ -295,6 +305,11 @@
 	return [NSString stringWithUTF8String:gtk_window_get_title(GTK_WINDOW([self GOBJECT]))];
 }
 
+-(CGTKWidget*)getTitlebar
+{
+	return [[CGTKWidget alloc] initWithGObject:(GObject *)gtk_window_get_titlebar(GTK_WINDOW([self GOBJECT]))];
+}
+
 -(GtkWindow*)getTransientFor
 {
 	return gtk_window_get_transient_for(GTK_WINDOW([self GOBJECT]));
@@ -333,6 +348,11 @@
 -(BOOL)isActive
 {
 	return (gtk_window_is_active(GTK_WINDOW([self GOBJECT])) ? YES : NO);
+}
+
+-(BOOL)isMaximized
+{
+	return (gtk_window_is_maximized(GTK_WINDOW([self GOBJECT])) ? YES : NO);
 }
 
 -(void)maximize

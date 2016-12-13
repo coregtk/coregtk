@@ -2,7 +2,7 @@
  * CGTKRadioMenuItem.m
  * This file is part of CoreGTK
  *
- * Copyright (C) 2015 - Tyler Burton
+ * Copyright (C) 2016 - Tyler Burton
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -20,7 +20,7 @@
  */
 
 /*
- * Modified by the CoreGTK Team, 2015. See the AUTHORS file for a
+ * Modified by the CoreGTK Team, 2016. See the AUTHORS file for a
  * list of people on the CoreGTK Team.
  * See the ChangeLog files for a list of changes.
  *
@@ -113,6 +113,11 @@
 -(GSList*)getGroup
 {
 	return gtk_radio_menu_item_get_group(GTK_RADIO_MENU_ITEM([self GOBJECT]));
+}
+
+-(void)joinGroup:(GtkRadioMenuItem*) groupSource
+{
+	gtk_radio_menu_item_join_group(GTK_RADIO_MENU_ITEM([self GOBJECT]), groupSource);
 }
 
 -(void)setGroup:(GSList*) group

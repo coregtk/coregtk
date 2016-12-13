@@ -2,7 +2,7 @@
  * CGTKListBoxRow.h
  * This file is part of CoreGTK
  *
- * Copyright (C) 2015 - Tyler Burton
+ * Copyright (C) 2016 - Tyler Burton
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -20,7 +20,7 @@
  */
 
 /*
- * Modified by the CoreGTK Team, 2015. See the AUTHORS file for a
+ * Modified by the CoreGTK Team, 2016. See the AUTHORS file for a
  * list of people on the CoreGTK Team.
  * See the ChangeLog files for a list of changes.
  *
@@ -55,6 +55,13 @@
 -(void)changed;
 
 /**
+ * -(BOOL*)getActivatable;
+ *
+ * @returns BOOL
+ */
+-(BOOL)getActivatable;
+
+/**
  * -(CGTKWidget**)getHeader;
  *
  * @returns CGTKWidget*
@@ -69,10 +76,38 @@
 -(gint)getIndex;
 
 /**
+ * -(BOOL*)getSelectable;
+ *
+ * @returns BOOL
+ */
+-(BOOL)getSelectable;
+
+/**
+ * -(BOOL*)isSelected;
+ *
+ * @returns BOOL
+ */
+-(BOOL)isSelected;
+
+/**
+ * -(void*)setActivatable:(BOOL) activatable;
+ *
+ * @param activatable
+ */
+-(void)setActivatable:(BOOL) activatable;
+
+/**
  * -(void*)setHeader:(CGTKWidget*) header;
  *
  * @param header
  */
 -(void)setHeader:(CGTKWidget*) header;
+
+/**
+ * -(void*)setSelectable:(BOOL) selectable;
+ *
+ * @param selectable
+ */
+-(void)setSelectable:(BOOL) selectable;
 
 @end

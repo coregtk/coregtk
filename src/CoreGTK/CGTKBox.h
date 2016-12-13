@@ -2,7 +2,7 @@
  * CGTKBox.h
  * This file is part of CoreGTK
  *
- * Copyright (C) 2015 - Tyler Burton
+ * Copyright (C) 2016 - Tyler Burton
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -20,7 +20,7 @@
  */
 
 /*
- * Modified by the CoreGTK Team, 2015. See the AUTHORS file for a
+ * Modified by the CoreGTK Team, 2016. See the AUTHORS file for a
  * list of people on the CoreGTK Team.
  * See the ChangeLog files for a list of changes.
  *
@@ -54,6 +54,13 @@
  * @returns GtkBaselinePosition
  */
 -(GtkBaselinePosition)getBaselinePosition;
+
+/**
+ * -(CGTKWidget**)getCenterWidget;
+ *
+ * @returns CGTKWidget*
+ */
+-(CGTKWidget*)getCenterWidget;
 
 /**
  * -(BOOL*)getHomogeneous;
@@ -114,6 +121,13 @@
  * @param position
  */
 -(void)setBaselinePosition:(GtkBaselinePosition) position;
+
+/**
+ * -(void*)setCenterWidget:(CGTKWidget*) widget;
+ *
+ * @param widget
+ */
+-(void)setCenterWidget:(CGTKWidget*) widget;
 
 /**
  * -(void*)setChildPackingWithChild:(CGTKWidget*) child andExpand:(BOOL) expand andFill:(BOOL) fill andPadding:(guint) padding andPackType:(GtkPackType) packType;

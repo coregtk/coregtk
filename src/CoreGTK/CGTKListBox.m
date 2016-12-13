@@ -2,7 +2,7 @@
  * CGTKListBox.m
  * This file is part of CoreGTK
  *
- * Copyright (C) 2015 - Tyler Burton
+ * Copyright (C) 2016 - Tyler Burton
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -20,7 +20,7 @@
  */
 
 /*
- * Modified by the CoreGTK Team, 2015. See the AUTHORS file for a
+ * Modified by the CoreGTK Team, 2016. See the AUTHORS file for a
  * list of people on the CoreGTK Team.
  * See the ChangeLog files for a list of changes.
  *
@@ -48,6 +48,11 @@
 -(GtkListBox*)LISTBOX
 {
 	return GTK_LIST_BOX([self GOBJECT]);
+}
+
+-(void)bindModelWithModel:(GListModel*) model andCreateWidgetFunc:(GtkListBoxCreateWidgetFunc) createWidgetFunc andUserData:(gpointer) userData andUserDataFreeFunc:(GDestroyNotify) userDataFreeFunc
+{
+	gtk_list_box_bind_model(GTK_LIST_BOX([self GOBJECT]), model, createWidgetFunc, userData, userDataFreeFunc);
 }
 
 -(void)dragHighlightRow:(GtkListBoxRow*) row
@@ -85,6 +90,11 @@
 	return gtk_list_box_get_selected_row(GTK_LIST_BOX([self GOBJECT]));
 }
 
+-(GList*)getSelectedRows
+{
+	return gtk_list_box_get_selected_rows(GTK_LIST_BOX([self GOBJECT]));
+}
+
 -(GtkSelectionMode)getSelectionMode
 {
 	return gtk_list_box_get_selection_mode(GTK_LIST_BOX([self GOBJECT]));
@@ -115,9 +125,19 @@
 	gtk_list_box_prepend(GTK_LIST_BOX([self GOBJECT]), [child WIDGET]);
 }
 
+-(void)selectAll
+{
+	gtk_list_box_select_all(GTK_LIST_BOX([self GOBJECT]));
+}
+
 -(void)selectRow:(GtkListBoxRow*) row
 {
 	gtk_list_box_select_row(GTK_LIST_BOX([self GOBJECT]), row);
+}
+
+-(void)selectedForeachWithFunc:(GtkListBoxForeachFunc) func andData:(gpointer) data
+{
+	gtk_list_box_selected_foreach(GTK_LIST_BOX([self GOBJECT]), func, data);
 }
 
 -(void)setActivateOnSingleClick:(BOOL) single
@@ -153,6 +173,16 @@
 -(void)setSortFuncWithSortFunc:(GtkListBoxSortFunc) sortFunc andUserData:(gpointer) userData andDestroy:(GDestroyNotify) destroy
 {
 	gtk_list_box_set_sort_func(GTK_LIST_BOX([self GOBJECT]), sortFunc, userData, destroy);
+}
+
+-(void)unselectAll
+{
+	gtk_list_box_unselect_all(GTK_LIST_BOX([self GOBJECT]));
+}
+
+-(void)unselectRow:(GtkListBoxRow*) row
+{
+	gtk_list_box_unselect_row(GTK_LIST_BOX([self GOBJECT]), row);
 }
 
 

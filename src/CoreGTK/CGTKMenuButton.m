@@ -2,7 +2,7 @@
  * CGTKMenuButton.m
  * This file is part of CoreGTK
  *
- * Copyright (C) 2015 - Tyler Burton
+ * Copyright (C) 2016 - Tyler Burton
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -20,7 +20,7 @@
  */
 
 /*
- * Modified by the CoreGTK Team, 2015. See the AUTHORS file for a
+ * Modified by the CoreGTK Team, 2016. See the AUTHORS file for a
  * list of people on the CoreGTK Team.
  * See the ChangeLog files for a list of changes.
  *
@@ -65,9 +65,19 @@
 	return gtk_menu_button_get_menu_model(GTK_MENU_BUTTON([self GOBJECT]));
 }
 
+-(GtkPopover*)getPopover
+{
+	return gtk_menu_button_get_popover(GTK_MENU_BUTTON([self GOBJECT]));
+}
+
 -(GtkMenu*)getPopup
 {
 	return gtk_menu_button_get_popup(GTK_MENU_BUTTON([self GOBJECT]));
+}
+
+-(BOOL)getUsePopover
+{
+	return (gtk_menu_button_get_use_popover(GTK_MENU_BUTTON([self GOBJECT])) ? YES : NO);
 }
 
 -(void)setAlignWidget:(CGTKWidget*) alignWidget
@@ -85,9 +95,19 @@
 	gtk_menu_button_set_menu_model(GTK_MENU_BUTTON([self GOBJECT]), menuModel);
 }
 
--(void)setPopup:(CGTKWidget*) popup
+-(void)setPopover:(CGTKWidget*) popover
 {
-	gtk_menu_button_set_popup(GTK_MENU_BUTTON([self GOBJECT]), [popup WIDGET]);
+	gtk_menu_button_set_popover(GTK_MENU_BUTTON([self GOBJECT]), [popover WIDGET]);
+}
+
+-(void)setPopup:(CGTKWidget*) menu
+{
+	gtk_menu_button_set_popup(GTK_MENU_BUTTON([self GOBJECT]), [menu WIDGET]);
+}
+
+-(void)setUsePopover:(BOOL) usePopover
+{
+	gtk_menu_button_set_use_popover(GTK_MENU_BUTTON([self GOBJECT]), (usePopover ? TRUE : FALSE));
 }
 
 

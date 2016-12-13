@@ -2,7 +2,7 @@
  * CGTKMessageDialog.m
  * This file is part of CoreGTK
  *
- * Copyright (C) 2015 - Tyler Burton
+ * Copyright (C) 2016 - Tyler Burton
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -20,7 +20,7 @@
  */
 
 /*
- * Modified by the CoreGTK Team, 2015. See the AUTHORS file for a
+ * Modified by the CoreGTK Team, 2016. See the AUTHORS file for a
  * list of people on the CoreGTK Team.
  * See the ChangeLog files for a list of changes.
  *
@@ -33,19 +33,9 @@
 
 @implementation CGTKMessageDialog
 
--(void)formatSecondaryMarkup:(NSString *)markup
+-(id)initWithParent:(CGTKWindow *)parent andFlags:(GtkDialogFlags)flags andType:(GtkMessageType)type andButtons:(GtkButtonsType)buttons andMarkup:(NSString *)markup
 {
-	gtk_message_dialog_format_secondary_markup([self MESSAGEDIALOG], [markup UTF8String], NULL);
-}
-
--(void)formatSecondaryText:(NSString *)message
-{
-	gtk_message_dialog_format_secondary_text([self MESSAGEDIALOG], [message UTF8String], NULL);
-}
-
--(id)initWithParent:(CGTKWindow *)parent andFlags:(GtkDialogFlags)flags andType:(GtkMessageType)type andButtons:(GtkButtonsType)buttons andMessage:(NSString *)message
-{
-	self = [super initWithGObject:(GObject *)gtk_message_dialog_new([parent WINDOW], flags, type, buttons, [message UTF8String], NULL)];
+	self = [super initWithGObject:(GObject *)gtk_message_dialog_new_with_markup([parent WINDOW], flags, type, buttons, [markup UTF8String], NULL)];
 
 	if(self)
 	{
@@ -55,9 +45,19 @@
 	return self;
 }
 
--(id)initWithParent:(CGTKWindow *)parent andFlags:(GtkDialogFlags)flags andType:(GtkMessageType)type andButtons:(GtkButtonsType)buttons andMarkup:(NSString *)markup
+-(void)formatSecondaryText:(NSString *)message
 {
-	self = [super initWithGObject:(GObject *)gtk_message_dialog_new_with_markup([parent WINDOW], flags, type, buttons, [markup UTF8String], NULL)];
+	gtk_message_dialog_format_secondary_text([self MESSAGEDIALOG], [message UTF8String], NULL);
+}
+
+-(void)formatSecondaryMarkup:(NSString *)markup
+{
+	gtk_message_dialog_format_secondary_markup([self MESSAGEDIALOG], [markup UTF8String], NULL);
+}
+
+-(id)initWithParent:(CGTKWindow *)parent andFlags:(GtkDialogFlags)flags andType:(GtkMessageType)type andButtons:(GtkButtonsType)buttons andMessage:(NSString *)message
+{
+	self = [super initWithGObject:(GObject *)gtk_message_dialog_new([parent WINDOW], flags, type, buttons, [message UTF8String], NULL)];
 
 	if(self)
 	{

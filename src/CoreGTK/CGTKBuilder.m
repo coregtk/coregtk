@@ -2,7 +2,7 @@
  * CGTKBuilder.m
  * This file is part of CoreGTK
  *
- * Copyright (C) 2015 - Tyler Burton
+ * Copyright (C) 2016 - Tyler Burton
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -20,7 +20,7 @@
  */
 
 /*
- * Modified by the CoreGTK Team, 2015. See the AUTHORS file for a
+ * Modified by the CoreGTK Team, 2016. See the AUTHORS file for a
  * list of people on the CoreGTK Team.
  * See the ChangeLog files for a list of changes.
  *
@@ -136,6 +136,11 @@
 	gtk_builder_expose_object(GTK_BUILDER([self GOBJECT]), [name UTF8String], object);
 }
 
+-(GtkApplication*)getApplication
+{
+	return gtk_builder_get_application(GTK_BUILDER([self GOBJECT]));
+}
+
 -(GObject*)getObject:(NSString*) name
 {
 	return gtk_builder_get_object(GTK_BUILDER([self GOBJECT]), [name UTF8String]);
@@ -159,6 +164,11 @@
 -(GCallback)lookupCallbackSymbol:(NSString*) callbackName
 {
 	return gtk_builder_lookup_callback_symbol(GTK_BUILDER([self GOBJECT]), [callbackName UTF8String]);
+}
+
+-(void)setApplication:(GtkApplication*) application
+{
+	gtk_builder_set_application(GTK_BUILDER([self GOBJECT]), application);
 }
 
 -(void)setTranslationDomain:(NSString*) domain

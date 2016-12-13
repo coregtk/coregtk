@@ -2,7 +2,7 @@
  * CGTKOverlay.m
  * This file is part of CoreGTK
  *
- * Copyright (C) 2015 - Tyler Burton
+ * Copyright (C) 2016 - Tyler Burton
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -20,7 +20,7 @@
  */
 
 /*
- * Modified by the CoreGTK Team, 2015. See the AUTHORS file for a
+ * Modified by the CoreGTK Team, 2016. See the AUTHORS file for a
  * list of people on the CoreGTK Team.
  * See the ChangeLog files for a list of changes.
  *
@@ -53,6 +53,21 @@
 -(void)addOverlay:(CGTKWidget*) widget
 {
 	gtk_overlay_add_overlay(GTK_OVERLAY([self GOBJECT]), [widget WIDGET]);
+}
+
+-(BOOL)getOverlayPassThrough:(CGTKWidget*) widget
+{
+	return (gtk_overlay_get_overlay_pass_through(GTK_OVERLAY([self GOBJECT]), [widget WIDGET]) ? YES : NO);
+}
+
+-(void)reorderOverlayWithChild:(CGTKWidget*) child andPosition:(gint) position
+{
+	gtk_overlay_reorder_overlay(GTK_OVERLAY([self GOBJECT]), [child WIDGET], position);
+}
+
+-(void)setOverlayPassThroughWithWidget:(CGTKWidget*) widget andPassThrough:(BOOL) passThrough
+{
+	gtk_overlay_set_overlay_pass_through(GTK_OVERLAY([self GOBJECT]), [widget WIDGET], (passThrough ? TRUE : FALSE));
 }
 
 

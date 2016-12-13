@@ -2,7 +2,7 @@
  * CGTKSwitch.m
  * This file is part of CoreGTK
  *
- * Copyright (C) 2015 - Tyler Burton
+ * Copyright (C) 2016 - Tyler Burton
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -20,7 +20,7 @@
  */
 
 /*
- * Modified by the CoreGTK Team, 2015. See the AUTHORS file for a
+ * Modified by the CoreGTK Team, 2016. See the AUTHORS file for a
  * list of people on the CoreGTK Team.
  * See the ChangeLog files for a list of changes.
  *
@@ -55,9 +55,19 @@
 	return (gtk_switch_get_active(GTK_SWITCH([self GOBJECT])) ? YES : NO);
 }
 
+-(BOOL)getState
+{
+	return (gtk_switch_get_state(GTK_SWITCH([self GOBJECT])) ? YES : NO);
+}
+
 -(void)setActive:(BOOL) isActive
 {
 	gtk_switch_set_active(GTK_SWITCH([self GOBJECT]), (isActive ? TRUE : FALSE));
+}
+
+-(void)setState:(BOOL) state
+{
+	gtk_switch_set_state(GTK_SWITCH([self GOBJECT]), (state ? TRUE : FALSE));
 }
 
 

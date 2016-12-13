@@ -2,7 +2,7 @@
  * CGTKWidget.m
  * This file is part of CoreGTK
  *
- * Copyright (C) 2015 - Tyler Burton
+ * Copyright (C) 2016 - Tyler Burton
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -20,7 +20,7 @@
  */
 
 /*
- * Modified by the CoreGTK Team, 2015. See the AUTHORS file for a
+ * Modified by the CoreGTK Team, 2016. See the AUTHORS file for a
  * list of people on the CoreGTK Team.
  * See the ChangeLog files for a list of changes.
  *
@@ -313,6 +313,11 @@
 	return gtk_widget_get_accessible(GTK_WIDGET([self GOBJECT]));
 }
 
+-(GActionGroup*)getActionGroup:(NSString*) prefix
+{
+	return gtk_widget_get_action_group(GTK_WIDGET([self GOBJECT]), [prefix UTF8String]);
+}
+
 -(int)getAllocatedBaseline
 {
 	return gtk_widget_get_allocated_baseline(GTK_WIDGET([self GOBJECT]));
@@ -363,6 +368,11 @@
 	return (gtk_widget_get_child_visible(GTK_WIDGET([self GOBJECT])) ? YES : NO);
 }
 
+-(void)getClip:(GtkAllocation*) clip
+{
+	gtk_widget_get_clip(GTK_WIDGET([self GOBJECT]), clip);
+}
+
 -(GtkClipboard*)getClipboard:(GdkAtom) selection
 {
 	return gtk_widget_get_clipboard(GTK_WIDGET([self GOBJECT]), selection);
@@ -401,6 +411,16 @@
 -(gint)getEvents
 {
 	return gtk_widget_get_events(GTK_WIDGET([self GOBJECT]));
+}
+
+-(PangoFontMap*)getFontMap
+{
+	return gtk_widget_get_font_map(GTK_WIDGET([self GOBJECT]));
+}
+
+-(const cairo_font_options_t*)getFontOptions
+{
+	return gtk_widget_get_font_options(GTK_WIDGET([self GOBJECT]));
 }
 
 -(GdkFrameClock*)getFrameClock
@@ -443,6 +463,11 @@
 	return gtk_widget_get_margin_bottom(GTK_WIDGET([self GOBJECT]));
 }
 
+-(gint)getMarginEnd
+{
+	return gtk_widget_get_margin_end(GTK_WIDGET([self GOBJECT]));
+}
+
 -(gint)getMarginLeft
 {
 	return gtk_widget_get_margin_left(GTK_WIDGET([self GOBJECT]));
@@ -451,6 +476,11 @@
 -(gint)getMarginRight
 {
 	return gtk_widget_get_margin_right(GTK_WIDGET([self GOBJECT]));
+}
+
+-(gint)getMarginStart
+{
+	return gtk_widget_get_margin_start(GTK_WIDGET([self GOBJECT]));
 }
 
 -(gint)getMarginTop
@@ -803,6 +833,11 @@
 	return gtk_widget_list_accel_closures(GTK_WIDGET([self GOBJECT]));
 }
 
+-(const gchar**)listActionPrefixes
+{
+	return gtk_widget_list_action_prefixes(GTK_WIDGET([self GOBJECT]));
+}
+
 -(GList*)listMnemonicLabels
 {
 	return gtk_widget_list_mnemonic_labels(GTK_WIDGET([self GOBJECT]));
@@ -1008,6 +1043,11 @@
 	gtk_widget_set_child_visible(GTK_WIDGET([self GOBJECT]), (isVisible ? TRUE : FALSE));
 }
 
+-(void)setClip:(const GtkAllocation*) clip
+{
+	gtk_widget_set_clip(GTK_WIDGET([self GOBJECT]), clip);
+}
+
 -(void)setCompositeName:(NSString*) name
 {
 	gtk_widget_set_composite_name(GTK_WIDGET([self GOBJECT]), [name UTF8String]);
@@ -1036,6 +1076,16 @@
 -(void)setEvents:(gint) events
 {
 	gtk_widget_set_events(GTK_WIDGET([self GOBJECT]), events);
+}
+
+-(void)setFontMap:(PangoFontMap*) fontMap
+{
+	gtk_widget_set_font_map(GTK_WIDGET([self GOBJECT]), fontMap);
+}
+
+-(void)setFontOptions:(const cairo_font_options_t*) options
+{
+	gtk_widget_set_font_options(GTK_WIDGET([self GOBJECT]), options);
 }
 
 -(void)setHalign:(GtkAlign) align
@@ -1073,6 +1123,11 @@
 	gtk_widget_set_margin_bottom(GTK_WIDGET([self GOBJECT]), margin);
 }
 
+-(void)setMarginEnd:(gint) margin
+{
+	gtk_widget_set_margin_end(GTK_WIDGET([self GOBJECT]), margin);
+}
+
 -(void)setMarginLeft:(gint) margin
 {
 	gtk_widget_set_margin_left(GTK_WIDGET([self GOBJECT]), margin);
@@ -1081,6 +1136,11 @@
 -(void)setMarginRight:(gint) margin
 {
 	gtk_widget_set_margin_right(GTK_WIDGET([self GOBJECT]), margin);
+}
+
+-(void)setMarginStart:(gint) margin
+{
+	gtk_widget_set_margin_start(GTK_WIDGET([self GOBJECT]), margin);
 }
 
 -(void)setMarginTop:(gint) margin

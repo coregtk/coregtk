@@ -2,7 +2,7 @@
  * CGTKScrolledWindow.m
  * This file is part of CoreGTK
  *
- * Copyright (C) 2015 - Tyler Burton
+ * Copyright (C) 2016 - Tyler Burton
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -20,7 +20,7 @@
  */
 
 /*
- * Modified by the CoreGTK Team, 2015. See the AUTHORS file for a
+ * Modified by the CoreGTK Team, 2016. See the AUTHORS file for a
  * list of people on the CoreGTK Team.
  * See the ChangeLog files for a list of changes.
  *
@@ -85,6 +85,11 @@
 	return gtk_scrolled_window_get_min_content_width(GTK_SCROLLED_WINDOW([self GOBJECT]));
 }
 
+-(BOOL)getOverlayScrolling
+{
+	return (gtk_scrolled_window_get_overlay_scrolling(GTK_SCROLLED_WINDOW([self GOBJECT])) ? YES : NO);
+}
+
 -(GtkCornerType)getPlacement
 {
 	return gtk_scrolled_window_get_placement(GTK_SCROLLED_WINDOW([self GOBJECT]));
@@ -133,6 +138,11 @@
 -(void)setMinContentWidth:(gint) width
 {
 	gtk_scrolled_window_set_min_content_width(GTK_SCROLLED_WINDOW([self GOBJECT]), width);
+}
+
+-(void)setOverlayScrolling:(BOOL) overlayScrolling
+{
+	gtk_scrolled_window_set_overlay_scrolling(GTK_SCROLLED_WINDOW([self GOBJECT]), (overlayScrolling ? TRUE : FALSE));
 }
 
 -(void)setPlacement:(GtkCornerType) windowPlacement

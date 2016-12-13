@@ -2,7 +2,7 @@
  * CGTKHeaderBar.m
  * This file is part of CoreGTK
  *
- * Copyright (C) 2015 - Tyler Burton
+ * Copyright (C) 2016 - Tyler Burton
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -20,7 +20,7 @@
  */
 
 /*
- * Modified by the CoreGTK Team, 2015. See the AUTHORS file for a
+ * Modified by the CoreGTK Team, 2016. See the AUTHORS file for a
  * list of people on the CoreGTK Team.
  * See the ChangeLog files for a list of changes.
  *
@@ -55,6 +55,16 @@
 	return [[CGTKWidget alloc] initWithGObject:(GObject *)gtk_header_bar_get_custom_title(GTK_HEADER_BAR([self GOBJECT]))];
 }
 
+-(NSString*)getDecorationLayout
+{
+	return [NSString stringWithUTF8String:gtk_header_bar_get_decoration_layout(GTK_HEADER_BAR([self GOBJECT]))];
+}
+
+-(BOOL)getHasSubtitle
+{
+	return (gtk_header_bar_get_has_subtitle(GTK_HEADER_BAR([self GOBJECT])) ? YES : NO);
+}
+
 -(BOOL)getShowCloseButton
 {
 	return (gtk_header_bar_get_show_close_button(GTK_HEADER_BAR([self GOBJECT])) ? YES : NO);
@@ -83,6 +93,16 @@
 -(void)setCustomTitle:(CGTKWidget*) titleWidget
 {
 	gtk_header_bar_set_custom_title(GTK_HEADER_BAR([self GOBJECT]), [titleWidget WIDGET]);
+}
+
+-(void)setDecorationLayout:(NSString*) layout
+{
+	gtk_header_bar_set_decoration_layout(GTK_HEADER_BAR([self GOBJECT]), [layout UTF8String]);
+}
+
+-(void)setHasSubtitle:(BOOL) setting
+{
+	gtk_header_bar_set_has_subtitle(GTK_HEADER_BAR([self GOBJECT]), (setting ? TRUE : FALSE));
 }
 
 -(void)setShowCloseButton:(BOOL) setting

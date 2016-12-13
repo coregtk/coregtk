@@ -2,7 +2,7 @@
  * CGTKMenuButton.h
  * This file is part of CoreGTK
  *
- * Copyright (C) 2015 - Tyler Burton
+ * Copyright (C) 2016 - Tyler Burton
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -20,7 +20,7 @@
  */
 
 /*
- * Modified by the CoreGTK Team, 2015. See the AUTHORS file for a
+ * Modified by the CoreGTK Team, 2016. See the AUTHORS file for a
  * list of people on the CoreGTK Team.
  * See the ChangeLog files for a list of changes.
  *
@@ -70,11 +70,25 @@
 -(GMenuModel*)getMenuModel;
 
 /**
+ * -(GtkPopover**)getPopover;
+ *
+ * @returns GtkPopover*
+ */
+-(GtkPopover*)getPopover;
+
+/**
  * -(GtkMenu**)getPopup;
  *
  * @returns GtkMenu*
  */
 -(GtkMenu*)getPopup;
+
+/**
+ * -(BOOL*)getUsePopover;
+ *
+ * @returns BOOL
+ */
+-(BOOL)getUsePopover;
 
 /**
  * -(void*)setAlignWidget:(CGTKWidget*) alignWidget;
@@ -98,10 +112,24 @@
 -(void)setMenuModel:(GMenuModel*) menuModel;
 
 /**
- * -(void*)setPopup:(CGTKWidget*) popup;
+ * -(void*)setPopover:(CGTKWidget*) popover;
  *
- * @param popup
+ * @param popover
  */
--(void)setPopup:(CGTKWidget*) popup;
+-(void)setPopover:(CGTKWidget*) popover;
+
+/**
+ * -(void*)setPopup:(CGTKWidget*) menu;
+ *
+ * @param menu
+ */
+-(void)setPopup:(CGTKWidget*) menu;
+
+/**
+ * -(void*)setUsePopover:(BOOL) usePopover;
+ *
+ * @param usePopover
+ */
+-(void)setUsePopover:(BOOL) usePopover;
 
 @end
