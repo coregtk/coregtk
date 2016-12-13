@@ -1,6 +1,6 @@
 <map id="CGTKStackSwitcher" name="CGTKStackSwitcher">
-<area shape="rect" id="node2" href="$interface_c_g_t_k_box.html" title="CGTKBox" alt="" coords="36,304,117,331"/>
+<area shape="rect" id="node2" href="$interface_c_g_t_k_box.html" title="CGTKBox" alt="" coords="36,304,119,331"/>
 <area shape="rect" id="node3" href="$interface_c_g_t_k_container.html" title="CGTKContainer" alt="" coords="20,229,135,256"/>
 <area shape="rect" id="node4" href="$interface_c_g_t_k_widget.html" title="CGTKWidget" alt="" coords="27,155,127,181"/>
-<area shape="rect" id="node5" href="$interface_c_g_t_k_base.html" title="CGTKBase" alt="" coords="33,80,121,107"/>
+<area shape="rect" id="node5" href="$interface_c_g_t_k_base.html" title="CGTKBase" alt="" coords="33,80,122,107"/>
 </map>

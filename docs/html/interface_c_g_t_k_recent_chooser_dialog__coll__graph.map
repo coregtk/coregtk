@@ -1,8 +1,8 @@
 <map id="CGTKRecentChooserDialog" name="CGTKRecentChooserDialog">
 <area shape="rect" id="node2" href="$interface_c_g_t_k_dialog.html" title="CGTKDialog" alt="" coords="51,453,147,480"/>
 <area shape="rect" id="node3" href="$interface_c_g_t_k_window.html" title="CGTKWindow" alt="" coords="45,379,152,405"/>
-<area shape="rect" id="node4" href="$interface_c_g_t_k_bin.html" title="CGTKBin" alt="" coords="59,304,137,331"/>
+<area shape="rect" id="node4" href="$interface_c_g_t_k_bin.html" title="CGTKBin" alt="" coords="59,304,138,331"/>
 <area shape="rect" id="node5" href="$interface_c_g_t_k_container.html" title="CGTKContainer" alt="" coords="41,229,156,256"/>
-<area shape="rect" id="node6" href="$interface_c_g_t_k_widget.html" title="CGTKWidget" alt="" coords="49,155,148,181"/>
+<area shape="rect" id="node6" href="$interface_c_g_t_k_widget.html" title="CGTKWidget" alt="" coords="49,155,149,181"/>
 <area shape="rect" id="node7" href="$interface_c_g_t_k_base.html" title="CGTKBase" alt="" coords="54,80,143,107"/>
 </map>

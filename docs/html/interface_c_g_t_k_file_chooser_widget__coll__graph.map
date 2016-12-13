@@ -1,6 +1,6 @@
 <map id="CGTKFileChooserWidget" name="CGTKFileChooserWidget">
-<area shape="rect" id="node2" href="$interface_c_g_t_k_box.html" title="CGTKBox" alt="" coords="49,304,131,331"/>
+<area shape="rect" id="node2" href="$interface_c_g_t_k_box.html" title="CGTKBox" alt="" coords="49,304,132,331"/>
 <area shape="rect" id="node3" href="$interface_c_g_t_k_container.html" title="CGTKContainer" alt="" coords="33,229,148,256"/>
-<area shape="rect" id="node4" href="$interface_c_g_t_k_widget.html" title="CGTKWidget" alt="" coords="41,155,140,181"/>
+<area shape="rect" id="node4" href="$interface_c_g_t_k_widget.html" title="CGTKWidget" alt="" coords="41,155,141,181"/>
 <area shape="rect" id="node5" href="$interface_c_g_t_k_base.html" title="CGTKBase" alt="" coords="46,80,135,107"/>
 </map>

@@ -7,6 +7,7 @@ var interface_c_g_t_k_radio_menu_item =
     [ "initWithLabelWithGroup:andLabel:", "interface_c_g_t_k_radio_menu_item.html#a21000ecbd5b849199830cc473729cc52", null ],
     [ "initWithMnemonicFromWidgetWithGroup:andLabel:", "interface_c_g_t_k_radio_menu_item.html#a1c7466e63345df598403425b28f15894", null ],
     [ "initWithMnemonicWithGroup:andLabel:", "interface_c_g_t_k_radio_menu_item.html#adeef881372beb2750431bf05bd95eec3", null ],
+    [ "joinGroup:", "interface_c_g_t_k_radio_menu_item.html#aef6d987bcb27fca796a23a17152eb7ac", null ],
     [ "RADIOMENUITEM", "interface_c_g_t_k_radio_menu_item.html#ab5967a5d531cb4e79dbea1c3fa9d11d7", null ],
     [ "setGroup:", "interface_c_g_t_k_radio_menu_item.html#a01f2cdd65e083569abb828d1bc835ce8", null ]
 ];

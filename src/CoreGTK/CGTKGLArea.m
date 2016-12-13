@@ -47,87 +47,87 @@
 
 -(GtkGLArea*)GLAREA
 {
-	return GTK_GLAREA([self GOBJECT]);
+	return GTK_GL_AREA([self GOBJECT]);
 }
 
 -(void)gtkGlAreaAttachBuffers
 {
-	gtk_gl_area_attach_buffers(GTK_GLAREA([self GOBJECT]));
+	gtk_gl_area_attach_buffers(GTK_GL_AREA([self GOBJECT]));
 }
 
 -(BOOL)gtkGlAreaGetAutoRender
 {
-	return (gtk_gl_area_get_auto_render(GTK_GLAREA([self GOBJECT])) ? YES : NO);
+	return (gtk_gl_area_get_auto_render(GTK_GL_AREA([self GOBJECT])) ? YES : NO);
 }
 
 -(GdkGLContext*)gtkGlAreaGetContext
 {
-	return gtk_gl_area_get_context(GTK_GLAREA([self GOBJECT]));
+	return gtk_gl_area_get_context(GTK_GL_AREA([self GOBJECT]));
 }
 
 -(GError*)gtkGlAreaGetError
 {
-	return gtk_gl_area_get_error(GTK_GLAREA([self GOBJECT]));
+	return gtk_gl_area_get_error(GTK_GL_AREA([self GOBJECT]));
 }
 
 -(BOOL)gtkGlAreaGetHasAlpha
 {
-	return (gtk_gl_area_get_has_alpha(GTK_GLAREA([self GOBJECT])) ? YES : NO);
+	return (gtk_gl_area_get_has_alpha(GTK_GL_AREA([self GOBJECT])) ? YES : NO);
 }
 
 -(BOOL)gtkGlAreaGetHasDepthBuffer
 {
-	return (gtk_gl_area_get_has_depth_buffer(GTK_GLAREA([self GOBJECT])) ? YES : NO);
+	return (gtk_gl_area_get_has_depth_buffer(GTK_GL_AREA([self GOBJECT])) ? YES : NO);
 }
 
 -(BOOL)gtkGlAreaGetHasStencilBuffer
 {
-	return (gtk_gl_area_get_has_stencil_buffer(GTK_GLAREA([self GOBJECT])) ? YES : NO);
+	return (gtk_gl_area_get_has_stencil_buffer(GTK_GL_AREA([self GOBJECT])) ? YES : NO);
 }
 
 -(void)gtkGlAreaGetRequiredVersionWithMajor:(gint*) major andMinor:(gint*) minor
 {
-	gtk_gl_area_get_required_version(GTK_GLAREA([self GOBJECT]), major, minor);
+	gtk_gl_area_get_required_version(GTK_GL_AREA([self GOBJECT]), major, minor);
 }
 
 -(void)gtkGlAreaMakeCurrent
 {
-	gtk_gl_area_make_current(GTK_GLAREA([self GOBJECT]));
+	gtk_gl_area_make_current(GTK_GL_AREA([self GOBJECT]));
 }
 
 -(void)gtkGlAreaQueueRender
 {
-	gtk_gl_area_queue_render(GTK_GLAREA([self GOBJECT]));
+	gtk_gl_area_queue_render(GTK_GL_AREA([self GOBJECT]));
 }
 
 -(void)gtkGlAreaSetAutoRender:(BOOL) autoRender
 {
-	gtk_gl_area_set_auto_render(GTK_GLAREA([self GOBJECT]), (autoRender ? TRUE : FALSE));
+	gtk_gl_area_set_auto_render(GTK_GL_AREA([self GOBJECT]), (autoRender ? TRUE : FALSE));
 }
 
 -(void)gtkGlAreaSetError:(const GError*) error
 {
-	gtk_gl_area_set_error(GTK_GLAREA([self GOBJECT]), error);
+	gtk_gl_area_set_error(GTK_GL_AREA([self GOBJECT]), error);
 }
 
 -(void)gtkGlAreaSetHasAlpha:(BOOL) hasAlpha
 {
-	gtk_gl_area_set_has_alpha(GTK_GLAREA([self GOBJECT]), (hasAlpha ? TRUE : FALSE));
+	gtk_gl_area_set_has_alpha(GTK_GL_AREA([self GOBJECT]), (hasAlpha ? TRUE : FALSE));
 }
 
 -(void)gtkGlAreaSetHasDepthBuffer:(BOOL) hasDepthBuffer
 {
-	gtk_gl_area_set_has_depth_buffer(GTK_GLAREA([self GOBJECT]), (hasDepthBuffer ? TRUE : FALSE));
+	gtk_gl_area_set_has_depth_buffer(GTK_GL_AREA([self GOBJECT]), (hasDepthBuffer ? TRUE : FALSE));
 }
 
 -(void)gtkGlAreaSetHasStencilBuffer:(BOOL) hasStencilBuffer
 {
-	gtk_gl_area_set_has_stencil_buffer(GTK_GLAREA([self GOBJECT]), (hasStencilBuffer ? TRUE : FALSE));
+	gtk_gl_area_set_has_stencil_buffer(GTK_GL_AREA([self GOBJECT]), (hasStencilBuffer ? TRUE : FALSE));
 }
 
 -(void)gtkGlAreaSetRequiredVersionWithMajor:(gint) major andMinor:(gint) minor
 {
-	gtk_gl_area_set_required_version(GTK_GLAREA([self GOBJECT]), major, minor);
+	gtk_gl_area_set_required_version(GTK_GL_AREA([self GOBJECT]), major, minor);
 }
 
 

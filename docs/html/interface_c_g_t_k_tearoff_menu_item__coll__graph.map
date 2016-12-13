@@ -1,7 +1,7 @@
 <map id="CGTKTearoffMenuItem" name="CGTKTearoffMenuItem">
-<area shape="rect" id="node2" href="$interface_c_g_t_k_menu_item.html" title="CGTKMenuItem" alt="" coords="25,379,141,405"/>
-<area shape="rect" id="node3" href="$interface_c_g_t_k_bin.html" title="CGTKBin" alt="" coords="45,304,123,331"/>
-<area shape="rect" id="node4" href="$interface_c_g_t_k_container.html" title="CGTKContainer" alt="" coords="27,229,141,256"/>
-<area shape="rect" id="node5" href="$interface_c_g_t_k_widget.html" title="CGTKWidget" alt="" coords="34,155,133,181"/>
-<area shape="rect" id="node6" href="$interface_c_g_t_k_base.html" title="CGTKBase" alt="" coords="39,80,128,107"/>
+<area shape="rect" id="node2" href="$interface_c_g_t_k_menu_item.html" title="CGTKMenuItem" alt="" coords="26,379,143,405"/>
+<area shape="rect" id="node3" href="$interface_c_g_t_k_bin.html" title="CGTKBin" alt="" coords="45,304,124,331"/>
+<area shape="rect" id="node4" href="$interface_c_g_t_k_container.html" title="CGTKContainer" alt="" coords="27,229,142,256"/>
+<area shape="rect" id="node5" href="$interface_c_g_t_k_widget.html" title="CGTKWidget" alt="" coords="35,155,135,181"/>
+<area shape="rect" id="node6" href="$interface_c_g_t_k_base.html" title="CGTKBase" alt="" coords="40,80,129,107"/>
 </map>

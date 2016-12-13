@@ -1,6 +1,8 @@
 var interface_c_g_t_k_header_bar =
 [
     [ "getCustomTitle", "interface_c_g_t_k_header_bar.html#a30bd54cb00c33bded17fc4b0013449bd", null ],
+    [ "getDecorationLayout", "interface_c_g_t_k_header_bar.html#a50eb6d95eb1bcbf37b44b2c2b9237ea6", null ],
+    [ "getHasSubtitle", "interface_c_g_t_k_header_bar.html#a5f05b7f0d97587b87093f5be5b818293", null ],
     [ "getShowCloseButton", "interface_c_g_t_k_header_bar.html#a90e948ab410e7b426033918d4b1459f2", null ],
     [ "getSubtitle", "interface_c_g_t_k_header_bar.html#a24fd12ef7ba3e721d0f7740d543364e8", null ],
     [ "getTitle", "interface_c_g_t_k_header_bar.html#a9900d432cbb64f539fe9a1acb1895c27", null ],
@@ -9,6 +11,8 @@ var interface_c_g_t_k_header_bar =
     [ "packEnd:", "interface_c_g_t_k_header_bar.html#a64b8afc366b67adcc2641868e1819f07", null ],
     [ "packStart:", "interface_c_g_t_k_header_bar.html#ab612577b66572932fb025acf8017ca5e", null ],
     [ "setCustomTitle:", "interface_c_g_t_k_header_bar.html#a409a1f3b0dd68a525679644aa8f84dee", null ],
+    [ "setDecorationLayout:", "interface_c_g_t_k_header_bar.html#a3918a2437a9db6c78f72ad3d0bcfc777", null ],
+    [ "setHasSubtitle:", "interface_c_g_t_k_header_bar.html#abd9616115b3c3f7af5a7a49cf3173cb3", null ],
     [ "setShowCloseButton:", "interface_c_g_t_k_header_bar.html#ab6df4c76c8228c54df055bf903db3071", null ],
     [ "setSubtitle:", "interface_c_g_t_k_header_bar.html#a6ca957fa2c419be8cdcc8808ad6480f0", null ],
     [ "setTitle:", "interface_c_g_t_k_header_bar.html#a43aa701896639fc4f3bdb7c2553f1e40", null ]

@@ -2,6 +2,7 @@ var interface_c_g_t_k_notebook =
 [
     [ "appendPageMenuWithChild:andTabLabel:andMenuLabel:", "interface_c_g_t_k_notebook.html#a7b52b30e80830cd124831ae31b853f1c", null ],
     [ "appendPageWithChild:andTabLabel:", "interface_c_g_t_k_notebook.html#abe3dd80e16ffc6e63197de21cdcaa748", null ],
+    [ "detachTab:", "interface_c_g_t_k_notebook.html#a4216d669d2bd9f25cf44d28f968117e9", null ],
     [ "getActionWidget:", "interface_c_g_t_k_notebook.html#a2c48e3eaf8d384e830fecf754803e9c7", null ],
     [ "getCurrentPage", "interface_c_g_t_k_notebook.html#a0c8f31ccd1f125e1eecc20c3e3ca7fd3", null ],
     [ "getGroupName", "interface_c_g_t_k_notebook.html#a27d4f91855121ff20aae1ab75bbc342f", null ],

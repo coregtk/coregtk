@@ -31,6 +31,7 @@ var searchData=
   ['rendericonpixbufwithstockid_3aandsize_3a',['renderIconPixbufWithStockId:andSize:',['../interface_c_g_t_k_widget.html#ae7748fbd691c6c9f2491c65cbc142c2d',1,'CGTKWidget']]],
   ['rendericonwithstockid_3aandsize_3aanddetail_3a',['renderIconWithStockId:andSize:andDetail:',['../interface_c_g_t_k_widget.html#a682c4c2a765b13563ec647534c5a3694',1,'CGTKWidget']]],
   ['reorderchildwithchild_3aandposition_3a',['reorderChildWithChild:andPosition:',['../interface_c_g_t_k_box.html#a3545129e273eef9bfed77081eb583bed',1,'CGTKBox::reorderChildWithChild:andPosition:()'],['../interface_c_g_t_k_menu.html#a60e5fbacf3f9f29e4de9167b47183c65',1,'CGTKMenu::reorderChildWithChild:andPosition:()'],['../interface_c_g_t_k_notebook.html#a5b7ba638548e5f44d7cc74118f966d33',1,'CGTKNotebook::reorderChildWithChild:andPosition:()']]],
+  ['reorderoverlaywithchild_3aandposition_3a',['reorderOverlayWithChild:andPosition:',['../interface_c_g_t_k_overlay.html#af56b5e6ed7bac4df5155ef5f82aaa7da',1,'CGTKOverlay']]],
   ['reparent_3a',['reparent:',['../interface_c_g_t_k_widget.html#a8d4a9a0a25f245ae6f9ec4f605ba57f4',1,'CGTKWidget']]],
   ['reposition',['reposition',['../interface_c_g_t_k_menu.html#a9ef83e7a0f514ce4d969b25cc0cbfb8f',1,'CGTKMenu']]],
   ['resetimcontext',['resetImContext',['../interface_c_g_t_k_entry.html#a231132d08ca3fe583c3a9e3f2b0f0b05',1,'CGTKEntry::resetImContext()'],['../interface_c_g_t_k_text_view.html#a6e5bdeb8c3869da386254cecdecd1194',1,'CGTKTextView::resetImContext()']]],

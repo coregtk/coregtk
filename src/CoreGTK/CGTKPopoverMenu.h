@@ -29,9 +29,9 @@
 /*
  * Objective-C imports
  */
-#import "CoreGTK/Popover.h"
+#import "CoreGTK/CGTKPopover.h"
 
-@interface CGTKPopoverMenu : Popover
+@interface CGTKPopoverMenu : CGTKPopover
 {
 
 }

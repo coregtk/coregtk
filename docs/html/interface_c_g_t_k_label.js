@@ -22,6 +22,8 @@ var interface_c_g_t_k_label =
     [ "getUseMarkup", "interface_c_g_t_k_label.html#a020378196e37068849a9f952a5d2c0ec", null ],
     [ "getUseUnderline", "interface_c_g_t_k_label.html#a6c486aa0757a89621f48141ae21ca6f9", null ],
     [ "getWidthChars", "interface_c_g_t_k_label.html#a0fc82122049d19f48161aabe64627e28", null ],
+    [ "getXalign", "interface_c_g_t_k_label.html#a2395e6b4f9aba628b394184610bbd44d", null ],
+    [ "getYalign", "interface_c_g_t_k_label.html#ac2156aa4e104011a9fda8539d6c8ac21", null ],
     [ "init:", "interface_c_g_t_k_label.html#a7d12be0a8b9aeb2f8143471282542241", null ],
     [ "initWithMnemonic:", "interface_c_g_t_k_label.html#a94fa9d1f8ba0fc04a68b6883a32ce077", null ],
     [ "LABEL", "interface_c_g_t_k_label.html#a9fcbf79f82045a98498e52798481d7ef", null ],
@@ -46,5 +48,7 @@ var interface_c_g_t_k_label =
     [ "setTrackVisitedLinks:", "interface_c_g_t_k_label.html#ab0275160f7c63e21de2c91df19bc2b8e", null ],
     [ "setUseMarkup:", "interface_c_g_t_k_label.html#a39f72155720c5a3a426ddcf1e5db134c", null ],
     [ "setUseUnderline:", "interface_c_g_t_k_label.html#ac071985bfcc3a2d86228a11c10458120", null ],
-    [ "setWidthChars:", "interface_c_g_t_k_label.html#a5018c68b95ebf352e75c4a0c5941f584", null ]
+    [ "setWidthChars:", "interface_c_g_t_k_label.html#a5018c68b95ebf352e75c4a0c5941f584", null ],
+    [ "setXalign:", "interface_c_g_t_k_label.html#ae0ad2198148b3f98fa6be0fdcd3b860b", null ],
+    [ "setYalign:", "interface_c_g_t_k_label.html#a56e06ece331a0966b30bdad60840caab", null ]
 ];
