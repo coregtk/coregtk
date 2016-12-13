@@ -14,7 +14,7 @@ ICC=./indirect_compiler.sh
 CC=gcc
 
 #Compiler flags
-CCFLAGS=-Wno-deprecated-declarations -I. -I./CoreGTK
+CCFLAGS=-Qunused-arguments -Wno-deprecated-declarations -I. -I./CoreGTK
 
 #CFLAGS
 CFLAGS=-c
