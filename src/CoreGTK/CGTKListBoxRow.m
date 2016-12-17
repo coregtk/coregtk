@@ -2,7 +2,7 @@
  * CGTKListBoxRow.m
  * This file is part of CoreGTK
  *
- * Copyright (C) 2015 - Tyler Burton
+ * Copyright (C) 2016 - Tyler Burton
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -20,7 +20,7 @@
  */
 
 /*
- * Modified by the CoreGTK Team, 2015. See the AUTHORS file for a
+ * Modified by the CoreGTK Team, 2016. See the AUTHORS file for a
  * list of people on the CoreGTK Team.
  * See the ChangeLog files for a list of changes.
  *
@@ -55,6 +55,11 @@
 	gtk_list_box_row_changed(GTK_LIST_BOX_ROW([self GOBJECT]));
 }
 
+-(BOOL)getActivatable
+{
+	return (gtk_list_box_row_get_activatable(GTK_LIST_BOX_ROW([self GOBJECT])) ? YES : NO);
+}
+
 -(CGTKWidget*)getHeader
 {
 	return [[CGTKWidget alloc] initWithGObject:(GObject *)gtk_list_box_row_get_header(GTK_LIST_BOX_ROW([self GOBJECT]))];
@@ -65,9 +70,29 @@
 	return gtk_list_box_row_get_index(GTK_LIST_BOX_ROW([self GOBJECT]));
 }
 
+-(BOOL)getSelectable
+{
+	return (gtk_list_box_row_get_selectable(GTK_LIST_BOX_ROW([self GOBJECT])) ? YES : NO);
+}
+
+-(BOOL)isSelected
+{
+	return (gtk_list_box_row_is_selected(GTK_LIST_BOX_ROW([self GOBJECT])) ? YES : NO);
+}
+
+-(void)setActivatable:(BOOL) activatable
+{
+	gtk_list_box_row_set_activatable(GTK_LIST_BOX_ROW([self GOBJECT]), (activatable ? TRUE : FALSE));
+}
+
 -(void)setHeader:(CGTKWidget*) header
 {
 	gtk_list_box_row_set_header(GTK_LIST_BOX_ROW([self GOBJECT]), [header WIDGET]);
+}
+
+-(void)setSelectable:(BOOL) selectable
+{
+	gtk_list_box_row_set_selectable(GTK_LIST_BOX_ROW([self GOBJECT]), (selectable ? TRUE : FALSE));
 }
 
 

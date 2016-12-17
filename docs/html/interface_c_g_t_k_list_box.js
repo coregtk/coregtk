@@ -1,5 +1,6 @@
 var interface_c_g_t_k_list_box =
 [
+    [ "bindModelWithModel:andCreateWidgetFunc:andUserData:andUserDataFreeFunc:", "interface_c_g_t_k_list_box.html#a585276cb905d885da417e3b995e75a93", null ],
     [ "dragHighlightRow:", "interface_c_g_t_k_list_box.html#a90a8f67693b91a225ab7adb146c4859c", null ],
     [ "dragUnhighlightRow", "interface_c_g_t_k_list_box.html#a9466b2a8afb383127547bedf5e67d6ae", null ],
     [ "getActivateOnSingleClick", "interface_c_g_t_k_list_box.html#a87465b2d401247ae65724fb19a995fcb", null ],
@@ -7,6 +8,7 @@ var interface_c_g_t_k_list_box =
     [ "getRowAtIndex:", "interface_c_g_t_k_list_box.html#ac706c57aaad9fcf9f1faee6e77d9e415", null ],
     [ "getRowAtY:", "interface_c_g_t_k_list_box.html#a802ea2076a5f5d46b591878f43536736", null ],
     [ "getSelectedRow", "interface_c_g_t_k_list_box.html#a02f67b2a9f3997ca51a871e8dffd230f", null ],
+    [ "getSelectedRows", "interface_c_g_t_k_list_box.html#ad7c761705df2ecbd2321fe9da0d244bb", null ],
     [ "getSelectionMode", "interface_c_g_t_k_list_box.html#aa02a2594e761ad1343331037c20f1717", null ],
     [ "init", "interface_c_g_t_k_list_box.html#a05802e7497f497f41047a97e4f25d3c0", null ],
     [ "insertWithChild:andPosition:", "interface_c_g_t_k_list_box.html#acd7072659761defbbc7c2efb485ff879", null ],
@@ -15,6 +17,8 @@ var interface_c_g_t_k_list_box =
     [ "invalidateSort", "interface_c_g_t_k_list_box.html#a43938d24351d430aa8095607290cc49c", null ],
     [ "LISTBOX", "interface_c_g_t_k_list_box.html#a1a9bcccd35fe3fa840821f655eb04c12", null ],
     [ "prepend:", "interface_c_g_t_k_list_box.html#ac76bb5cd37d58c91f82aa8b90dbfd32c", null ],
+    [ "selectAll", "interface_c_g_t_k_list_box.html#a972c7d965c088191f8c3aae406b1df45", null ],
+    [ "selectedForeachWithFunc:andData:", "interface_c_g_t_k_list_box.html#a6abd71cbd3c0899c793b37a153667665", null ],
     [ "selectRow:", "interface_c_g_t_k_list_box.html#a33b51d707461c565c479a31d6c312235", null ],
     [ "setActivateOnSingleClick:", "interface_c_g_t_k_list_box.html#af719ad026e7b9b5b94118f65051683a3", null ],
     [ "setAdjustment:", "interface_c_g_t_k_list_box.html#a3e7d1679f5ec31e086a7eb13bfcbce86", null ],
@@ -22,5 +26,7 @@ var interface_c_g_t_k_list_box =
     [ "setHeaderFuncWithUpdateHeader:andUserData:andDestroy:", "interface_c_g_t_k_list_box.html#a1632a6473487551c7903fa36cb8ae91f", null ],
     [ "setPlaceholder:", "interface_c_g_t_k_list_box.html#a7511345467d9489d2bbaa7c923fe2001", null ],
     [ "setSelectionMode:", "interface_c_g_t_k_list_box.html#a410710759b59bfcf2330b2078fcb2390", null ],
-    [ "setSortFuncWithSortFunc:andUserData:andDestroy:", "interface_c_g_t_k_list_box.html#aa8738b45a6ef56fb4c7b653440902cc7", null ]
+    [ "setSortFuncWithSortFunc:andUserData:andDestroy:", "interface_c_g_t_k_list_box.html#aa8738b45a6ef56fb4c7b653440902cc7", null ],
+    [ "unselectAll", "interface_c_g_t_k_list_box.html#a369743d4c6c7da0bea0d55dac04cf9a0", null ],
+    [ "unselectRow:", "interface_c_g_t_k_list_box.html#a844d54a7fe688a8488adb6953689df14", null ]
 ];

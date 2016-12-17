@@ -6,6 +6,7 @@ var searchData=
   ['destroy',['destroy',['../interface_c_g_t_k_widget.html#a49abc58113965b5df9d5ac9262ea7a66',1,'CGTKWidget']]],
   ['destroyed_3a',['destroyed:',['../interface_c_g_t_k_widget.html#a44ea770795efa1fbfdfd1b70c7d50898',1,'CGTKWidget']]],
   ['detach',['detach',['../interface_c_g_t_k_menu.html#ad813a1362acf6f83b517e96ab6e092e9',1,'CGTKMenu']]],
+  ['detachtab_3a',['detachTab:',['../interface_c_g_t_k_notebook.html#a4216d669d2bd9f25cf44d28f968117e9',1,'CGTKNotebook']]],
   ['deviceisshadowed_3a',['deviceIsShadowed:',['../interface_c_g_t_k_widget.html#ae3096b5e9f8bfee5ef4638ea1ece57e6',1,'CGTKWidget']]],
   ['dialog',['DIALOG',['../interface_c_g_t_k_dialog.html#abf953bb75899fca20795ee95c57e92fb',1,'CGTKDialog']]],
   ['draghighlightrow_3a',['dragHighlightRow:',['../interface_c_g_t_k_list_box.html#a90a8f67693b91a225ab7adb146c4859c',1,'CGTKListBox']]],

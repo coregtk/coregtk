@@ -2,7 +2,7 @@
  * CGTKStack.h
  * This file is part of CoreGTK
  *
- * Copyright (C) 2015 - Tyler Burton
+ * Copyright (C) 2016 - Tyler Burton
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -20,7 +20,7 @@
  */
 
 /*
- * Modified by the CoreGTK Team, 2015. See the AUTHORS file for a
+ * Modified by the CoreGTK Team, 2016. See the AUTHORS file for a
  * list of people on the CoreGTK Team.
  * See the ChangeLog files for a list of changes.
  *
@@ -66,11 +66,33 @@
 -(void)addTitledWithChild:(CGTKWidget*) child andName:(NSString*) name andTitle:(NSString*) title;
 
 /**
+ * -(CGTKWidget**)getChildByName:(NSString*) name;
+ *
+ * @param name
+ * @returns CGTKWidget*
+ */
+-(CGTKWidget*)getChildByName:(NSString*) name;
+
+/**
+ * -(BOOL*)getHhomogeneous;
+ *
+ * @returns BOOL
+ */
+-(BOOL)getHhomogeneous;
+
+/**
  * -(BOOL*)getHomogeneous;
  *
  * @returns BOOL
  */
 -(BOOL)getHomogeneous;
+
+/**
+ * -(BOOL*)getInterpolateSize;
+ *
+ * @returns BOOL
+ */
+-(BOOL)getInterpolateSize;
 
 /**
  * -(guint*)getTransitionDuration;
@@ -80,11 +102,25 @@
 -(guint)getTransitionDuration;
 
 /**
+ * -(BOOL*)getTransitionRunning;
+ *
+ * @returns BOOL
+ */
+-(BOOL)getTransitionRunning;
+
+/**
  * -(GtkStackTransitionType*)getTransitionType;
  *
  * @returns GtkStackTransitionType
  */
 -(GtkStackTransitionType)getTransitionType;
+
+/**
+ * -(BOOL*)getVhomogeneous;
+ *
+ * @returns BOOL
+ */
+-(BOOL)getVhomogeneous;
 
 /**
  * -(CGTKWidget**)getVisibleChild;
@@ -101,11 +137,25 @@
 -(NSString*)getVisibleChildName;
 
 /**
+ * -(void*)setHhomogeneous:(BOOL) hhomogeneous;
+ *
+ * @param hhomogeneous
+ */
+-(void)setHhomogeneous:(BOOL) hhomogeneous;
+
+/**
  * -(void*)setHomogeneous:(BOOL) homogeneous;
  *
  * @param homogeneous
  */
 -(void)setHomogeneous:(BOOL) homogeneous;
+
+/**
+ * -(void*)setInterpolateSize:(BOOL) interpolateSize;
+ *
+ * @param interpolateSize
+ */
+-(void)setInterpolateSize:(BOOL) interpolateSize;
 
 /**
  * -(void*)setTransitionDuration:(guint) duration;
@@ -120,6 +170,13 @@
  * @param transition
  */
 -(void)setTransitionType:(GtkStackTransitionType) transition;
+
+/**
+ * -(void*)setVhomogeneous:(BOOL) vhomogeneous;
+ *
+ * @param vhomogeneous
+ */
+-(void)setVhomogeneous:(BOOL) vhomogeneous;
 
 /**
  * -(void*)setVisibleChild:(CGTKWidget*) child;

@@ -1,7 +1,7 @@
 <map id="CGTKApplicationWindow" name="CGTKApplicationWindow">
 <area shape="rect" id="node2" href="$interface_c_g_t_k_window.html" title="CGTKWindow" alt="" coords="37,379,144,405"/>
-<area shape="rect" id="node3" href="$interface_c_g_t_k_bin.html" title="CGTKBin" alt="" coords="51,304,129,331"/>
+<area shape="rect" id="node3" href="$interface_c_g_t_k_bin.html" title="CGTKBin" alt="" coords="51,304,130,331"/>
 <area shape="rect" id="node4" href="$interface_c_g_t_k_container.html" title="CGTKContainer" alt="" coords="33,229,148,256"/>
-<area shape="rect" id="node5" href="$interface_c_g_t_k_widget.html" title="CGTKWidget" alt="" coords="41,155,140,181"/>
+<area shape="rect" id="node5" href="$interface_c_g_t_k_widget.html" title="CGTKWidget" alt="" coords="41,155,141,181"/>
 <area shape="rect" id="node6" href="$interface_c_g_t_k_base.html" title="CGTKBase" alt="" coords="46,80,135,107"/>
 </map>

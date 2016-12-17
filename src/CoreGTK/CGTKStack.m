@@ -2,7 +2,7 @@
  * CGTKStack.m
  * This file is part of CoreGTK
  *
- * Copyright (C) 2015 - Tyler Burton
+ * Copyright (C) 2016 - Tyler Burton
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -20,7 +20,7 @@
  */
 
 /*
- * Modified by the CoreGTK Team, 2015. See the AUTHORS file for a
+ * Modified by the CoreGTK Team, 2016. See the AUTHORS file for a
  * list of people on the CoreGTK Team.
  * See the ChangeLog files for a list of changes.
  *
@@ -60,9 +60,24 @@
 	gtk_stack_add_titled(GTK_STACK([self GOBJECT]), [child WIDGET], [name UTF8String], [title UTF8String]);
 }
 
+-(CGTKWidget*)getChildByName:(NSString*) name
+{
+	return [[CGTKWidget alloc] initWithGObject:(GObject *)gtk_stack_get_child_by_name(GTK_STACK([self GOBJECT]), [name UTF8String])];
+}
+
+-(BOOL)getHhomogeneous
+{
+	return (gtk_stack_get_hhomogeneous(GTK_STACK([self GOBJECT])) ? YES : NO);
+}
+
 -(BOOL)getHomogeneous
 {
 	return (gtk_stack_get_homogeneous(GTK_STACK([self GOBJECT])) ? YES : NO);
+}
+
+-(BOOL)getInterpolateSize
+{
+	return (gtk_stack_get_interpolate_size(GTK_STACK([self GOBJECT])) ? YES : NO);
 }
 
 -(guint)getTransitionDuration
@@ -70,9 +85,19 @@
 	return gtk_stack_get_transition_duration(GTK_STACK([self GOBJECT]));
 }
 
+-(BOOL)getTransitionRunning
+{
+	return (gtk_stack_get_transition_running(GTK_STACK([self GOBJECT])) ? YES : NO);
+}
+
 -(GtkStackTransitionType)getTransitionType
 {
 	return gtk_stack_get_transition_type(GTK_STACK([self GOBJECT]));
+}
+
+-(BOOL)getVhomogeneous
+{
+	return (gtk_stack_get_vhomogeneous(GTK_STACK([self GOBJECT])) ? YES : NO);
 }
 
 -(CGTKWidget*)getVisibleChild
@@ -85,9 +110,19 @@
 	return [NSString stringWithUTF8String:gtk_stack_get_visible_child_name(GTK_STACK([self GOBJECT]))];
 }
 
+-(void)setHhomogeneous:(BOOL) hhomogeneous
+{
+	gtk_stack_set_hhomogeneous(GTK_STACK([self GOBJECT]), (hhomogeneous ? TRUE : FALSE));
+}
+
 -(void)setHomogeneous:(BOOL) homogeneous
 {
 	gtk_stack_set_homogeneous(GTK_STACK([self GOBJECT]), (homogeneous ? TRUE : FALSE));
+}
+
+-(void)setInterpolateSize:(BOOL) interpolateSize
+{
+	gtk_stack_set_interpolate_size(GTK_STACK([self GOBJECT]), (interpolateSize ? TRUE : FALSE));
 }
 
 -(void)setTransitionDuration:(guint) duration
@@ -98,6 +133,11 @@
 -(void)setTransitionType:(GtkStackTransitionType) transition
 {
 	gtk_stack_set_transition_type(GTK_STACK([self GOBJECT]), transition);
+}
+
+-(void)setVhomogeneous:(BOOL) vhomogeneous
+{
+	gtk_stack_set_vhomogeneous(GTK_STACK([self GOBJECT]), (vhomogeneous ? TRUE : FALSE));
 }
 
 -(void)setVisibleChild:(CGTKWidget*) child

@@ -2,7 +2,7 @@
  * CGTKWidget.h
  * This file is part of CoreGTK
  *
- * Copyright (C) 2015 - Tyler Burton
+ * Copyright (C) 2016 - Tyler Burton
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -20,7 +20,7 @@
  */
 
 /*
- * Modified by the CoreGTK Team, 2015. See the AUTHORS file for a
+ * Modified by the CoreGTK Team, 2016. See the AUTHORS file for a
  * list of people on the CoreGTK Team.
  * See the ChangeLog files for a list of changes.
  *
@@ -430,6 +430,14 @@
 -(AtkObject*)getAccessible;
 
 /**
+ * -(GActionGroup**)getActionGroup:(NSString*) prefix;
+ *
+ * @param prefix
+ * @returns GActionGroup*
+ */
+-(GActionGroup*)getActionGroup:(NSString*) prefix;
+
+/**
  * -(int*)getAllocatedBaseline;
  *
  * @returns int
@@ -501,6 +509,13 @@
 -(BOOL)getChildVisible;
 
 /**
+ * -(void*)getClip:(GtkAllocation*) clip;
+ *
+ * @param clip
+ */
+-(void)getClip:(GtkAllocation*) clip;
+
+/**
  * -(GtkClipboard**)getClipboard:(GdkAtom) selection;
  *
  * @param selection
@@ -560,6 +575,20 @@
 -(gint)getEvents;
 
 /**
+ * -(PangoFontMap**)getFontMap;
+ *
+ * @returns PangoFontMap*
+ */
+-(PangoFontMap*)getFontMap;
+
+/**
+ * -(const cairo_font_options_t**)getFontOptions;
+ *
+ * @returns const cairo_font_options_t*
+ */
+-(const cairo_font_options_t*)getFontOptions;
+
+/**
  * -(GdkFrameClock**)getFrameClock;
  *
  * @returns GdkFrameClock*
@@ -616,6 +645,13 @@
 -(gint)getMarginBottom;
 
 /**
+ * -(gint*)getMarginEnd;
+ *
+ * @returns gint
+ */
+-(gint)getMarginEnd;
+
+/**
  * -(gint*)getMarginLeft;
  *
  * @returns gint
@@ -628,6 +664,13 @@
  * @returns gint
  */
 -(gint)getMarginRight;
+
+/**
+ * -(gint*)getMarginStart;
+ *
+ * @returns gint
+ */
+-(gint)getMarginStart;
 
 /**
  * -(gint*)getMarginTop;
@@ -1135,6 +1178,13 @@
 -(GList*)listAccelClosures;
 
 /**
+ * -(const gchar***)listActionPrefixes;
+ *
+ * @returns const gchar**
+ */
+-(const gchar**)listActionPrefixes;
+
+/**
  * -(GList**)listMnemonicLabels;
  *
  * @returns GList*
@@ -1441,6 +1491,13 @@
 -(void)setChildVisible:(BOOL) isVisible;
 
 /**
+ * -(void*)setClip:(const GtkAllocation*) clip;
+ *
+ * @param clip
+ */
+-(void)setClip:(const GtkAllocation*) clip;
+
+/**
  * -(void*)setCompositeName:(NSString*) name;
  *
  * @param name
@@ -1483,6 +1540,20 @@
  * @param events
  */
 -(void)setEvents:(gint) events;
+
+/**
+ * -(void*)setFontMap:(PangoFontMap*) fontMap;
+ *
+ * @param fontMap
+ */
+-(void)setFontMap:(PangoFontMap*) fontMap;
+
+/**
+ * -(void*)setFontOptions:(const cairo_font_options_t*) options;
+ *
+ * @param options
+ */
+-(void)setFontOptions:(const cairo_font_options_t*) options;
 
 /**
  * -(void*)setHalign:(GtkAlign) align;
@@ -1534,6 +1605,13 @@
 -(void)setMarginBottom:(gint) margin;
 
 /**
+ * -(void*)setMarginEnd:(gint) margin;
+ *
+ * @param margin
+ */
+-(void)setMarginEnd:(gint) margin;
+
+/**
  * -(void*)setMarginLeft:(gint) margin;
  *
  * @param margin
@@ -1546,6 +1624,13 @@
  * @param margin
  */
 -(void)setMarginRight:(gint) margin;
+
+/**
+ * -(void*)setMarginStart:(gint) margin;
+ *
+ * @param margin
+ */
+-(void)setMarginStart:(gint) margin;
 
 /**
  * -(void*)setMarginTop:(gint) margin;

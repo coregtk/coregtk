@@ -2,7 +2,7 @@
  * main.m
  * This file is part of CoreGTK
  *
- * Copyright (C) 2015 - Tyler Burton
+ * Copyright (C) 2016 - Tyler Burton
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -20,7 +20,7 @@
  */
 
 /*
- * Modified by the CoreGTK Team, 2015. See the AUTHORS file for a
+ * Modified by the CoreGTK Team, 2016. See the AUTHORS file for a
  * list of people on the CoreGTK Team.
  * See the ChangeLog files for a list of changes.
  *
@@ -101,7 +101,7 @@ int main(int argc, char *argv[])
 	[window setBorderWidth:10];
 
 	// Sets the title text of the window
-	[window setTitle:@"Running GTK3!"];
+	[window setTitle:@"Now supporting GTK+ 3.18!"];
 
 	// Sets the default size to 400x300
 	[window setDefaultSizeWithWidth:400 andHeight:300];

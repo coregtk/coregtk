@@ -2,7 +2,7 @@
  * CGTKPaned.m
  * This file is part of CoreGTK
  *
- * Copyright (C) 2015 - Tyler Burton
+ * Copyright (C) 2016 - Tyler Burton
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -20,7 +20,7 @@
  */
 
 /*
- * Modified by the CoreGTK Team, 2015. See the AUTHORS file for a
+ * Modified by the CoreGTK Team, 2016. See the AUTHORS file for a
  * list of people on the CoreGTK Team.
  * See the ChangeLog files for a list of changes.
  *
@@ -80,6 +80,11 @@
 	return gtk_paned_get_position(GTK_PANED([self GOBJECT]));
 }
 
+-(BOOL)getWideHandle
+{
+	return (gtk_paned_get_wide_handle(GTK_PANED([self GOBJECT])) ? YES : NO);
+}
+
 -(void)pack1WithChild:(CGTKWidget*) child andResize:(BOOL) resize andShrink:(BOOL) shrink
 {
 	gtk_paned_pack1(GTK_PANED([self GOBJECT]), [child WIDGET], (resize ? TRUE : FALSE), (shrink ? TRUE : FALSE));
@@ -93,6 +98,11 @@
 -(void)setPosition:(gint) position
 {
 	gtk_paned_set_position(GTK_PANED([self GOBJECT]), position);
+}
+
+-(void)setWideHandle:(BOOL) wide
+{
+	gtk_paned_set_wide_handle(GTK_PANED([self GOBJECT]), (wide ? TRUE : FALSE));
 }
 
 

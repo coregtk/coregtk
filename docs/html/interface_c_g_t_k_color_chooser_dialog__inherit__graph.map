@@ -1,8 +1,8 @@
 <map id="CGTKColorChooserDialog" name="CGTKColorChooserDialog">
 <area shape="rect" id="node2" href="$interface_c_g_t_k_dialog.html" title="CGTKDialog" alt="" coords="45,453,141,480"/>
 <area shape="rect" id="node3" href="$interface_c_g_t_k_window.html" title="CGTKWindow" alt="" coords="40,379,147,405"/>
-<area shape="rect" id="node4" href="$interface_c_g_t_k_bin.html" title="CGTKBin" alt="" coords="54,304,132,331"/>
+<area shape="rect" id="node4" href="$interface_c_g_t_k_bin.html" title="CGTKBin" alt="" coords="54,304,133,331"/>
 <area shape="rect" id="node5" href="$interface_c_g_t_k_container.html" title="CGTKContainer" alt="" coords="36,229,151,256"/>
 <area shape="rect" id="node6" href="$interface_c_g_t_k_widget.html" title="CGTKWidget" alt="" coords="43,155,143,181"/>
-<area shape="rect" id="node7" href="$interface_c_g_t_k_base.html" title="CGTKBase" alt="" coords="49,80,137,107"/>
+<area shape="rect" id="node7" href="$interface_c_g_t_k_base.html" title="CGTKBase" alt="" coords="49,80,138,107"/>
 </map>

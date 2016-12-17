@@ -6,6 +6,7 @@ var interface_c_g_t_k_dialog =
     [ "DIALOG", "interface_c_g_t_k_dialog.html#abf953bb75899fca20795ee95c57e92fb", null ],
     [ "getActionArea", "interface_c_g_t_k_dialog.html#af6c0badd821b522b516b61a6dc98c09f", null ],
     [ "getContentArea", "interface_c_g_t_k_dialog.html#a8ed43f51c7984b3367e90a75c0480f24", null ],
+    [ "getHeaderBar", "interface_c_g_t_k_dialog.html#a05da7b1f61232a97b7b1b1897220c052", null ],
     [ "getResponseForWidget:", "interface_c_g_t_k_dialog.html#a92b9110daebc93fdc01bf2d1a5335bde", null ],
     [ "getWidgetForResponse:", "interface_c_g_t_k_dialog.html#abf6340cb422c59323e56dfe9f98724a6", null ],
     [ "init", "interface_c_g_t_k_dialog.html#a17baf2938180ab586777f5a8790110e5", null ],

@@ -1,8 +1,8 @@
 <map id="CGTKRadioMenuItem" name="CGTKRadioMenuItem">
-<area shape="rect" id="node2" href="$interface_c_g_t_k_check_menu_item.html" title="CGTKCheckMenuItem" alt="" coords="4,453,157,480"/>
-<area shape="rect" id="node3" href="$interface_c_g_t_k_menu_item.html" title="CGTKMenuItem" alt="" coords="23,379,139,405"/>
-<area shape="rect" id="node4" href="$interface_c_g_t_k_bin.html" title="CGTKBin" alt="" coords="42,304,120,331"/>
-<area shape="rect" id="node5" href="$interface_c_g_t_k_container.html" title="CGTKContainer" alt="" coords="24,229,139,256"/>
-<area shape="rect" id="node6" href="$interface_c_g_t_k_widget.html" title="CGTKWidget" alt="" coords="31,155,131,181"/>
-<area shape="rect" id="node7" href="$interface_c_g_t_k_base.html" title="CGTKBase" alt="" coords="37,80,125,107"/>
+<area shape="rect" id="node2" href="$interface_c_g_t_k_check_menu_item.html" title="CGTKCheckMenuItem" alt="" coords="5,453,160,480"/>
+<area shape="rect" id="node3" href="$interface_c_g_t_k_menu_item.html" title="CGTKMenuItem" alt="" coords="24,379,141,405"/>
+<area shape="rect" id="node4" href="$interface_c_g_t_k_bin.html" title="CGTKBin" alt="" coords="43,304,122,331"/>
+<area shape="rect" id="node5" href="$interface_c_g_t_k_container.html" title="CGTKContainer" alt="" coords="25,229,140,256"/>
+<area shape="rect" id="node6" href="$interface_c_g_t_k_widget.html" title="CGTKWidget" alt="" coords="33,155,133,181"/>
+<area shape="rect" id="node7" href="$interface_c_g_t_k_base.html" title="CGTKBase" alt="" coords="38,80,127,107"/>
 </map>

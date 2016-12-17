@@ -2,7 +2,7 @@
  * CGTKNotebook.m
  * This file is part of CoreGTK
  *
- * Copyright (C) 2015 - Tyler Burton
+ * Copyright (C) 2016 - Tyler Burton
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -20,7 +20,7 @@
  */
 
 /*
- * Modified by the CoreGTK Team, 2015. See the AUTHORS file for a
+ * Modified by the CoreGTK Team, 2016. See the AUTHORS file for a
  * list of people on the CoreGTK Team.
  * See the ChangeLog files for a list of changes.
  *
@@ -58,6 +58,11 @@
 -(gint)appendPageMenuWithChild:(CGTKWidget*) child andTabLabel:(CGTKWidget*) tabLabel andMenuLabel:(CGTKWidget*) menuLabel
 {
 	return gtk_notebook_append_page_menu(GTK_NOTEBOOK([self GOBJECT]), [child WIDGET], [tabLabel WIDGET], [menuLabel WIDGET]);
+}
+
+-(void)detachTab:(CGTKWidget*) child
+{
+	gtk_notebook_detach_tab(GTK_NOTEBOOK([self GOBJECT]), [child WIDGET]);
 }
 
 -(CGTKWidget*)getActionWidget:(GtkPackType) packType
