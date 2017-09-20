@@ -2,7 +2,7 @@
  * CGTKAssistant.m
  * This file is part of CoreGTK
  *
- * Copyright (C) 2015 - Tyler Burton
+ * Copyright (C) 2016 - Tyler Burton
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -20,7 +20,7 @@
  */
 
 /*
- * Modified by the CoreGTK Team, 2015. See the AUTHORS file for a
+ * Modified by the CoreGTK Team, 2016. See the AUTHORS file for a
  * list of people on the CoreGTK Team.
  * See the ChangeLog files for a list of changes.
  *
@@ -83,6 +83,11 @@
 -(BOOL)getPageComplete:(CGTKWidget*) page
 {
 	return (gtk_assistant_get_page_complete(GTK_ASSISTANT([self GOBJECT]), [page WIDGET]) ? YES : NO);
+}
+
+-(BOOL)getPageHasPadding:(CGTKWidget*) page
+{
+	return (gtk_assistant_get_page_has_padding(GTK_ASSISTANT([self GOBJECT]), [page WIDGET]) ? YES : NO);
 }
 
 -(GdkPixbuf*)getPageHeaderImage:(CGTKWidget*) page
@@ -148,6 +153,11 @@
 -(void)setPageCompleteWithPage:(CGTKWidget*) page andComplete:(BOOL) complete
 {
 	gtk_assistant_set_page_complete(GTK_ASSISTANT([self GOBJECT]), [page WIDGET], (complete ? TRUE : FALSE));
+}
+
+-(void)setPageHasPaddingWithPage:(CGTKWidget*) page andHasPadding:(BOOL) hasPadding
+{
+	gtk_assistant_set_page_has_padding(GTK_ASSISTANT([self GOBJECT]), [page WIDGET], (hasPadding ? TRUE : FALSE));
 }
 
 -(void)setPageHeaderImageWithPage:(CGTKWidget*) page andPixbuf:(GdkPixbuf*) pixbuf

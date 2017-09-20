@@ -2,7 +2,7 @@
  * CGTKTextView.m
  * This file is part of CoreGTK
  *
- * Copyright (C) 2015 - Tyler Burton
+ * Copyright (C) 2016 - Tyler Burton
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -20,7 +20,7 @@
  */
 
 /*
- * Modified by the CoreGTK Team, 2015. See the AUTHORS file for a
+ * Modified by the CoreGTK Team, 2016. See the AUTHORS file for a
  * list of people on the CoreGTK Team.
  * See the ChangeLog files for a list of changes.
  *
@@ -107,6 +107,11 @@
 	return gtk_text_view_get_border_window_size(GTK_TEXT_VIEW([self GOBJECT]), type);
 }
 
+-(gint)getBottomMargin
+{
+	return gtk_text_view_get_bottom_margin(GTK_TEXT_VIEW([self GOBJECT]));
+}
+
 -(GtkTextBuffer*)getBuffer
 {
 	return gtk_text_view_get_buffer(GTK_TEXT_VIEW([self GOBJECT]));
@@ -187,6 +192,11 @@
 	gtk_text_view_get_line_yrange(GTK_TEXT_VIEW([self GOBJECT]), iter, y, height);
 }
 
+-(BOOL)getMonospace
+{
+	return (gtk_text_view_get_monospace(GTK_TEXT_VIEW([self GOBJECT])) ? YES : NO);
+}
+
 -(BOOL)getOverwrite
 {
 	return (gtk_text_view_get_overwrite(GTK_TEXT_VIEW([self GOBJECT])) ? YES : NO);
@@ -215,6 +225,11 @@
 -(PangoTabArray*)getTabs
 {
 	return gtk_text_view_get_tabs(GTK_TEXT_VIEW([self GOBJECT]));
+}
+
+-(gint)getTopMargin
+{
+	return gtk_text_view_get_top_margin(GTK_TEXT_VIEW([self GOBJECT]));
 }
 
 -(GtkAdjustment*)getVadjustment
@@ -297,6 +312,11 @@
 	gtk_text_view_set_border_window_size(GTK_TEXT_VIEW([self GOBJECT]), type, size);
 }
 
+-(void)setBottomMargin:(gint) bottomMargin
+{
+	gtk_text_view_set_bottom_margin(GTK_TEXT_VIEW([self GOBJECT]), bottomMargin);
+}
+
 -(void)setBuffer:(GtkTextBuffer*) buffer
 {
 	gtk_text_view_set_buffer(GTK_TEXT_VIEW([self GOBJECT]), buffer);
@@ -337,6 +357,11 @@
 	gtk_text_view_set_left_margin(GTK_TEXT_VIEW([self GOBJECT]), leftMargin);
 }
 
+-(void)setMonospace:(BOOL) monospace
+{
+	gtk_text_view_set_monospace(GTK_TEXT_VIEW([self GOBJECT]), (monospace ? TRUE : FALSE));
+}
+
 -(void)setOverwrite:(BOOL) overwrite
 {
 	gtk_text_view_set_overwrite(GTK_TEXT_VIEW([self GOBJECT]), (overwrite ? TRUE : FALSE));
@@ -365,6 +390,11 @@
 -(void)setTabs:(PangoTabArray*) tabs
 {
 	gtk_text_view_set_tabs(GTK_TEXT_VIEW([self GOBJECT]), tabs);
+}
+
+-(void)setTopMargin:(gint) topMargin
+{
+	gtk_text_view_set_top_margin(GTK_TEXT_VIEW([self GOBJECT]), topMargin);
 }
 
 -(void)setWrapMode:(GtkWrapMode) wrapMode

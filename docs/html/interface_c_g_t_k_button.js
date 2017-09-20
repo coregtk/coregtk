@@ -27,7 +27,7 @@ var interface_c_g_t_k_button =
     [ "setImage:", "interface_c_g_t_k_button.html#ace3bce7ab262c8b87ebafb4d93175a14", null ],
     [ "setImagePosition:", "interface_c_g_t_k_button.html#a1248de3f3640eb8283714283f98ff1bd", null ],
     [ "setLabel:", "interface_c_g_t_k_button.html#a254f8015868472f12b8d9acb04da6e54", null ],
-    [ "setRelief:", "interface_c_g_t_k_button.html#a684acf98d96a535119b58b92877545b4", null ],
+    [ "setRelief:", "interface_c_g_t_k_button.html#a974a6bb082ac33fc9d12800926e919cd", null ],
     [ "setUseStock:", "interface_c_g_t_k_button.html#abd189718f9857b541f8ee5f97d3172d6", null ],
     [ "setUseUnderline:", "interface_c_g_t_k_button.html#a0cad32d81837af293b46e0a09c550d7d", null ]
 ];

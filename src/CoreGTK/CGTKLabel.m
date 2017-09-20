@@ -2,7 +2,7 @@
  * CGTKLabel.m
  * This file is part of CoreGTK
  *
- * Copyright (C) 2015 - Tyler Burton
+ * Copyright (C) 2016 - Tyler Burton
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -20,7 +20,7 @@
  */
 
 /*
- * Modified by the CoreGTK Team, 2015. See the AUTHORS file for a
+ * Modified by the CoreGTK Team, 2016. See the AUTHORS file for a
  * list of people on the CoreGTK Team.
  * See the ChangeLog files for a list of changes.
  *
@@ -172,6 +172,16 @@
 	return gtk_label_get_width_chars(GTK_LABEL([self GOBJECT]));
 }
 
+-(gfloat)getXalign
+{
+	return gtk_label_get_xalign(GTK_LABEL([self GOBJECT]));
+}
+
+-(gfloat)getYalign
+{
+	return gtk_label_get_yalign(GTK_LABEL([self GOBJECT]));
+}
+
 -(void)selectRegionWithStartOffset:(gint) startOffset andEndOffset:(gint) endOffset
 {
 	gtk_label_select_region(GTK_LABEL([self GOBJECT]), startOffset, endOffset);
@@ -280,6 +290,16 @@
 -(void)setWidthChars:(gint) nchars
 {
 	gtk_label_set_width_chars(GTK_LABEL([self GOBJECT]), nchars);
+}
+
+-(void)setXalign:(gfloat) xalign
+{
+	gtk_label_set_xalign(GTK_LABEL([self GOBJECT]), xalign);
+}
+
+-(void)setYalign:(gfloat) yalign
+{
+	gtk_label_set_yalign(GTK_LABEL([self GOBJECT]), yalign);
 }
 
 

@@ -1,7 +1,7 @@
 var searchData=
 [
   ['handlebox',['HANDLEBOX',['../interface_c_g_t_k_handle_box.html#adc572a043f31275cda9f189480ddc116',1,'CGTKHandleBox']]],
-  ['handleevent_3a',['handleEvent:',['../interface_c_g_t_k_search_bar.html#abe24875bbd7f1cecfc41892306a73299',1,'CGTKSearchBar']]],
+  ['handleevent_3a',['handleEvent:',['../interface_c_g_t_k_search_bar.html#abe24875bbd7f1cecfc41892306a73299',1,'CGTKSearchBar::handleEvent:()'],['../interface_c_g_t_k_search_entry.html#a25692f0b11ae7cba3389138ebc10c5eb',1,'CGTKSearchEntry::handleEvent:()']]],
   ['hasdefault',['hasDefault',['../interface_c_g_t_k_widget.html#aee2c646e2d1ca917baecc5e99b9d8802',1,'CGTKWidget']]],
   ['hasfocus',['hasFocus',['../interface_c_g_t_k_widget.html#ad37d527b774ae4a9f9d2fc14172e17f9',1,'CGTKWidget']]],
   ['hasgrab',['hasGrab',['../interface_c_g_t_k_widget.html#a172a54d258cd3049559adb92253a0575',1,'CGTKWidget']]],

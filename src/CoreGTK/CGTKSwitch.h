@@ -2,7 +2,7 @@
  * CGTKSwitch.h
  * This file is part of CoreGTK
  *
- * Copyright (C) 2015 - Tyler Burton
+ * Copyright (C) 2016 - Tyler Burton
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -20,7 +20,7 @@
  */
 
 /*
- * Modified by the CoreGTK Team, 2015. See the AUTHORS file for a
+ * Modified by the CoreGTK Team, 2016. See the AUTHORS file for a
  * list of people on the CoreGTK Team.
  * See the ChangeLog files for a list of changes.
  *
@@ -56,10 +56,24 @@
 -(BOOL)getActive;
 
 /**
+ * -(BOOL*)getState;
+ *
+ * @returns BOOL
+ */
+-(BOOL)getState;
+
+/**
  * -(void*)setActive:(BOOL) isActive;
  *
  * @param isActive
  */
 -(void)setActive:(BOOL) isActive;
+
+/**
+ * -(void*)setState:(BOOL) state;
+ *
+ * @param state
+ */
+-(void)setState:(BOOL) state;
 
 @end

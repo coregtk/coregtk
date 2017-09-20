@@ -2,7 +2,7 @@
  * CGTKWindow.h
  * This file is part of CoreGTK
  *
- * Copyright (C) 2015 - Tyler Burton
+ * Copyright (C) 2016 - Tyler Burton
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -20,7 +20,7 @@
  */
 
 /*
- * Modified by the CoreGTK Team, 2015. See the AUTHORS file for a
+ * Modified by the CoreGTK Team, 2016. See the AUTHORS file for a
  * list of people on the CoreGTK Team.
  * See the ChangeLog files for a list of changes.
  *
@@ -47,6 +47,7 @@
 +(BOOL)setDefaultIconFromFileWithFilename:(NSString*) filename andErr:(GError**) err;
 +(void)setDefaultIconList:(GList*) list;
 +(void)setDefaultIconName:(NSString*) name;
++(void)setInteractiveDebugging:(BOOL) enable;
 
 /**
  * Constructors
@@ -134,6 +135,14 @@
  *
  */
 -(void)fullscreen;
+
+/**
+ * -(void*)fullscreenOnMonitorWithScreen:(GdkScreen*) screen andMonitor:(gint) monitor;
+ *
+ * @param screen
+ * @param monitor
+ */
+-(void)fullscreenOnMonitorWithScreen:(GdkScreen*) screen andMonitor:(gint) monitor;
 
 /**
  * -(BOOL*)getAcceptFocus;
@@ -357,6 +366,13 @@
 -(NSString*)getTitle;
 
 /**
+ * -(CGTKWidget**)getTitlebar;
+ *
+ * @returns CGTKWidget*
+ */
+-(CGTKWidget*)getTitlebar;
+
+/**
  * -(GtkWindow**)getTransientFor;
  *
  * @returns GtkWindow*
@@ -410,6 +426,13 @@
  * @returns BOOL
  */
 -(BOOL)isActive;
+
+/**
+ * -(BOOL*)isMaximized;
+ *
+ * @returns BOOL
+ */
+-(BOOL)isMaximized;
 
 /**
  * -(void*)maximize;

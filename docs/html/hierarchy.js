@@ -9,12 +9,14 @@ var hierarchy =
           [ "CGTKCellView", "interface_c_g_t_k_cell_view.html", null ],
           [ "CGTKContainer", "interface_c_g_t_k_container.html", [
             [ "CGTKBin", "interface_c_g_t_k_bin.html", [
+              [ "CGTKActionBar", "interface_c_g_t_k_action_bar.html", null ],
               [ "CGTKAlignment", "interface_c_g_t_k_alignment.html", null ],
               [ "CGTKButton", "interface_c_g_t_k_button.html", [
                 [ "CGTKColorButton", "interface_c_g_t_k_color_button.html", null ],
                 [ "CGTKFontButton", "interface_c_g_t_k_font_button.html", null ],
                 [ "CGTKLinkButton", "interface_c_g_t_k_link_button.html", null ],
                 [ "CGTKLockButton", "interface_c_g_t_k_lock_button.html", null ],
+                [ "CGTKModelButton", "interface_c_g_t_k_model_button.html", null ],
                 [ "CGTKScaleButton", "interface_c_g_t_k_scale_button.html", [
                   [ "CGTKVolumeButton", "interface_c_g_t_k_volume_button.html", null ]
                 ] ],
@@ -31,6 +33,7 @@ var hierarchy =
               ] ],
               [ "CGTKEventBox", "interface_c_g_t_k_event_box.html", null ],
               [ "CGTKExpander", "interface_c_g_t_k_expander.html", null ],
+              [ "CGTKFlowBoxChild", "interface_c_g_t_k_flow_box_child.html", null ],
               [ "CGTKFrame", "interface_c_g_t_k_frame.html", [
                 [ "CGTKAspectFrame", "interface_c_g_t_k_aspect_frame.html", null ]
               ] ],
@@ -45,11 +48,15 @@ var hierarchy =
                 [ "CGTKTearoffMenuItem", "interface_c_g_t_k_tearoff_menu_item.html", null ]
               ] ],
               [ "CGTKOverlay", "interface_c_g_t_k_overlay.html", null ],
+              [ "CGTKPopover", "interface_c_g_t_k_popover.html", [
+                [ "CGTKPopoverMenu", "interface_c_g_t_k_popover_menu.html", null ]
+              ] ],
               [ "CGTKRevealer", "interface_c_g_t_k_revealer.html", null ],
               [ "CGTKScrolledWindow", "interface_c_g_t_k_scrolled_window.html", [
                 [ "CGTKPlacesSidebar", "interface_c_g_t_k_places_sidebar.html", null ]
               ] ],
               [ "CGTKSearchBar", "interface_c_g_t_k_search_bar.html", null ],
+              [ "CGTKStackSidebar", "interface_c_g_t_k_stack_sidebar.html", null ],
               [ "CGTKToolItem", "interface_c_g_t_k_tool_item.html", [
                 [ "CGTKSeparatorToolItem", "interface_c_g_t_k_separator_tool_item.html", null ],
                 [ "CGTKToolButton", "interface_c_g_t_k_tool_button.html", [
@@ -97,6 +104,7 @@ var hierarchy =
               [ "CGTKVBox", "interface_c_g_t_k_v_box.html", null ]
             ] ],
             [ "CGTKFixed", "interface_c_g_t_k_fixed.html", null ],
+            [ "CGTKFlowBox", "interface_c_g_t_k_flow_box.html", null ],
             [ "CGTKGrid", "interface_c_g_t_k_grid.html", null ],
             [ "CGTKHeaderBar", "interface_c_g_t_k_header_bar.html", null ],
             [ "CGTKIconView", "interface_c_g_t_k_icon_view.html", null ],
@@ -126,6 +134,7 @@ var hierarchy =
             [ "CGTKSearchEntry", "interface_c_g_t_k_search_entry.html", null ],
             [ "CGTKSpinButton", "interface_c_g_t_k_spin_button.html", null ]
           ] ],
+          [ "CGTKGLArea", "interface_c_g_t_k_g_l_area.html", null ],
           [ "CGTKHSV", "interface_c_g_t_k_h_s_v.html", null ],
           [ "CGTKInvisible", "interface_c_g_t_k_invisible.html", null ],
           [ "CGTKLevelBar", "interface_c_g_t_k_level_bar.html", null ],

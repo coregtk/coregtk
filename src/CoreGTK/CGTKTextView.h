@@ -2,7 +2,7 @@
  * CGTKTextView.h
  * This file is part of CoreGTK
  *
- * Copyright (C) 2015 - Tyler Burton
+ * Copyright (C) 2016 - Tyler Burton
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -20,7 +20,7 @@
  */
 
 /*
- * Modified by the CoreGTK Team, 2015. See the AUTHORS file for a
+ * Modified by the CoreGTK Team, 2016. See the AUTHORS file for a
  * list of people on the CoreGTK Team.
  * See the ChangeLog files for a list of changes.
  *
@@ -124,6 +124,13 @@
  * @returns gint
  */
 -(gint)getBorderWindowSize:(GtkTextWindowType) type;
+
+/**
+ * -(gint*)getBottomMargin;
+ *
+ * @returns gint
+ */
+-(gint)getBottomMargin;
 
 /**
  * -(GtkTextBuffer**)getBuffer;
@@ -250,6 +257,13 @@
 -(void)getLineYrangeWithIter:(const GtkTextIter*) iter andY:(gint*) y andHeight:(gint*) height;
 
 /**
+ * -(BOOL*)getMonospace;
+ *
+ * @returns BOOL
+ */
+-(BOOL)getMonospace;
+
+/**
  * -(BOOL*)getOverwrite;
  *
  * @returns BOOL
@@ -290,6 +304,13 @@
  * @returns PangoTabArray*
  */
 -(PangoTabArray*)getTabs;
+
+/**
+ * -(gint*)getTopMargin;
+ *
+ * @returns gint
+ */
+-(gint)getTopMargin;
 
 /**
  * -(GtkAdjustment**)getVadjustment;
@@ -421,6 +442,13 @@
 -(void)setBorderWindowSizeWithType:(GtkTextWindowType) type andSize:(gint) size;
 
 /**
+ * -(void*)setBottomMargin:(gint) bottomMargin;
+ *
+ * @param bottomMargin
+ */
+-(void)setBottomMargin:(gint) bottomMargin;
+
+/**
  * -(void*)setBuffer:(GtkTextBuffer*) buffer;
  *
  * @param buffer
@@ -477,6 +505,13 @@
 -(void)setLeftMargin:(gint) leftMargin;
 
 /**
+ * -(void*)setMonospace:(BOOL) monospace;
+ *
+ * @param monospace
+ */
+-(void)setMonospace:(BOOL) monospace;
+
+/**
  * -(void*)setOverwrite:(BOOL) overwrite;
  *
  * @param overwrite
@@ -517,6 +552,13 @@
  * @param tabs
  */
 -(void)setTabs:(PangoTabArray*) tabs;
+
+/**
+ * -(void*)setTopMargin:(gint) topMargin;
+ *
+ * @param topMargin
+ */
+-(void)setTopMargin:(gint) topMargin;
 
 /**
  * -(void*)setWrapMode:(GtkWrapMode) wrapMode;

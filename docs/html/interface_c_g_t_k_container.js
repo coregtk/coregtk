@@ -5,6 +5,7 @@ var interface_c_g_t_k_container =
     [ "checkResize", "interface_c_g_t_k_container.html#a7a5896cf03751c4bb21d32716d30e721", null ],
     [ "childGetPropertyWithChild:andPropertyName:andValue:", "interface_c_g_t_k_container.html#a4188bd5879b7916192e28348f70da00d", null ],
     [ "childGetValistWithChild:andFirstPropertyName:andVarArgs:", "interface_c_g_t_k_container.html#ac25318efacdefced806fb5caad73f6c6", null ],
+    [ "childNotifyByPspecWithChild:andPspec:", "interface_c_g_t_k_container.html#ac88f60a2c57138736a61864012e62ede", null ],
     [ "childNotifyWithChild:andChildProperty:", "interface_c_g_t_k_container.html#aeef4ca60d6664622f3b7f9ef9d12524f", null ],
     [ "childSetPropertyWithChild:andPropertyName:andValue:", "interface_c_g_t_k_container.html#ac54c33a0b50c5b199454ba44664095b6", null ],
     [ "childSetValistWithChild:andFirstPropertyName:andVarArgs:", "interface_c_g_t_k_container.html#a2d9890037ad58528ccf57f8ddd1b1a22", null ],

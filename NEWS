@@ -1,4 +1,56 @@
 ===============================================================================
+CoreGTK 3.18.0 - 2016-12-17
+===============================================================================
+
+Highlights for this release:
+-----------------------------
+
+ * Rebased on GTK+ 3.18
+ * New supported GtkWidgets in this release:
+     * GtkActionBar
+     * GtkFlowBox
+     * GtkFlowBoxChild
+     * GtkGLArea
+     * GtkModelButton
+     * GtkPopover
+     * GtkPopoverMenu
+     * GtkStackSidebar
+ * Reverted to using GCC as the default compiler (but clang can still be used)
+
+Issues resolved:
+
+ * #26 Clean up unused configuration options in makefile
+ * #27 Is Clang actually required to build CoreGTK? If not try to also support GCC.
+ * #28 Release 3.18 version
+
+===============================================================================
+CoreGTK 3.10.2 - 2016-02-20
+===============================================================================
+
+Highlights for this release:
+-----------------------------
+
+ * This is a bug fix release.
+ * Corrected issue with compiling CoreGTK on OS X.
+
+Issues resolved:
+
+ * #22 Won't compile on OS X due to "file not found 'CoreGTK/.h'"
+
+===============================================================================
+CoreGTK 3.10.1 - 2015-09-08
+===============================================================================
+
+Highlights for this release:
+-----------------------------
+
+ * Added some missing (varargs) GTK+ functions. This makes it easier to create widgets like the FileChooserDialog.
+
+Issues resolved:
+
+ * #19 Add missing GTK+ functions
+
+===============================================================================
 CoreGTK 3.10.0 - 2015-06-28
 ===============================================================================
 

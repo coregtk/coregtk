@@ -1,7 +1,7 @@
 <map id="CGTKScrollbar" name="CGTKScrollbar">
 <area shape="rect" id="node6" href="$interface_c_g_t_k_h_scrollbar.html" title="CGTKHScrollbar" alt="" coords="5,379,125,405"/>
-<area shape="rect" id="node7" href="$interface_c_g_t_k_v_scrollbar.html" title="CGTKVScrollbar" alt="" coords="150,379,268,405"/>
-<area shape="rect" id="node2" href="$interface_c_g_t_k_range.html" title="CGTKRange" alt="" coords="89,229,185,256"/>
+<area shape="rect" id="node7" href="$interface_c_g_t_k_v_scrollbar.html" title="CGTKVScrollbar" alt="" coords="150,379,269,405"/>
+<area shape="rect" id="node2" href="$interface_c_g_t_k_range.html" title="CGTKRange" alt="" coords="89,229,186,256"/>
 <area shape="rect" id="node3" href="$interface_c_g_t_k_widget.html" title="CGTKWidget" alt="" coords="87,155,187,181"/>
-<area shape="rect" id="node4" href="$interface_c_g_t_k_base.html" title="CGTKBase" alt="" coords="93,80,181,107"/>
+<area shape="rect" id="node4" href="$interface_c_g_t_k_base.html" title="CGTKBase" alt="" coords="93,80,182,107"/>
 </map>

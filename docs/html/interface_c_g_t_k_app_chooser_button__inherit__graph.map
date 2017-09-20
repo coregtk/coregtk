@@ -1,7 +1,7 @@
 <map id="CGTKAppChooserButton" name="CGTKAppChooserButton">
-<area shape="rect" id="node2" href="$interface_c_g_t_k_combo_box.html" title="CGTKComboBox" alt="" coords="27,379,151,405"/>
-<area shape="rect" id="node3" href="$interface_c_g_t_k_bin.html" title="CGTKBin" alt="" coords="50,304,128,331"/>
-<area shape="rect" id="node4" href="$interface_c_g_t_k_container.html" title="CGTKContainer" alt="" coords="32,229,147,256"/>
-<area shape="rect" id="node5" href="$interface_c_g_t_k_widget.html" title="CGTKWidget" alt="" coords="39,155,139,181"/>
-<area shape="rect" id="node6" href="$interface_c_g_t_k_base.html" title="CGTKBase" alt="" coords="45,80,133,107"/>
+<area shape="rect" id="node2" href="$interface_c_g_t_k_combo_box.html" title="CGTKComboBox" alt="" coords="28,379,152,405"/>
+<area shape="rect" id="node3" href="$interface_c_g_t_k_bin.html" title="CGTKBin" alt="" coords="51,304,129,331"/>
+<area shape="rect" id="node4" href="$interface_c_g_t_k_container.html" title="CGTKContainer" alt="" coords="33,229,147,256"/>
+<area shape="rect" id="node5" href="$interface_c_g_t_k_widget.html" title="CGTKWidget" alt="" coords="40,155,140,181"/>
+<area shape="rect" id="node6" href="$interface_c_g_t_k_base.html" title="CGTKBase" alt="" coords="45,80,135,107"/>
 </map>

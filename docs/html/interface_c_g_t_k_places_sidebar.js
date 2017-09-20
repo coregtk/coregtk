@@ -1,17 +1,28 @@
 var interface_c_g_t_k_places_sidebar =
 [
     [ "addShortcut:", "interface_c_g_t_k_places_sidebar.html#a138ee7e1524f4be9ab1ae2c0ee67a2c2", null ],
+    [ "getLocalOnly", "interface_c_g_t_k_places_sidebar.html#ae86a3bbde9404eb49b76acc1df9357f4", null ],
     [ "getLocation", "interface_c_g_t_k_places_sidebar.html#a9856af610be50322bea48f3a81d5a352", null ],
     [ "getNthBookmark:", "interface_c_g_t_k_places_sidebar.html#a66726cdeb7c45a649ee6c39997d65e17", null ],
     [ "getOpenFlags", "interface_c_g_t_k_places_sidebar.html#a5a1fcd0abcd0fd2dcafe74a37fb4d3e5", null ],
     [ "getShowConnectToServer", "interface_c_g_t_k_places_sidebar.html#ab12b69625a1e7cdf069622d9a52babe0", null ],
     [ "getShowDesktop", "interface_c_g_t_k_places_sidebar.html#af4f07b15b3da016054b39df756fd2769", null ],
+    [ "getShowEnterLocation", "interface_c_g_t_k_places_sidebar.html#a112d2c305746dfc75d9793442362357e", null ],
+    [ "getShowOtherLocations", "interface_c_g_t_k_places_sidebar.html#a933980b2d7f25ea570d051dc6154f4d5", null ],
+    [ "getShowRecent", "interface_c_g_t_k_places_sidebar.html#a064c131e658e7bc937369491da9a91be", null ],
+    [ "getShowTrash", "interface_c_g_t_k_places_sidebar.html#a1f4e4551a372757180b4a649f3167e9d", null ],
     [ "init", "interface_c_g_t_k_places_sidebar.html#a8af973d6229f2b9d315fa95c5b08df74", null ],
     [ "listShortcuts", "interface_c_g_t_k_places_sidebar.html#ab8c64c040baf300433a36e224009d5f7", null ],
     [ "PLACESSIDEBAR", "interface_c_g_t_k_places_sidebar.html#ab03f5cba1bf877b712ac20cddc935a21", null ],
     [ "removeShortcut:", "interface_c_g_t_k_places_sidebar.html#a8454c44822e0be8404628e729a94c337", null ],
+    [ "setDropTargetsVisibleWithVisible:andContext:", "interface_c_g_t_k_places_sidebar.html#ac8d6c7e5fd444ec76850ddb0edfeb5aa", null ],
+    [ "setLocalOnly:", "interface_c_g_t_k_places_sidebar.html#ae28b712074e9bdf8be53bb8039c37f60", null ],
     [ "setLocation:", "interface_c_g_t_k_places_sidebar.html#a1643938b6b6475dd21a5a8d6e3230b52", null ],
     [ "setOpenFlags:", "interface_c_g_t_k_places_sidebar.html#a685549182aeabc6fe3417ac3bf779ae1", null ],
     [ "setShowConnectToServer:", "interface_c_g_t_k_places_sidebar.html#a0fd661354dfc21d9f9ac59ea259e6817", null ],
-    [ "setShowDesktop:", "interface_c_g_t_k_places_sidebar.html#a3c2d1a2f8a138cca96c6a6f1989e45bb", null ]
+    [ "setShowDesktop:", "interface_c_g_t_k_places_sidebar.html#a3c2d1a2f8a138cca96c6a6f1989e45bb", null ],
+    [ "setShowEnterLocation:", "interface_c_g_t_k_places_sidebar.html#a0e500d4ce81f3759cfa585aeb6b5cbaf", null ],
+    [ "setShowOtherLocations:", "interface_c_g_t_k_places_sidebar.html#a6d4a48cf2142bfd19a76d07a46d5d0f6", null ],
+    [ "setShowRecent:", "interface_c_g_t_k_places_sidebar.html#a244b44757c71d975255fe4932cf6a243", null ],
+    [ "setShowTrash:", "interface_c_g_t_k_places_sidebar.html#a28eccae42756574675f6fa1df88c3e36", null ]
 ];

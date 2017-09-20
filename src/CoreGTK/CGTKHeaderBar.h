@@ -2,7 +2,7 @@
  * CGTKHeaderBar.h
  * This file is part of CoreGTK
  *
- * Copyright (C) 2015 - Tyler Burton
+ * Copyright (C) 2016 - Tyler Burton
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -20,7 +20,7 @@
  */
 
 /*
- * Modified by the CoreGTK Team, 2015. See the AUTHORS file for a
+ * Modified by the CoreGTK Team, 2016. See the AUTHORS file for a
  * list of people on the CoreGTK Team.
  * See the ChangeLog files for a list of changes.
  *
@@ -54,6 +54,20 @@
  * @returns CGTKWidget*
  */
 -(CGTKWidget*)getCustomTitle;
+
+/**
+ * -(NSString**)getDecorationLayout;
+ *
+ * @returns NSString*
+ */
+-(NSString*)getDecorationLayout;
+
+/**
+ * -(BOOL*)getHasSubtitle;
+ *
+ * @returns BOOL
+ */
+-(BOOL)getHasSubtitle;
 
 /**
  * -(BOOL*)getShowCloseButton;
@@ -96,6 +110,20 @@
  * @param titleWidget
  */
 -(void)setCustomTitle:(CGTKWidget*) titleWidget;
+
+/**
+ * -(void*)setDecorationLayout:(NSString*) layout;
+ *
+ * @param layout
+ */
+-(void)setDecorationLayout:(NSString*) layout;
+
+/**
+ * -(void*)setHasSubtitle:(BOOL) setting;
+ *
+ * @param setting
+ */
+-(void)setHasSubtitle:(BOOL) setting;
 
 /**
  * -(void*)setShowCloseButton:(BOOL) setting;

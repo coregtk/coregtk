@@ -2,7 +2,7 @@
  * CGTKPlacesSidebar.m
  * This file is part of CoreGTK
  *
- * Copyright (C) 2015 - Tyler Burton
+ * Copyright (C) 2016 - Tyler Burton
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -20,7 +20,7 @@
  */
 
 /*
- * Modified by the CoreGTK Team, 2015. See the AUTHORS file for a
+ * Modified by the CoreGTK Team, 2016. See the AUTHORS file for a
  * list of people on the CoreGTK Team.
  * See the ChangeLog files for a list of changes.
  *
@@ -55,6 +55,11 @@
 	gtk_places_sidebar_add_shortcut(GTK_PLACES_SIDEBAR([self GOBJECT]), location);
 }
 
+-(BOOL)getLocalOnly
+{
+	return (gtk_places_sidebar_get_local_only(GTK_PLACES_SIDEBAR([self GOBJECT])) ? YES : NO);
+}
+
 -(GFile*)getLocation
 {
 	return gtk_places_sidebar_get_location(GTK_PLACES_SIDEBAR([self GOBJECT]));
@@ -80,6 +85,26 @@
 	return (gtk_places_sidebar_get_show_desktop(GTK_PLACES_SIDEBAR([self GOBJECT])) ? YES : NO);
 }
 
+-(BOOL)getShowEnterLocation
+{
+	return (gtk_places_sidebar_get_show_enter_location(GTK_PLACES_SIDEBAR([self GOBJECT])) ? YES : NO);
+}
+
+-(BOOL)getShowOtherLocations
+{
+	return (gtk_places_sidebar_get_show_other_locations(GTK_PLACES_SIDEBAR([self GOBJECT])) ? YES : NO);
+}
+
+-(BOOL)getShowRecent
+{
+	return (gtk_places_sidebar_get_show_recent(GTK_PLACES_SIDEBAR([self GOBJECT])) ? YES : NO);
+}
+
+-(BOOL)getShowTrash
+{
+	return (gtk_places_sidebar_get_show_trash(GTK_PLACES_SIDEBAR([self GOBJECT])) ? YES : NO);
+}
+
 -(GSList*)listShortcuts
 {
 	return gtk_places_sidebar_list_shortcuts(GTK_PLACES_SIDEBAR([self GOBJECT]));
@@ -88,6 +113,16 @@
 -(void)removeShortcut:(GFile*) location
 {
 	gtk_places_sidebar_remove_shortcut(GTK_PLACES_SIDEBAR([self GOBJECT]), location);
+}
+
+-(void)setDropTargetsVisibleWithVisible:(BOOL) visible andContext:(GdkDragContext*) context
+{
+	gtk_places_sidebar_set_drop_targets_visible(GTK_PLACES_SIDEBAR([self GOBJECT]), (visible ? TRUE : FALSE), context);
+}
+
+-(void)setLocalOnly:(BOOL) localOnly
+{
+	gtk_places_sidebar_set_local_only(GTK_PLACES_SIDEBAR([self GOBJECT]), (localOnly ? TRUE : FALSE));
 }
 
 -(void)setLocation:(GFile*) location
@@ -108,6 +143,26 @@
 -(void)setShowDesktop:(BOOL) showDesktop
 {
 	gtk_places_sidebar_set_show_desktop(GTK_PLACES_SIDEBAR([self GOBJECT]), (showDesktop ? TRUE : FALSE));
+}
+
+-(void)setShowEnterLocation:(BOOL) showEnterLocation
+{
+	gtk_places_sidebar_set_show_enter_location(GTK_PLACES_SIDEBAR([self GOBJECT]), (showEnterLocation ? TRUE : FALSE));
+}
+
+-(void)setShowOtherLocations:(BOOL) showOtherLocations
+{
+	gtk_places_sidebar_set_show_other_locations(GTK_PLACES_SIDEBAR([self GOBJECT]), (showOtherLocations ? TRUE : FALSE));
+}
+
+-(void)setShowRecent:(BOOL) showRecent
+{
+	gtk_places_sidebar_set_show_recent(GTK_PLACES_SIDEBAR([self GOBJECT]), (showRecent ? TRUE : FALSE));
+}
+
+-(void)setShowTrash:(BOOL) showTrash
+{
+	gtk_places_sidebar_set_show_trash(GTK_PLACES_SIDEBAR([self GOBJECT]), (showTrash ? TRUE : FALSE));
 }
 
 

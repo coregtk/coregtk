@@ -2,7 +2,7 @@
  * CGTKListBox.h
  * This file is part of CoreGTK
  *
- * Copyright (C) 2015 - Tyler Burton
+ * Copyright (C) 2016 - Tyler Burton
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -20,7 +20,7 @@
  */
 
 /*
- * Modified by the CoreGTK Team, 2015. See the AUTHORS file for a
+ * Modified by the CoreGTK Team, 2016. See the AUTHORS file for a
  * list of people on the CoreGTK Team.
  * See the ChangeLog files for a list of changes.
  *
@@ -47,6 +47,16 @@
  */
 
 -(GtkListBox*)LISTBOX;
+
+/**
+ * -(void*)bindModelWithModel:(GListModel*) model andCreateWidgetFunc:(GtkListBoxCreateWidgetFunc) createWidgetFunc andUserData:(gpointer) userData andUserDataFreeFunc:(GDestroyNotify) userDataFreeFunc;
+ *
+ * @param model
+ * @param createWidgetFunc
+ * @param userData
+ * @param userDataFreeFunc
+ */
+-(void)bindModelWithModel:(GListModel*) model andCreateWidgetFunc:(GtkListBoxCreateWidgetFunc) createWidgetFunc andUserData:(gpointer) userData andUserDataFreeFunc:(GDestroyNotify) userDataFreeFunc;
 
 /**
  * -(void*)dragHighlightRow:(GtkListBoxRow*) row;
@@ -99,6 +109,13 @@
 -(GtkListBoxRow*)getSelectedRow;
 
 /**
+ * -(GList**)getSelectedRows;
+ *
+ * @returns GList*
+ */
+-(GList*)getSelectedRows;
+
+/**
  * -(GtkSelectionMode*)getSelectionMode;
  *
  * @returns GtkSelectionMode
@@ -139,11 +156,25 @@
 -(void)prepend:(CGTKWidget*) child;
 
 /**
+ * -(void*)selectAll;
+ *
+ */
+-(void)selectAll;
+
+/**
  * -(void*)selectRow:(GtkListBoxRow*) row;
  *
  * @param row
  */
 -(void)selectRow:(GtkListBoxRow*) row;
+
+/**
+ * -(void*)selectedForeachWithFunc:(GtkListBoxForeachFunc) func andData:(gpointer) data;
+ *
+ * @param func
+ * @param data
+ */
+-(void)selectedForeachWithFunc:(GtkListBoxForeachFunc) func andData:(gpointer) data;
 
 /**
  * -(void*)setActivateOnSingleClick:(BOOL) single;
@@ -199,5 +230,18 @@
  * @param destroy
  */
 -(void)setSortFuncWithSortFunc:(GtkListBoxSortFunc) sortFunc andUserData:(gpointer) userData andDestroy:(GDestroyNotify) destroy;
+
+/**
+ * -(void*)unselectAll;
+ *
+ */
+-(void)unselectAll;
+
+/**
+ * -(void*)unselectRow:(GtkListBoxRow*) row;
+ *
+ * @param row
+ */
+-(void)unselectRow:(GtkListBoxRow*) row;
 
 @end

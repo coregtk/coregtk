@@ -1,7 +1,7 @@
 <map id="CGTKVButtonBox" name="CGTKVButtonBox">
-<area shape="rect" id="node2" href="$interface_c_g_t_k_button_box.html" title="CGTKButtonBox" alt="" coords="9,379,129,405"/>
-<area shape="rect" id="node3" href="$interface_c_g_t_k_box.html" title="CGTKBox" alt="" coords="28,304,109,331"/>
-<area shape="rect" id="node4" href="$interface_c_g_t_k_container.html" title="CGTKContainer" alt="" coords="12,229,127,256"/>
-<area shape="rect" id="node5" href="$interface_c_g_t_k_widget.html" title="CGTKWidget" alt="" coords="19,155,119,181"/>
-<area shape="rect" id="node6" href="$interface_c_g_t_k_base.html" title="CGTKBase" alt="" coords="25,80,113,107"/>
+<area shape="rect" id="node2" href="$interface_c_g_t_k_button_box.html" title="CGTKButtonBox" alt="" coords="10,379,130,405"/>
+<area shape="rect" id="node3" href="$interface_c_g_t_k_box.html" title="CGTKBox" alt="" coords="29,304,111,331"/>
+<area shape="rect" id="node4" href="$interface_c_g_t_k_container.html" title="CGTKContainer" alt="" coords="13,229,127,256"/>
+<area shape="rect" id="node5" href="$interface_c_g_t_k_widget.html" title="CGTKWidget" alt="" coords="20,155,120,181"/>
+<area shape="rect" id="node6" href="$interface_c_g_t_k_base.html" title="CGTKBase" alt="" coords="25,80,115,107"/>
 </map>

@@ -1,8 +1,8 @@
 <map id="CGTKMisc" name="CGTKMisc">
 <area shape="rect" id="node5" href="$interface_c_g_t_k_arrow.html" title="CGTKArrow" alt="" coords="5,304,99,331"/>
-<area shape="rect" id="node6" href="$interface_c_g_t_k_image.html" title="CGTKImage" alt="" coords="123,304,217,331"/>
+<area shape="rect" id="node6" href="$interface_c_g_t_k_image.html" title="CGTKImage" alt="" coords="123,304,218,331"/>
 <area shape="rect" id="node7" href="$interface_c_g_t_k_label.html" title="CGTKLabel" alt="" coords="243,304,333,331"/>
-<area shape="rect" id="node2" href="$interface_c_g_t_k_widget.html" title="CGTKWidget" alt="" coords="121,155,220,181"/>
+<area shape="rect" id="node2" href="$interface_c_g_t_k_widget.html" title="CGTKWidget" alt="" coords="121,155,221,181"/>
 <area shape="rect" id="node3" href="$interface_c_g_t_k_base.html" title="CGTKBase" alt="" coords="126,80,215,107"/>
 <area shape="rect" id="node8" href="$interface_c_g_t_k_accel_label.html" title="CGTKAccelLabel" alt="" coords="227,379,349,405"/>
 </map>

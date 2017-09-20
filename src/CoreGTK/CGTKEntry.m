@@ -2,7 +2,7 @@
  * CGTKEntry.m
  * This file is part of CoreGTK
  *
- * Copyright (C) 2015 - Tyler Burton
+ * Copyright (C) 2016 - Tyler Burton
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -20,7 +20,7 @@
  */
 
 /*
- * Modified by the CoreGTK Team, 2015. See the AUTHORS file for a
+ * Modified by the CoreGTK Team, 2016. See the AUTHORS file for a
  * list of people on the CoreGTK Team.
  * See the ChangeLog files for a list of changes.
  *
@@ -192,6 +192,11 @@
 	return gtk_entry_get_max_length(GTK_ENTRY([self GOBJECT]));
 }
 
+-(gint)getMaxWidthChars
+{
+	return gtk_entry_get_max_width_chars(GTK_ENTRY([self GOBJECT]));
+}
+
 -(BOOL)getOverwriteMode
 {
 	return (gtk_entry_get_overwrite_mode(GTK_ENTRY([self GOBJECT])) ? YES : NO);
@@ -240,6 +245,11 @@
 -(gint)getWidthChars
 {
 	return gtk_entry_get_width_chars(GTK_ENTRY([self GOBJECT]));
+}
+
+-(void)grabFocusWithoutSelecting
+{
+	gtk_entry_grab_focus_without_selecting(GTK_ENTRY([self GOBJECT]));
 }
 
 -(BOOL)imContextFilterKeypress:(GdkEventKey*) event
@@ -365,6 +375,11 @@
 -(void)setMaxLength:(gint) max
 {
 	gtk_entry_set_max_length(GTK_ENTRY([self GOBJECT]), max);
+}
+
+-(void)setMaxWidthChars:(gint) nchars
+{
+	gtk_entry_set_max_width_chars(GTK_ENTRY([self GOBJECT]), nchars);
 }
 
 -(void)setOverwriteMode:(BOOL) overwrite
