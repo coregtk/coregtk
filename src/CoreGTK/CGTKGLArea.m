@@ -2,7 +2,7 @@
  * CGTKGLArea.m
  * This file is part of CoreGTK
  *
- * Copyright (C) 2016 - Tyler Burton
+ * Copyright (C) 2017 - Tyler Burton
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -20,7 +20,7 @@
  */
 
 /*
- * Modified by the CoreGTK Team, 2016. See the AUTHORS file for a
+ * Modified by the CoreGTK Team, 2017. See the AUTHORS file for a
  * list of people on the CoreGTK Team.
  * See the ChangeLog files for a list of changes.
  *
@@ -90,6 +90,11 @@
 	gtk_gl_area_get_required_version(GTK_GL_AREA([self GOBJECT]), major, minor);
 }
 
+-(BOOL)gtkGlAreaGetUseEs
+{
+	return (gtk_gl_area_get_use_es(GTK_GL_AREA([self GOBJECT])) ? YES : NO);
+}
+
 -(void)gtkGlAreaMakeCurrent
 {
 	gtk_gl_area_make_current(GTK_GL_AREA([self GOBJECT]));
@@ -128,6 +133,11 @@
 -(void)gtkGlAreaSetRequiredVersionWithMajor:(gint) major andMinor:(gint) minor
 {
 	gtk_gl_area_set_required_version(GTK_GL_AREA([self GOBJECT]), major, minor);
+}
+
+-(void)gtkGlAreaSetUseEs:(BOOL) useEs
+{
+	gtk_gl_area_set_use_es(GTK_GL_AREA([self GOBJECT]), (useEs ? TRUE : FALSE));
 }
 
 

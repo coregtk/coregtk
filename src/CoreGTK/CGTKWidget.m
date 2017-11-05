@@ -2,7 +2,7 @@
  * CGTKWidget.m
  * This file is part of CoreGTK
  *
- * Copyright (C) 2016 - Tyler Burton
+ * Copyright (C) 2017 - Tyler Burton
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -20,7 +20,7 @@
  */
 
 /*
- * Modified by the CoreGTK Team, 2016. See the AUTHORS file for a
+ * Modified by the CoreGTK Team, 2017. See the AUTHORS file for a
  * list of people on the CoreGTK Team.
  * See the ChangeLog files for a list of changes.
  *
@@ -328,6 +328,11 @@
 	return gtk_widget_get_allocated_height(GTK_WIDGET([self GOBJECT]));
 }
 
+-(void)getAllocatedSizeWithAllocation:(GtkAllocation*) allocation andBaseline:(int*) baseline
+{
+	gtk_widget_get_allocated_size(GTK_WIDGET([self GOBJECT]), allocation, baseline);
+}
+
 -(int)getAllocatedWidth
 {
 	return gtk_widget_get_allocated_width(GTK_WIDGET([self GOBJECT]));
@@ -411,6 +416,11 @@
 -(gint)getEvents
 {
 	return gtk_widget_get_events(GTK_WIDGET([self GOBJECT]));
+}
+
+-(BOOL)getFocusOnClick
+{
+	return (gtk_widget_get_focus_on_click(GTK_WIDGET([self GOBJECT])) ? YES : NO);
 }
 
 -(PangoFontMap*)getFontMap
@@ -918,6 +928,11 @@
 	gtk_widget_path(GTK_WIDGET([self GOBJECT]), pathLength, path, pathReversed);
 }
 
+-(void)queueAllocate
+{
+	gtk_widget_queue_allocate(GTK_WIDGET([self GOBJECT]));
+}
+
 -(void)queueComputeExpand
 {
 	gtk_widget_queue_compute_expand(GTK_WIDGET([self GOBJECT]));
@@ -1076,6 +1091,11 @@
 -(void)setEvents:(gint) events
 {
 	gtk_widget_set_events(GTK_WIDGET([self GOBJECT]), events);
+}
+
+-(void)setFocusOnClick:(BOOL) focusOnClick
+{
+	gtk_widget_set_focus_on_click(GTK_WIDGET([self GOBJECT]), (focusOnClick ? TRUE : FALSE));
 }
 
 -(void)setFontMap:(PangoFontMap*) fontMap

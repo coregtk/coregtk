@@ -2,7 +2,7 @@
  * CGTKBuilder.m
  * This file is part of CoreGTK
  *
- * Copyright (C) 2016 - Tyler Burton
+ * Copyright (C) 2017 - Tyler Burton
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -20,7 +20,7 @@
  */
 
 /*
- * Modified by the CoreGTK Team, 2016. See the AUTHORS file for a
+ * Modified by the CoreGTK Team, 2017. See the AUTHORS file for a
  * list of people on the CoreGTK Team.
  * See the ChangeLog files for a list of changes.
  *
@@ -134,6 +134,11 @@
 -(void)exposeObjectWithName:(NSString*) name andObject:(GObject*) object
 {
 	gtk_builder_expose_object(GTK_BUILDER([self GOBJECT]), [name UTF8String], object);
+}
+
+-(guint)extendWithTemplateWithWidget:(CGTKWidget*) widget andTemplateType:(GType) templateType andBuffer:(NSString*) buffer andLength:(gsize) length andErr:(GError**) err
+{
+	return gtk_builder_extend_with_template(GTK_BUILDER([self GOBJECT]), [widget WIDGET], templateType, [buffer UTF8String], length, err);
 }
 
 -(GtkApplication*)getApplication

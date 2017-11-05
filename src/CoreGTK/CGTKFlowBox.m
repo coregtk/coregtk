@@ -2,7 +2,7 @@
  * CGTKFlowBox.m
  * This file is part of CoreGTK
  *
- * Copyright (C) 2016 - Tyler Burton
+ * Copyright (C) 2017 - Tyler Burton
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -20,7 +20,7 @@
  */
 
 /*
- * Modified by the CoreGTK Team, 2016. See the AUTHORS file for a
+ * Modified by the CoreGTK Team, 2017. See the AUTHORS file for a
  * list of people on the CoreGTK Team.
  * See the ChangeLog files for a list of changes.
  *
@@ -63,6 +63,11 @@
 -(GtkFlowBoxChild*)getChildAtIndex:(gint) idx
 {
 	return gtk_flow_box_get_child_at_index(GTK_FLOW_BOX([self GOBJECT]), idx);
+}
+
+-(GtkFlowBoxChild*)getChildAtPosWithX:(gint) x andY:(gint) y
+{
+	return gtk_flow_box_get_child_at_pos(GTK_FLOW_BOX([self GOBJECT]), x, y);
 }
 
 -(guint)getColumnSpacing

@@ -2,7 +2,7 @@
  * CGTKTextView.h
  * This file is part of CoreGTK
  *
- * Copyright (C) 2016 - Tyler Burton
+ * Copyright (C) 2017 - Tyler Burton
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -20,7 +20,7 @@
  */
 
 /*
- * Modified by the CoreGTK Team, 2016. See the AUTHORS file for a
+ * Modified by the CoreGTK Team, 2017. See the AUTHORS file for a
  * list of people on the CoreGTK Team.
  * See the ChangeLog files for a list of changes.
  *
@@ -198,23 +198,25 @@
 -(GtkInputPurpose)getInputPurpose;
 
 /**
- * -(void*)getIterAtLocationWithIter:(GtkTextIter*) iter andX:(gint) x andY:(gint) y;
+ * -(BOOL*)getIterAtLocationWithIter:(GtkTextIter*) iter andX:(gint) x andY:(gint) y;
  *
  * @param iter
  * @param x
  * @param y
+ * @returns BOOL
  */
--(void)getIterAtLocationWithIter:(GtkTextIter*) iter andX:(gint) x andY:(gint) y;
+-(BOOL)getIterAtLocationWithIter:(GtkTextIter*) iter andX:(gint) x andY:(gint) y;
 
 /**
- * -(void*)getIterAtPositionWithIter:(GtkTextIter*) iter andTrailing:(gint*) trailing andX:(gint) x andY:(gint) y;
+ * -(BOOL*)getIterAtPositionWithIter:(GtkTextIter*) iter andTrailing:(gint*) trailing andX:(gint) x andY:(gint) y;
  *
  * @param iter
  * @param trailing
  * @param x
  * @param y
+ * @returns BOOL
  */
--(void)getIterAtPositionWithIter:(GtkTextIter*) iter andTrailing:(gint*) trailing andX:(gint) x andY:(gint) y;
+-(BOOL)getIterAtPositionWithIter:(GtkTextIter*) iter andTrailing:(gint*) trailing andX:(gint) x andY:(gint) y;
 
 /**
  * -(void*)getIterLocationWithIter:(const GtkTextIter*) iter andLocation:(GdkRectangle*) location;
@@ -389,6 +391,12 @@
  * @returns BOOL
  */
 -(BOOL)placeCursorOnscreen;
+
+/**
+ * -(void*)resetCursorBlink;
+ *
+ */
+-(void)resetCursorBlink;
 
 /**
  * -(void*)resetImContext;

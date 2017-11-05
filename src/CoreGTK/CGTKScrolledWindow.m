@@ -2,7 +2,7 @@
  * CGTKScrolledWindow.m
  * This file is part of CoreGTK
  *
- * Copyright (C) 2016 - Tyler Burton
+ * Copyright (C) 2017 - Tyler Burton
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -20,7 +20,7 @@
  */
 
 /*
- * Modified by the CoreGTK Team, 2016. See the AUTHORS file for a
+ * Modified by the CoreGTK Team, 2017. See the AUTHORS file for a
  * list of people on the CoreGTK Team.
  * See the ChangeLog files for a list of changes.
  *
@@ -75,6 +75,16 @@
 	return (gtk_scrolled_window_get_kinetic_scrolling(GTK_SCROLLED_WINDOW([self GOBJECT])) ? YES : NO);
 }
 
+-(gint)getMaxContentHeight
+{
+	return gtk_scrolled_window_get_max_content_height(GTK_SCROLLED_WINDOW([self GOBJECT]));
+}
+
+-(gint)getMaxContentWidth
+{
+	return gtk_scrolled_window_get_max_content_width(GTK_SCROLLED_WINDOW([self GOBJECT]));
+}
+
 -(gint)getMinContentHeight
 {
 	return gtk_scrolled_window_get_min_content_height(GTK_SCROLLED_WINDOW([self GOBJECT]));
@@ -98,6 +108,16 @@
 -(void)getPolicyWithHscrollbarPolicy:(GtkPolicyType*) hscrollbarPolicy andVscrollbarPolicy:(GtkPolicyType*) vscrollbarPolicy
 {
 	gtk_scrolled_window_get_policy(GTK_SCROLLED_WINDOW([self GOBJECT]), hscrollbarPolicy, vscrollbarPolicy);
+}
+
+-(BOOL)getPropagateNaturalHeight
+{
+	return (gtk_scrolled_window_get_propagate_natural_height(GTK_SCROLLED_WINDOW([self GOBJECT])) ? YES : NO);
+}
+
+-(BOOL)getPropagateNaturalWidth
+{
+	return (gtk_scrolled_window_get_propagate_natural_width(GTK_SCROLLED_WINDOW([self GOBJECT])) ? YES : NO);
 }
 
 -(GtkShadowType)getShadowType
@@ -130,6 +150,16 @@
 	gtk_scrolled_window_set_kinetic_scrolling(GTK_SCROLLED_WINDOW([self GOBJECT]), (kineticScrolling ? TRUE : FALSE));
 }
 
+-(void)setMaxContentHeight:(gint) height
+{
+	gtk_scrolled_window_set_max_content_height(GTK_SCROLLED_WINDOW([self GOBJECT]), height);
+}
+
+-(void)setMaxContentWidth:(gint) width
+{
+	gtk_scrolled_window_set_max_content_width(GTK_SCROLLED_WINDOW([self GOBJECT]), width);
+}
+
 -(void)setMinContentHeight:(gint) height
 {
 	gtk_scrolled_window_set_min_content_height(GTK_SCROLLED_WINDOW([self GOBJECT]), height);
@@ -153,6 +183,16 @@
 -(void)setPolicyWithHscrollbarPolicy:(GtkPolicyType) hscrollbarPolicy andVscrollbarPolicy:(GtkPolicyType) vscrollbarPolicy
 {
 	gtk_scrolled_window_set_policy(GTK_SCROLLED_WINDOW([self GOBJECT]), hscrollbarPolicy, vscrollbarPolicy);
+}
+
+-(void)setPropagateNaturalHeight:(BOOL) propagate
+{
+	gtk_scrolled_window_set_propagate_natural_height(GTK_SCROLLED_WINDOW([self GOBJECT]), (propagate ? TRUE : FALSE));
+}
+
+-(void)setPropagateNaturalWidth:(BOOL) propagate
+{
+	gtk_scrolled_window_set_propagate_natural_width(GTK_SCROLLED_WINDOW([self GOBJECT]), (propagate ? TRUE : FALSE));
 }
 
 -(void)setShadowType:(GtkShadowType) type

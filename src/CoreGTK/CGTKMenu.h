@@ -2,7 +2,7 @@
  * CGTKMenu.h
  * This file is part of CoreGTK
  *
- * Copyright (C) 2016 - Tyler Burton
+ * Copyright (C) 2017 - Tyler Burton
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -20,7 +20,7 @@
  */
 
 /*
- * Modified by the CoreGTK Team, 2016. See the AUTHORS file for a
+ * Modified by the CoreGTK Team, 2017. See the AUTHORS file for a
  * list of people on the CoreGTK Team.
  * See the ChangeLog files for a list of changes.
  *
@@ -135,6 +135,13 @@
 -(NSString*)getTitle;
 
 /**
+ * -(void*)placeOnMonitor:(GdkMonitor*) monitor;
+ *
+ * @param monitor
+ */
+-(void)placeOnMonitor:(GdkMonitor*) monitor;
+
+/**
  * -(void*)popdown;
  *
  */
@@ -151,6 +158,34 @@
  * @param activateTime
  */
 -(void)popupWithParentMenuShell:(CGTKWidget*) parentMenuShell andParentMenuItem:(CGTKWidget*) parentMenuItem andFunc:(GtkMenuPositionFunc) func andData:(gpointer) data andButton:(guint) button andActivateTime:(guint32) activateTime;
+
+/**
+ * -(void*)popupAtPointer:(const GdkEvent*) triggerEvent;
+ *
+ * @param triggerEvent
+ */
+-(void)popupAtPointer:(const GdkEvent*) triggerEvent;
+
+/**
+ * -(void*)popupAtRectWithRectWindow:(GdkWindow*) rectWindow andRect:(const GdkRectangle*) rect andRectAnchor:(GdkGravity) rectAnchor andMenuAnchor:(GdkGravity) menuAnchor andTriggerEvent:(const GdkEvent*) triggerEvent;
+ *
+ * @param rectWindow
+ * @param rect
+ * @param rectAnchor
+ * @param menuAnchor
+ * @param triggerEvent
+ */
+-(void)popupAtRectWithRectWindow:(GdkWindow*) rectWindow andRect:(const GdkRectangle*) rect andRectAnchor:(GdkGravity) rectAnchor andMenuAnchor:(GdkGravity) menuAnchor andTriggerEvent:(const GdkEvent*) triggerEvent;
+
+/**
+ * -(void*)popupAtWidgetWithWidget:(CGTKWidget*) widget andWidgetAnchor:(GdkGravity) widgetAnchor andMenuAnchor:(GdkGravity) menuAnchor andTriggerEvent:(const GdkEvent*) triggerEvent;
+ *
+ * @param widget
+ * @param widgetAnchor
+ * @param menuAnchor
+ * @param triggerEvent
+ */
+-(void)popupAtWidgetWithWidget:(CGTKWidget*) widget andWidgetAnchor:(GdkGravity) widgetAnchor andMenuAnchor:(GdkGravity) menuAnchor andTriggerEvent:(const GdkEvent*) triggerEvent;
 
 /**
  * -(void*)popupForDeviceWithDevice:(GdkDevice*) device andParentMenuShell:(CGTKWidget*) parentMenuShell andParentMenuItem:(CGTKWidget*) parentMenuItem andFunc:(GtkMenuPositionFunc) func andData:(gpointer) data andDestroy:(GDestroyNotify) destroy andButton:(guint) button andActivateTime:(guint32) activateTime;
