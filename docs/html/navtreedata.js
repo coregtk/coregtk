@@ -20,16 +20,16 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_c_g_t_k_8h_source.html",
-"_c_g_t_k_tree_view_8h_source.html",
-"interface_c_g_t_k_builder.html#a852f6630c53e85c3f8ef9edaa69b6d65",
-"interface_c_g_t_k_container.html#af0a135c2d6db989603d35320d077f704",
-"interface_c_g_t_k_g_l_area.html#a722c5611887685376913676415c951e1",
-"interface_c_g_t_k_label.html#a692c588735588cc734181b01064a1e10",
-"interface_c_g_t_k_notebook.html#a7e345b0dc0c851a7fdc0363e175df603",
-"interface_c_g_t_k_search_bar.html",
-"interface_c_g_t_k_tool_item.html#a44b56fb82dc3b328fbd64d577f5ecc52",
-"interface_c_g_t_k_widget.html#a1e810a26a2ca787b1199b00a11ce3b4d",
-"interface_c_g_t_k_window.html#a248aeec78b0745f2f1d853cf425cff72"
+"_c_g_t_k_tool_palette_8h_source.html",
+"interface_c_g_t_k_builder.html#a11f82bf66244d54fe9c137a362333476",
+"interface_c_g_t_k_container.html#ab553d0a635fcd9ab733ff9370213ca9d",
+"interface_c_g_t_k_frame.html#af9c8e4b2c3cbbee5d7f1a9b64ded771b",
+"interface_c_g_t_k_label.html#a3ef1ba103e753bd1ede10f8b50be0df8",
+"interface_c_g_t_k_notebook.html",
+"interface_c_g_t_k_scale_button.html#afb6faedafcb6958330820477ae46b80c",
+"interface_c_g_t_k_text_view.html#af3762aa0826a76270b515619b11b34bf",
+"interface_c_g_t_k_viewport.html",
+"interface_c_g_t_k_widget.html#ae3096b5e9f8bfee5ef4638ea1ece57e6"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

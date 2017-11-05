@@ -2,7 +2,7 @@
  * CGTKTextView.m
  * This file is part of CoreGTK
  *
- * Copyright (C) 2016 - Tyler Burton
+ * Copyright (C) 2017 - Tyler Burton
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -20,7 +20,7 @@
  */
 
 /*
- * Modified by the CoreGTK Team, 2016. See the AUTHORS file for a
+ * Modified by the CoreGTK Team, 2017. See the AUTHORS file for a
  * list of people on the CoreGTK Team.
  * See the ChangeLog files for a list of changes.
  *
@@ -157,14 +157,14 @@
 	return gtk_text_view_get_input_purpose(GTK_TEXT_VIEW([self GOBJECT]));
 }
 
--(void)getIterAtLocationWithIter:(GtkTextIter*) iter andX:(gint) x andY:(gint) y
+-(BOOL)getIterAtLocationWithIter:(GtkTextIter*) iter andX:(gint) x andY:(gint) y
 {
-	gtk_text_view_get_iter_at_location(GTK_TEXT_VIEW([self GOBJECT]), iter, x, y);
+	return (gtk_text_view_get_iter_at_location(GTK_TEXT_VIEW([self GOBJECT]), iter, x, y) ? YES : NO);
 }
 
--(void)getIterAtPositionWithIter:(GtkTextIter*) iter andTrailing:(gint*) trailing andX:(gint) x andY:(gint) y
+-(BOOL)getIterAtPositionWithIter:(GtkTextIter*) iter andTrailing:(gint*) trailing andX:(gint) x andY:(gint) y
 {
-	gtk_text_view_get_iter_at_position(GTK_TEXT_VIEW([self GOBJECT]), iter, trailing, x, y);
+	return (gtk_text_view_get_iter_at_position(GTK_TEXT_VIEW([self GOBJECT]), iter, trailing, x, y) ? YES : NO);
 }
 
 -(void)getIterLocationWithIter:(const GtkTextIter*) iter andLocation:(GdkRectangle*) location
@@ -280,6 +280,11 @@
 -(BOOL)placeCursorOnscreen
 {
 	return (gtk_text_view_place_cursor_onscreen(GTK_TEXT_VIEW([self GOBJECT])) ? YES : NO);
+}
+
+-(void)resetCursorBlink
+{
+	gtk_text_view_reset_cursor_blink(GTK_TEXT_VIEW([self GOBJECT]));
 }
 
 -(void)resetImContext

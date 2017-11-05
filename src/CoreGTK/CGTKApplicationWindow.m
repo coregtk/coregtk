@@ -2,7 +2,7 @@
  * CGTKApplicationWindow.m
  * This file is part of CoreGTK
  *
- * Copyright (C) 2016 - Tyler Burton
+ * Copyright (C) 2017 - Tyler Burton
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -20,7 +20,7 @@
  */
 
 /*
- * Modified by the CoreGTK Team, 2016. See the AUTHORS file for a
+ * Modified by the CoreGTK Team, 2017. See the AUTHORS file for a
  * list of people on the CoreGTK Team.
  * See the ChangeLog files for a list of changes.
  *
@@ -50,6 +50,11 @@
 	return GTK_APPLICATION_WINDOW([self GOBJECT]);
 }
 
+-(GtkShortcutsWindow*)getHelpOverlay
+{
+	return gtk_application_window_get_help_overlay(GTK_APPLICATION_WINDOW([self GOBJECT]));
+}
+
 -(guint)getId
 {
 	return gtk_application_window_get_id(GTK_APPLICATION_WINDOW([self GOBJECT]));
@@ -58,6 +63,11 @@
 -(BOOL)getShowMenubar
 {
 	return (gtk_application_window_get_show_menubar(GTK_APPLICATION_WINDOW([self GOBJECT])) ? YES : NO);
+}
+
+-(void)setHelpOverlay:(GtkShortcutsWindow*) helpOverlay
+{
+	gtk_application_window_set_help_overlay(GTK_APPLICATION_WINDOW([self GOBJECT]), helpOverlay);
 }
 
 -(void)setShowMenubar:(BOOL) showMenubar

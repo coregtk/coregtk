@@ -2,7 +2,7 @@ var interface_c_g_t_k_signal_data =
 [
     [ "data", "interface_c_g_t_k_signal_data.html#a49955f8a89dcec8e92d6fbdf939fa078", null ],
     [ "dataRetained", "interface_c_g_t_k_signal_data.html#aeb680e961c6e8192cb15a5bc91ec7476", null ],
-    [ "initWithTarget:selector:data:", "interface_c_g_t_k_signal_data.html#a2fe72ef15cce01f7d43c270666399abb", null ],
+    [ "initWithTarget:selector:data:", "interface_c_g_t_k_signal_data.html#a0e8ce7ec696e97c97f77e0b4bb8fd2b9", null ],
     [ "selector", "interface_c_g_t_k_signal_data.html#a806f18b1bae2105aa7eb5e489fc35451", null ],
     [ "target", "interface_c_g_t_k_signal_data.html#a21b5af43eb6bfe99b609370849512b16", null ],
     [ "data", "interface_c_g_t_k_signal_data.html#afa9750a896200f0215ad63dfbc262fa1", null ],

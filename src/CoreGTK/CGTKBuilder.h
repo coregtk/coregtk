@@ -2,7 +2,7 @@
  * CGTKBuilder.h
  * This file is part of CoreGTK
  *
- * Copyright (C) 2016 - Tyler Burton
+ * Copyright (C) 2017 - Tyler Burton
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -20,7 +20,7 @@
  */
 
 /*
- * Modified by the CoreGTK Team, 2016. See the AUTHORS file for a
+ * Modified by the CoreGTK Team, 2017. See the AUTHORS file for a
  * list of people on the CoreGTK Team.
  * See the ChangeLog files for a list of changes.
  *
@@ -30,6 +30,7 @@
  * Objective-C imports
  */
 #import "CoreGTK/CGTKBase.h"
+#import "CoreGTK/CGTKWidget.h"
 
 @interface CGTKBuilder : CGTKBase
 {
@@ -140,6 +141,18 @@
  * @param object
  */
 -(void)exposeObjectWithName:(NSString*) name andObject:(GObject*) object;
+
+/**
+ * -(guint*)extendWithTemplateWithWidget:(CGTKWidget*) widget andTemplateType:(GType) templateType andBuffer:(NSString*) buffer andLength:(gsize) length andErr:(GError**) err;
+ *
+ * @param widget
+ * @param templateType
+ * @param buffer
+ * @param length
+ * @param err
+ * @returns guint
+ */
+-(guint)extendWithTemplateWithWidget:(CGTKWidget*) widget andTemplateType:(GType) templateType andBuffer:(NSString*) buffer andLength:(gsize) length andErr:(GError**) err;
 
 /**
  * -(GtkApplication**)getApplication;

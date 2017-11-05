@@ -1,6 +1,6 @@
 var interface_c_g_t_k_callback_data =
 [
-    [ "initWithObject:andSEL:", "interface_c_g_t_k_callback_data.html#a2b4e180f46821571aad7557fb3a53232", null ],
+    [ "initWithObject:andSEL:", "interface_c_g_t_k_callback_data.html#a1ddec91b3ad215a9a804de5a66aba057", null ],
     [ "object", "interface_c_g_t_k_callback_data.html#ae8f1097d43ca57bc8eb8bb470f2cf603", null ],
     [ "sel", "interface_c_g_t_k_callback_data.html#a21922d99f82c23a850d2073e2589b609", null ],
     [ "setObject:", "interface_c_g_t_k_callback_data.html#a1d5aed4e697c3e5ab31282c66945548b", null ],

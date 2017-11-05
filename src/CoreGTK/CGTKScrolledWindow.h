@@ -2,7 +2,7 @@
  * CGTKScrolledWindow.h
  * This file is part of CoreGTK
  *
- * Copyright (C) 2016 - Tyler Burton
+ * Copyright (C) 2017 - Tyler Burton
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -20,7 +20,7 @@
  */
 
 /*
- * Modified by the CoreGTK Team, 2016. See the AUTHORS file for a
+ * Modified by the CoreGTK Team, 2017. See the AUTHORS file for a
  * list of people on the CoreGTK Team.
  * See the ChangeLog files for a list of changes.
  *
@@ -84,6 +84,20 @@
 -(BOOL)getKineticScrolling;
 
 /**
+ * -(gint*)getMaxContentHeight;
+ *
+ * @returns gint
+ */
+-(gint)getMaxContentHeight;
+
+/**
+ * -(gint*)getMaxContentWidth;
+ *
+ * @returns gint
+ */
+-(gint)getMaxContentWidth;
+
+/**
  * -(gint*)getMinContentHeight;
  *
  * @returns gint
@@ -118,6 +132,20 @@
  * @param vscrollbarPolicy
  */
 -(void)getPolicyWithHscrollbarPolicy:(GtkPolicyType*) hscrollbarPolicy andVscrollbarPolicy:(GtkPolicyType*) vscrollbarPolicy;
+
+/**
+ * -(BOOL*)getPropagateNaturalHeight;
+ *
+ * @returns BOOL
+ */
+-(BOOL)getPropagateNaturalHeight;
+
+/**
+ * -(BOOL*)getPropagateNaturalWidth;
+ *
+ * @returns BOOL
+ */
+-(BOOL)getPropagateNaturalWidth;
 
 /**
  * -(GtkShadowType*)getShadowType;
@@ -162,6 +190,20 @@
 -(void)setKineticScrolling:(BOOL) kineticScrolling;
 
 /**
+ * -(void*)setMaxContentHeight:(gint) height;
+ *
+ * @param height
+ */
+-(void)setMaxContentHeight:(gint) height;
+
+/**
+ * -(void*)setMaxContentWidth:(gint) width;
+ *
+ * @param width
+ */
+-(void)setMaxContentWidth:(gint) width;
+
+/**
  * -(void*)setMinContentHeight:(gint) height;
  *
  * @param height
@@ -196,6 +238,20 @@
  * @param vscrollbarPolicy
  */
 -(void)setPolicyWithHscrollbarPolicy:(GtkPolicyType) hscrollbarPolicy andVscrollbarPolicy:(GtkPolicyType) vscrollbarPolicy;
+
+/**
+ * -(void*)setPropagateNaturalHeight:(BOOL) propagate;
+ *
+ * @param propagate
+ */
+-(void)setPropagateNaturalHeight:(BOOL) propagate;
+
+/**
+ * -(void*)setPropagateNaturalWidth:(BOOL) propagate;
+ *
+ * @param propagate
+ */
+-(void)setPropagateNaturalWidth:(BOOL) propagate;
 
 /**
  * -(void*)setShadowType:(GtkShadowType) type;

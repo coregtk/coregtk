@@ -7,7 +7,7 @@ var interface_c_g_t_k_tool_button =
     [ "getStockId", "interface_c_g_t_k_tool_button.html#aef1a6d0e1ef93275eb2b6b774ad708cf", null ],
     [ "getUseUnderline", "interface_c_g_t_k_tool_button.html#ac9c2a7a29bbea638c3e6dfc358024736", null ],
     [ "initFromStock:", "interface_c_g_t_k_tool_button.html#a88982149dc921183e847453893cc10df", null ],
-    [ "initWithIconWidget:andLabel:", "interface_c_g_t_k_tool_button.html#a79188039f90e6b997b923ba1420fba7e", null ],
+    [ "initWithIconWidget:andLabel:", "interface_c_g_t_k_tool_button.html#ae89c82cf4f26b192b69cb0f3cf93a6aa", null ],
     [ "setIconName:", "interface_c_g_t_k_tool_button.html#ab44bf11ba0df9b25ec73b75e6c33ac00", null ],
     [ "setIconWidget:", "interface_c_g_t_k_tool_button.html#ad94f10f83f8ebd097d802c286f908401", null ],
     [ "setLabel:", "interface_c_g_t_k_tool_button.html#a5123b763407e4793a607728847c747f0", null ],

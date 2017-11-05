@@ -1,7 +1,7 @@
 var interface_c_g_t_k_stack =
 [
-    [ "addNamedWithChild:andName:", "interface_c_g_t_k_stack.html#ab32b648608786a6d2b2505a891ae94f7", null ],
-    [ "addTitledWithChild:andName:andTitle:", "interface_c_g_t_k_stack.html#add80dba1d595cc450ea848b03a917f27", null ],
+    [ "addNamedWithChild:andName:", "interface_c_g_t_k_stack.html#a26c86ab55a8266e0df627d22d5463a12", null ],
+    [ "addTitledWithChild:andName:andTitle:", "interface_c_g_t_k_stack.html#a5bece35afb40c5ce406ca270b916d611", null ],
     [ "getChildByName:", "interface_c_g_t_k_stack.html#a66a9950db88a619a9d133c11c9196fbc", null ],
     [ "getHhomogeneous", "interface_c_g_t_k_stack.html#a1b3613a3e531b0645cb081455fa6c6c3", null ],
     [ "getHomogeneous", "interface_c_g_t_k_stack.html#a44c065e5399a9eadc270b9efa06e1c62", null ],
@@ -20,7 +20,7 @@ var interface_c_g_t_k_stack =
     [ "setTransitionType:", "interface_c_g_t_k_stack.html#ab7948332e22adeb4fa4f76020fbce0aa", null ],
     [ "setVhomogeneous:", "interface_c_g_t_k_stack.html#ae89c45f7eb762ec148632ed6b358c868", null ],
     [ "setVisibleChild:", "interface_c_g_t_k_stack.html#a3e6f74514e65bb8114463b5965a33d66", null ],
-    [ "setVisibleChildFullWithName:andTransition:", "interface_c_g_t_k_stack.html#a46fb0959e52e7f87b8bd21815344ad10", null ],
+    [ "setVisibleChildFullWithName:andTransition:", "interface_c_g_t_k_stack.html#a52f9ee907d847561a1385d1b9c0531d2", null ],
     [ "setVisibleChildName:", "interface_c_g_t_k_stack.html#a290fce5e5ea36f2bb3b531b61dd488c9", null ],
     [ "STACK", "interface_c_g_t_k_stack.html#a08a1082cf15390c4b294608bc3218d5d", null ]
 ];
