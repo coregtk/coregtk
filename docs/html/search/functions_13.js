@@ -16,7 +16,7 @@ var searchData=
   ['toolitem',['TOOLITEM',['../interface_c_g_t_k_tool_item.html#aad548b8044120eb70389d05cbb85b810',1,'CGTKToolItem']]],
   ['toolitemgroup',['TOOLITEMGROUP',['../interface_c_g_t_k_tool_item_group.html#aa1c81839d1458490e83713b6a191628c',1,'CGTKToolItemGroup']]],
   ['toolpalette',['TOOLPALETTE',['../interface_c_g_t_k_tool_palette.html#a49a0ec4f018f31124d30acaa4560aab2',1,'CGTKToolPalette']]],
-  ['translatecoordinateswithdestwidget_3aandsrcx_3aandsrcy_3aanddestx_3aanddesty_3a',['translateCoordinatesWithDestWidget:andSrcX:andSrcY:andDestX:andDestY:',['../interface_c_g_t_k_widget.html#ac34b85a900513998d062881371445adc',1,'CGTKWidget']]],
+  ['translatecoordinateswithdestwidget_3aandsrcx_3aandsrcy_3aanddestx_3aanddesty_3a',['translateCoordinatesWithDestWidget:andSrcX:andSrcY:andDestX:andDestY:',['../interface_c_g_t_k_widget.html#a3fa237e6e9a657ac27fff2fa94128fb2',1,'CGTKWidget']]],
   ['treeview',['TREEVIEW',['../interface_c_g_t_k_tree_view.html#a409ecc9b267512c8399c588811d96ee3',1,'CGTKTreeView']]],
   ['triggertooltipquery',['triggerTooltipQuery',['../interface_c_g_t_k_widget.html#a0510c02173a437fdd49d94d562f412b3',1,'CGTKWidget']]]
 ];

@@ -2,7 +2,7 @@
  * CGTKMenu.m
  * This file is part of CoreGTK
  *
- * Copyright (C) 2016 - Tyler Burton
+ * Copyright (C) 2017 - Tyler Burton
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -20,7 +20,7 @@
  */
 
 /*
- * Modified by the CoreGTK Team, 2016. See the AUTHORS file for a
+ * Modified by the CoreGTK Team, 2017. See the AUTHORS file for a
  * list of people on the CoreGTK Team.
  * See the ChangeLog files for a list of changes.
  *
@@ -122,6 +122,11 @@
 	return [NSString stringWithUTF8String:gtk_menu_get_title(GTK_MENU([self GOBJECT]))];
 }
 
+-(void)placeOnMonitor:(GdkMonitor*) monitor
+{
+	gtk_menu_place_on_monitor(GTK_MENU([self GOBJECT]), monitor);
+}
+
 -(void)popdown
 {
 	gtk_menu_popdown(GTK_MENU([self GOBJECT]));
@@ -130,6 +135,21 @@
 -(void)popupWithParentMenuShell:(CGTKWidget*) parentMenuShell andParentMenuItem:(CGTKWidget*) parentMenuItem andFunc:(GtkMenuPositionFunc) func andData:(gpointer) data andButton:(guint) button andActivateTime:(guint32) activateTime
 {
 	gtk_menu_popup(GTK_MENU([self GOBJECT]), [parentMenuShell WIDGET], [parentMenuItem WIDGET], func, data, button, activateTime);
+}
+
+-(void)popupAtPointer:(const GdkEvent*) triggerEvent
+{
+	gtk_menu_popup_at_pointer(GTK_MENU([self GOBJECT]), triggerEvent);
+}
+
+-(void)popupAtRectWithRectWindow:(GdkWindow*) rectWindow andRect:(const GdkRectangle*) rect andRectAnchor:(GdkGravity) rectAnchor andMenuAnchor:(GdkGravity) menuAnchor andTriggerEvent:(const GdkEvent*) triggerEvent
+{
+	gtk_menu_popup_at_rect(GTK_MENU([self GOBJECT]), rectWindow, rect, rectAnchor, menuAnchor, triggerEvent);
+}
+
+-(void)popupAtWidgetWithWidget:(CGTKWidget*) widget andWidgetAnchor:(GdkGravity) widgetAnchor andMenuAnchor:(GdkGravity) menuAnchor andTriggerEvent:(const GdkEvent*) triggerEvent
+{
+	gtk_menu_popup_at_widget(GTK_MENU([self GOBJECT]), [widget WIDGET], widgetAnchor, menuAnchor, triggerEvent);
 }
 
 -(void)popupForDeviceWithDevice:(GdkDevice*) device andParentMenuShell:(CGTKWidget*) parentMenuShell andParentMenuItem:(CGTKWidget*) parentMenuItem andFunc:(GtkMenuPositionFunc) func andData:(gpointer) data andDestroy:(GDestroyNotify) destroy andButton:(guint) button andActivateTime:(guint32) activateTime

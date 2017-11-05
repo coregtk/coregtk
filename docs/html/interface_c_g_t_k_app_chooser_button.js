@@ -1,7 +1,7 @@
 var interface_c_g_t_k_app_chooser_button =
 [
     [ "APPCHOOSERBUTTON", "interface_c_g_t_k_app_chooser_button.html#ab702a58d2c7a2878cd9af46cc01fdec0", null ],
-    [ "appendCustomItemWithName:andLabel:andIcon:", "interface_c_g_t_k_app_chooser_button.html#ab9f01ffd94b4efcfc1642d26e5651f52", null ],
+    [ "appendCustomItemWithName:andLabel:andIcon:", "interface_c_g_t_k_app_chooser_button.html#a18df4ffd13a0f990a80ae34ee4c30509", null ],
     [ "appendSeparator", "interface_c_g_t_k_app_chooser_button.html#a92dd395c5cc26c1fc2363e1049ba16cd", null ],
     [ "getHeading", "interface_c_g_t_k_app_chooser_button.html#a9d03992a50e697d9539ea30b05689c5f", null ],
     [ "getShowDefaultItem", "interface_c_g_t_k_app_chooser_button.html#a55066210f052f515d3acb0f328e00928", null ],

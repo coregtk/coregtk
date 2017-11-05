@@ -2,7 +2,7 @@
  * CGTKWidget.h
  * This file is part of CoreGTK
  *
- * Copyright (C) 2016 - Tyler Burton
+ * Copyright (C) 2017 - Tyler Burton
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -20,7 +20,7 @@
  */
 
 /*
- * Modified by the CoreGTK Team, 2016. See the AUTHORS file for a
+ * Modified by the CoreGTK Team, 2017. See the AUTHORS file for a
  * list of people on the CoreGTK Team.
  * See the ChangeLog files for a list of changes.
  *
@@ -452,6 +452,14 @@
 -(int)getAllocatedHeight;
 
 /**
+ * -(void*)getAllocatedSizeWithAllocation:(GtkAllocation*) allocation andBaseline:(int*) baseline;
+ *
+ * @param allocation
+ * @param baseline
+ */
+-(void)getAllocatedSizeWithAllocation:(GtkAllocation*) allocation andBaseline:(int*) baseline;
+
+/**
  * -(int*)getAllocatedWidth;
  *
  * @returns int
@@ -573,6 +581,13 @@
  * @returns gint
  */
 -(gint)getEvents;
+
+/**
+ * -(BOOL*)getFocusOnClick;
+ *
+ * @returns BOOL
+ */
+-(BOOL)getFocusOnClick;
 
 /**
  * -(PangoFontMap**)getFontMap;
@@ -1308,6 +1323,12 @@
 -(void)pathWithPathLength:(guint*) pathLength andPath:(gchar**) path andPathReversed:(gchar**) pathReversed;
 
 /**
+ * -(void*)queueAllocate;
+ *
+ */
+-(void)queueAllocate;
+
+/**
  * -(void*)queueComputeExpand;
  *
  */
@@ -1540,6 +1561,13 @@
  * @param events
  */
 -(void)setEvents:(gint) events;
+
+/**
+ * -(void*)setFocusOnClick:(BOOL) focusOnClick;
+ *
+ * @param focusOnClick
+ */
+-(void)setFocusOnClick:(BOOL) focusOnClick;
 
 /**
  * -(void*)setFontMap:(PangoFontMap*) fontMap;

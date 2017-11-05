@@ -2,7 +2,7 @@
  * CGTKPopover.m
  * This file is part of CoreGTK
  *
- * Copyright (C) 2016 - Tyler Burton
+ * Copyright (C) 2017 - Tyler Burton
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -20,7 +20,7 @@
  */
 
 /*
- * Modified by the CoreGTK Team, 2016. See the AUTHORS file for a
+ * Modified by the CoreGTK Team, 2017. See the AUTHORS file for a
  * list of people on the CoreGTK Team.
  * See the ChangeLog files for a list of changes.
  *
@@ -67,6 +67,11 @@
 	gtk_popover_bind_model(GTK_POPOVER([self GOBJECT]), model, [actionNamespace UTF8String]);
 }
 
+-(GtkPopoverConstraint)getConstrainTo
+{
+	return gtk_popover_get_constrain_to(GTK_POPOVER([self GOBJECT]));
+}
+
 -(CGTKWidget*)getDefaultWidget
 {
 	return [[CGTKWidget alloc] initWithGObject:(GObject *)gtk_popover_get_default_widget(GTK_POPOVER([self GOBJECT]))];
@@ -95,6 +100,21 @@
 -(BOOL)getTransitionsEnabled
 {
 	return (gtk_popover_get_transitions_enabled(GTK_POPOVER([self GOBJECT])) ? YES : NO);
+}
+
+-(void)popdown
+{
+	gtk_popover_popdown(GTK_POPOVER([self GOBJECT]));
+}
+
+-(void)popup
+{
+	gtk_popover_popup(GTK_POPOVER([self GOBJECT]));
+}
+
+-(void)setConstrainTo:(GtkPopoverConstraint) constraint
+{
+	gtk_popover_set_constrain_to(GTK_POPOVER([self GOBJECT]), constraint);
 }
 
 -(void)setDefaultWidget:(CGTKWidget*) widget

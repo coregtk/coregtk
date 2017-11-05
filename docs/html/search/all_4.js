@@ -3,7 +3,7 @@ var searchData=
   ['deactivate',['deactivate',['../interface_c_g_t_k_menu_shell.html#a7c12f79ad762238dc6fba9f0274fe715',1,'CGTKMenuShell']]],
   ['deiconify',['deiconify',['../interface_c_g_t_k_window.html#a30cdbc414c16c55fa9730eca4a0a145f',1,'CGTKWindow']]],
   ['deselect',['deselect',['../interface_c_g_t_k_menu_item.html#ac5981f31dce3ea40bd5c879b46dadf0e',1,'CGTKMenuItem::deselect()'],['../interface_c_g_t_k_menu_shell.html#aa542a45de72bbae58969bbff625a22d0',1,'CGTKMenuShell::deselect()']]],
-  ['destroy',['destroy',['../interface_c_g_t_k_widget.html#a49abc58113965b5df9d5ac9262ea7a66',1,'CGTKWidget']]],
+  ['destroy',['destroy',['../interface_c_g_t_k_native_dialog.html#a9608c32f5679d24a0ce3895ab4eeb2cb',1,'CGTKNativeDialog::destroy()'],['../interface_c_g_t_k_widget.html#a49abc58113965b5df9d5ac9262ea7a66',1,'CGTKWidget::destroy()']]],
   ['destroyed_3a',['destroyed:',['../interface_c_g_t_k_widget.html#a44ea770795efa1fbfdfd1b70c7d50898',1,'CGTKWidget']]],
   ['detach',['detach',['../interface_c_g_t_k_menu.html#ad813a1362acf6f83b517e96ab6e092e9',1,'CGTKMenu']]],
   ['detachtab_3a',['detachTab:',['../interface_c_g_t_k_notebook.html#a4216d669d2bd9f25cf44d28f968117e9',1,'CGTKNotebook']]],

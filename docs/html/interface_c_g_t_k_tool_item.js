@@ -21,7 +21,7 @@ var interface_c_g_t_k_tool_item =
     [ "setExpand:", "interface_c_g_t_k_tool_item.html#add2c423c8632114f043e1bbd17a51685", null ],
     [ "setHomogeneous:", "interface_c_g_t_k_tool_item.html#a8441554768af9a045f115a7b2bc7da76", null ],
     [ "setIsImportant:", "interface_c_g_t_k_tool_item.html#a7a43fc069d98c9cfcac3bcccb6137623", null ],
-    [ "setProxyMenuItemWithMenuItemId:andMenuItem:", "interface_c_g_t_k_tool_item.html#abfb5940574a8d61c3e90a063e6e2c028", null ],
+    [ "setProxyMenuItemWithMenuItemId:andMenuItem:", "interface_c_g_t_k_tool_item.html#a4009a203283830088a3c5cb8b16855f7", null ],
     [ "setTooltipMarkup:", "interface_c_g_t_k_tool_item.html#adebc1b77c778977faddba5f43bedbf90", null ],
     [ "setTooltipText:", "interface_c_g_t_k_tool_item.html#ad5596356a05a4fc23186ce9ba2ab785a", null ],
     [ "setUseDragWindow:", "interface_c_g_t_k_tool_item.html#a60923befe5bb07d4cd145d4808106f2c", null ],

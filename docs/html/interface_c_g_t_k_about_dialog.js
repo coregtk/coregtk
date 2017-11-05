@@ -1,7 +1,7 @@
 var interface_c_g_t_k_about_dialog =
 [
     [ "ABOUTDIALOG", "interface_c_g_t_k_about_dialog.html#a525f506fdf487cb36645d0ec2125b678", null ],
-    [ "addCreditSectionWithSectionName:andPeople:", "interface_c_g_t_k_about_dialog.html#a69305965c8befbd408949131f5e73f8b", null ],
+    [ "addCreditSectionWithSectionName:andPeople:", "interface_c_g_t_k_about_dialog.html#a93731ab7956a953d15e83cbd5e292e77", null ],
     [ "getArtists", "interface_c_g_t_k_about_dialog.html#a151fcba37ad7be003e6573f6a8eab9a7", null ],
     [ "getAuthors", "interface_c_g_t_k_about_dialog.html#a11fc88c4d73bda51f66b4212543f270c", null ],
     [ "getComments", "interface_c_g_t_k_about_dialog.html#a58179d059ea078461d86b09e8c6e8cd8", null ],

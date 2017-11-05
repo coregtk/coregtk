@@ -15,7 +15,7 @@ var interface_c_g_t_k_places_sidebar =
     [ "listShortcuts", "interface_c_g_t_k_places_sidebar.html#ab8c64c040baf300433a36e224009d5f7", null ],
     [ "PLACESSIDEBAR", "interface_c_g_t_k_places_sidebar.html#ab03f5cba1bf877b712ac20cddc935a21", null ],
     [ "removeShortcut:", "interface_c_g_t_k_places_sidebar.html#a8454c44822e0be8404628e729a94c337", null ],
-    [ "setDropTargetsVisibleWithVisible:andContext:", "interface_c_g_t_k_places_sidebar.html#ac8d6c7e5fd444ec76850ddb0edfeb5aa", null ],
+    [ "setDropTargetsVisibleWithVisible:andContext:", "interface_c_g_t_k_places_sidebar.html#acd7c5a6ba0a553d531eccddb9674be6a", null ],
     [ "setLocalOnly:", "interface_c_g_t_k_places_sidebar.html#ae28b712074e9bdf8be53bb8039c37f60", null ],
     [ "setLocation:", "interface_c_g_t_k_places_sidebar.html#a1643938b6b6475dd21a5a8d6e3230b52", null ],
     [ "setOpenFlags:", "interface_c_g_t_k_places_sidebar.html#a685549182aeabc6fe3417ac3bf779ae1", null ],
