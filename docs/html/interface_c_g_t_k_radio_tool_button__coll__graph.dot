@@ -1,0 +1,22 @@
+digraph "CGTKRadioToolButton"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node9 [label="CGTKRadioToolButton",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node10 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="CGTKToggleToolButton",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interface_c_g_t_k_toggle_tool_button.html"];
+  Node11 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="CGTKToolButton",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interface_c_g_t_k_tool_button.html"];
+  Node12 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="CGTKToolItem",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interface_c_g_t_k_tool_item.html"];
+  Node13 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="CGTKBin",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interface_c_g_t_k_bin.html"];
+  Node14 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="CGTKContainer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interface_c_g_t_k_container.html"];
+  Node15 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="CGTKWidget",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interface_c_g_t_k_widget.html"];
+  Node16 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="CGTKBase",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interface_c_g_t_k_base.html"];
+  Node17 -> Node16 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 [label="NSObject",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+}

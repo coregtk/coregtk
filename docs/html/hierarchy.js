@@ -4,6 +4,7 @@ var hierarchy =
       [ "CGTK", "interface_c_g_t_k.html", null ],
       [ "CGTKBase", "interface_c_g_t_k_base.html", [
         [ "CGTKBuilder", "interface_c_g_t_k_builder.html", null ],
+        [ "CGTKNativeDialog", "interface_c_g_t_k_native_dialog.html", null ],
         [ "CGTKWidget", "interface_c_g_t_k_widget.html", [
           [ "CGTKCalendar", "interface_c_g_t_k_calendar.html", null ],
           [ "CGTKCellView", "interface_c_g_t_k_cell_view.html", null ],
@@ -99,6 +100,7 @@ var hierarchy =
               [ "CGTKHBox", "interface_c_g_t_k_h_box.html", null ],
               [ "CGTKInfoBar", "interface_c_g_t_k_info_bar.html", null ],
               [ "CGTKRecentChooserWidget", "interface_c_g_t_k_recent_chooser_widget.html", null ],
+              [ "CGTKShortcutsShortcut", "interface_c_g_t_k_shortcuts_shortcut.html", null ],
               [ "CGTKStackSwitcher", "interface_c_g_t_k_stack_switcher.html", null ],
               [ "CGTKStatusbar", "interface_c_g_t_k_statusbar.html", null ],
               [ "CGTKVBox", "interface_c_g_t_k_v_box.html", null ]

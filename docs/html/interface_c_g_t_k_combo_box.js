@@ -38,7 +38,7 @@ var interface_c_g_t_k_combo_box =
     [ "setIdColumn:", "interface_c_g_t_k_combo_box.html#aadf5351c9e2a1d06a8bacd3ecb1ead75", null ],
     [ "setModel:", "interface_c_g_t_k_combo_box.html#afd2ed94daa636b33898c48d6fe65e0ea", null ],
     [ "setPopupFixedWidth:", "interface_c_g_t_k_combo_box.html#af3c5b0bfc9df5ec9c1741b90db3e3c65", null ],
-    [ "setRowSeparatorFuncWithFunc:andData:andDestroy:", "interface_c_g_t_k_combo_box.html#a94c84f62a429ea781610628a82cbd551", null ],
+    [ "setRowSeparatorFuncWithFunc:andData:andDestroy:", "interface_c_g_t_k_combo_box.html#a529a66670162b96d843f52e22efeede6", null ],
     [ "setRowSpanColumn:", "interface_c_g_t_k_combo_box.html#a1f2af194a6bbcdf32cf17127491d8de5", null ],
     [ "setTitle:", "interface_c_g_t_k_combo_box.html#a6ebb5f47035a96ef14e661f9257e63f8", null ],
     [ "setWrapWidth:", "interface_c_g_t_k_combo_box.html#a5f11fff32360ff18c5780336b1771d27", null ]

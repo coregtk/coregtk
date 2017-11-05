@@ -1,6 +1,6 @@
 var interface_c_g_t_k_toolbar =
 [
-    [ "getDropIndexWithX:andY:", "interface_c_g_t_k_toolbar.html#acdefe1db6751b4f49ddbbc0207ea338c", null ],
+    [ "getDropIndexWithX:andY:", "interface_c_g_t_k_toolbar.html#ad81b5cc8773ecfb869e34089f32f7c07", null ],
     [ "getIconSize", "interface_c_g_t_k_toolbar.html#a4258c2aae6a990e2bd3ec6077aa7dc92", null ],
     [ "getItemIndex:", "interface_c_g_t_k_toolbar.html#a51682bfeb36af5fd765702c92d7b3e39", null ],
     [ "getNitems", "interface_c_g_t_k_toolbar.html#abdf7fe36d86edb02a73f9323f026ad2a", null ],
@@ -9,8 +9,8 @@ var interface_c_g_t_k_toolbar =
     [ "getShowArrow", "interface_c_g_t_k_toolbar.html#ac6a18c9ba7c3e034fbc78ac5162fd5d1", null ],
     [ "getStyle", "interface_c_g_t_k_toolbar.html#a909b498711effc6d06330671700cf732", null ],
     [ "init", "interface_c_g_t_k_toolbar.html#a0e875547314ac9ca0c723187ceb91d3e", null ],
-    [ "insertWithItem:andPos:", "interface_c_g_t_k_toolbar.html#a7be4ccfe6038421f40d0874ab2b90f7b", null ],
-    [ "setDropHighlightItemWithToolItem:andIndex:", "interface_c_g_t_k_toolbar.html#a27739d8dd19e444275f8788e696554dc", null ],
+    [ "insertWithItem:andPos:", "interface_c_g_t_k_toolbar.html#a61ba28fa20b14053d5ac63b45fa7c412", null ],
+    [ "setDropHighlightItemWithToolItem:andIndex:", "interface_c_g_t_k_toolbar.html#a5eaf560319cc870ccce5a3a747b5b5a6", null ],
     [ "setIconSize:", "interface_c_g_t_k_toolbar.html#a9098ef82f795eaf3f44e78966c5f916a", null ],
     [ "setShowArrow:", "interface_c_g_t_k_toolbar.html#a5e23605292c0aa992c8c0920efc233ba", null ],
     [ "setStyle:", "interface_c_g_t_k_toolbar.html#aa07320d2df478ba792680bf38e8b20d6", null ],

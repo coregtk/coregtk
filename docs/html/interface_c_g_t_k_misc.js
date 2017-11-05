@@ -1,8 +1,8 @@
 var interface_c_g_t_k_misc =
 [
-    [ "getAlignmentWithXalign:andYalign:", "interface_c_g_t_k_misc.html#a084976b16bb48b6f1477390d65021349", null ],
-    [ "getPaddingWithXpad:andYpad:", "interface_c_g_t_k_misc.html#a4b4f819e5e159f232fcf84ecdc5768ba", null ],
+    [ "getAlignmentWithXalign:andYalign:", "interface_c_g_t_k_misc.html#a131cd6444d3371aa6ad3f2a9917330ee", null ],
+    [ "getPaddingWithXpad:andYpad:", "interface_c_g_t_k_misc.html#a699b019b0e487ce50fad7a55ef2afc2b", null ],
     [ "MISC", "interface_c_g_t_k_misc.html#a6c66f84f57e8abdaf03c322aee4b9b00", null ],
-    [ "setAlignmentWithXalign:andYalign:", "interface_c_g_t_k_misc.html#a07ab90f14891ed32037523dd3ea6c9fa", null ],
-    [ "setPaddingWithXpad:andYpad:", "interface_c_g_t_k_misc.html#a2d73a0a3d46a79fe7e484e73a4e5a293", null ]
+    [ "setAlignmentWithXalign:andYalign:", "interface_c_g_t_k_misc.html#ad8a8ff4646a3e1618076d5985e03ff55", null ],
+    [ "setPaddingWithXpad:andYpad:", "interface_c_g_t_k_misc.html#aae88279e84eff3a3ef4e5f0ac484545a", null ]
 ];
