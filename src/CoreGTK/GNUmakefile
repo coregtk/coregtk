@@ -1,7 +1,7 @@
 include $(GNUSTEP_MAKEFILES)/common.make
 
 FRAMEWORK_NAME = CoreGTK
-VERSION = 3.18.0
+VERSION = 3.22.0
 
 OBJCFLAGS=`pkg-config --cflags gtk+-3.0`
 LDFLAGS=`pkg-config --libs gtk+-3.0`
